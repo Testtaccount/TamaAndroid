@@ -1,15 +1,13 @@
 package com.tama.chat.ui.activities.authorization;
 
 import android.app.Activity;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.AnyRes;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
+import android.text.TextUtils;
 import android.util.Base64;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +15,7 @@ import android.widget.ImageView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.quickblox.q_municate_user_service.model.QMUser;
 import com.quickblox.users.model.QBUser;
 import com.soundcloud.android.crop.Crop;
@@ -30,6 +29,7 @@ import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.ValidationUtils;
 import com.tama.chat.utils.helpers.MediaPickHelper;
 import com.tama.chat.utils.helpers.ServiceManager;
+import com.tama.chat.utils.image.ImageLoaderUtils;
 import com.tama.chat.utils.listeners.OnMediaPickedListener;
 import com.tama.q_municate_core.models.AppSession;
 import com.tama.q_municate_core.models.UserCustomData;
@@ -99,43 +99,19 @@ public class AuthenticationActivity extends BaseLoggableActivity implements OnMe
     if (getIntent().getExtras() != null) {
       qbUser = (QBUser) getIntent().getSerializableExtra(EXTRA_QB_USER);
       this.userPhone = qbUser.getPhone();
+      firstNameEditText.setText(qbUser.getFullName());
     }
 
-//    Uri uri = Uri.parse("android.resource://org.xyz.abc/drawable/myimage");
-//
-//    imageUri = Uri.parse("content://com.tama.chat.provider/res:///" + R.drawable.placeholder_rect_user);
-////    isNeedUpdateImage = false;
-//
-//
-//    if (Build.VERSION.SDK_INT >= 24)
-//      imageUri = FileProvider
-//          .getUriForFile(this, BuildConfig.APPLICATION_ID + ".provider", f);
-//    else
-//      imageUri = Uri.fromFile(f);
+    initCustomData();
+    loadAvatar();
+    updateOldData();
+
   }
 
-  @Override
-  protected int getContentResId() {
-    return R.layout.activity_authentication;
-  }
-
-  @OnClick(R.id.chooseImage)
-  public void clickChooseImage() {
-    mediaPickHelper.pickAnMedia(this, MediaUtils.IMAGE_REQUEST_CODE);
-  }
-
-  private void startCropActivity(Uri originalUri) {
-    imageUri = MediaUtils.getValidUri(new File(getCacheDir(), Crop.class.getName()), this);
-    Crop.of(originalUri, imageUri).asSquare().start(this);
-  }
-
-  private void handleCrop(int resultCode, Intent result) {
-    if (resultCode == RESULT_OK) {
-//      isNeedUpdateImage = true;
-      avatarImageView.setImageURI(imageUri);
-
-    } else if (resultCode == Crop.RESULT_ERROR) {
-      ToastUtils.longToast(Crop.getError(result).getMessage());
+  private void loadAvatar() {
+    if (userCustomData != null && !TextUtils.isEmpty(userCustomData.getAvatarUrl())) {
+      ImageLoader.getInstance().displayImage(userCustomData.getAvatarUrl(),
+          avatarImageView, ImageLoaderUtils.UIL_USER_AVATAR_DISPLAY_OPTIONS);
     }
   }
 
@@ -145,6 +121,32 @@ public class AuthenticationActivity extends BaseLoggableActivity implements OnMe
       handleCrop(resultCode, data);
     }
     super.onActivityResult(requestCode, resultCode, data);
+  }
+
+  @Override
+  protected int getContentResId() {
+    return R.layout.activity_authentication;
+  }
+
+  private void startCropActivity(Uri originalUri) {
+    String extensionOriginalUri = originalUri.getPath().substring(originalUri.getPath().lastIndexOf(".")).toLowerCase();
+
+    imageUri = MediaUtils.getValidUri(new File(getCacheDir(), extensionOriginalUri), this);
+    Crop.of(originalUri, imageUri).asSquare().start(this);
+  }
+
+  private void handleCrop(int resultCode, Intent result) {
+    if (resultCode == RESULT_OK) {
+//      isNeedUpdateImage = true;
+      avatarImageView.setImageURI(imageUri);
+    } else if (resultCode == Crop.RESULT_ERROR) {
+      ToastUtils.longToast(Crop.getError(result).getMessage());
+    }
+  }
+
+  @OnClick(R.id.chooseImage)
+  public void clickChooseImage() {
+    mediaPickHelper.pickAnMedia(this, MediaUtils.IMAGE_REQUEST_CODE);
   }
 
   @Override
@@ -166,23 +168,20 @@ public class AuthenticationActivity extends BaseLoggableActivity implements OnMe
 
   @OnClick(R.id.finishAuthentication)
   public void clickfinishAuthentication() {
-//        AppSession.getSession().updateUser(user);
-
     if (checkNetworkAvailableWithError()) {
         updateUser();
-
     }
 
   }
-
-  public static final Uri getUriToDrawable(@NonNull Context context,
-      @AnyRes int drawableId) {
-    Uri imageUri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE +
-        "://" + context.getResources().getResourcePackageName(drawableId)
-        + '/' + context.getResources().getResourceTypeName(drawableId)
-        + '/' + context.getResources().getResourceEntryName(drawableId) );
-    return imageUri;
-  }
+//
+//  public static final Uri getUriToDrawable(@NonNull Context context,
+//      @AnyRes int drawableId) {
+//    Uri imageUri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE +
+//        "://" + context.getResources().getResourcePackageName(drawableId)
+//        + '/' + context.getResources().getResourceTypeName(drawableId)
+//        + '/' + context.getResources().getResourceEntryName(drawableId) );
+//    return imageUri;
+//  }
 
   private void updateUser() {
     initCurrentData();
@@ -373,160 +372,4 @@ public class AuthenticationActivity extends BaseLoggableActivity implements OnMe
     return byteBuffer.toByteArray();
   }
 
-//    private AutheenticationSuccess myMth;
-//
-//    public void closeActivity(AutheenticationSuccess mth){
-//        myMth = mth;
-//    }
-//
-//    public void executeNow(){
-//        myMth.registerSuccess();
-//    }
 }
-
-////////////////////////////////////////////////
-
-//  public AuthenticationActivity() {
-//
-//  }
-//
-//  @Override
-//  protected void onCreate(Bundle savedInstanceState) {
-//    super.onCreate(savedInstanceState);
-//    setContentView(R.layout.activity_authentication);
-//    ButterKnife.bind(this);
-//    mediaPickHelper = new MediaPickHelper();
-//    Bundle bundle = getIntent().getExtras();
-//    this.userPhone = bundle.getString(EXTRA_PHONE_NUMBER);
-//  }
-//
-//  @Override
-//  protected int getContentResId() {
-//    return R.layout.activity_authentication;
-//  }
-//
-//  @OnClick(R.id.chooseImage)
-//  public void clickChooseImage() {
-//    mediaPickHelper.pickAnMedia(this, MediaUtils.IMAGE_REQUEST_CODE);
-//  }
-//
-//  private void startCropActivity(Uri originalUri) {
-//    imageUri = MediaUtils.getValidUri(new File(getCacheDir(), Crop.class.getName()), this);
-//    Crop.of(originalUri, imageUri).asSquare().start(this);
-//  }
-//
-//  private void handleCrop(int resultCode, Intent result) {
-//    if (resultCode == RESULT_OK) {
-////            isNeedUpdateImage = true;
-//      avatarImageView.setImageURI(imageUri);
-//    } else if (resultCode == Crop.RESULT_ERROR) {
-//      ToastUtils.longToast(Crop.getError(result).getMessage());
-//    }
-//  }
-//
-//  @Override
-//  public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//    if (requestCode == Crop.REQUEST_CROP) {
-//      handleCrop(resultCode, data);
-//    }
-//    super.onActivityResult(requestCode, resultCode, data);
-//  }
-//
-//  @Override
-//  public void onMediaPicked(int requestCode, Attachment.Type attachmentType, Object attachment) {
-//    if (Attachment.Type.IMAGE.equals(attachmentType)) {
-//      startCropActivity(MediaUtils.getValidUri((File)attachment, this));
-//    }
-//  }
-//
-//  @Override
-//  public void onMediaPickError(int requestCode, Exception e) {
-//    ErrorUtils.showError(this, e);
-//  }
-//
-//  @Override
-//  public void onMediaPickClosed(int requestCode) {
-//  }
-//
-//
-//  @OnClick(R.id.finishAuthentication)
-//  public void clickfinishAuthentication() {
-////        AppSession.getSession().updateUser(user);
-//    try {
-//      @Nullable
-//      byte[] inputData;
-////            if (imageUri != null) {
-//      InputStream iStream = getContentResolver().openInputStream(imageUri);
-//      inputData = getBytes(iStream);
-////            }
-//
-//      new TamaAccountHelper().register(this, this, this.userPhone, firstNameTextEdit.getText().toString(), lastNameTextEdit.getText().toString(), toBase64(inputData));
-//    } catch (UnsupportedEncodingException e) {
-//      e.printStackTrace();
-//    } catch (FileNotFoundException e) {
-//      e.printStackTrace();
-//    } catch (IOException e) {
-//      e.printStackTrace();
-//    }
-//  }
-//
-//  private static String[] parseJSon(String data) throws JSONException {
-//    if (data == null) {
-//      return null;
-//    }
-//    JSONObject jsonObject = new JSONObject(data);
-////        JSONObject jsonData = jsonObject.getJSONObject("data");
-//    String user_id = jsonObject.getString("user_id");
-////        String is_europe = jsonObject.getString("is_europe");
-//
-//    return new String[]{user_id};
-//  }
-//
-//
-//  @Override
-//  public void requestSuccess(String data) {
-//    String[] response = new String[]{};
-//    try {
-//      response = parseJSon(data);
-//    } catch (JSONException e) {
-//      e.printStackTrace();
-//    }
-//    AppSession.getSession().setTamaAccountId(response[0]);
-//    appSharedHelper.saveTamaAccountId(response[0]);
-//    //appSharedHelper.saveTamaIsEurope(response[1].equals("1"));
-////        startMainActivity();
-//    finish();
-//  }
-//
-//  @Override
-//  public void requestError(String data) {
-//    ToastUtils.longToast(data);
-//  }
-//  @Override
-//  public void alertDialogCancelListener() {
-//
-//  }
-//
-//  @Override
-//  public Context getAppContext() {
-//    return this;
-//  }
-//
-//  private String toBase64(byte[] bytes) {
-//    return Base64.encodeToString(bytes, Base64.DEFAULT);
-//  }
-//
-//  public byte[] getBytes(InputStream inputStream) throws IOException {
-//    if (inputStream == null) {
-//      return null;
-//    }
-//    ByteArrayOutputStream byteBuffer = new ByteArrayOutputStream();
-//    int bufferSize = 1024;
-//    byte[] buffer = new byte[bufferSize];
-//
-//    int len = 0;
-//    while ((len = inputStream.read(buffer)) != -1) {
-//      byteBuffer.write(buffer, 0, len);
-//    }
-//    return byteBuffer.toByteArray();
-//  }

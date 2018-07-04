@@ -280,11 +280,19 @@ public class MediaUtils {
         return resultFile.getAbsolutePath();
     }
 
-    public static File getCreatedFileFromUri(Uri uri) {// content://com.tama.chat.provider/cache_files/com.soundcloud.android.crop.Crop
-        String filePath;//  content://com.android.providers.media.documents/document/image%3A27790
+    public static File getCreatedFileFromUri(Uri uri) {
+
+        // content://com.tama.chat.provider/cache_files/com.soundcloud.android.crop.Crop
+                    // content://com.tama.chat.provider/cache_files/.jpeg
+
+        // /storage/emulated/0/Android/data/com.tama.chat/1530703947187.Crop
+                   // /storage/emulated/0/Android/data/com.tama.chat/1530704089815.jpeg
+
+        String filePath;
         File file = null;
         try {
             if (uri != null) {
+
                 filePath = saveUriToFile(uri);
                 file = new File(filePath);
             }

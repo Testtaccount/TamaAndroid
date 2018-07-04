@@ -260,6 +260,63 @@ public class ServiceManager {
         return result;
     }
 
+
+
+
+
+//    public Observable<Observable<QMUser>> updateUser(final QBUser user, final File file) {
+//
+//        Observable<Observable<QMUser>> result = null;
+//
+//        Performer<QBFile> performer = QBContent.uploadFileTask(file, true, (String) null);
+//        final Observable<QBFile> observable = performer.convertTo(RxJavaPerformProcessor.INSTANCE);
+//
+//        result = observable
+//            .subscribeOn(Schedulers.io())
+//
+////                .flatMap(new Func1<QBFile, Observable<QMUser>>() {
+////                    @Override
+////                    public Observable<QMUser> call(QBFile qbFile) {
+////                        QBUser newUser = new QBUser();
+////
+////                        newUser.setId(user.getId());
+////                        newUser.setPassword(user.getPassword());
+////                        newUser.setFileId(qbFile.getId());
+////                        newUser.setFullName(user.getFullName());
+////
+////                        UserCustomData userCustomData = getUserCustomData(user);
+////                        userCustomData.setAvatarUrl(qbFile.getPublicUrl());
+////                        newUser.setCustomData(Utils.customDataToString(userCustomData));
+////
+////                        return updateUser(newUser);
+////                    }
+////                })
+//            .map(new Func1<QBFile, Observable<QMUser>>() {
+//                @Override
+//                public Observable<QMUser> call(QBFile qbFile) {
+//                    QBUser newUser = new QBUser();
+//
+//                    newUser.setId(user.getId());
+//                    newUser.setPassword(user.getPassword());
+//                    newUser.setFileId(qbFile.getId());
+//                    newUser.setFullName(user.getFullName());
+//
+//                    UserCustomData userCustomData = getUserCustomData(user);
+//                    userCustomData.setAvatarUrl(qbFile.getPublicUrl());
+//                    newUser.setCustomData(Utils.customDataToString(userCustomData));
+//
+//                    return updateUser(newUser);
+//                }
+//            })
+//            .observeOn(AndroidSchedulers.mainThread());
+//
+//        return result;
+//    }
+
+
+
+
+
     public QBUser updateUserSync(QBUser inputUser) throws QBResponseException {
         QBUser user;
 
