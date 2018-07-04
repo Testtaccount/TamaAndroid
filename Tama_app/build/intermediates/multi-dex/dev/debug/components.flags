@@ -1,0 +1,42 @@
+-injars 'E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\jarMerging\dev\debug\jars\1\1f\combined.jar'
+-outjars 'E:\Android\Project\Tama Android\Tama_app\build\intermediates\multi-dex\dev\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\Avetik\AppData\Local\Android\Sdk\build-tools\26.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'E:\Android\Project\Tama Android\Tama_app\build\intermediates\multi-dex\dev\debug\components.flags'
+
+
+# view AndroidManifest.xml #generated:58
+-keep class com.tama.chat.App {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

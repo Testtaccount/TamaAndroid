@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.firebase:firebase-jobdispatcher-with-gcm-dep-0.8.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/c86f59d366445ef391ece65b55f8927b9ef2eb1f/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/c86f59d366445ef391ece65b55f8927b9ef2eb1f/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-jobdispatcher-with-gcm-dep/0.8.2/6e89a5fd72dbc440eeb16e0daeafd3568c377c2/firebase-jobdispatcher-with-gcm-dep-0.8.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

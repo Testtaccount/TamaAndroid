@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\34f8896745313d6a95295cb58925e0a7da7d42ee\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\asl_playpause.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\380438f198877825db6978745ff2b29f0ce2d08c\\output\\res\\drawable-v21\\asl_playpause.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\crop__selectable_background.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\0d799f9d2dc795ca9b1864652fceca173abd5299\\output\\res\\drawable-v21\\crop__selectable_background.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\fui_idp_button_background_email.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\\output\\res\\drawable-v21\\fui_idp_button_background_email.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\fui_idp_button_background_phone.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\\output\\res\\drawable-v21\\fui_idp_button_background_phone.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\md_btn_shape.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\879e4c391d93a1c4d3b2e1b2b3b111a18c5aaea7\\output\\res\\drawable-v21\\md_btn_shape.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\md_btn_selector_ripple.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\879e4c391d93a1c4d3b2e1b2b3b111a18c5aaea7\\output\\res\\drawable-v21\\md_btn_selector_ripple.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\md_btn_selector_ripple_dark.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\879e4c391d93a1c4d3b2e1b2b3b111a18c5aaea7\\output\\res\\drawable-v21\\md_btn_selector_ripple_dark.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\fui_idp_button_background_twitter.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\\output\\res\\drawable-v21\\fui_idp_button_background_twitter.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\fui_idp_button_background_google.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\\output\\res\\drawable-v21\\fui_idp_button_background_google.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\fui_idp_button_background_facebook.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\\output\\res\\drawable-v21\\fui_idp_button_background_facebook.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    }
+]

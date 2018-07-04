@@ -1,0 +1,300 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tama.chat.ui.fragments.tamaaccount.SingleProductFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fragment_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_red_normal"
+                android:padding="3dp"
+                android:text="@string/checkout"
+                android:textColor="@color/tama_account_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/personal_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_title_text"
+                android:layout_marginTop="10dp"
+                android:text="@string/your_personal_details"
+                android:textColor="@color/tama_account_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sender_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personal_details"
+                android:layout_marginTop="5dp"
+                android:text="@string/sender_name"
+                android:textColor="@color/tama_account_grey"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/sender_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topup_edit_text_height"
+                android:layout_below="@+id/sender_name_title"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text_oval"
+                android:gravity="start"
+                android:inputType="textPersonName"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingStart="5dp"
+                android:textColor="@color/button_red_normal"
+                android:textCursorDrawable="@color/button_red_normal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/sender_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sender_name"
+                android:layout_marginTop="5dp"
+                android:text="@string/sender_mobile_number"
+                android:textColor="@color/tama_account_grey"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/phone_number_layout_first"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topup_edit_text_height"
+                android:layout_below="@id/sender_mobile_number"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text_oval"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/country_code_spinner_first"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                  android:background="@android:color/transparent"
+                    android:dropDownWidth="200dp"
+                    android:gravity="start"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/enter_phone_number_text_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/topup_edit_text_height"
+                  android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/button_red_normal"
+                    android:textCursorDrawable="@color/button_red_normal"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/open_contacts_list_first"
+                android:layout_width="@dimen/topup_edit_text_height"
+                android:layout_height="@dimen/topup_edit_text_height"
+                android:background="@drawable/plus_svg"
+                android:layout_below="@+id/sender_mobile_number"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/phone_error_text_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_number_layout_first"
+                android:textColor="@color/button_red_normal"
+                android:textSize="@dimen/topup_title_text_height" />
+
+            <TextView
+                android:id="@+id/beneficiary_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_number_layout_first"
+                android:layout_marginTop="25dp"
+                android:text="@string/beneficiary_details"
+                android:textColor="@color/tama_account_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/beneficiary_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/beneficiary_details"
+                android:layout_marginTop="5dp"
+                android:text="@string/beneficiary_name"
+                android:textColor="@color/tama_account_grey"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/beneficiary_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topup_edit_text_height"
+                android:layout_below="@+id/beneficiary_name_title"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text_oval"
+                android:gravity="start"
+                android:inputType="textPersonName"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingStart="5dp"
+                android:textColor="@color/button_red_normal"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/topup_number_title_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/beneficiary_name"
+                android:layout_marginTop="10dp"
+                android:text="@string/beneficiary_mobile_number"
+                android:textColor="@color/tama_account_grey"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/phone_number_layout_second"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topup_edit_text_height"
+                android:layout_below="@id/topup_number_title_second"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text_oval"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/country_code_spinner_second"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                  android:background="@android:color/transparent"
+                    android:dropDownWidth="200dp"
+                    android:gravity="start"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/phone_number_text_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/topup_edit_text_height"
+                  android:background="@android:color/transparent"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/button_red_normal"
+                    android:textCursorDrawable="@color/button_red_normal"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+                <EditText
+                    android:id="@+id/enter_phone_number_text_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/topup_edit_text_height"
+                  android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/button_red_normal"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/open_contacts_list_second"
+                android:layout_width="@dimen/topup_edit_text_height"
+                android:layout_height="@dimen/topup_edit_text_height"
+                android:background="@drawable/plus_svg"
+                android:layout_below="@+id/topup_number_title_second"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/phone_error_text_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_number_layout_second"
+                android:textColor="@color/button_red_normal"
+                android:textSize="@dimen/topup_title_text_height" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_number_layout_second"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:button="@drawable/check_box_selector"
+                android:text="@string/checkout_confirm_text"
+                android:textColor="@color/button_red_normal"
+                android:textSize="@dimen/topup_title_text_height"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/phone_number_layout_second"
+                android:paddingTop="40dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/confirm_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/topup_button_height"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button_green_oval"
+                    android:text="@string/pay_by_balance_btn_text"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/topup_button_text_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/request_order_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/topup_button_height"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button_green_oval"
+                    android:text="@string/pay_to_retailer_btn_text"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/topup_button_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

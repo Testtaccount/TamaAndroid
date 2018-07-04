@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tama.chat.ui.activities.tamaaccount.TamaTopUpActivity">
+
+    <include
+        android:id="@+id/toolbar_tama_view"
+        layout="@layout/toolbar_tama"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_tama_view"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/topup_number_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tama_account_black"
+            android:textSize="15sp"
+            android:text="@string/enter_number_where_you_want_transfer"/>
+
+        <LinearLayout
+            android:id="@+id/phone_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topup_edit_text_height"
+            android:layout_below="@id/topup_number_title"
+            android:background="@drawable/edit_text_oval"
+            android:layout_gravity="center">
+            <Spinner
+                android:id="@+id/country_code_spinner"
+                style="?android:attr/spinnerDropDownItemStyle"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="start"
+              android:background="@android:color/transparent"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="end"
+                android:dropDownWidth="200dp"/>
+            <EditText
+                android:id="@+id/enter_phone_number_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topup_edit_text_height"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+              android:background="@android:color/transparent"
+                android:textColor="@color/button_red_normal"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textCursorDrawable = "@color/button_red_normal"
+                android:inputType="phone"
+                tools:targetApi="lollipop" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/phone_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_number_layout"
+            android:textSize="@dimen/topup_title_text_height"
+            android:textColor="@color/button_red_normal"/>
+
+        <TextView
+            android:id="@+id/topup_amount_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/phone_number_layout"
+            android:textColor="@color/tama_account_black"
+            android:textSize="15sp"
+            android:text="@string/enter_amount_transfer"/>
+
+        <LinearLayout
+            android:id="@+id/amount_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topup_edit_text_height"
+            android:layout_below="@id/topup_amount_title"
+            android:background="@drawable/edit_text_oval"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+              android:background="@android:color/transparent"
+                android:textColor="@color/button_red_normal"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textCursorDrawable = "@color/button_red_normal"
+                android:inputType="numberDecimal"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/button_red_normal"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/euro"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/amount_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount_number_layout"
+            android:textSize="@dimen/topup_title_text_height"
+            android:textColor="@color/button_red_normal"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/check_box_selector"
+            android:text="@string/transfer_confirm_text"
+            android:textSize="@dimen/topup_title_text_height"
+            android:textColor="@color/button_red_normal"
+            android:layout_below="@id/amount_number_layout"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/transfer_button"
+            android:layout_width="@dimen/topup_button_width"
+            android:layout_height="@dimen/topup_button_height"
+            android:layout_below="@+id/amount_number_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/selector_button_red_oval"
+            android:textColor="@color/white"
+            android:text="@string/topup_button"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="@dimen/topup_button_text_size" />
+
+    </RelativeLayout>
+</RelativeLayout>

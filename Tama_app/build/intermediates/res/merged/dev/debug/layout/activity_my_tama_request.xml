@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    tools:context="com.tama.chat.ui.activities.tamaAccount.MyTamaRequestActivity">
+
+    <include
+        android:id="@+id/toolbar_tama_view"
+        layout="@layout/toolbar_tama"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_tama_view"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/btn_my_tama_topup_rqt"
+                    android:layout_width="145dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/selector_button_red_oval"
+                    android:layout_gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/tama_topup_logo"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingEnd="0dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="0dp"
+                        android:paddingStart="1dp"
+                        android:text="@string/my_tama_topup_request"
+                        android:textColor="@color/tama_account_text"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/btn_mobile_topup_request"
+                    android:layout_width="145dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/selector_button_red_oval"
+                    android:layout_gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="31dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/tama_topup_rqst_logo"
+                        android:scaleType="centerInside"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/my_tama_mobile_topup_request"
+                        android:textColor="@color/tama_account_text"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:paddingStart="1dp"
+                        android:paddingLeft="1dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/btn_pay_tamaexpress_rqt"
+                    android:layout_width="145dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/selector_button_red_oval"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/pay_tama_rqst_logo"
+                        android:scaleType="centerInside"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/pay_ntamaexpress_nrequest"
+                        android:textColor="@color/tama_account_text"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:paddingStart="1dp"
+                        android:paddingLeft="1dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/btn_incoming_rqt"
+                    android:layout_width="145dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/selector_button_red_oval"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/incoming_rqst_logo"
+                        android:scaleType="centerInside"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/request"
+                        android:textColor="@color/tama_account_text"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:paddingStart="1dp"
+                        android:paddingLeft="1dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

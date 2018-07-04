@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <com.tama.chat.ui.views.TouchImageView
+      android:id="@+id/image_touchimageview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="@dimen/activity_horizontal_margin" />
+
+</LinearLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<include layout="@layout/toolbar" />-->
+
+    <!--<VideoView-->
+        <!--android:id="@+id/video_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_gravity="center"/>-->
+
+    <!--&lt;!&ndash;<com.twitter.sdk.android.tweetui.internal.VideoView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/video_view_tw"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="center"/>&ndash;&gt;-->
+
+    <!--<com.tama.chat.ui.views.TouchImageView-->
+        <!--android:id="@+id/image_touchimageview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+<!--</LinearLayout>-->

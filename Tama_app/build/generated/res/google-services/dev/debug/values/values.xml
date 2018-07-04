@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">169100630890-5tu87u90hkgj4bf7vqamh39gjbf29564.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://tama-7aeab.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">169100630890</string>
+    <string name="google_api_key" translatable="false">AIzaSyCDnXDAcXkT2s0nYQGmQsugAFie5-v6XpI</string>
+    <string name="google_app_id" translatable="false">1:169100630890:android:1dfe26b22fe6f684</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCDnXDAcXkT2s0nYQGmQsugAFie5-v6XpI</string>
+    <string name="google_storage_bucket" translatable="false">tama-7aeab.appspot.com</string>
+</resources>

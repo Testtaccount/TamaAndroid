@@ -1,0 +1,472 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.tama.chat.ui.fragments.tamaaccount.CountriesFragment">
+  <TextView
+    android:id="@+id/fragment_title_text"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:padding="3dp"
+    android:background="@color/button_red_normal"
+    android:text="@string/countries"
+    android:textColor="@color/tama_account_text"
+    android:textSize="15sp"
+    android:layout_marginBottom="10dp"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:id="@+id/fragment_subtitle_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:text="@string/click_on_your_country_to_find_out_the_products_available"
+        android:textColor="@color/tama_account_black" />
+
+      <!--<GridView-->
+      <!--android:id="@+id/grid_countries_view"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:paddingTop="10dp"-->
+      <!--android:columnWidth="110dp"-->
+      <!--android:gravity="center"-->
+      <!--android:numColumns="2"-->
+      <!--android:stretchMode="spacingWidthUniform" />-->
+
+      <com.tama.chat.ui.fragments.tamaaccount.ExpandableHeightGridView
+        android:id="@+id/grid_countries_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_subtitle_text"
+        android:paddingTop="10dp"
+        android:columnWidth="110dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:stretchMode="spacingWidthUniform" />
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/grid_countries_view"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <TextView
+            android:id="@+id/tv_tama_helper_how_to_purchase_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="6dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/tama_helper_how_to_purchase_title"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!--1-->
+            <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_gravity="top"
+              android:gravity="center"
+              android:orientation="vertical">
+              <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:gravity="center">
+                <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:srcCompat="@drawable/select_country" />
+              </RelativeLayout>
+
+              <TextView
+                android:id="@+id/tv_tama_helper_how_to_purchase_choose_the_country"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:text="@string/tama_helper_how_to_purchase_choose_the_country" />
+            </LinearLayout>
+
+            <!--2-->
+            <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_gravity="top"
+              android:gravity="center"
+              android:orientation="vertical">
+              <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:gravity="center">
+                <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:srcCompat="@drawable/select_product" />
+              </RelativeLayout>
+
+              <TextView
+                android:id="@+id/tv_tama_helper_how_to_purchase_choose_the_good_tosend"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:text="@string/tama_helper_how_to_purchase_choose_the_good_tosend" />
+            </LinearLayout>
+
+            <!--3-->
+            <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_gravity="top"
+              android:gravity="center"
+              android:orientation="vertical">
+              <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:gravity="center">
+                <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:srcCompat="@drawable/give_number" />
+              </RelativeLayout>
+
+              <TextView
+                android:id="@+id/tv_tama_helper_how_to_purchase_give_the_number"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:text="@string/tama_helper_how_to_purchase_give_the_number" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--4-->
+            <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_gravity="top"
+              android:gravity="center"
+              android:orientation="vertical">
+              <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:gravity="center">
+                <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:srcCompat="@drawable/customer_care" />
+              </RelativeLayout>
+
+              <TextView
+                android:id="@+id/tama_helper_how_to_purchase_we_call_the_benficiari"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:text="@string/tama_helper_how_to_purchase_we_call_the_benficiari" />
+            </LinearLayout>
+
+            <!--5-->
+            <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_gravity="top"
+              android:gravity="center"
+              android:orientation="vertical">
+              <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:gravity="center">
+                <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:srcCompat="@drawable/product_delivered" />
+              </RelativeLayout>
+
+              <TextView
+                android:id="@+id/tv_tama_helper_how_to_purchase_good_are_deliver"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:text="@string/tama_helper_how_to_purchase_good_are_deliver" />
+            </LinearLayout>
+
+
+          </LinearLayout>
+
+
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+      <!--<RelativeLayout-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:orientation="vertical">-->
+
+      <!---->
+
+
+      <!--<LinearLayout-->
+      <!--android:layout_gravity="bottom"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_marginBottom="10dp"-->
+      <!--android:gravity="bottom">-->
+
+      <!--<LinearLayout-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:gravity="center"-->
+      <!--android:orientation="vertical">-->
+
+      <!--<TextView-->
+      <!--android:id="@+id/buttond5"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:paddingBottom="6dp"-->
+      <!--android:gravity="center"-->
+      <!--android:maxLines="1"-->
+      <!--android:text="How to Purchase a Goods ?"-->
+      <!--android:textColor="@color/black"-->
+      <!--android:textSize="15sp" />-->
+
+      <!--<LinearLayout-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="match_parent"-->
+      <!--android:gravity="center"-->
+      <!--android:orientation="horizontal"-->
+      <!--android:weightSum="3">-->
+
+      <!--&lt;!&ndash;1&ndash;&gt;-->
+      <!--<LinearLayout-->
+      <!--android:layout_width="0dp"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_weight="1"-->
+      <!--android:layout_gravity="top"-->
+      <!--android:gravity="center"-->
+      <!--android:orientation="vertical">-->
+      <!--<RelativeLayout-->
+      <!--android:id="@+id/imageView4"-->
+      <!--android:layout_width="70dp"-->
+      <!--android:layout_height="70dp"-->
+      <!--android:layout_margin="4dp"-->
+      <!--android:gravity="center">-->
+      <!--<ImageView-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--app:srcCompat="@drawable/select_country" />-->
+      <!--</RelativeLayout>-->
+
+      <!--<TextView-->
+      <!--android:id="@+id/txtView2"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:padding="3dp"-->
+      <!--android:gravity="center"-->
+      <!--android:text="Choose the country\n where you want\n to send the good" />-->
+      <!--</LinearLayout>-->
+
+      <!--&lt;!&ndash;2&ndash;&gt;-->
+      <!--<LinearLayout-->
+      <!--android:layout_width="0dp"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_weight="1"-->
+      <!--android:layout_gravity="top"-->
+      <!--android:gravity="center"-->
+      <!--android:orientation="vertical">-->
+      <!--<RelativeLayout-->
+      <!--android:id="@+id/imageViewh4"-->
+      <!--android:layout_width="70dp"-->
+      <!--android:layout_height="70dp"-->
+      <!--android:layout_margin="4dp"-->
+      <!--android:gravity="center">-->
+      <!--<ImageView-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--app:srcCompat="@drawable/select_product" />-->
+      <!--</RelativeLayout>-->
+
+      <!--<TextView-->
+      <!--android:id="@+id/txtViewt2"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:padding="3dp"-->
+      <!--android:gravity="center"-->
+      <!--android:text="Choose the good you want\n to send" />-->
+      <!--</LinearLayout>-->
+
+      <!--&lt;!&ndash;3&ndash;&gt;-->
+      <!--<LinearLayout-->
+      <!--android:layout_width="0dp"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_weight="1"-->
+      <!--android:layout_gravity="top"-->
+      <!--android:gravity="center"-->
+      <!--android:orientation="vertical">-->
+      <!--<RelativeLayout-->
+      <!--android:id="@+id/imageVifew4"-->
+      <!--android:layout_width="70dp"-->
+      <!--android:layout_height="70dp"-->
+      <!--android:layout_margin="4dp"-->
+      <!--android:gravity="center">-->
+      <!--<ImageView-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--app:srcCompat="@drawable/give_number" />-->
+      <!--</RelativeLayout>-->
+
+      <!--<TextView-->
+      <!--android:id="@+id/txtViefw2"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:padding="3dp"-->
+      <!--android:gravity="center"-->
+      <!--android:text="Give the number\n and name of\n the beneficiary" />-->
+      <!--</LinearLayout>-->
+
+      <!--</LinearLayout>-->
+
+      <!--<LinearLayout-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:gravity="center"-->
+      <!--android:orientation="horizontal">-->
+
+      <!--&lt;!&ndash;4&ndash;&gt;-->
+      <!--<LinearLayout-->
+      <!--android:layout_width="0dp"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_weight="1"-->
+      <!--android:layout_gravity="top"-->
+      <!--android:gravity="center"-->
+      <!--android:orientation="vertical">-->
+      <!--<RelativeLayout-->
+      <!--android:id="@+id/imageViewg4"-->
+      <!--android:layout_width="70dp"-->
+      <!--android:layout_height="70dp"-->
+      <!--android:layout_margin="4dp"-->
+      <!--android:gravity="center">-->
+      <!--<ImageView-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--app:srcCompat="@drawable/customer_care" />-->
+      <!--</RelativeLayout>-->
+
+      <!--<TextView-->
+      <!--android:id="@+id/txtViewu2"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:padding="3dp"-->
+      <!--android:gravity="center"-->
+      <!--android:text="We call\n the beneficiary\n for an appointment" />-->
+      <!--</LinearLayout>-->
+
+      <!--&lt;!&ndash;5&ndash;&gt;-->
+      <!--<LinearLayout-->
+      <!--android:layout_width="0dp"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_weight="1"-->
+      <!--android:layout_gravity="top"-->
+      <!--android:gravity="center"-->
+      <!--android:orientation="vertical">-->
+      <!--<RelativeLayout-->
+      <!--android:id="@+id/imageViewuih4"-->
+      <!--android:layout_width="70dp"-->
+      <!--android:layout_height="70dp"-->
+      <!--android:layout_margin="4dp"-->
+      <!--android:gravity="center">-->
+      <!--<ImageView-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--app:srcCompat="@drawable/product_delivered" />-->
+      <!--</RelativeLayout>-->
+
+      <!--<TextView-->
+      <!--android:id="@+id/txtViewit2"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:padding="3dp"-->
+      <!--android:gravity="center"-->
+      <!--android:text="Good are deliver in\n the country\n (between 3 hours\n and 72 hours)" />-->
+      <!--</LinearLayout>-->
+
+
+      <!--</LinearLayout>-->
+
+
+      <!--</LinearLayout>-->
+
+
+    </RelativeLayout>
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+  </ScrollView>
+
+
+</LinearLayout>

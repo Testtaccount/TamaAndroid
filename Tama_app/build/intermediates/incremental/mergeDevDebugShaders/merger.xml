@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\Android\Project\Tama Android\Tama_app\src\main\shaders"/></dataSet><dataSet config="dev"><source path="E:\Android\Project\Tama Android\Tama_app\src\dev\shaders"/></dataSet><dataSet config="debug"><source path="E:\Android\Project\Tama Android\Tama_app\src\debug\shaders"/></dataSet><dataSet config="devDebug"><source path="E:\Android\Project\Tama Android\Tama_app\src\devDebug\shaders"/></dataSet></merger>

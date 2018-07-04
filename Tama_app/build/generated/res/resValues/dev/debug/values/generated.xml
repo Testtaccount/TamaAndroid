@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Values from build type: debug -->
+    <string name="facebookAppId" translatable="false">"xxxxxxxxxxxxxxxx"</string>
+    <string name="sender_id" translatable="false">"169100630890"</string>
+    <string name="twitterDigitsApiKey" translatable="false">"b29ae4d1d42a96c39bf1a1c80e028ea058cf7fda"</string>
+
+</resources>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xhdpi\\left_bubble.9.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xhdpi\\left_bubble.9.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xhdpi\\crop__divider.9.png",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\0d799f9d2dc795ca9b1864652fceca173abd5299\\output\\res\\drawable-xhdpi\\crop__divider.9.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xhdpi\\right_bubble.9.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xhdpi\\right_bubble.9.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xhdpi\\keyboard_background_holo.9.png",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\ba349513ecd4bc5b86431111b522ce1d08b1011c\\output\\res\\drawable-xhdpi\\keyboard_background_holo.9.png"
+    }
+]

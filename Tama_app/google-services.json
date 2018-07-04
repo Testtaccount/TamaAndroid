@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "169100630890",
+    "firebase_url": "https://tama-7aeab.firebaseio.com",
+    "project_id": "tama-7aeab",
+    "storage_bucket": "tama-7aeab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169100630890:android:1dfe26b22fe6f684",
+        "android_client_info": {
+          "package_name": "com.tama.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169100630890-9cn52aeljdqlu9te4g8e8jheqlu2nv6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tama.chat",
+            "certificate_hash": "8ba903449a10aa3eeb67d75753904c63d4ca99f6"
+          }
+        },
+        {
+          "client_id": "169100630890-5tu87u90hkgj4bf7vqamh39gjbf29564.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDnXDAcXkT2s0nYQGmQsugAFie5-v6XpI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169100630890-5tu87u90hkgj4bf7vqamh39gjbf29564.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_tama_history_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tama.chat.ui.activities.tamaAccount.TamaHistoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+        <TextView
+            android:id="@+id/order_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_no"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/single_history_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_text_view"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="44864646"/>
+        <TextView
+            android:id="@+id/single_history_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_history_id"
+            android:text="2017-06-13 11:06:04"/>
+        <TextView
+            android:id="@+id/amount_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/amount"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/amount_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="6.37 €"
+            android:layout_below="@+id/amount_title_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/order_layout"
+        android:background="@color/gray"
+        android:orientation="horizontal" />
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_1"
+        android:padding="7dp">
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="7dp"
+            android:background="@drawable/background_red_rect"/>
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Your order was Accepted"/>
+        <TextView
+            android:id="@+id/history_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Tama Express Order"
+            android:paddingTop="20dp"
+            android:layout_toRightOf="@+id/image_view"
+            android:layout_toEndOf="@+id/image_view" />
+        <TextView
+            android:id="@+id/mobile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/mobile"
+            android:layout_below="@+id/history_name"
+            android:layout_toRightOf="@+id/image_view"
+            android:layout_toEndOf="@+id/image_view" />
+        <TextView
+            android:id="@+id/mobile_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="9181225354881"
+            android:layout_below="@+id/history_name"
+            android:layout_toRightOf="@+id/mobile_text"
+            android:layout_toEndOf="@+id/mobile_text" />
+        <TextView
+            android:id="@+id/status_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/tama_account_text"
+            android:text="SUCC"
+            android:layout_above="@+id/status_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/image_layout"
+        android:background="@color/gray"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/products_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_2"
+        android:layout_above="@+id/line_3"
+        android:padding="7dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/order_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/order_details"/>
+        <LinearLayout
+            android:id="@+id/details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_details"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/product"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/quantity"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="@string/price"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/products_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_title"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line_3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/sender_layout"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/sender_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/sender_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sender_name"/>
+        <TextView
+            android:id="@+id/sender_number_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sender_number"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/sender_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sender_name_view"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Ronaldo"/>
+        <TextView
+            android:id="@+id/sender_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="918122535488"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/sender_number_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/receiver_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/sender_name_text"
+            android:text="@string/beneficiary_name"/>
+        <TextView
+            android:id="@+id/receiver_number_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beneficiary_number"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/sender_number_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/receiver_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receiver_name_view"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Messi"/>
+        <TextView
+            android:id="@+id/receiver_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="919159305358"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/receiver_number_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/error_message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/topup_title_text_height"
+        android:textColor="@color/button_red_normal"
+        android:text="ERROR"
+        android:padding="15dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

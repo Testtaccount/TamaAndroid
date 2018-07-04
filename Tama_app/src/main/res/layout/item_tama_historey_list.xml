@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/number_textView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="@color/tama_account_black"
+        android:gravity="center"
+        android:textSize="9sp"
+        android:text="SL.\nNO"/>
+    <TextView
+        android:id="@+id/name_textView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/tama_account_black"
+        android:textSize="9sp"
+        android:text="NAME"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/amount_textView"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/tama_account_black"
+        android:textSize="9sp"
+        android:text="AMOUNT"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/phone_number_textView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/tama_account_black"
+        android:textSize="9sp"
+        android:text="PHONE NUMBER"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/data_time__textView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/tama_account_black"
+        android:textSize="9sp"
+        android:text="DATE &amp; TIME"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>

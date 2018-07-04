@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="dialog_attach_types_array">
+    <item>Take Photo</item>
+    <item>From Library</item>
+  </string-array>
+    <string-array name="dlg_icon_pick">
+    <item>Gallery</item>
+    <item>Camera Photo</item>
+  </string-array>
+    <string-array name="dlg_image_pick">
+    <item>Gallery</item>
+    <item>Take a Photo</item>
+    <item>Take a Video</item>
+    <item>Location</item>
+  </string-array>
+    <plurals name="days">
+    <item quantity="one">%1$d day</item>
+    <item quantity="other">%1$d days</item>
+  </plurals>
+    <plurals name="fui_error_weak_password" translation_description="Inline error for weak password"> <item quantity="one">Das Passwort ist zu schwach. Verwenden Sie mindestens %1$d Zeichen und eine Mischung aus Buchstaben und Ziffern.</item> <item quantity="other">Das Passwort ist zu schwach. Verwenden Sie mindestens %1$d Zeichen und eine Mischung aus Buchstaben und Ziffern.</item> </plurals>
+    <plurals name="hours">
+    <item quantity="one">%1$d hour</item>
+    <item quantity="other">%1$d hours</item>
+  </plurals>
+    <plurals name="minutes">
+    <item quantity="one">%1$d minute</item>
+    <item quantity="other">%1$d minutes</item>
+  </plurals>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Zur Startseite"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s: %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s: %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Nach oben"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Weitere Optionen"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Fertig"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Alle ansehen"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"App auswählen"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"Aus"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"An"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Suchen…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Suchanfrage löschen"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Suchanfrage"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Suchen"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Suchanfrage senden"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Sprachsuche"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Freigeben für"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Freigeben für %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Minimieren"</string>
+    <string name="about_title">Über</string>
+    <string name="about_user_agreement">Nutzungsbedingungen</string>
+    <string name="about_vendor">© 2017 QuickBlox</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="account_topup">KONTO AUFLADUNG</string>
+    <string name="action_bar_about">Über</string>
+    <string name="action_bar_add_chat">Chat hinzufügen</string>
+    <string name="action_bar_add_chat_attach">Anlage hinzufügen</string>
+    <string name="action_bar_add_friend_to_chat">Freund zum Chat hinzufügen</string>
+    <string name="action_bar_chat_details">Chat Details</string>
+    <string name="action_bar_chats">Chats</string>
+    <string name="action_bar_contacts">Kontakte</string>
+    <string name="action_bar_delete_friend">Freund löschen</string>
+    <string name="action_bar_feedback">Rückmeldung</string>
+    <string name="action_bar_invite_friends">Freunde einladen</string>
+    <string name="action_bar_leave_chat">Chatten verlassen</string>
+    <string name="action_bar_map">Karte</string>
+    <string name="action_bar_search">Suchen</string>
+    <string name="action_bar_search_hint">Suchen</string>
+    <string name="action_bar_settings">Einstellungen</string>
+    <string name="add_friends_to_group_no_friends_for_adding">Keine Freunde zum Hinzufügen</string>
+    <string name="add_friends_to_group_title">Freunde hinzufügen</string>
+    <string name="add_to_cart">IN DEN WARENKORB LEGEN</string>
+    <string name="address">Adresse:</string>
+    <string name="alertTextFromCountry">Sie haben einige Produkte in der Produktliste von %1$s.Wenn Sie fortsetzen, werden diese Produkte gelöscht</string>
+    <string name="also_on_call">Besetzt</string>
+    <string name="amount">Betrag</string>
+    <string name="answer_call">Antworten</string>
+    <string name="app_name">Tama</string>
+    <string name="app_policy_link">http://tamaexpress.com:790/privacy-policy</string>
+    <string name="auth_choose_user_picture">Wähle Benutzerbild</string>
+    <string name="auth_email_field_is_incorrect">Bitte geben Sie eine gültige E-Mail-Adresse ein</string>
+    <string name="auth_email_field_not_entered">Bitte E-Mail eingeben</string>
+    <string name="auth_first_name_field_is_too_long">Full Name is too long (maximum is 50 characters)</string>
+    <string name="auth_first_name_field_is_too_short">Full Name is too short (minimum is 3 characters)</string>
+    <string name="auth_first_name_has_impossible_characters">Full Name has impossible characters (not allowed: \'>\', \'&lt;\', \';\')</string>
+    <string name="auth_forgot_password">Passwort vergessen</string>
+    <string name="auth_full_name_field_is_too_long">Voller Name ist zu lang (maximal 50 Zeichen)</string>
+    <string name="auth_full_name_field_is_too_short">Voller Name ist zu kurz (mindestens 3 Zeichen)</string>
+    <string name="auth_full_name_field_not_entered">Bitte geben Sie den vollständigen Namen ein</string>
+    <string name="auth_full_name_has_impossible_characters">Voller Name hat unmögliche Zeichen (nicht erlaubt: \'>\', \'&lt;\', \';\')</string>
+    <string name="auth_hint_email">E-Mail</string>
+    <string name="auth_hint_full_name">Voller Name</string>
+    <string name="auth_hint_password">Passwort</string>
+    <string name="auth_last_name_field_is_too_long">Full Name is too long (maximum is 50 characters)</string>
+    <string name="auth_last_name_field_is_too_short">Full Name is too short (minimum is 3 characters)</string>
+    <string name="auth_last_name_has_impossible_characters">Full Name has impossible characters (not allowed: \'>\', \'&lt;\', \';\')</string>
+    <string name="auth_log_in_with_facebook">Anmeldung mit Facebook</string>
+    <string name="auth_login_title">Anmeldung</string>
+    <string name="auth_not_all_fields_entered">Bitte füllen Sie alle leeren Eingabefelder aus</string>
+    <string name="auth_or_text">oder</string>
+    <string name="auth_password_field_is_too_short">Das Passwort ist zu kurz (mindestens 8 Zeichen)</string>
+    <string name="auth_password_field_not_entered">Bitte Passwort eingeben</string>
+    <string name="auth_remember_me">Angemeldet bleiben</string>
+    <string name="auth_sign_up_title">Anmelden</string>
+    <string name="auth_username_error">Dieser Benutzername wurde noch nicht authentifiziert. Bitte überprüfen Sie Ihre Anmeldeinformationen</string>
+    <string name="back">ZURÜCK</string>
+    <string name="balance">GUTHABEN</string>
+    <string name="balance_transfer">GUTHABENÜBERTRAGUNG</string>
+    <string name="beneficiary_details">Daten des Begünstigten</string>
+    <string name="beneficiary_mobile_number">Begünstigte Handynummer</string>
+    <string name="beneficiary_name">Name des Begünstigten</string>
+    <string name="beneficiary_number">Begünstigte Nummer</string>
+    <string name="call_accepted">Akzeptiert</string>
+    <string name="call_chat_service_is_initializing">Bitte warten, Verbindung wird aufgebaut …</string>
+    <string name="call_hung_up">Auflegen</string>
+    <string name="call_incoming_audio_call">Eingehender Anruf</string>
+    <string name="call_incoming_video_call">Eingehender Videoanruf</string>
+    <string name="call_no_answer">Keine Antwort</string>
+    <string name="call_rejected">Abgelehnt</string>
+    <string name="calling_to">Anrufen %1$s…</string>
+    <string name="categories">KATEGORIEN</string>
+    <string name="change_password_all_fields_not_entered">Bitte füllen Sie alle leeren Eingabefelder aus</string>
+    <string name="change_password_change">Ändern</string>
+    <string name="change_password_hint_new_password">Neues Kennwort</string>
+    <string name="change_password_hint_old_password">Altes Passwort</string>
+    <string name="change_password_new_password_not_entered">Bitte geben Sie das neue Passwort ein</string>
+    <string name="change_password_old_password_not_entered">Bitte geben Sie das alte Passwort ein</string>
+    <string name="change_password_old_password_wrong">Altes Passwort ist falsch</string>
+    <string name="change_password_title">Passwort ändern</string>
+    <string name="chat_service_is_initializing">Bitte warten, Verbindung wird aufgebaut …</string>
+    <string name="checking">Überprüfung …</string>
+    <string name="checkout">Auschecken</string>
+    <string name="checkout_confirm_text">Bestätigen</string>
+    <string name="click_on_your_country_to_find_out_the_products_available">Klicken Sie auf Ihr Land, um die verfügbaren Produkte zu finden</string>
+    <string name="close">Schließen</string>
+    <string name="close_btn">Schließen</string>
+    <string name="closed">Abgeschlossen</string>
+    <string name="com_facebook_device_auth_instructions">Gehe über dein Smartphone oder deinen Computer zu &lt;b>facebook.com/device&lt;/b>&lt;br /> und gib diesen Code ein:</string>
+    <string name="com_facebook_image_download_unknown_error">Unerwarteter Fehler beim Herunterladen eines Bildes.</string>
+    <string name="com_facebook_internet_permission_error_message">Die WebView-Anmeldung erfordert die INTERNET-Berechtigung</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest-Fehler</string>
+    <string name="com_facebook_like_button_liked">Gefällt dir</string>
+    <string name="com_facebook_like_button_not_liked">Gefällt mir</string>
+    <string name="com_facebook_loading">Wird geladen ...</string>
+    <string name="com_facebook_loginview_cancel_action">Abbrechen</string>
+    <string name="com_facebook_loginview_log_in_button">Anmelden</string>
+    <string name="com_facebook_loginview_log_in_button_long">Über Facebook anmelden</string>
+    <string name="com_facebook_loginview_log_out_action">Abmelden</string>
+    <string name="com_facebook_loginview_log_out_button">Abmelden</string>
+    <string name="com_facebook_loginview_logged_in_as">Angemeldet als: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Über Facebook angemeldet</string>
+    <string name="com_facebook_send_button_text">Senden</string>
+    <string name="com_facebook_share_button_text">Teilen</string>
+    <string name="com_facebook_tooltip_default">Neu! Es liegt ganz an dir – du kannst dir aussuchen, was du mit Apps teilen möchtest.</string>
+    <string name="coming_soon">Kommt bald…</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Aktivieren"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> funktioniert erst nach der Aktivierung der Google Play-Dienste."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play-Dienste aktivieren"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Installieren"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"Zur Nutzung von <ns1:g id="APP_NAME">%1$s</ns1:g> sind die Google Play-Dienste erforderlich, die auf deinem Gerät nicht installiert sind."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play-Dienste installieren"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Fehler bei Zugriff auf Google Play-Dienste"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> hat Probleme mit Google Play-Diensten. Bitte versuche es noch einmal."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"Zur Nutzung von <ns1:g id="APP_NAME">%1$s</ns1:g> sind Google Play-Dienste erforderlich, die auf deinem Gerät nicht unterstützt werden."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Aktualisieren"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> wird nur ausgeführt, wenn du die Google Play-Dienste aktualisierst."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play-Dienste aktualisieren"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"Zur Nutzung von <ns1:g id="APP_NAME">%1$s</ns1:g> sind Google Play-Dienste erforderlich, die gerade aktualisiert werden."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Eine neue Version der Google Play-Dienste wird benötigt. Diese wird in Kürze automatisch aktualisiert."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Auf Smartphone öffnen"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Anmelden"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Über Google anmelden"</string>
+    <string name="confirm_btn_text">Bestätigen</string>
+    <string name="confirm_text_topup_my_mobile_request">Bestätigen Sie, dass Sie %1$s € von Zahler %2$s auf die Nummer %3$s übertragen möchten</string>
+    <string name="connect">Verbinden…</string>
+    <string name="connected">Verbunden</string>
+    <string name="contact_alert_message">"Bitte Kontakt mit Landesvorwahl auswählen "</string>
+    <string name="contact_us">"Kontaktieren Sie uns "</string>
+    <string name="contact_us_to_find_retailer_or_for_any_question">"Kontaktieren Sie uns, um Einzelhändler zu finden oder für jede Frage "</string>
+    <string name="contact_us_uppercase">"KONTAKTIEREN SIE UNS "</string>
+    <string name="continue_btn">Weiter</string>
+    <string name="continue_shopping">Weiter einkaufen</string>
+    <string name="countries">LÄNDER</string>
+    <string name="create_group_confirm_selecting_photo">Wollen Sie wirklich dieses Foto laden?</string>
+    <string name="create_group_empty_group_name">Gruppenname darf nicht leer sein</string>
+    <string name="create_group_group_name">Gruppenname</string>
+    <string name="create_group_participants">%1d Teilnehmer</string>
+    <string name="create_group_title">Neue Gruppe</string>
+    <string name="d_m_account_with">Sie haben Ihr Konto mit…(amount)..aufgeladen</string>
+    <string name="date_ago">Datum vor</string>
+    <string name="days_short">%1$dd</string>
+    <string name="de">de</string>
+    <string name="decline_call">Decline</string>
+    <string name="deleted_user">Benutzer löschen</string>
+    <string name="denied">VERWEIGERT</string>
+    <string name="denied_permission_message">Der Anruf wurde ohne Zugriff auf  %s gestartet</string>
+    <string name="dgts__call_me">Ruf mich an</string>
+    <string name="dgts__calling">Anruf…</string>
+    <string name="dgts__confirmation_code">Bestätigungscode</string>
+    <string name="dgts__confirmation_edit_hint">Gib den 6-stelligen Code ein, den wir Dir gesendet haben</string>
+    <string name="dgts__confirmation_error">Deine Telefonnummer konnte nicht bestätigt werden</string>
+    <string name="dgts__confirmation_error_alternative">Leider haben wir Schwierigkeiten, Dir einen Bestätigungscode zu senden.</string>
+    <string name="dgts__continue">Weiter</string>
+    <string name="dgts__create_account">Account erstellen</string>
+    <string name="dgts__digits_logo_desc">Digits Logo-Symbol</string>
+    <string name="dgts__digits_logo_name_desc">Digits Logo-Name</string>
+    <string name="dgts__dismiss">Verwerfen</string>
+    <string name="dgts__done">Fertig</string>
+    <string name="dgts__email_request_edit_hint">E-Mail Adresse</string>
+    <string name="dgts__email_request_title">E-Mail Adresse eingeben</string>
+    <string name="dgts__find_your_friends">Freunde suchen</string>
+    <string name="dgts__image_header_description">Image-Header für Anmeldung</string>
+    <string name="dgts__invalid_email">Ungültige E-Mail Adresse. Erneut versuchen</string>
+    <string name="dgts__login_digits_text">Meine Telefonnummer verwenden</string>
+    <string name="dgts__network_error">Prüfe bitte Dein Netzwerk und versuche es erneut.</string>
+    <string name="dgts__not_now">Nicht jetzt</string>
+    <string name="dgts__okay">Okay</string>
+    <string name="dgts__phone_number_edit_hint">Deine Nummer</string>
+    <string name="dgts__phone_number_text">Deine Telefonnummer eingeben</string>
+    <string name="dgts__pin_code_verification_title">2-Schritt-Bestätigungscode eingeben</string>
+    <string name="dgts__resend_confirmation_button_code">Erneut senden</string>
+    <string name="dgts__send_confirmation_code">Bestätigungscode senden</string>
+    <string name="dgts__sending">Sendet…</string>
+    <string name="dgts__success_desc">Erfolgssymbol</string>
+    <string name="dgts__terms_email_request">Wenn Du oben %1$sWeiter%1$s\
+antippst, fügst Du diese E-Mail Adresse zu Deinem Digits Account hinzu. \
+Du stimmst zu, dass diese und %7$salle anderen Apps, die in \
+Deinem Digits Account aufgelistet sind%5$s, Zugriff auf \
+diese E-Mail Adresse haben und ihre Nutzer Dich anhand dieser E-Mail \
+Adresse finden können.</string>
+    <string name="dgts__terms_text">Wenn Du oben %1$sBestätigungscode senden%1$s antippst, sendet %6$sDigits by Twitter%5$s Dir eine SMS zu, um Deine Telefonnummer zu bestätigen. Auf der nächsten Seite kannst Du „Code erneut senden“ wählen, um die SMS\
+ noch einmal zu erhalten, oder „Ruf mich an“ wählen, um per Sprachanruf \
+Deine Telefonnummer zu bestätigen. SMS-, Anruf- \
+und Datengebühren können anfallen.</string>
+    <string name="dgts__terms_text_call_me">Wenn Du oben %1$sRuf mich an%1$s antippst, sendet %6$sDigits by Twitter%5$s Dir eine SMS zu, um Deine Telefonnummer zu bestätigen. SMS- und Datengebühren können anfallen.</string>
+    <string name="dgts__terms_text_create">Indem Du oben %1$sAccount erstellen%1$s antippst, stimmst Du den %8$sAllgemeinen \
+Geschäftsbedingungen%5$s, den %9$sDatenschutzbestimmungen%5$s \
+und der %10$sNutzung von Cookis%5$s\
+ von %6$sDigits by Twitter%5$s \
+zu. Außerdem\
+ erklärst Du Dich damit einverstanden, Deine Telefonnummer mit %4$s zu \
+teilen, sodass Dich andere Nutzer von %4$s anhand Deiner Telefonnummer \
+finden können.</string>
+    <string name="dgts__terms_text_sign_in">Indem Du oben %1$sWeiter%1$s antippst, \
+werden Deine %7$sDigits \
+Telefonnummer und/oder E-Mail Adresse%5$s mit %4$s geteilt und \
+andere Nutzer von %4$s können Dich anhand Deiner Telefonnummer und/oder E-Mail Adresse \
+finden.</string>
+    <string name="dgts__terms_text_updated">Wenn Du oben %1$sWeiter%1$s antippst, stimmst Du den %8$sAllgemeinen Geschäftsbedingungen%5$s, den %9$sDatenschutzbestimmungen%5$s und der %10$sNutzung von Cookies%5$s von %6$sDigits by Twitter%5$s zu, um Deine %7$sDigits Telefonnummer \
+und/oder E-Mail Adresse%5$s mit %4$s zu teilen. Außerdem \
+erklärst Du Dich damit einverstanden, dass andere Nutzer von %4$s Dich \
+anhand Deiner Telefonnummer und/oder E-Mail Adresse finden können.</string>
+    <string name="dgts__try_again">Erneut versuchen</string>
+    <string name="dgts__try_again_confirmation">Prüfe bitte Deinen Code und versuche es erneut.</string>
+    <string name="dgts__try_again_email">Prüfe bitte Deine E-Mail Adresse und versuche es erneut</string>
+    <string name="dgts__try_again_phone_number">Prüfe bitte Deine Nummer und versuche es erneut.</string>
+    <string name="dgts__try_another_phone">Probiere eine andere Telefonnummer</string>
+    <string name="dgts__unsupported_operator_error">Es konnte keine SMS Nachricht an diese Nummer gesendet werden.</string>
+    <string name="dgts__upload_contacts">Mit Digits by Twitter können wir mehrere Deiner Freunde finden, die diese App verwenden. Wenn Du auf \"OK\" tippst, laden wir Dein Adressuch in Digits by Twitter hoch und helfen dabei, Dir bekannte Nutzer von %1$s zu finden sowie anderen Nutzern von %1$s, Dich zu finden.</string>
+    <string name="dgts__verification_code">Verifizierungscode</string>
+    <string name="dgts_pin_code_terms">Du hast zuvor einen 2-Schritte-Verifizierungscode auf digits.com eingestellt</string>
+    <string name="dialog_attach_audio">attachment audio</string>
+    <string name="dialog_attach_image">attachment image</string>
+    <string name="dialog_attach_video">attachment video</string>
+    <string name="dialog_confirm_sending_attach">Wollen Sie wirklich dieses %1$s laden?</string>
+    <string name="dialog_ctx_menu_delete">Gespräch löschen</string>
+    <string name="dialog_ctx_menu_profile">Profil anzeigen</string>
+    <string name="dialog_ctx_menu_prv_message">Private Nachricht</string>
+    <string name="dialog_ctx_menu_remove">Chatten verlassen</string>
+    <string name="dialog_ctx_menu_reply">Reply</string>
+    <string name="dialog_ctx_menu_video_call">Videoanruf</string>
+    <string name="dialog_details_all_friends_is_in_group">Du kannst keinen neuen Freund hinzufügen, denn alle vorhandenen Freunde werden in diesem Gruppenchat hinzugefügt</string>
+    <string name="dialog_details_leave_group">Gruppe verlassen</string>
+    <string name="dialog_details_name_not_entered">Bitte füllen Sie den Gruppennamen aus</string>
+    <string name="dialog_details_online_participants">%1$d/%2$d online</string>
+    <string name="dialog_details_participants">%1$d Teilnehmer</string>
+    <string name="dialog_details_service_is_initializing">Bitte warten, Verbindung wird aufgebaut …</string>
+    <string name="dialog_details_title">Gruppendetails</string>
+    <string name="dialog_hint_message">Nachricht</string>
+    <string name="dialog_loading_dialogs">Gesprächliste aktualisiert ... Bitte warten</string>
+    <string name="dialog_message_reject_friend">Wollen Sie wirklich Kontaktanfrage von %1$s ablehnen?</string>
+    <string name="dialog_now_typing">Schreiben …</string>
+    <string name="dialog_reply">Reply</string>
+    <string name="dialog_user_is_not_friend">Benutzer ist nicht dein Freund</string>
+    <string name="directions">Richtungen</string>
+    <string name="disconnected">Abgeschaltet</string>
+    <string name="dlg_cancel">Abbrechen</string>
+    <string name="dlg_choose_image_from">Wählen Sie Bild von …</string>
+    <string name="dlg_choose_media_from">Wählen Sie Bild von …</string>
+    <string name="dlg_confirm">Sind Sie sicher?</string>
+    <string name="dlg_delete">Löschen</string>
+    <string name="dlg_done">Fertig</string>
+    <string name="dlg_force_relogin_on_token_required">Une erreur de jeton est survenue dans l\'application</string>
+    <string name="dlg_internet_connection_error">Something went wrong. Please, verify your internet connection and try again</string>
+    <string name="dlg_internet_connection_is_missing">Warten auf Verbindung</string>
+    <string name="dlg_leave_group">Gruppe verlassen</string>
+    <string name="dlg_logout">Ausloggen</string>
+    <string name="dlg_need_permission">%1$s benötigt Zugriff auf Ihren externen Speicher, damit Sie Dateien senden und speichern können</string>
+    <string name="dlg_need_permission_read_contacts">Um Freunde per E-Mail einzuladen, muss %s  Zugriff auf Kontakte haben</string>
+    <string name="dlg_need_permission_write_storage">%s benötigt Zugriff auf Ihren externen Speicher, damit Sie Dateien senden und speichern können</string>
+    <string name="dlg_no_friends_selected">Bitte wählen Sie Freunde für die Einladung!</string>
+    <string name="dlg_offline_call">%1$s ruft Sie an</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_open_app_settings">Einstellungen</string>
+    <string name="dlg_password_changed">Passwort geändert</string>
+    <string name="dlg_permission_camera">Kamera</string>
+    <string name="dlg_permission_storage">"Externer Speicher "</string>
+    <string name="dlg_refresh_session">QB Session expiró. La sesión de actualización se ejecutará ahora</string>
+    <string name="dlg_signal_error">"Abgeschaltet... Bitte überprüfen Sie Ihre Internetverbindung! "</string>
+    <string name="dlg_success_request_facebook">Anfrage geschickt</string>
+    <string name="dlg_wait_please">Bitte warten</string>
+    <string name="email">E-Mail:</string>
+    <string name="en">en</string>
+    <string name="enter_amount_transfer">Geben Sie den Betrag, den Sie übertragen möchten</string>
+    <string name="enter_number">Keine Nummer. Geben Sie die Nummer ein</string>
+    <string name="enter_number_to_topup">Geben Sie die Nummer ein, die Sie aufladen möchten</string>
+    <string name="enter_number_where_you_want_transfer">Geben Sie die Nummer ein, wo Sie Ihr Guthaben übertragen möchten</string>
+    <string name="error_bad_timestamp">base Bad timestamp</string>
+    <string name="error_bad_timestamp_from_app">Bitte gehen Sie zu den Telefon-Systemeinstellungen, wählen Sie Datum und Uhrzeit und stellen Sie sicher, dass die automatische Synchronisierung aktiviert ist</string>
+    <string name="error_cant_delete_chat">Sorry, Chat kann nicht gelöscht werden. Bitte versuchen Sie es später</string>
+    <string name="error_disconnected">"Abgeschaltet... Bitte überprüfen Sie Ihre Internetverbindung! "</string>
+    <string name="error_email_already_taken">E-Mail wurde bereits verwendet</string>
+    <string name="error_email_already_taken_from_app">Bitte gehen Sie zu Facebook-App und loggen Sie sich erneut  ein. Diese E-Mail wurde bereits verwendet</string>
+    <string name="error_login_or_email_required">Login oder E-Mail erforderlich</string>
+    <string name="error_login_or_email_required_from_app">Login oder E-Mail erforderlich, bitte stellen Sie sicher, dass Ihre FB E-Mail öffentlich ist (facebook.com/settings)</string>
+    <string name="error_playing_ringtone">Fehler beim Spielen von Klingelton</string>
+    <string name="error_unauthorized">Nicht autorisiert</string>
+    <string name="error_unauthorized_from_app">Falsche Email oder Passwort</string>
+    <string name="es">es</string>
+    <string name="euro">" €</string>
+    <string name="exo_controls_fastforward_description">"Vorspulen"</string>
+    <string name="exo_controls_next_description">"Nächster Titel"</string>
+    <string name="exo_controls_pause_description">"Pausieren"</string>
+    <string name="exo_controls_play_description">"Wiedergabe"</string>
+    <string name="exo_controls_previous_description">"Vorheriger Titel"</string>
+    <string name="exo_controls_repeat_all_description">"Alle wiederholen"</string>
+    <string name="exo_controls_repeat_off_description">"Keinen Titel wiederholen"</string>
+    <string name="exo_controls_repeat_one_description">"Einen Titel wiederholen"</string>
+    <string name="exo_controls_rewind_description">"Zurückspulen"</string>
+    <string name="exo_controls_stop_description">"Beenden"</string>
+    <string name="facebook_exception">Facebook Ausnahme</string>
+    <string name="failed">Fehlgeschlagen</string>
+    <string name="feedback_bug_type">Fehler</string>
+    <string name="feedback_choose_email_provider">Wählen Sie einen E-Mail-Anbieter</string>
+    <string name="feedback_improvement_type">Verbesserung</string>
+    <string name="feedback_label">
+        In your email please provide the steps of bug/error reproduction. Let us know how often it occurs and if it gives any error code.
+        This information will help us to find the source of the issue. Kindly give us as many details as possible. Thank you.
+    </string>
+    <string name="feedback_suggestion_type">Vorschlag</string>
+    <string name="feedback_support_email">q-municate@quickblox.com</string>
+    <string name="feedback_title">Feedback Beschreibung</string>
+    <string name="feedback_write_email">Schreibe eine E-Mail</string>
+    <string name="forgot_password_email">E-Mail</string>
+    <string name="forgot_password_email_field_is_incorrect">Bitte geben Sie eine gültige E-Mail-Adresse ein</string>
+    <string name="forgot_password_email_field_not_entered">Bitte E-Mail eingeben</string>
+    <string name="forgot_password_label">Geben Sie Ihre E-Mail ein und wir schicken Ihnen einen Link, um Ihr Passwort zurückzusetzen</string>
+    <string name="forgot_password_massage_email_was_sent">Mail wurde an %1$s gesendet</string>
+    <string name="forgot_password_title">Passwort vergessen</string>
+    <string name="fr">fr</string>
+    <string name="france">Frankreich</string>
+    <string name="from_the_number">von der Nummer %1$s</string>
+    <string name="fui_accessibility_logo" translation_description="Content description for app logo">App-Logo</string>
+    <string name="fui_button_text_save" translation_description="Button text to save input form">Speichern</string>
+    <string name="fui_button_text_send" translation_description="Button text to send recovery email">Senden</string>
+    <string name="fui_code_sent" translation_description="Progress dialog success transition once sms is sent">Code gesendet</string>
+    <string name="fui_confirm_recovery_body" translation_description="Alert dialog displayed after password recovery email is sent">Folgen Sie der an %1$s gesendeten Anleitung, um Ihr Passwort zurückzusetzen.</string>
+    <string name="fui_continue_phone_login" translation_description="Button text to submit phone number and send sms">Weiter</string>
+    <string name="fui_create_account_preamble_pp_only" translation_description="Text shown when creating an account with only privacy policy">Durch Tippen auf %1$s stimmen Sie der %2$s zu.</string>
+    <string name="fui_create_account_preamble_tos_and_pp" translation_description="Text shown when creating an account with both terms of service and privacy policy.">Durch Tippen auf %1$s stimmen Sie den %2$s und der %3$s zu.</string>
+    <string name="fui_create_account_preamble_tos_only" translation_description="Text shown when creating an account with only terms of service">Durch Tippen auf %1$s stimmen Sie den %2$s zu.</string>
+    <string name="fui_done" translation_description="Progress dialog success transition once sms is sent">Fertig</string>
+    <string name="fui_email_account_creation_error" translation_description="Inline error for signup failure">Registrierung des E-Mail-Kontos fehlgeschlagen</string>
+    <string name="fui_email_hint" translation_description="Hint in email input field">E-Mail-Adresse</string>
+    <string name="fui_enter_confirmation_code" translation_description="Phone number verification code entry form title">Geben Sie den sechsstelligen Code ein, der gesendet wurde an</string>
+    <string name="fui_error_email_does_not_exist" translation_description="Inline error when user attempt signin with invalid account">Diese E-Mail-Adresse passt zu keinem Konto</string>
+    <string name="fui_error_quota_exceeded" translation_description="Error message when the Firebase project&apos;s quota has been exceeded.">Bei der Bestätigung Ihrer Telefonnummer ist ein Problem aufgetreten</string>
+    <string name="fui_error_session_expired" translation_description="Error message when SMS confirmation code has expired.">Dieser Code ist nicht mehr gültig</string>
+    <string name="fui_error_too_many_attempts" translation_description="Error message when the phone number has been used too many times">Diese Telefonnummer wurde schon zu oft verwendet</string>
+    <string name="fui_error_user_collision" translation_description="Inline error when user signs up using an existing email account">Ein Konto mit dieser E-Mail-Adresse ist bereits vorhanden.</string>
+    <string name="fui_general_error" translation_description="Toast text flashing general error">Ein Fehler ist aufgetreten.</string>
+    <string name="fui_idp_name_facebook">Facebook</string>
+    <string name="fui_idp_name_google">Google</string>
+    <string name="fui_idp_name_twitter">Twitter</string>
+    <string name="fui_incorrect_code_dialog_body" translation_description="Inline error when incorrect sms verification code is being used to verify">Falscher Code. Versuchen Sie es noch einmal.</string>
+    <string name="fui_incorrect_code_dialog_positive_button_text" translation_description="Text to dismiss error alert dialog">OK</string>
+    <string name="fui_invalid_email_address" translation_description="Inline error for invalid email address">Ungültige E-Mail-Adresse</string>
+    <string name="fui_invalid_phone_number" translation_description="Inline error when phone number entered is invalid">Geben Sie eine gültige Telefonnummer ein</string>
+    <string name="fui_missing_email_address" translation_description="Inline error for empty email address in input field">E-Mail-Adresse eingeben, um fortzufahren</string>
+    <string name="fui_name_hint" translation_description="Hint for last name input field">Vor- und Nachname</string>
+    <string name="fui_next_default" translation_description="Button text to continue">Weiter</string>
+    <string name="fui_password_hint" translation_description="Hint for password input field">Passwort</string>
+    <string name="fui_password_recovery_body" translation_description="Password recovery message body">In der an diese E-Mail-Adresse gesendeten Anleitung wird beschrieben, wie Sie Ihr Passwort zurücksetzen können.</string>
+    <string name="fui_phone_hint" translation_description="Hint for phone input field">Telefonnummer</string>
+    <string name="fui_privacy_policy" translation_description="Link text to web url containing the app&apos;s privacy policy">Datenschutzerklärung</string>
+    <string name="fui_progress_dialog_checking_accounts" translation_description="Progress dialog text while checking for existing accounts">Auf vorhandene Konten wird geprüft…</string>
+    <string name="fui_progress_dialog_loading" translation_description="Loading text in dialog">Wird geladen…</string>
+    <string name="fui_progress_dialog_sending" translation_description="Progress dialog while password recovery email is being sent">Wird gesendet…</string>
+    <string name="fui_progress_dialog_signing_in" translation_description="Progress dialog text">Anmeldung wird durchgeführt…</string>
+    <string name="fui_progress_dialog_signing_up" translation_description="Dialog text while waiting for server&apos;s signup response">Registrierung wird durchgeführt…</string>
+    <string name="fui_provider_name_email">E-Mail-Adresse</string>
+    <string name="fui_provider_name_phone">Telefonnummer</string>
+    <string name="fui_required_field" translation_description="Inline error for required field">Pflichtfeld.</string>
+    <string name="fui_resend_code" translation_description="Link text to resend verification sms">Code erneut senden</string>
+    <string name="fui_resend_code_in" translation_description="Countdown timer text that the user needs to wait for before attempting to resend verification sms">Code in 0:%02d erneut senden</string>
+    <string name="fui_resending" translation_description="Progress dialog text when user clicks on resend sms">Wird erneut gesendet…</string>
+    <string name="fui_retrieving_sms" translation_description="Progress dialog text when sms is being retrieved before auto-submit">SMS werden abgerufen…</string>
+    <string name="fui_sign_in_default" translation_description="Button text to sign in">Anmelden</string>
+    <string name="fui_sign_in_with_email" translation_description="Sign in button text">Mit einer E-Mail-Adresse anmelden</string>
+    <string name="fui_sign_in_with_facebook" translation_description="Sign in button text">Über Facebook anmelden</string>
+    <string name="fui_sign_in_with_google" translation_description="Sign in button text">Über Google anmelden</string>
+    <string name="fui_sign_in_with_phone" translation_description="Sign in button text">Mit einer Telefonnummer anmelden</string>
+    <string name="fui_sign_in_with_phone_number" translation_description="Label for phone number input form">Mit einer Telefonnummer anmelden</string>
+    <string name="fui_sign_in_with_twitter" translation_description="Sign in button text">Über Twitter anmelden</string>
+    <string name="fui_signed_in_with_specific_account" translation_description="Post signin message showing method of authentication">Angemeldet als %1$s</string>
+    <string name="fui_sms_terms_of_service" translation_description="Fine print warning displayed below Verify Phone Number button">Wenn sie auf “%1$s” tippen, erhalten Sie möglicherweise eine SMS. Es können Gebühren für SMS und Datenübertragung anfallen.</string>
+    <string name="fui_terms_of_service" translation_description="Link text to web url containing the app&apos;s terms of service">Nutzungsbedingungen</string>
+    <string name="fui_title_confirm_recover_password" translation_description="Password recovery confirmation message">Im Posteingang nachsehen</string>
+    <string name="fui_title_recover_password_activity" translation_description="Recover password screen title">Passwort zurücksetzen</string>
+    <string name="fui_title_register_email" translation_description="Title for signup form">Registrieren</string>
+    <string name="fui_trouble_signing_in" translation_description="Link leading to forgot password flow">Probleme bei der Anmeldung?</string>
+    <string name="fui_verified" translation_description="Progress dialog success transition when phone number was verified">Bestätigt</string>
+    <string name="fui_verify_phone_number" translation_description="Button text to submit confirmation code and complete phone verification">Telefonnummer bestätigen</string>
+    <string name="fui_verify_phone_number_title" translation_description="Phone number entry form title">Telefonnummer eingeben</string>
+    <string name="fui_verify_your_phone_title" translation_description="Button text to complete phone number verification">Telefonnummer bestätigen</string>
+    <string name="fui_verifying" translation_description="Progress dialog text while phone number is being verified">Wird bestätigt…</string>
+    <string name="fui_welcome_back_email_header" translation_description="Message for returning users">Willkommen zurück!</string>
+    <string name="fui_welcome_back_idp_header" translation_description="Inline subtitle to users whose signup was interrupted since an existing account was detected">Sie haben bereits ein Konto</string>
+    <string name="fui_welcome_back_idp_prompt" translation_description="Message to users that need to signin using existing IDP accounts">Sie haben %1$s bereits verwendet. Melden Sie sich mit %2$s an, um fortzufahren.</string>
+    <string name="fui_welcome_back_password_prompt_body" translation_description="Message to users that need to signin using existing email accounts">Sie haben %1$s bereits zur Anmeldung verwendet. Geben Sie das Passwort für dieses Konto ein.</string>
+    <string name="germany">Deutschland</string>
+    <string name="get_offer_code">Erhalten Sie Angebot-Code</string>
+    <string name="grand_total">Gesamtsumme</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="higher_amount">Es tut uns leid! Dieser Betrag ist höher als der auf Ihrem Konto verfügbare Betrag. Bitte geben Sie einen gültigen Betrag ein</string>
+    <string name="history">HISTORIE</string>
+    <string name="history_all">Alle</string>
+    <string name="history_balance_transfer">GUTHABENÜBERTRAGUNG</string>
+    <string name="history_tama_express">TamaExpress</string>
+    <string name="history_tama_topup">TamaAufladung</string>
+    <string name="hours_short">%1$dh</string>
+    <string name="hybrid">HYBRID</string>
+    <string name="image">Bild</string>
+    <string name="incoming_request">ANKOMMENDE BESTELLUNG</string>
+    <string name="incoming_request_one_line">ANKOMMENDE BESTELLUNG</string>
+    <string name="invite_friends_body_of_invitation">Lieber Freund, benutze Q-municate Anwendung, um mich zu erreichen! Download es hier: http://q-municate.com</string>
+    <string name="invite_friends_choose_email_provider">Wählen Sie einen E-Mail-Anbieter</string>
+    <string name="invite_friends_fb_request_canceled">Anfrage abgebrochen</string>
+    <string name="invite_friends_select_all">Alle auswählen</string>
+    <string name="invite_friends_send">Senden</string>
+    <string name="invite_friends_subject_of_invitation">Tama</string>
+    <string name="invite_friends_title">Freunde einladen</string>
+    <string name="it">it</string>
+    <string name="its_must_not_your_number">Es muss nicht Ihre Telefonnummer sein</string>
+    <string name="label_error_incorrect_phone">Falsches Telefon</string>
+    <string name="label_send">Senden</string>
+    <string name="landing_already_have_account">Login per E-Mail oder Social Media</string>
+    <string name="landing_connect_with_facebook">Mit Facebook verbinden</string>
+    <string name="landing_connect_with_twitter_digits">Mit Telefonnummer verbinden</string>
+    <string name="landing_sign_up">Mit E-mail Adresse anmelden</string>
+    <string name="landing_version">v. %1$s</string>
+    <string name="last_seen">Zuletzt gesehen  %1$s at %2$s</string>
+    <string name="location_title">Ort</string>
+    <string name="message_available_european_users">Diese Optionen sind nur für europäische Benutzer verfügbar</string>
+    <string name="messenger_send_button_text">Senden</string>
+    <string name="minutes_short">%1$dm</string>
+    <string name="mobile">Handy +</string>
+    <string name="mobile_topup">HANDY AUFLADUNG</string>
+    <string name="my_account">MEIN KONTO</string>
+    <string name="my_tama">MyTama</string>
+    <string name="my_tama_acc_topup_rqt">MY TAMA ACCOUNT\nTOPUP REQUEST</string>
+    <string name="my_tama_account">MY TAMA KONTO</string>
+    <string name="my_tama_mobile_topup_request">MY TAMA AUFLADUNGSANTRAG</string>
+    <string name="my_tama_request">MY TAMA ANTRAG</string>
+    <string name="my_tama_topup_request">MY TAMA ANTRAG</string>
+    <string name="mytama_history">MY TAMA HISTORIE</string>
+    <string name="name">Name</string>
+    <string name="navigation_chats">CHATS</string>
+    <string name="navigation_contacts">KONTAKTE</string>
+    <string name="navigation_map">KARTE</string>
+    <string name="navigation_my_tama">MY TAMA</string>
+    <string name="navigation_settings">EINSTELLUNGEN</string>
+    <string name="new_group_add_people">Leute hinzufügen</string>
+    <string name="new_group_no_friends_for_creating_group">Keine Freunde für Gruppe erstellen</string>
+    <string name="new_group_title">Neue Gruppe</string>
+    <string name="new_message_create_group">Gruppe erstellen</string>
+    <string name="new_message_no_friends">Sie haben noch keine Freunde</string>
+    <string name="new_message_no_friends_for_new_message">Sie haben noch keine Freunde zum Erstellen neuer Chat</string>
+    <string name="new_message_title">Neue Nachricht</string>
+    <string name="no">NEIN</string>
+    <string name="no_internet_conection">Keine Internetverbindung</string>
+    <string name="normal">NORMAL</string>
+    <string name="now_open">Jetzt offen</string>
+    <string name="number_count_error">Die Gutscheinnummer muss 9 Zeichen sein</string>
+    <string name="ok">OK</string>
+    <string name="order_details">Bestelldetails</string>
+    <string name="order_no">Bestell-Nr</string>
+    <string name="outgoing_request">AUSGEHENDE BESTELLUNG</string>
+    <string name="pay_by_balance_btn_text">ZAHLEN VON GUTHABEN</string>
+    <string name="pay_ntamaexpress_nrequest">TAMAEXPRESS BESTELLUNG ZAHLEN</string>
+    <string name="pay_tama_express_rqt">TAMAEXPRESS BESTELLUNG ZAHLEN</string>
+    <string name="pay_to_retailer_btn_text">ZAHLEN BEI DEN HÄNDLER</string>
+    <string name="payer_mobile_number">Zahler Handynummer</string>
+    <string name="permission_unavailable">%s Ist jetzt nicht verfügbar!</string>
+    <string name="permissions_unavailable">%s Sind jetzt nicht verfügbar</string>
+    <string name="phone">TELEFON:</string>
+    <string name="please_enter_the_amount">Bitte geben Sie den Betrag ein</string>
+    <string name="please_enter_the_payer_number">Bitte geben Sie die Zahlernummer ein</string>
+    <string name="please_enter_the_phone_number_to_be_topup">Bitte geben Sie die Telefonnummer ein, den Sie aufladen möchten</string>
+    <string name="please_enter_the_tamaexpress_pin">Bitte geben Sie die TamaExpress PIN ein</string>
+    <string name="please_enter_the_voucher_number">Bitte geben Sie die Gutscheinnummer ein</string>
+    <string name="preview_image_error">Image has not loaded</string>
+    <string name="preview_image_title">Vorschaubild</string>
+    <string name="preview_video_title">Video-Vorschau</string>
+    <string name="price">Preis</string>
+    <string name="price_">Preis:</string>
+    <string name="product">Produkt</string>
+    <string name="products">PRODUKTE</string>
+    <string name="profile_change_photo">Foto ändern</string>
+    <string name="profile_first_name_not_entered">Please enter First Name</string>
+    <string name="profile_full_name">Voller Name</string>
+    <string name="profile_full_name_and_photo_not_changed">Voller Name oder Foto muss geändert werden</string>
+    <string name="profile_full_name_not_changed">Voller Name muss anders sein</string>
+    <string name="profile_full_name_not_entered">Bitte geben Sie den vollständigen Namen ein</string>
+    <string name="profile_last_name_not_entered">Please enter Last Name</string>
+    <string name="profile_title">Bearbeiten</string>
+    <string name="progress">Im Laufe</string>
+    <string name="quantity">Anzahl</string>
+    <string name="rating">Bewertung</string>
+    <string name="recharge_my_tama_account_will_topup">Konto wird nach oben</string>
+    <string name="recharge_my_tama_enther_voucher_number">Geben Sie die Gutscheinnummer ein</string>
+    <string name="recharge_my_tama_go_to_tama_shop">Gehen Sie\n zu Tama Shop</string>
+    <string name="recharge_my_tama_scratch_voucher">Scratch einen Gutschein</string>
+    <string name="recharge_my_tama_title">Wie man MyTama Account auflädt</string>
+    <string name="remove">Entfernen</string>
+    <string name="request">ANTRAG</string>
+    <string name="request_order">BESTELLUNG VERLANGEN</string>
+    <string name="satellite">SATELLITEN</string>
+    <string name="save_snap_time_pref">"save_snap_time"</string>
+    <string name="search_at_last_items">Geben Sie weitere Symbole ein, nicht weniger als 3</string>
+    <string name="search_global_list">Global</string>
+    <string name="search_local_list">Local</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Suchen"</string>
+    <string name="search_pending_request_status">Ausstehende Kontaktanfrage</string>
+    <string name="search_users_not_found">Sorry ... keine Benutzer</string>
+    <string name="select_amunt">Betrag auswählen</string>
+    <string name="send_credit">KREDIT SENDEN</string>
+    <string name="send_request">BESTELLUNG SENDEN</string>
+    <string name="sender_mobile_number">Sender Handynummer</string>
+    <string name="sender_name">Absender</string>
+    <string name="sender_number">Absender Nummer</string>
+    <string name="settings_change_password">Passwort ändern</string>
+    <string name="settings_delete_my_account">Mein Konto löschen</string>
+    <string name="settings_give_feedback">Feedback geben</string>
+    <string name="settings_invite_friends">Freunde einladen</string>
+    <string name="settings_logout">Ausloggen</string>
+    <string name="settings_profile">Profil</string>
+    <string name="settings_push_notifications">Push Mitteilungen</string>
+    <string name="settings_save_photo_video">Foto &amp; Video speichern</string>
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="share_chooser_title">Teilen mit</string>
+    <string name="share_link">http://q-municate.com</string>
+    <string name="shopping_cart">EINKAUFSWAGEN</string>
+    <string name="snackbar_new_contact_request_title">%1$s\nNew Contacts request</string>
+    <string name="snackbar_new_message_title">%1$s\nMessage: %2$s</string>
+    <string name="snap_pref">snap_pref</string>
+    <string name="sorry_your_balance_is_low_please_topup_your_mytama_account">Es tut uns leid! Ihr Guthaben ist niedrig. Bitte laden Sie Ihr MyTama-Konto auf</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="succes">Erfolgreich</string>
+    <string name="success">Erfolgreich</string>
+    <string name="switch_camera">Kamera einschalten</string>
+    <string name="switch_speaker">Lautsprecher einschalten</string>
+    <string name="tama_express">TAMA EXPRESS</string>
+    <string name="tama_express_confirm_text">Bestätigen Sie, dass Sie zahlen möchten von %1$s</string>
+    <string name="tama_express_one_line">TAMA EXPRESS</string>
+    <string name="tama_family">TamaFamily</string>
+    <string name="tama_helper_how_to_purchase_choose_the_country">Wähle das Land, in dem du das Gute schicken willst</string>
+    <string name="tama_helper_how_to_purchase_choose_the_good_tosend">Wähle das Gute, das du senden möchtest</string>
+    <string name="tama_helper_how_to_purchase_give_the_number">Geben Sie die Nummer und den Namen des Begünstigten an</string>
+    <string name="tama_helper_how_to_purchase_good_are_deliver">Gut sind im Land (zwischen 3 Stunden und 72 Stunden)</string>
+    <string name="tama_helper_how_to_purchase_title">Wie kaufe ich eine Ware?</string>
+    <string name="tama_helper_how_to_purchase_we_call_the_benficiari">Wir rufen den Begünstigten zu einem Termin an</string>
+    <string name="tama_helper_mobile_select_the_am_you_want_topup">Wählen Sie den gewünschten Betrag aus</string>
+    <string name="tama_helper_mobile_the_mobile_istopup">Das Mobile ist mit der Lokalwährung topup</string>
+    <string name="tama_helper_mobile_topup_title">Wie gehst du dich mobil?</string>
+    <string name="tama_helper_mobile_you_want_topup">Geben Sie die\n Nummer, die\n Sie wollen Topup</string>
+    <string name="tama_request">ANTRAG</string>
+    <string name="tama_topup">TAMA AUFLADUNG</string>
+    <string name="time_out">Time Out</string>
+    <string name="title_activity_map_blink_element">MapBlinkElementActivity</string>
+    <string name="title_activity_maps2">Karte</string>
+    <string name="to_the_number">zur Nummer %1$s</string>
+    <string name="today">Heute</string>
+    <string name="topup">Aufladung</string>
+    <string name="topup_button">AUFLADUNG</string>
+    <string name="topup_my_account">MEIN KONTO AUFLADEN</string>
+    <string name="topup_my_account_one_line">MEIN KONTO AUFLADEN</string>
+    <string name="topup_my_mobile_request">HANDYAUFLADUNG BESTELLUNG</string>
+    <string name="topup_rqt_confirm_text">Bestätigen Sie, dass Sie Ihr Konto hinzufügen möchten %1$s € von Zahler %2$s</string>
+    <string name="total">Gesamt</string>
+    <string name="transfer">ÜBERTRAGUNG</string>
+    <string name="transfer_confirm_text">Bestätigen Sie, dass Sie  %1$s € von Ihrem Konto auf die Nummer %2$s übertragen möchten</string>
+    <string name="tw__allow_btn_txt">Erlauben</string>
+    <string name="tw__login_btn_txt">Mit Twitter anmelden</string>
+    <string name="tw__not_now_btn_txt">Nicht jetzt</string>
+    <string name="tw__share_email_desc">Erlaube %1$s  Zugriff auf die mit Deinem Twitter Account verknüpfte E-Mail Adresse \@%2$s, damit %1$s sie den Datenschutzrichtlinien entsprechend nutzen kann. Zum \
+Beispiel könnte %1$s Dir Updates und andere Informationen an diese Adresse senden.</string>
+    <string name="tw__share_email_title">Teile Deine E-Mail Adresse</string>
+    <string name="unit_price">Einzelpreis</string>
+    <string name="user_agreement_label">Wenn du auf Tick klickst, stimmst du Tama zu</string>
+    <string name="user_agreement_title">Nutzungsbedingungen</string>
+    <string name="user_delete_chat_history">Chat-Historie löschen</string>
+    <string name="user_profile_audio_call">Audio Anruf</string>
+    <string name="user_profile_chat_does_not_exists">Chat existiert nicht</string>
+    <string name="user_profile_delete_chat_history">Wollen Sie wirklich Chat-Historie mit %1$s löschen?</string>
+    <string name="user_profile_mobile">Handy</string>
+    <string name="user_profile_remove_contact_and_chat_history">Wollen Sie wirklich  %1$s aus der Kontaktliste mit dem Chat löschen?</string>
+    <string name="user_profile_send_message">Nachricht senden</string>
+    <string name="user_profile_success_chat_history_deleting">Sie haben den Chat-Historie mit %1$s gelöscht</string>
+    <string name="user_profile_success_contacts_deleting">Sie haben  %1$s aus Ihren Kontakten gelöscht</string>
+    <string name="user_profile_title">Info</string>
+    <string name="user_profile_video_call">Videoanruf</string>
+    <string name="user_remove_contact_and_chat_history">Kontakt und Chat entfernen</string>
+    <string name="view">Aussicht</string>
+    <string name="wifi_disabled">Anruf beendet wurde, weil die Verbindung unterbrochen wurde</string>
+    <string name="wrong_number_quantity">Zahlenmenge falsch (muß mindestens 4, maximal 12 Ziffern lang sein)</string>
+    <string name="yes">JA</string>
+    <string name="yesterday">Gestern</string>
+    <string name="you_have_no_history">Du hast keine Geschichte</string>
+    <string name="you_have_transfered">Sie haben übergeben</string>
+    <string name="your_personal_details">Ihre Persönlichen Daten</string>
+</resources>

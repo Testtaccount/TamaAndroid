@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Tama</string>
+  <string name="about_title">Di</string>
+  <string name="app_policy_link">http://tamaexpress.com:790/privacy-policy</string>
+  <string name="share_link">http://q-municate.com</string>
+  <string name="share_chooser_title">Condividi con</string>
+  <string name="action_bar_chats">Chat</string>
+  <string name="action_bar_settings">Impostazioni</string>
+  <string name="action_bar_map">"Carta geografica "</string>
+  <string name="action_bar_contacts">Contatti</string>
+  <string name="action_bar_invite_friends">Invita gli amici</string>
+  <string name="action_bar_feedback">Risposta</string>
+  <string name="action_bar_about">Di</string>
+  <string name="action_bar_search">Ricerca</string>
+  <string name="action_bar_search_hint">Ricerca</string>
+  <string name="action_bar_add_chat">Aggiungi chat</string>
+  <string name="action_bar_delete_friend">Elimina amico</string>
+  <string name="action_bar_add_friend_to_chat">Aggiungi amico a Chat</string>
+  <string name="action_bar_leave_chat">Chiudi Chat</string>
+  <string name="action_bar_chat_details">Dettagli chat</string>
+  <string name="action_bar_add_chat_attach">Aggiungi allegato</string>
+  <string name="navigation_chats">CHAT</string>
+  <string name="navigation_contacts">CONTATTI</string>
+  <string name="navigation_map">CARTA</string>
+  <string name="navigation_my_tama">MY TAMA</string>
+  <string name="navigation_settings">IMPOSTAZIONI</string>
+  <string name="landing_connect_with_facebook">Connetti con facebook</string>
+  <string name="landing_connect_with_twitter_digits">Connetti con il numero di telefono</string>
+  <string name="landing_already_have_account">Accesso via E-Mail o sociale</string>
+  <string name="landing_sign_up">Registrati con e-mail</string>
+  <string name="landing_version">v. %1$s</string>
+  <string name="auth_sign_up_title">Registrazione</string>
+  <string name="auth_login_title">Accesso</string>
+  <string name="auth_forgot_password">Ha dimenticato la password</string>
+  <string name="auth_or_text">o</string>
+  <string name="auth_hint_password">Password</string>
+  <string name="auth_log_in_with_facebook">Login con Facebook</string>
+  <string name="auth_hint_email">Email</string>
+  <string name="auth_remember_me">Ricordare la password</string>
+  <string name="auth_username_error">Questo nome utente non è ancora stato autenticato. Si prega di verificare le informazioni di accesso</string>
+  <string name="auth_not_all_fields_entered">Si prega di compilare tutti i campi vuoti</string>
+  <string name="auth_email_field_is_incorrect">Si prega di inserire un indirizzo email valido</string>
+  <string name="auth_email_field_not_entered">Inserisci l\'email</string>
+  <string name="auth_password_field_not_entered">Si prega di inserire la password</string>
+  <string name="auth_password_field_is_too_short">La password è troppo breve (minimo 8 caratteri)</string>
+  <string name="auth_full_name_field_not_entered">Inserisci il nome completo</string>
+  <string name="auth_full_name_field_is_too_short">Il nome completo è troppo breve (minimo 3 caratteri)</string>
+  <string name="auth_full_name_field_is_too_long">Il nome completo è troppo lungo (massimo 50 caratteri)</string>
+  <string name="auth_full_name_has_impossible_characters">Il nome completo ha caratteri impossibili (non è consentito: \'&gt;\', \'&lt;\', \';\')</string>
+  <string name="auth_first_name_field_is_too_short">Full Name is too short (minimum is 3 characters)</string>
+  <string name="auth_first_name_field_is_too_long">Full Name is too long (maximum is 50 characters)</string>
+  <string name="auth_first_name_has_impossible_characters">Full Name has impossible characters (not allowed: \'&gt;\', \'&lt;\', \';\')</string>
+  <string name="auth_last_name_field_is_too_short">Full Name is too short (minimum is 3 characters)</string>
+  <string name="auth_last_name_field_is_too_long">Full Name is too long (maximum is 50 characters)</string>
+  <string name="auth_last_name_has_impossible_characters">Full Name has impossible characters (not allowed: \'&gt;\', \'&lt;\', \';\')</string>
+  <string name="auth_hint_full_name">Nome completo</string>
+  <string name="auth_choose_user_picture">Scegli l\'immagine dell\'utente</string>
+  <string name="user_agreement_title">Accordo utente</string>
+  <string name="user_agreement_label">Cliccando Tick, l\'utente accetta di Tama</string>
+  <string name="forgot_password_title">Ha dimenticato la password</string>
+  <string name="forgot_password_email">Email</string>
+  <string name="forgot_password_email_field_not_entered">Inserisci l\'email</string>
+  <string name="forgot_password_email_field_is_incorrect">Si prega di inserire un indirizzo email valido</string>
+  <string name="forgot_password_label">Inserisci la tua email e ti invieremo un collegamento per reimpostare la tua password</string>
+  <string name="forgot_password_massage_email_was_sent">La posta è stata inviata a %1$s</string>
+
+  <!-- User profile -->
+  <string name="user_profile_title">Informazioni</string>
+  <string name="user_profile_mobile">Mobile</string>
+  <string name="user_profile_send_message">Invia messaggio</string>
+  <string name="user_profile_audio_call">Chiamata audio</string>
+  <string name="user_profile_video_call">Video chiamata</string>
+  <string name="user_delete_chat_history">Elimina cronologia chat</string>
+  <string name="user_remove_contact_and_chat_history">Rimuovi contatto e chiacchiere</string>
+  <string name="user_profile_remove_contact_and_chat_history">Vuoi davvero eliminare %1$s dalla tua lista dei contatti con la sua chat?</string>
+  <string name="user_profile_delete_chat_history">Vuoi davvero eliminare la cronologia chat con %1$s?</string>
+  <string name="user_profile_success_contacts_deleting">Hai eliminato %1$s dai tuoi contatti</string>
+  <string name="user_profile_success_chat_history_deleting">Hai eliminato la cronologia chat con %1$s</string>
+  <string name="user_profile_chat_does_not_exists">Il chat non esiste</string>
+
+
+  <!-- New Message -->
+  <string name="new_message_title">Nuovo messaggio</string>
+  <string name="new_message_create_group">Creare un gruppo</string>
+  <string name="new_message_no_friends_for_new_message">Non hai amici per la creazione di nuovi chat</string>
+  <string name="new_message_no_friends">Non hai amici</string>
+  //Av
+
+
+  <!-- New Group Dialog -->
+  <string name="new_group_title">Nuovo gruppo</string>
+  <string name="new_group_no_friends_for_creating_group">Nessun amico per creare gruppo</string>
+  <string name="new_group_add_people">Aggiungi persone</string>
+
+
+  <!-- Create Group Dialog -->
+  <string name="create_group_title">Nuovo gruppo</string>
+  <string name="create_group_group_name">Nome del gruppo</string>
+  <string name="create_group_empty_group_name">Il nome del gruppo non può essere vuoto</string>
+  <string name="create_group_participants">%1d partecipanti</string>
+  <string name="create_group_confirm_selecting_photo">Vuoi davvero caricare questa foto?</string>
+
+
+  <!-- Add Friends To Group Dialog -->
+  <string name="add_friends_to_group_title">Aggiungere amici</string>
+  <string name="add_friends_to_group_no_friends_for_adding">Nessun amico per l\'aggiunta</string>
+
+
+  <!-- Dialog -->
+  <string name="dialog_hint_message">Messaggio</string>
+  <string name="dialog_reply">Reply</string>
+  <string name="dialog_user_is_not_friend">L\'utente non è il tuo amico</string>
+  <string name="dialog_confirm_sending_attach">Vuoi davvero caricare questa %1$s?</string>
+  <string name="dialog_attach_image">attachment image</string>
+  <string name="dialog_attach_audio">attachment audio</string>
+  <string name="dialog_attach_video">attachment video</string>
+  <string name="dialog_now_typing">Digitando…</string>
+  <string name="dialog_message_reject_friend">Vuoi davvero di respingere la richiesta di contatto da %1$s?</string>
+  <string name="dialog_ctx_menu_reply">Reply</string>
+  <string name="dialog_ctx_menu_prv_message">Messaggio privato</string>
+  <string name="dialog_ctx_menu_video_call">Video chiamata</string>
+  <string name="dialog_ctx_menu_profile">Vedi profilo</string>
+  <string name="dialog_ctx_menu_remove">Chiudi Chat</string>
+  <string name="dialog_ctx_menu_delete">Elimina finestra di dialogo</string>
+  <string name="dialog_loading_dialogs">Aggiorna lista dialoghi ... Attendere</string>
+  <string name="dlg_need_permission_write_storage">%s ha bisogno dell\'accesso alla tua archiviazione esterna in modo da poter inviare e salvare i file</string>
+
+  <string-array name="dialog_attach_types_array">
+    <item>Take Photo</item>
+    <item>From Library</item>
+  </string-array>
+
+
+  <!-- Group Dialog Details -->
+  <string name="dialog_details_title">Dettagli del gruppo</string>
+  <string name="dialog_details_leave_group">Lasciare il gruppo</string>
+  <string name="dialog_details_participants">%1$d partecipanti</string>
+  <string name="dialog_details_online_participants">%1$d/%2$d in linea</string>
+  <string name="dialog_details_name_not_entered">Si prega di compilare il nome del gruppo</string>
+  <string name="dialog_details_all_friends_is_in_group">Non puoi aggiungere un nuovo amico perché tutti gli amici esistenti vengono aggiunti in questo gruppo</string>
+  <string name="dialog_details_service_is_initializing">Attendere, la connessione sta impostando ...</string>
+
+
+  <!-- Settings -->
+  <string name="settings_title">Impostazioni</string>
+  <string name="settings_profile">Profilo</string>
+  <string name="settings_logout">Logout</string>
+  <string name="settings_change_password">Cambia la password</string>
+  <string name="settings_push_notifications">Notifiche push</string>
+  <string name="settings_save_photo_video">Salva foto e video</string>
+  <string name="settings_version">Versione %1$s</string>
+  <string name="settings_invite_friends">Invita gli amici</string>
+  <string name="settings_give_feedback">Dare un feedback</string>
+  <string name="settings_delete_my_account">Cancella il mio account</string>
+
+
+  <!-- Change Password -->
+  <string name="change_password_title">Cambia la password</string>
+  <string name="change_password_change">Modificare</string>
+  <string name="change_password_hint_old_password">Vecchia password</string>
+  <string name="change_password_hint_new_password">Nuova password</string>
+  <string name="change_password_all_fields_not_entered">Si prega di compilare tutti i campi vuoti</string>
+  <string name="change_password_old_password_not_entered">Inserisci la vecchia password</string>
+  <string name="change_password_new_password_not_entered">Inserisci nuova password</string>
+  <string name="change_password_old_password_wrong">Vecchia password errata</string>
+
+
+  <!-- Profile -->
+  <string name="profile_title">Modifica</string>
+  <string name="profile_full_name">Nome completo</string>
+  <string name="profile_change_photo">Cambia foto</string>
+  <string name="profile_full_name_not_entered">Inserisci il nome completo</string>
+  <string name="profile_first_name_not_entered">Please enter First Name</string>
+  <string name="profile_last_name_not_entered">Please enter Last Name</string>
+  <string name="profile_full_name_not_changed">Il nome completo deve essere diverso</string>
+  <string name="profile_full_name_and_photo_not_changed">È necessario modificare il nome completo o la foto</string>
+
+
+  <!-- Feedback -->
+  <string name="feedback_title">Descrizione del commento</string>
+  <string name="feedback_label">
+        In your email please provide the steps of bug/error reproduction. Let us know how often it occurs and if it gives any error code.
+        This information will help us to find the source of the issue. Kindly give us as many details as possible. Thank you.
+    </string>
+  <string name="feedback_bug_type">Errore</string>
+  <string name="feedback_improvement_type">Miglioramento</string>
+  <string name="feedback_suggestion_type">Suggerimento</string>
+  <string name="feedback_support_email">q-municate@quickblox.com</string>
+  <string name="feedback_choose_email_provider">Scegliere un provider di email</string>
+  <string name="feedback_write_email">Scrivere un email</string>
+
+
+  <!-- About -->
+  <string name="about_version">Versione %1$s</string>
+  <string name="about_vendor">&#169; 2017 QuickBlox</string>
+  <string name="about_user_agreement">Accordo utente</string>
+
+
+  <!-- Preview Images -->
+  <string name="preview_image_title">Anteprima immagine</string>
+  <string name="preview_video_title">Anteprima del video</string>
+  <string name="preview_image_error">Image has not loaded</string>
+
+
+  <!-- Call -->
+  <string name="call_incoming_audio_call">Chiamata audio in entrata</string>
+  <string name="call_incoming_video_call">Chiamata video in entrata</string>
+  <string name="calling_to">Chiamando %1$s…</string>
+  <string name="call_accepted">Accettato</string>
+  <string name="call_rejected">Respinto</string>
+  <string name="call_no_answer">Nessuna risposta</string>
+  <string name="call_hung_up">Riagganciare</string>
+  <string name="call_chat_service_is_initializing">Attendere, la connessione sta impostando ...</string>
+  <string name="switch_speaker">Commutare altoparlante</string>
+  <string name="switch_camera">Cambiare la fotocamera</string>
+  <string name="decline_call">Decline</string>
+  <string name="answer_call">Risposta</string>
+  <string name="denied_permission_message">La chiamata è stata avviata senza un accesso a %s</string>
+
+
+  <!-- Invite Friends -->
+  <string name="invite_friends_title">Invita gli amici</string>
+  <string name="invite_friends_send">Inviare</string>
+  <string name="invite_friends_select_all">Seleziona tutto</string>
+  <string name="invite_friends_choose_email_provider">Scegliere un provider di email</string>
+  <string name="invite_friends_subject_of_invitation">Tama</string>
+  <string name="invite_friends_body_of_invitation">Caro amico, usa l\'applicazione Q-municate per raggiungermi! \\ N  Scarica qui: http://q-municate.com</string>
+  <string name="invite_friends_fb_request_canceled">Richiesta annullata</string>
+
+
+  <!-- Local/Global Search -->
+  <string name="search_users_not_found">Scusa ... nessun utente</string>
+  <string name="search_pending_request_status">Richiesta di contatto in attesa</string>
+  <string name="search_local_list">Locale</string>
+  <string name="search_global_list">Globale</string>
+
+
+  <!-- Others -->
+  <string name="chat_service_is_initializing">Attendere, la connessione sta impostando ...</string>
+  <string name="dlg_internet_connection_error">Something went wrong. Please, verify your internet connection and try again</string>
+  <string name="dlg_internet_connection_is_missing">In attesa di connessione</string>
+  <string name="dlg_wait_please">Attendere prego</string>
+  <string name="dlg_ok">OK</string>
+  <string name="dlg_cancel">Annulla</string>
+  <string name="dlg_open_app_settings">Impostazioni</string>
+  <string name="dlg_done">Fatto</string>
+  <string name="dlg_logout">Logout</string>
+  <string name="dlg_delete">Elimina</string>
+  <string name="dlg_confirm">Sei sicuro?</string>
+  <string name="dlg_need_permission">%1$s ha bisogno dell\'accesso alla tua archiviazione esterna in modo da poter inviare e salvare i file</string>
+  <string name="dlg_permission_storage">"Archiviazione esterna "</string>
+  <string name="dlg_permission_camera">Telecamera</string>
+  <string name="dlg_need_permission_read_contacts">Per invitare amici via email, %s deve disporre di un accesso a Contatti</string>
+  <string name="dlg_password_changed">Password cambiata</string>
+  <string name="dlg_success_request_facebook">Richiesta inviata</string>
+  <string name="dlg_no_friends_selected">Seleziona alcuni amici per invitare!</string>
+  <string name="dlg_leave_group">Lasciare il gruppo</string>
+  <string name="dlg_force_relogin_on_token_required">Token-Fehler ist in der Anwendung aufgetreten</string>
+  <string name="dlg_refresh_session">QB Session expired. Update session will be executed now</string>
+  <string name="error_bad_timestamp">base Bad timestamp</string>
+  <string name="error_bad_timestamp_from_app">Vai alle impostazioni del sistema telefonico, scegli la data e l\'ora e assicuratevi che la sincronizzazione automatica sia attiva</string>
+  <string name="error_login_or_email_required">Accesso o email richiesto</string>
+  <string name="error_login_or_email_required_from_app">Accesso o email richiesti, assicuratevi che la tua email FB sia pubblica (facebook.com/settings)</string>
+  <string name="error_email_already_taken">L\'email è già stata presa</string>
+  <string name="error_email_already_taken_from_app">Vai all\'app Facebook e faccia relogin. Questa email è già stata presa</string>
+  <string name="error_unauthorized">Non autorizzato</string>
+  <string name="error_unauthorized_from_app">Email o password sbagliate</string>
+  <string name="error_disconnected">"Scollegati… Per favore controlla la tua connessione Internet! "</string>
+  <string name="dlg_choose_image_from">Seleziona immagine da ...</string>
+  <string name="dlg_choose_media_from">Seleziona media da ...</string>
+  <string name="snackbar_new_message_title">%1$s\nMessage: %2$s</string>
+  <string name="snackbar_new_contact_request_title">%1$s\nNew Contacts request</string>
+  <string name="facebook_exception">Eccezione di Facebook</string>
+  <string name="error_playing_ringtone">Errore durante la suoneria di riproduzione</string>
+  <string name="coming_soon">In arrivo…</string>
+  <string name="search_at_last_items">Inserisci più simboli, non meno di 3</string>
+  <string name="deleted_user">UTENTE ELIMINATO</string>
+  <string name="today">Oggi</string>
+  <string name="yesterday">Ieri</string>
+  <string name="days_short">%1$dd</string>
+  <string name="hours_short">%1$dh</string>
+  <string name="minutes_short">%1$dm</string>
+  <string name="date_ago">Data precedente</string>
+  <string name="last_seen">L\'ultima volta attivo  %1$s at %2$s</string>
+  <string name="dlg_signal_error">"Scollegati… Per favore controlla la tua connessione Internet! "</string>
+  <string name="also_on_call">Anche su chiamata</string>
+  <string name="connect">Collegare…</string>
+  <string name="checking">Controllo ...</string>
+  <string name="connected">Collegato</string>
+  <string name="disconnected">Scollegato</string>
+  <string name="closed">Chiuso</string>
+  <string name="time_out">Pausa</string>
+  <string name="failed">Fallito</string>
+  <string name="wifi_disabled">La chiamata è stata arrestata perché la connessione è stata persa</string>
+  <string name="dlg_offline_call">%1$s Ti sta chiamando</string>
+  <string name="permission_unavailable">%s Non è disponibile adesso!</string>
+  <string name="permissions_unavailable">%s Non sono disponibili adesso</string>
+  <string name="error_cant_delete_chat">Spiacenti, la chat non può essere eliminata. Per favore prova più tardi</string>
+
+  <string name="snap_pref">snap_pref</string>
+  <string name="save_snap_time_pref">"save_snap_time"</string>
+  <string name="rating">Valutazione</string>
+  <string name="now_open">Ora aperto</string>
+  <string name="close">Vicino</string>
+  <string name="address">indirizzo:</string>
+
+  <string name="location_title">Posizione</string>
+  <!--   Location Permissions   -->
+
+  <plurals name="days">
+    <item quantity="one">%1$d day</item>
+    <item quantity="other">%1$d days</item>
+  </plurals>
+
+  <plurals name="hours">
+    <item quantity="one">%1$d hour</item>
+    <item quantity="other">%1$d hours</item>
+  </plurals>
+
+  <plurals name="minutes">
+    <item quantity="one">%1$d minute</item>
+    <item quantity="other">%1$d minutes</item>
+  </plurals>
+
+  <string-array name="dlg_image_pick">
+    <item>Gallery</item>
+    <item>Take a Photo</item>
+    <item>Take a Video</item>
+    <item>Location</item>
+  </string-array>
+  <string-array name="dlg_icon_pick">
+    <item>Gallery</item>
+    <item>Camera Photo</item>
+  </string-array>
+  <string name="title_activity_map_blink_element">MapBlinkElementActivity</string>
+  <string name="get_offer_code">Ottieni il codice dell\'offerta</string>
+  <string name="directions">Indicazioni</string>
+  <string name="title_activity_maps2">Carta geografica</string>
+  <string name="satellite">SATELLITARE</string>
+  <string name="normal">NORMALE</string>
+  <string name="hybrid">HYBRID</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="my_tama_account">IL MIO CONTO DI MYTAMA</string>
+  <string name="my_account">IL MIO ACCOUNT</string>
+  <string name="topup_my_account">RICARICA IL MIO CONTO</string>
+  <string name="topup_my_account_one_line">RICARICA IL MIO CONTO</string>
+  <string name="send_credit">INVIA CREDITO</string>
+  <string name="tama_express">TAMA EXPRESS</string>
+  <string name="tama_express_one_line">TAMA EXPRESS</string>
+  <string name="tama_topup">TAMA RICARICA</string>
+  <string name="tama_request">RICHIESTA</string>
+  <string name="history">STORIA</string>
+  <string name="balance">SOLDI</string>
+  <string name="account_topup">RICARICA CONTO</string>
+  <string name="please_enter_the_voucher_number">Inserisci il numero del buono</string>
+  <string name="topup_button">RICARICA</string>
+  <string name="number_count_error">Il numero del buono deve essere di 9 caratteri</string>
+  <string name="d_m_account_with">Hai ricaricato il tuo conto con</string>
+  <string name="no_internet_conection">Nessuna connessione Internet</string>
+
+  <string name="mytama_history">STORIA DI MYTAMA</string>
+  <string name="enter_number_to_topup">Inserisci il numero che desideri ricaricare</string>
+  <string name="enter_number_where_you_want_transfer">Inserire il numero di cui si desidera trasferire il saldo</string>
+  <string name="enter_amount_transfer">Inserisci l\'importo che desideri trasferire</string>
+  <string name="mobile_topup">RICARICA MOBILE</string>
+  <string name="enter_number">Nessun numero. Immettere il numero</string>
+  <string name="wrong_number_quantity">Quantità errata (deve per min 4, max 12 cifre)</string>
+  <string name="transfer_confirm_text">"Conferma di trasferire %1$s € dal tuo account al numero %2$s "</string>
+  <string name="checkout_confirm_text">Conferma</string>
+  <string name="confirm_btn_text">Conferma</string>
+  <string name="confirm_text_topup_my_mobile_request">Conferma che si desidera trasferire %1$s € dal pagatore %2$s al numero %3$s</string>
+  <string name="topup_rqt_confirm_text">Conferma di aggiungere il tuo account %1$s € dal pagatore %2$s</string>
+  <string name="tama_express_confirm_text">Conferma di voler pagare %1$s</string>
+  <string name="transfer">TRASFERIMENTO</string>
+  <string name="balance_transfer">TRASFERIMENTO DI SALDO</string>
+  <string name="you_have_transfered">Hai trasferito</string>
+  <string name="euro">" €</string>
+  <string name="higher_amount">Scusate! Questo importo è superiore a quello disponibile sul tuo account. Inserisci un importo valido</string>
+  <string name="to_the_number">Al numero %1$s</string>
+  <string name="from_the_number">Dal numero %1$s</string>
+
+  <string name="pay_to_retailer_btn_text">Pagare al rivenditore</string>
+  <string name="pay_by_balance_btn_text">Pagare dal saldo</string>
+
+  <string name="my_tama_topup_request">RICHIESTA MYTAMA</string>
+  <string name="my_tama_mobile_topup_request">RICHIESTA DI RICARICA MY TAMA</string>
+  <string name="my_tama_request">RICHIESTA MYTAMA</string>
+
+
+  <!--countryCode-->
+  <string name="label_send">Inviare</string>
+  <string name="label_error_incorrect_phone">Telefono non corretto</string>
+  <string name="select_amunt">Seleziona l\'importo</string>
+  <string name="back">INDIETRO</string>
+  <string name="pay_ntamaexpress_nrequest">RICHIESTA DI PAGAMENTO TAMAEXPRESS</string>
+  <string name="incoming_request">RICHIESTA IN ARRIVO</string>
+  <string name="request">RICHIESTA</string>
+  <string name="my_tama_acc_topup_rqt">MY TAMA ACCOUNT\nTOPUP REQUEST</string>
+  <string name="pay_tama_express_rqt">RICHIESTA DI PAGAMENTO TAMAEXPRESS</string>
+  <string name="incoming_request_one_line">RICHIESTA IN ARRIVO</string>
+  <string name="outgoing_request">RICHIESTA IN USCITA</string>
+  <string name="topup_my_mobile_request">RICHIESTA DI RICARICARE IL  MOBILE</string>
+  <string name="send_request">INVIA RICHIESTA</string>
+  <string name="please_enter_the_payer_number">Inserisci il numero di pagatore</string>
+  <string name="please_enter_the_amount">Inserisci l\'importo</string>
+  <string name="please_enter_the_phone_number_to_be_topup">Inserisci il numero di telefono da utilizzare</string>
+  <string name="please_enter_the_tamaexpress_pin">Inserisci il PIN di TamaExpress</string>
+  <string name="denied">NEGATO</string>
+  <string name="countries">PAESI</string>
+  <string name="click_on_your_country_to_find_out_the_products_available">Clicca sul tuo paese per scoprire i prodotti disponibili</string>
+  <string name="categories">CATEGORIE</string>
+  <string name="products">PRODOTTI</string>
+  <string name="add_to_cart">AGGIUNGI AL CARRELLO</string>
+  <string name="shopping_cart">CARRELLO DELLA SPESA</string>
+  <string name="image">Immagine</string>
+  <string name="name">Nome</string>
+  <string name="unit_price">Prezzo unitario</string>
+  <string name="quantity">Quantità</string>
+  <string name="total">Totale</string>
+  <string name="remove">Rimuovere</string>
+  <string name="continue_shopping">Continua a fare acquisti</string>
+  <string name="checkout">Check-out</string>
+  <string name="grand_total">Somma totale</string>
+  <string name="sorry_your_balance_is_low_please_topup_your_mytama_account">Scusate! il saldo è basso. \\ Si prega di ricaricare il tuo conto MyTama</string>
+  <string name="topup">Ricarica</string>
+  <string name="your_personal_details">I tuoi dettagli personali</string>
+  <string name="sender_name">Nome del mittente</string>
+  <string name="sender_mobile_number">Numero di cellulare del mittente</string>
+  <string name="payer_mobile_number">Numero di telefono del pagatore</string>
+  <string name="beneficiary_details">Dettagli relativi al beneficiario</string>
+  <string name="beneficiary_name">Nome del beneficiario</string>
+  <string name="beneficiary_mobile_number">Numero di cellulare del beneficiario</string>
+  <string name="its_must_not_your_number">Non deve essere il tuo numero di telefono</string>
+  <string name="ok">OK</string>
+
+  <string name="history_all">Tutti</string>
+  <string name="my_tama">MyTama</string>
+  <string name="tama_family">TamaFamily</string>
+  <string name="history_tama_express">TamaExpress</string>
+  <string name="history_tama_topup">TamaTopup</string>
+  <string name="history_balance_transfer">BalanceTransfer</string>
+  <string name="progress">PROGRESSO</string>
+  <string name="success">SUCCESSO</string>
+  <string name="view">Vista</string>
+  <string name="order_no">Numero d\'ordine</string>
+  <string name="mobile">Mobile +</string>
+  <string name="amount">Quantità</string>
+  <string name="succes">SUCCESSO</string>
+  <string name="sender_number">Numero del mittente</string>
+  <string name="beneficiary_number">Numero beneficiario</string>
+  <string name="order_details">Dettagli ordine</string>
+  <string name="product">Prodotto</string>
+  <string name="price">Prezzo</string>
+  <string name="price_">Prezzo:</string>
+  <string name="request_order">PROCEDURA DI RICHIESTA</string>
+  <string name="close_btn">Vicino</string>
+  <string name="continue_btn">Continua</string>
+
+  <string name="en">en</string>
+  <string name="de">de</string>
+  <string name="es">es</string>
+  <string name="fr">fr</string>
+  <string name="it">it</string>
+  <string name="yes">sì</string>
+  <string name="no">NO</string>
+  <string name="alertTextFromCountry">Hai alcuni prodotti nell\'elenco dei prodotti da %1$s. \\ N Se scegli continuare, questi prodotti verranno eliminati</string>
+  <string name="contact_alert_message">Seleziona il contatto, con il codice del paese</string>
+  <string name="contact_us">Contattaci</string>
+  <string name="contact_us_uppercase">CONTATTACI</string>
+  <string name="contact_us_to_find_retailer_or_for_any_question">Contattaci per trovare il rivenditore o per qualsiasi domanda</string>
+  <string name="phone">TELEFONO:</string>
+  <string name="france">Francia</string>
+  <string name="germany">Germania</string>
+  <string name="email">Email:</string>
+
+  <!--TAMA_HELPER_MOBILE_TOPUP-->
+  <string name="tama_helper_mobile_topup_title">Come sfruttare il tuo cellulare?</string>
+  <string name="tama_helper_mobile_you_want_topup">Inserisci il numero che desideri</string>
+  <string name="tama_helper_mobile_select_the_am_you_want_topup">Selezionare\n l\'importo che\n si desidera\n sovrapporre\n nel mobile desiderato</string>
+  <string name="tama_helper_mobile_the_mobile_istopup">Il Mobile è\n topup con la valuta locale</string>
+
+  <!--TAMA_HELPER_RECHARGE_MY_TAMA-->
+  <string name="recharge_my_tama_title">Come ricaricare MyTama Account</string>
+  <string name="recharge_my_tama_go_to_tama_shop">Vai a\t Tama Shop</string>
+  <string name="recharge_my_tama_scratch_voucher">Graffi un buono</string>
+  <string name="recharge_my_tama_enther_voucher_number">Inserisci il numero del voucher</string>
+  <string name="recharge_my_tama_account_will_topup">Il conto\n sarà Topup</string>
+
+  <!--TAMA_HELPER_HOW_TO_PURCHASE-->
+  <string name="tama_helper_how_to_purchase_title">Come acquistare un bene?</string>
+  <string name="tama_helper_how_to_purchase_choose_the_country">Scegli il paese in cui desideri inviare il bene</string>
+  <string name="tama_helper_how_to_purchase_choose_the_good_tosend">Scegli il bene che desideri inviare</string>
+  <string name="tama_helper_how_to_purchase_give_the_number">Indicare il numero e il nome del beneficiario</string>
+  <string name="tama_helper_how_to_purchase_we_call_the_benficiari">Chiamiamo il beneficiario per un appuntamento</string>
+  <string name="tama_helper_how_to_purchase_good_are_deliver">Buoni sono consegnati nel paese (tra 3 ore e 72 ore)</string>
+
+  <string name="message_available_european_users">Queste opzioni sono disponibili solo per gli utenti europei</string>
+  <string name="you_have_no_history">Non hai storia</string>
+
+</resources>

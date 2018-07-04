@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tama.chat.ui.activities.tamaAccount.IncomingRequestActivity">
+
+    <include
+        android:id="@+id/toolbar_tama_view"
+        layout="@layout/toolbar_tama"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_tama_view"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_incoming_request"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_button_red_rect"
+                android:textColor="@color/tama_account_text"
+                android:textStyle="bold"
+                android:text="@string/incoming_request_one_line"/>
+            <Button
+                android:id="@+id/btn_outgoing_request"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:background="@drawable/selector_button_grey_rect"
+                android:textColor="@color/tama_account_text"
+                android:textStyle="bold"
+                android:text="@string/outgoing_request" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn_layout"
+            android:orientation="vertical"
+            android:background="@drawable/text_view_rect_bold">
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/all_text_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:textColor="@color/text_dark"
+                    android:background="@drawable/selector_button_red_under_line"
+                    android:text="@string/history_all"/>
+                <TextView
+                    android:id="@+id/my_tama_text_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:textColor="@color/button_red_normal"
+                    android:text="@string/my_tama"/>
+                <TextView
+                    android:id="@+id/tama_express_text_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:textColor="@color/button_red_normal"
+                    android:text="@string/history_tama_express"/>
+                <TextView
+                    android:id="@+id/tama_topup_text_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:textColor="@color/button_red_normal"
+                    android:text="@string/history_tama_topup"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/incoming_request_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/request_item_show_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/item_show_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tama_account_black"
+                    android:textSize="20sp"
+                    android:padding="15dp"
+                    android:gravity="center"/>
+                
+                <Button
+                    android:id="@+id/btn_item_ok"
+                    android:layout_width="@dimen/topup_button_width"
+                    android:layout_height="@dimen/topup_button_height"
+                    android:text="@string/dlg_ok"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/selector_button_green_oval"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_below="@+id/item_show_text"/>
+
+                <Button
+                    android:id="@+id/btn_item_denied"
+                    android:layout_width="@dimen/topup_button_width"
+                    android:layout_height="@dimen/topup_button_height"
+                    android:text="@string/denied"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/selector_button_red_oval"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_below="@+id/item_show_text"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/error_message_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_layout"
+            android:textSize="@dimen/topup_title_text_height"
+            android:textColor="@color/button_red_normal"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

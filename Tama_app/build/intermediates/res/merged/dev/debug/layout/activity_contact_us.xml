@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tama.chat.ui.activities.tamaAccount.ContactUsActivity">
+    <include
+        android:id="@+id/toolbar_tama_view"
+        layout="@layout/toolbar_tama"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_us_to_find_retailer_or_for_any_question"
+        android:textSize="16sp"
+        android:textColor="@color/tama_account_black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_tama_view"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/button_red_normal"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/title_text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/france_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/france"
+        android:textSize="18sp"
+        android:textColor="@color/tama_account_black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/phone_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/france_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="+33176660340"
+        android:textSize="18sp"
+        android:autoLink="phone"
+        android:textColorLink="@color/tama_account_black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/phone_title"
+        app:layout_constraintLeft_toRightOf="@+id/phone_title"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="60dp" />
+
+    <TextView
+        android:id="@+id/germany_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/germany"
+        android:textSize="18sp"
+        android:textColor="@color/tama_account_black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/france_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/germany_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="+4921195987800"
+        android:textSize="18sp"
+        android:textColorLink="@color/tama_account_black"
+        android:autoLink="phone"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/france_number"
+        app:layout_constraintLeft_toRightOf="@+id/phone_title"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="60dp" />
+
+    <TextView
+        android:id="@+id/email_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/button_red_normal"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/germany_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        tools:text="service@tamaexpress.com"
+        android:textSize="18sp"
+        android:textColorLink="@color/tama_account_black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/email_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

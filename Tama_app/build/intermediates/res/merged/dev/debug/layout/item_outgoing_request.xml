@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="3dp"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/outgoing_request_item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="2dp"
+        android:src="@drawable/incoming_tamatopup_logo"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingStart="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/outgoing_request_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|start"
+                android:paddingEnd="5dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="5dp"
+                android:paddingStart="0dp"
+                android:text="text"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6">
+
+            <TextView
+                android:id="@+id/outgoing_request_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|start"
+                android:text="sub text"
+                android:textColor="@color/tama_light_grey"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignLeft="@+id/outgoing_request_status"
+                android:layout_alignStart="@+id/outgoing_request_status"
+                android:layout_toLeftOf="@+id/outgoing_request_status"
+                android:layout_toStartOf="@+id/outgoing_request_status" />
+
+            <TextView
+                android:id="@+id/outgoing_request_status"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_red_oval"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:padding="3dp"
+                android:text="DENIED"
+                android:textSize="17sp"
+                android:textColor="@color/tama_account_text"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

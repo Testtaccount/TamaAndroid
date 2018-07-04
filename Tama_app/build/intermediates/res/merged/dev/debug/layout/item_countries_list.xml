@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button_topup_myacc"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/item_countries_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/world_icon"/>
+    <TextView
+        android:id="@+id/item_countries_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sdfgstr"
+        android:gravity="center"
+        android:layout_below="@+id/item_countries_image"
+        android:textColor="@color/tama_account_black"
+        android:textSize="14sp"/>
+</RelativeLayout>

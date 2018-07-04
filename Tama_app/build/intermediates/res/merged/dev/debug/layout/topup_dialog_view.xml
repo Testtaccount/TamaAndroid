@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/topup_dialog_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/topup_dialog_smoll_text_size"
+        android:textColor="@color/button_red_normal"/>
+
+    <TextView
+        android:id="@+id/topup_dialog_big_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/topup_dialog_big_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/button_red_normal"/>
+
+    <TextView
+        android:id="@+id/topup_dialog_subtitle_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/topup_dialog_smoll_text_size"
+        android:textColor="@color/button_red_normal"/>
+
+    <Button
+        android:id="@+id/topup_dialog_button"
+        android:layout_width="@dimen/topup_dialog_button_width"
+        android:layout_height="@dimen/topup_dialog_button_height"
+        android:background="@drawable/selector_button_grey_oval"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/close"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="@dimen/topup_dialog_button_text_size" />
+
+
+</LinearLayout>

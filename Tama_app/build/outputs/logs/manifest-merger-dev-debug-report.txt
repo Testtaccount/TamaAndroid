@@ -1,0 +1,1299 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:2:1-335:12
+	package
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+	android:installLocation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:5:5-45
+uses-permission#android.permission.INTERNET
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:7:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.6] C:\Users\Avetik\.android\build-cache\002b52ee859c4a539193424c436caeac872c3a95\output\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.4.0] C:\Users\Avetik\.android\build-cache\571d39b289e96d09fb803a33bf3fe5bc2c7e0632\output\AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.0] C:\Users\Avetik\.android\build-cache\e543f806b16b11c8e17d4a6c7cdea97ea4f3984a\output\AndroidManifest.xml:9:5-67
+MERGED from [com.quickblox:quickblox-android-sdk-content:3.3.5] C:\Users\Avetik\.android\build-cache\002dff66223c1b71009fa9f891fc84ba7bc53f01\output\AndroidManifest.xml:10:5-67
+MERGED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:25:5-67
+MERGED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:25:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.0] C:\Users\Avetik\.android\build-cache\2f9f2062c67d7b9cd254689b8a92d37ffa964f3f\output\AndroidManifest.xml:29:5-67
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] C:\Users\Avetik\.android\build-cache\e4cbb0b91941f1786ea425a0481fa83947f65048\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] C:\Users\Avetik\.android\build-cache\2b022205da417e9c8ac4fde3a9d48d710a07b6fb\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Avetik\.android\build-cache\81117dbf97871483679f2df3b9efa3aa4455ae57\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\441643bf9727b4d5efccd5acbeac2c14c27cbb7d\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\d857eb6f6fc7e35061a2630ba49f50e7c39798a1\output\AndroidManifest.xml:20:5-66
+MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:13:5-67
+MERGED from [com.quickblox:quickblox-android-sdk-chat:3.3.5] C:\Users\Avetik\.android\build-cache\b808606ebca56976b31059520041f1ade864f68a\output\AndroidManifest.xml:11:5-67
+MERGED from [com.quickblox:quickblox-android-sdk-extensions:3.3.5] C:\Users\Avetik\.android\build-cache\f223abe0ea1f1e204c9c156118af39f89c863aa8\output\AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:8:5-79
+MERGED from [Tama Android:Q-municate_core:unspecified] E:\Android\Project\Tama Android\Q-municate_core\build\intermediates\bundles\default\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Avetik\.android\build-cache\81117dbf97871483679f2df3b9efa3aa4455ae57\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\441643bf9727b4d5efccd5acbeac2c14c27cbb7d\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\d857eb6f6fc7e35061a2630ba49f50e7c39798a1\output\AndroidManifest.xml:21:5-78
+MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:12:5-79
+MERGED from [com.quickblox:quickblox-android-sdk-chat:3.3.5] C:\Users\Avetik\.android\build-cache\b808606ebca56976b31059520041f1ade864f68a\output\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:9:22-73
+uses-permission#android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:10:5-101
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:10:22-98
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:11:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.CAMERA
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:13:22-62
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:14:5-68
+MERGED from [com.google.android.gms:play-services-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\441643bf9727b4d5efccd5acbeac2c14c27cbb7d\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\d857eb6f6fc7e35061a2630ba49f50e7c39798a1\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:14:22-65
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:15:5-80
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:15:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:16:5-71
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:16:22-68
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:17:5-82
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] C:\Users\Avetik\.android\build-cache\e4cbb0b91941f1786ea425a0481fa83947f65048\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] C:\Users\Avetik\.android\build-cache\2b022205da417e9c8ac4fde3a9d48d710a07b6fb\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:17:22-79
+uses-permission#android.permission.VIBRATE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:18:5-66
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:18:22-63
+uses-permission#android.permission.GET_TASKS
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:19:5-68
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:19:22-65
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:20:5-70
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:20:22-67
+uses-permission#android.permission.READ_CONTACTS
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:21:5-72
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:21:22-69
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:22:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:23:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:24:5-75
+MERGED from [Tama Android:Q-municate_core:unspecified] E:\Android\Project\Tama Android\Q-municate_core\build\intermediates\bundles\default\AndroidManifest.xml:10:5-75
+MERGED from [Tama Android:Q-municate_db:unspecified] E:\Android\Project\Tama Android\Q-municate_db\build\intermediates\bundles\default\AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:24:22-72
+uses-permission#android.Manifest.permission.READ_PHONE_STATE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:25:5-84
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:25:22-81
+permission#com.example.app.permission.MAPS_RECEIVE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:27:5-29:47
+	android:protectionLevel
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:29:9-44
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:28:9-63
+uses-permission#com.example.app.permission.MAPS_RECEIVE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:32:22-76
+uses-feature#android.hardware.camera
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:34:5-37:32
+	tools:node
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:37:9-29
+	android:required
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:36:9-33
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:35:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:38:5-41:32
+	tools:node
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:41:9-29
+	android:required
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:40:9-33
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:39:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:42:5-45:32
+	tools:node
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:45:9-29
+	android:required
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:44:9-33
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:43:9-53
+uses-feature#0x00020000
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:46:5-48:35
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Avetik\.android\build-cache\81117dbf97871483679f2df3b9efa3aa4455ae57\output\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:47:9-41
+	android:required
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:48:9-32
+application
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:50:5-333:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:11:5-17:19
+MERGED from [com.crashlytics.sdk.android:beta:1.2.6] C:\Users\Avetik\.android\build-cache\002b52ee859c4a539193424c436caeac872c3a95\output\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.4.0] C:\Users\Avetik\.android\build-cache\571d39b289e96d09fb803a33bf3fe5bc2c7e0632\output\AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.0] C:\Users\Avetik\.android\build-cache\e543f806b16b11c8e17d4a6c7cdea97ea4f3984a\output\AndroidManifest.xml:11:5-20
+MERGED from [Tama Android:Q-municate_core:unspecified] E:\Android\Project\Tama Android\Q-municate_core\build\intermediates\bundles\default\AndroidManifest.xml:12:5-47
+MERGED from [com.quickblox:quickblox-android-sdk-messages:3.3.5] C:\Users\Avetik\.android\build-cache\3066565e2a2e1e89f6989c51413713d671d32ee4\output\AndroidManifest.xml:10:5-23:19
+MERGED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:27:5-111:19
+MERGED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:27:5-40:19
+MERGED from [io.fabric.sdk.android:fabric:1.4.0] C:\Users\Avetik\.android\build-cache\2f9f2062c67d7b9cd254689b8a92d37ffa964f3f\output\AndroidManifest.xml:31:5-20
+MERGED from [com.crashlytics.sdk.android:answers-shim:0.0.4] C:\Users\Avetik\.android\build-cache\4e2b964e60d1b4e6db6074392c6607f2c572fc7e\output\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\Avetik\.android\build-cache\88b4de45b041dc9e8696ea67b08fb10f3c033df9\output\AndroidManifest.xml:28:5-37:19
+MERGED from [com.quickblox:chat-message-adapter:2.0] C:\Users\Avetik\.android\build-cache\380438f198877825db6978745ff2b29f0ce2d08c\output\AndroidManifest.xml:9:5-16:19
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Avetik\.android\build-cache\957d37b68688098c3fdcfa277626afa125b6d85c\output\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] C:\Users\Avetik\.android\build-cache\e4cbb0b91941f1786ea425a0481fa83947f65048\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] C:\Users\Avetik\.android\build-cache\2b022205da417e9c8ac4fde3a9d48d710a07b6fb\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Avetik\.android\build-cache\81117dbf97871483679f2df3b9efa3aa4455ae57\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-location:11.0.4] C:\Users\Avetik\.android\build-cache\5d8fe3d3ec025f9ba6e67a0de213de73a1ceb9a8\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\441643bf9727b4d5efccd5acbeac2c14c27cbb7d\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.4] C:\Users\Avetik\.android\build-cache\048b2a26f9c5d81a988d76aa05cb96222e545f61\output\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\d857eb6f6fc7e35061a2630ba49f50e7c39798a1\output\AndroidManifest.xml:26:5-19
+MERGED from [com.firebase:firebase-jobdispatcher-with-gcm-dep:0.8.2] C:\Users\Avetik\.android\build-cache\c86f59d366445ef391ece65b55f8927b9ef2eb1f\output\AndroidManifest.xml:26:5-40:19
+MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:15:5-77:19
+MERGED from [com.android.support:design:26.0.1] C:\Users\Avetik\.android\build-cache\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:transition:26.0.1] C:\Users\Avetik\.android\build-cache\8eb83b1005a91e94d049862f0e6466b22831204a\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:customtabs:26.0.1] C:\Users\Avetik\.android\build-cache\5be01ee12ffaf468c76142952bbf1e5bf40bfd7a\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta1] C:\Users\Avetik\.android\build-cache\de0bb3b9794682a4ed896e406964b55167f21ad4\output\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Avetik\.android\build-cache\1cc2c99b47284d5f41d30233e8e39b685af9de60\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Avetik\.android\build-cache\f92b20edd533d15bb0b651fdaa17eca62d64070e\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\Avetik\.android\build-cache\e26a42662eb20663044aa4fa2067d6e72d9c4c1e\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.github.orangegangsters:swipy:1.2.0] C:\Users\Avetik\.android\build-cache\1eda7c41880380bae688cda15b29755f02589f63\output\AndroidManifest.xml:11:5-12:19
+MERGED from [com.timehop.stickyheadersrecyclerview:library:0.4.2] C:\Users\Avetik\.android\build-cache\517670c4fec3628e7bfe1af0a3796a3fe898a290\output\AndroidManifest.xml:12:5-20
+MERGED from [com.rockerhieu.emojicon:library:1.3.1] C:\Users\Avetik\.android\build-cache\ba349513ecd4bc5b86431111b522ce1d08b1011c\output\AndroidManifest.xml:9:5-53
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.1] C:\Users\Avetik\.android\build-cache\879e4c391d93a1c4d3b2e1b2b3b111a18c5aaea7\output\AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:recyclerview-v7:26.0.1] C:\Users\Avetik\.android\build-cache\cc82ad473672bd8338b1a0448b1b268c1e0a14f9\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.0.1] C:\Users\Avetik\.android\build-cache\1b084a5c1a4c1f2a184fba6253f9089c520827e5\output\AndroidManifest.xml:22:5-26:19
+MERGED from [Tama Android:q-municate_auth_service:unspecified] E:\Android\Project\Tama Android\q-municate_auth_service\build\intermediates\bundles\default\AndroidManifest.xml:11:5-15:19
+MERGED from [Tama Android:q-municate_user_cache:unspecified] E:\Android\Project\Tama Android\q-municate_user_cache\build\intermediates\bundles\default\AndroidManifest.xml:11:5-15:19
+MERGED from [Tama Android:Q-municate_db:unspecified] E:\Android\Project\Tama Android\Q-municate_db\build\intermediates\bundles\default\AndroidManifest.xml:13:5-47
+MERGED from [Tama Android:q-municate_user_service:unspecified] E:\Android\Project\Tama Android\q-municate_user_service\build\intermediates\bundles\default\AndroidManifest.xml:11:5-15:19
+MERGED from [Tama Android:q-municate_base_service:unspecified] E:\Android\Project\Tama Android\q-municate_base_service\build\intermediates\bundles\default\AndroidManifest.xml:11:5-15:19
+MERGED from [Tama Android:q-municate_base_cache:unspecified] E:\Android\Project\Tama Android\q-municate_base_cache\build\intermediates\bundles\default\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Avetik\.android\build-cache\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Avetik\.android\build-cache\6782415da2447f817c0d484a28637556e59078ce\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Avetik\.android\build-cache\e8b083030a2488321ee3e4ca263c1003f2d38dee\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Avetik\.android\build-cache\6577e955336ee32ec601e7c49296d109980bd95d\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Avetik\.android\build-cache\1d8fde70596bb3290630ca6f5721ddc5e04d5244\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Avetik\.android\build-cache\229db8097da26433510c6a661c0790c76db0d6ee\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Avetik\.android\build-cache\3141c1ccdd7383ee86f33a9517ab4b8408e3ed85\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Avetik\.android\build-cache\8c62d95c43adf95cee0e7e039e78cf3061d5386c\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Avetik\.android\build-cache\12bd88664cf8757d38812276a1f437d82642a605\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Avetik\.android\build-cache\b2642105b75d779bcb4f18932d3cb87900c67782\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Avetik\.android\build-cache\d1380f4c6453ca08b3b9ba6c035ea5bd676bd3cd\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Avetik\.android\build-cache\5ef54f54fcd7762bb1ea5ee094a27d0ee561b4c1\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Avetik\.android\build-cache\34f8896745313d6a95295cb58925e0a7da7d42ee\output\AndroidManifest.xml:25:5-29:19
+	android:label
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:54:9-41
+	android:supportsRtl
+		ADDED from [com.quickblox:chat-message-adapter:2.0] C:\Users\Avetik\.android\build-cache\380438f198877825db6978745ff2b29f0ce2d08c\output\AndroidManifest.xml:12:9-35
+	android:allowBackup
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:52:9-35
+	android:icon
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:53:9-45
+	android:largeHeap
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:55:9-33
+	android:theme
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:56:9-40
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:51:9-28
+activity#com.tama.chat.ui.activities.authorization.SplashActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:57:9-67:20
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:61:13-49
+	android:launchMode
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:60:13-48
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:59:13-97
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:58:13-71
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:62:13-66:29
+action#android.intent.action.MAIN
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:63:17-69
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:63:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:65:17-77
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:65:27-74
+service#com.tama.chat.service.SessionJobService
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:69:9-75:19
+	android:exported
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:71:13-37
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:70:13-54
+intent-filter#com.firebase.jobdispatcher.ACTION_EXECUTE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:72:13-74:29
+action#com.firebase.jobdispatcher.ACTION_EXECUTE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:73:17-84
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:73:25-81
+activity#com.tama.chat.ui.activities.authorization.LandingActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:77:9-81:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:81:13-49
+	android:launchMode
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:80:13-44
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:79:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:78:13-72
+activity#com.tama.chat.ui.activities.authorization.LoginActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:82:9-86:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:86:13-49
+	android:launchMode
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:85:13-44
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:84:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:83:13-70
+activity#com.tama.chat.ui.activities.authorization.SignUpActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:87:9-91:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:91:13-49
+	android:launchMode
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:90:13-44
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:89:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:88:13-71
+activity#com.facebook.FacebookActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:92:9-97:45
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\Avetik\.android\build-cache\88b4de45b041dc9e8696ea67b08fb10f3c033df9\output\AndroidManifest.xml:29:9-32:75
+MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:59:9-63:48
+	android:label
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:95:13-45
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:63:13-45
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:94:13-96
+	android:theme
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:96:13-72
+		REJECTED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\Avetik\.android\build-cache\88b4de45b041dc9e8696ea67b08fb10f3c033df9\output\AndroidManifest.xml:32:13-72
+	tools:replace
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:97:13-42
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:93:13-57
+activity#com.tama.chat.ui.activities.main.MainActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:98:9-100:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:100:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:99:13-60
+activity#com.tama.chat.ui.activities.invitefriends.InviteFriendsActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:101:9-104:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:104:13-49
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:103:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:102:13-78
+activity#com.tama.chat.ui.activities.feedback.FeedbackActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:105:9-108:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:108:13-49
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:107:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:106:13-68
+activity#com.tama.chat.ui.activities.profile.UserProfileActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:109:9-112:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:112:13-49
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:111:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:110:13-70
+activity#com.tama.chat.ui.activities.call.CallActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:113:9-117:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:117:13-49
+	android:launchMode
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:116:13-43
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:115:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:114:13-60
+activity#com.tama.chat.ui.activities.chats.NewMessageActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:118:9-120:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:120:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:119:13-67
+activity#com.tama.chat.ui.activities.chats.MapBlinkActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:121:9-123:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:123:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:122:13-65
+activity#com.tama.chat.ui.activities.chats.NewGroupDialogActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:124:9-127:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:127:13-49
+	android:noHistory
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:126:13-37
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:125:13-71
+activity#com.tama.chat.ui.activities.chats.CreateGroupDialogActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:128:9-131:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:131:13-49
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:130:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:129:13-74
+activity#com.tama.chat.ui.activities.chats.PrivateDialogActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:132:9-136:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:136:13-49
+	android:launchMode
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:135:13-43
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:134:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:133:13-70
+activity#com.tama.chat.ui.activities.chats.GroupDialogActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:137:9-141:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:141:13-49
+	android:launchMode
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:140:13-43
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:139:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:138:13-68
+activity#com.tama.chat.ui.activities.chats.GroupDialogDetailsActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:142:9-145:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:145:13-49
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:144:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:143:13-75
+activity#com.tama.chat.ui.activities.profile.MyProfileActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:146:9-148:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:148:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:147:13-68
+activity#com.tama.chat.ui.activities.chats.AddFriendsToGroupActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:149:9-152:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:152:13-49
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:151:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:150:13-74
+activity#com.tama.chat.ui.activities.changepassword.ChangePasswordActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:153:9-156:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:156:13-49
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:155:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:154:13-80
+activity#com.tama.chat.ui.activities.forgotpassword.ForgotPasswordActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:157:9-160:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:160:13-49
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:159:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:158:13-80
+activity#com.tama.chat.ui.activities.agreements.UserAgreementActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:161:9-164:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:164:13-49
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:163:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:162:13-75
+activity#com.soundcloud.android.crop.CropImageActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:165:9-82
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:165:19-79
+activity#com.tama.chat.ui.activities.about.AboutActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:166:9-168:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:168:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:167:13-62
+activity#com.tama.chat.ui.activities.others.PreviewImageActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:169:9-171:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:171:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:170:13-70
+activity#com.quickblox.ui.kit.chatmessage.adapter.media.video.ui.VideoPlayerActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:172:9-186:20
+	android:launchMode
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:175:13-43
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:174:13-122
+	android:theme
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:176:13-52
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:173:13-103
+intent-filter#android.intent.category.DEFAULT
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:177:13-185:29
+category#android.intent.category.DEFAULT
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:178:17-76
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:178:27-73
+data
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:180:17-47
+	android:scheme
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:180:23-44
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:188:9-191:45
+MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:22:9-24:63
+	android:value
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:190:13-50
+		REJECTED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:24:13-60
+	tools:replace
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:191:13-42
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:189:13-58
+meta-data#com.google.android.gms.version
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:192:9-194:69
+MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:16:9-18:69
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Avetik\.android\build-cache\3141c1ccdd7383ee86f33a9517ab4b8408e3ed85\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:194:13-66
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:193:13-58
+meta-data#com.quickblox.messages.TYPE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:195:9-197:35
+	android:value
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:197:13-32
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:196:13-55
+meta-data#com.quickblox.messages.SENDER_ID
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:198:9-200:49
+	android:value
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:200:13-46
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:199:13-60
+meta-data#com.quickblox.messages.QB_ENVIRONMENT
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:201:9-203:42
+	android:value
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:203:13-39
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:202:13-65
+meta-data#com.google.android.geo.API_KEY
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:204:9-206:55
+	android:value
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:206:13-52
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:205:13-58
+receiver#com.tama.chat.gcm.GcmBroadcastReceiver
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:208:9-217:20
+	android:permission
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:210:13-73
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:209:13-53
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.quickblox.qmunicate
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:211:13-216:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:212:17-81
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:212:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:213:17-86
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:213:25-83
+category#com.quickblox.qmunicate
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:215:17-68
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:215:27-65
+receiver#com.tama.chat.utils.broadcasts.NetworkChangeReceiver
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:218:9-224:20
+	android:label
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:220:13-50
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:219:13-67
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:221:13-223:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:222:17-79
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:222:25-76
+receiver#com.tama.chat.utils.broadcasts.ChatMessageReceiver
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:225:9-231:20
+	android:label
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:227:13-48
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:226:13-65
+intent-filter#q_municate.got_chat_message
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:228:13-230:29
+action#q_municate.got_chat_message
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:229:17-70
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:229:25-67
+service#com.tama.q_municate_core.network.NetworkGCMTaskService
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:233:9-240:19
+	android:exported
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:235:13-36
+	android:permission
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:236:13-93
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:234:13-82
+intent-filter#com.google.android.gms.gcm.ACTION_TASK_READY
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:237:13-239:29
+action#com.google.android.gms.gcm.ACTION_TASK_READY
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:238:17-87
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:238:25-84
+service#com.tama.chat.gcm.GCMIntentService
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:241:9-57
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:241:18-54
+service#com.tama.chat.service.MyFirebaseMessagingService
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:242:9-246:19
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:242:18-68
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:243:13-245:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:244:17-78
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:244:25-75
+service#com.tama.chat.service.MyFirebaseInstanceIDService
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:247:9-251:19
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:247:18-69
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:248:13-250:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:249:17-80
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:249:25-77
+service#com.tama.q_municate_core.service.QBService
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:252:9-254:52
+	android:icon
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:254:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:253:13-70
+service#com.tama.chat.fcm.FcmPushListenerService
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:255:9-259:19
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:255:18-60
+service#com.quickblox.messages.services.fcm.QBFcmPushInstanceIDService
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:260:9-266:19
+	android:exported
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:262:13-37
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:261:13-90
+provider#android.support.v4.content.FileProvider
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:268:9-276:20
+	android:authorities
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:270:13-60
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+	android:grantUriPermissions
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:272:13-47
+	android:exported
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:271:13-37
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:269:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:273:13-275:58
+	android:resource
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:275:17-55
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:274:17-67
+activity#com.tama.chat.ui.activities.mapBlink.MapBlinkElementActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:278:9-281:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:281:13-49
+	android:label
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:280:13-69
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:279:13-75
+activity#com.tama.chat.ui.activities.mapBlink.MapsActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:283:9-285:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:285:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:284:13-64
+activity#com.tama.chat.ui.activities.location.MapsActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:287:9-289:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:289:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:288:13-64
+meta-data#io.fabric.ApiKey
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:291:9-294:45
+MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:19:9-21:63
+	android:value
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:293:13-69
+		REJECTED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:21:13-60
+	tools:replace
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:294:13-42
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:292:13-44
+activity#com.tama.chat.ui.activities.tamaaccount.TopupMyAccountActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:296:9-298:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:298:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:297:13-77
+activity#com.tama.chat.ui.activities.tamaaccount.TamaHistoryActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:299:9-301:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:301:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:300:13-74
+activity#com.tama.chat.ui.activities.tamaaccount.TamaTopUpActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:302:9-304:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:304:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:303:13-72
+activity#com.tama.chat.ui.activities.tamaaccount.TamaTransferActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:305:9-307:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:307:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:306:13-75
+activity#com.tama.chat.ui.activities.tamaaccount.MyTamaRequestActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:308:9-310:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:310:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:309:13-76
+activity#com.tama.chat.ui.activities.tamaaccount.MyTamaAccountTopUpRqtActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:311:9-313:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:313:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:312:13-84
+activity#com.tama.chat.ui.activities.tamaaccount.MyTamaMobileTopUpRequestActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:314:9-316:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:316:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:315:13-87
+activity#com.tama.chat.ui.activities.tamaaccount.PayTamaExpressRequestActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:317:9-319:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:319:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:318:13-84
+activity#com.tama.chat.ui.activities.tamaaccount.IncomingRequestActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:320:9-322:52
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:322:13-49
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:321:13-78
+activity#com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:323:9-327:55
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:326:13-49
+	android:windowSoftInputMode
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:327:13-52
+	android:configChanges
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:325:13-74
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:324:13-74
+activity#com.tama.chat.ui.activities.tamaaccount.ContactUsActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:328:9-81
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:328:19-78
+activity#com.tama.chat.ui.activities.tamaaccount.ProfileInfoActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:329:9-83
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:329:19-80
+activity#com.tama.chat.ui.activities.authorization.AuthenticationActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:330:9-332:78
+	android:label
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:332:13-66
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:331:13-79
+uses-sdk
+INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Avetik\.android\build-cache\2d969044b49db1c0ae60c9b65329f33fbfbd8f56\output\AndroidManifest.xml:18:5-42
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.6] C:\Users\Avetik\.android\build-cache\002b52ee859c4a539193424c436caeac872c3a95\output\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.4.0] C:\Users\Avetik\.android\build-cache\571d39b289e96d09fb803a33bf3fe5bc2c7e0632\output\AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.0] C:\Users\Avetik\.android\build-cache\e543f806b16b11c8e17d4a6c7cdea97ea4f3984a\output\AndroidManifest.xml:7:5-43
+MERGED from [Tama Android:Q-municate_core:unspecified] E:\Android\Project\Tama Android\Q-municate_core\build\intermediates\bundles\default\AndroidManifest.xml:5:5-7:41
+MERGED from [com.quickblox:quickblox-android-sdk-content:3.3.5] C:\Users\Avetik\.android\build-cache\002dff66223c1b71009fa9f891fc84ba7bc53f01\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.quickblox:quickblox-android-sdk-customobjects:3.3.5] C:\Users\Avetik\.android\build-cache\a57501c3d0d616e92bdbc6d4dd70267e707f85c3\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.quickblox:quickblox-android-sdk-messages:3.3.5] C:\Users\Avetik\.android\build-cache\3066565e2a2e1e89f6989c51413713d671d32ee4\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.quickblox:quickblox-android-sdk-videochat-webrtc:3.3.5] C:\Users\Avetik\.android\build-cache\6b4c56c763990b8342500118b00ffb3dee6dfb6c\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:23:5-44
+MERGED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:23:5-44
+MERGED from [io.fabric.sdk.android:fabric:1.4.0] C:\Users\Avetik\.android\build-cache\2f9f2062c67d7b9cd254689b8a92d37ffa964f3f\output\AndroidManifest.xml:27:5-43
+MERGED from [com.crashlytics.sdk.android:answers-shim:0.0.4] C:\Users\Avetik\.android\build-cache\4e2b964e60d1b4e6db6074392c6607f2c572fc7e\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\Avetik\.android\build-cache\88b4de45b041dc9e8696ea67b08fb10f3c033df9\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.quickblox:chat-message-adapter:2.0] C:\Users\Avetik\.android\build-cache\380438f198877825db6978745ff2b29f0ce2d08c\output\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Avetik\.android\build-cache\957d37b68688098c3fdcfa277626afa125b6d85c\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.exoplayer:exoplayer:r2.5.1] C:\Users\Avetik\.android\build-cache\1801df3128e84b39ed690a664df94a956be4708e\output\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:r2.5.1] C:\Users\Avetik\.android\build-cache\1e606577f5e8482383144a0882ee310f0a7a62ef\output\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:r2.5.1] C:\Users\Avetik\.android\build-cache\02b209cdc9e55f92de7d562cb42cfa56c62dc70f\output\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:r2.5.1] C:\Users\Avetik\.android\build-cache\d153b6e68bcdc7fbd67f49c828040352d290ff28\output\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:r2.5.1] C:\Users\Avetik\.android\build-cache\4da027b0a51c0d7670538b68873e4c1271d0be69\output\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:r2.5.1] C:\Users\Avetik\.android\build-cache\ab2951fc86580e90ec06e085dbbec6fbfb742f1d\output\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.gms:play-services-gcm:11.0.4] C:\Users\Avetik\.android\build-cache\e4cbb0b91941f1786ea425a0481fa83947f65048\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.0.4] C:\Users\Avetik\.android\build-cache\2b022205da417e9c8ac4fde3a9d48d710a07b6fb\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Avetik\.android\build-cache\81117dbf97871483679f2df3b9efa3aa4455ae57\output\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.4] C:\Users\Avetik\.android\build-cache\5d8fe3d3ec025f9ba6e67a0de213de73a1ceb9a8\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\441643bf9727b4d5efccd5acbeac2c14c27cbb7d\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.4] C:\Users\Avetik\.android\build-cache\048b2a26f9c5d81a988d76aa05cb96222e545f61\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\d857eb6f6fc7e35061a2630ba49f50e7c39798a1\output\AndroidManifest.xml:17:5-43
+MERGED from [com.firebase:firebase-jobdispatcher-with-gcm-dep:0.8.2] C:\Users\Avetik\.android\build-cache\c86f59d366445ef391ece65b55f8927b9ef2eb1f\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:design:26.0.1] C:\Users\Avetik\.android\build-cache\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:26.0.1] C:\Users\Avetik\.android\build-cache\8eb83b1005a91e94d049862f0e6466b22831204a\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:26.0.1] C:\Users\Avetik\.android\build-cache\5be01ee12ffaf468c76142952bbf1e5bf40bfd7a\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta1] C:\Users\Avetik\.android\build-cache\de0bb3b9794682a4ed896e406964b55167f21ad4\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Avetik\.android\build-cache\1cc2c99b47284d5f41d30233e8e39b685af9de60\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] C:\Users\Avetik\.android\build-cache\0c708a243bcde7192e8301746b5f7a82c0f8b5f1\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Avetik\.android\build-cache\f92b20edd533d15bb0b651fdaa17eca62d64070e\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\Avetik\.android\build-cache\e26a42662eb20663044aa4fa2067d6e72d9c4c1e\output\AndroidManifest.xml:17:5-43
+MERGED from [com.soundcloud.android:android-crop:1.0.1] C:\Users\Avetik\.android\build-cache\0d799f9d2dc795ca9b1864652fceca173abd5299\output\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.orangegangsters:swipy:1.2.0] C:\Users\Avetik\.android\build-cache\1eda7c41880380bae688cda15b29755f02589f63\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.timehop.stickyheadersrecyclerview:library:0.4.2] C:\Users\Avetik\.android\build-cache\517670c4fec3628e7bfe1af0a3796a3fe898a290\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.rockerhieu.emojicon:library:1.3.1] C:\Users\Avetik\.android\build-cache\ba349513ecd4bc5b86431111b522ce1d08b1011c\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.1] C:\Users\Avetik\.android\build-cache\879e4c391d93a1c4d3b2e1b2b3b111a18c5aaea7\output\AndroidManifest.xml:8:5-11:75
+MERGED from [com.android.support:recyclerview-v7:26.0.1] C:\Users\Avetik\.android\build-cache\cc82ad473672bd8338b1a0448b1b268c1e0a14f9\output\AndroidManifest.xml:20:5-44
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.7] C:\Users\Avetik\.android\build-cache\f8edbd883e3d903c733ba6e1447ba0f958226146\output\AndroidManifest.xml:12:5-14:41
+MERGED from [com.android.support:cardview-v7:26.0.1] C:\Users\Avetik\.android\build-cache\1b084a5c1a4c1f2a184fba6253f9089c520827e5\output\AndroidManifest.xml:20:5-44
+MERGED from [Tama Android:q-municate_auth_service:unspecified] E:\Android\Project\Tama Android\q-municate_auth_service\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [Tama Android:q-municate_user_cache:unspecified] E:\Android\Project\Tama Android\q-municate_user_cache\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [Tama Android:Q-municate_db:unspecified] E:\Android\Project\Tama Android\Q-municate_db\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [com.quickblox:quickblox-android-sdk-chat:3.3.5] C:\Users\Avetik\.android\build-cache\b808606ebca56976b31059520041f1ade864f68a\output\AndroidManifest.xml:5:5-7:41
+MERGED from [Tama Android:q-municate_user_service:unspecified] E:\Android\Project\Tama Android\q-municate_user_service\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [Tama Android:q-municate_base_service:unspecified] E:\Android\Project\Tama Android\q-municate_base_service\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [Tama Android:q-municate_base_cache:unspecified] E:\Android\Project\Tama Android\q-municate_base_cache\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Avetik\.android\build-cache\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Avetik\.android\build-cache\6782415da2447f817c0d484a28637556e59078ce\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Avetik\.android\build-cache\e8b083030a2488321ee3e4ca263c1003f2d38dee\output\AndroidManifest.xml:20:5-44
+MERGED from [com.quickblox:quickblox-android-sdk-extensions:3.3.5] C:\Users\Avetik\.android\build-cache\f223abe0ea1f1e204c9c156118af39f89c863aa8\output\AndroidManifest.xml:6:5-8:41
+MERGED from [com.quickblox:quickblox-android-sdk-core:3.3.5] C:\Users\Avetik\.android\build-cache\d8fdd7e27f1b75607cf537446bfab61cdb18efce\output\AndroidManifest.xml:6:5-8:41
+MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\Avetik\.android\build-cache\6c993f80c6c029145648792762b263ea2c16aa7a\output\AndroidManifest.xml:19:5-43
+MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Avetik\.android\build-cache\6577e955336ee32ec601e7c49296d109980bd95d\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Avetik\.android\build-cache\1d8fde70596bb3290630ca6f5721ddc5e04d5244\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Avetik\.android\build-cache\229db8097da26433510c6a661c0790c76db0d6ee\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Avetik\.android\build-cache\3141c1ccdd7383ee86f33a9517ab4b8408e3ed85\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Avetik\.android\build-cache\8c62d95c43adf95cee0e7e039e78cf3061d5386c\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Avetik\.android\build-cache\12bd88664cf8757d38812276a1f437d82642a605\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Avetik\.android\build-cache\b2642105b75d779bcb4f18932d3cb87900c67782\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Avetik\.android\build-cache\d1380f4c6453ca08b3b9ba6c035ea5bd676bd3cd\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Avetik\.android\build-cache\5ef54f54fcd7762bb1ea5ee094a27d0ee561b4c1\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Avetik\.android\build-cache\34f8896745313d6a95295cb58925e0a7da7d42ee\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.1] C:\Users\Avetik\.android\build-cache\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
+provider#com.crashlytics.android.CrashlyticsInitProvider
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:14:13-75
+	android:exported
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:13:13-75
+service#com.quickblox.messages.services.SubscribeTaskManager
+ADDED from [com.quickblox:quickblox-android-sdk-messages:3.3.5] C:\Users\Avetik\.android\build-cache\3066565e2a2e1e89f6989c51413713d671d32ee4\output\AndroidManifest.xml:11:9-18:19
+	android:exported
+		ADDED from [com.quickblox:quickblox-android-sdk-messages:3.3.5] C:\Users\Avetik\.android\build-cache\3066565e2a2e1e89f6989c51413713d671d32ee4\output\AndroidManifest.xml:13:13-36
+	android:permission
+		ADDED from [com.quickblox:quickblox-android-sdk-messages:3.3.5] C:\Users\Avetik\.android\build-cache\3066565e2a2e1e89f6989c51413713d671d32ee4\output\AndroidManifest.xml:14:13-93
+	android:name
+		ADDED from [com.quickblox:quickblox-android-sdk-messages:3.3.5] C:\Users\Avetik\.android\build-cache\3066565e2a2e1e89f6989c51413713d671d32ee4\output\AndroidManifest.xml:12:13-80
+service#com.quickblox.messages.services.SubscribeService
+ADDED from [com.quickblox:quickblox-android-sdk-messages:3.3.5] C:\Users\Avetik\.android\build-cache\3066565e2a2e1e89f6989c51413713d671d32ee4\output\AndroidManifest.xml:19:9-22:19
+	android:exported
+		ADDED from [com.quickblox:quickblox-android-sdk-messages:3.3.5] C:\Users\Avetik\.android\build-cache\3066565e2a2e1e89f6989c51413713d671d32ee4\output\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [com.quickblox:quickblox-android-sdk-messages:3.3.5] C:\Users\Avetik\.android\build-cache\3066565e2a2e1e89f6989c51413713d671d32ee4\output\AndroidManifest.xml:20:13-76
+activity#com.digits.sdk.android.PhoneNumberActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:28:9-33:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:31:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:33:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:30:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:32:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:29:13-70
+activity#com.digits.sdk.android.ConfirmationCodeActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:34:9-39:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:37:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:39:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:36:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:38:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:35:13-75
+activity#com.digits.sdk.android.LoginCodeActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:40:9-45:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:43:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:45:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:42:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:44:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:41:13-68
+activity#com.digits.sdk.android.PinCodeActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:46:9-51:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:49:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:51:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:48:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:50:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:47:13-66
+activity#com.digits.sdk.android.FailureActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:52:9-56:61
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:55:13-37
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:54:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:56:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:53:13-66
+activity#com.digits.sdk.android.ContactsActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:57:9-60:40
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:60:13-37
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:59:13-59
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:58:13-67
+activity#com.digits.sdk.android.EmailRequestActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:61:9-66:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:64:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:66:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:63:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:65:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:62:13-71
+activity#com.digits.sdk.android.PhoneNumberActionBarActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:67:9-72:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:70:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:72:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:69:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:71:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:68:13-79
+activity#com.digits.sdk.android.ConfirmationCodeActionBarActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:73:9-78:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:76:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:78:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:75:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:77:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:74:13-84
+activity#com.digits.sdk.android.LoginCodeActionBarActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:79:9-84:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:82:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:84:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:81:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:83:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:80:13-77
+activity#com.digits.sdk.android.FailureActionBarActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:85:9-89:61
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:88:13-37
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:87:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:89:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:86:13-75
+activity#com.digits.sdk.android.ContactsActionBarActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:90:9-93:40
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:93:13-37
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:92:13-59
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:91:13-76
+activity#com.digits.sdk.android.PinCodeActionBarActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:94:9-99:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:97:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:99:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:96:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:98:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:95:13-75
+activity#com.digits.sdk.android.EmailRequestActionBarActivity
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:100:9-105:58
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:103:13-37
+	android:windowSoftInputMode
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:105:13-55
+	android:configChanges
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:102:13-59
+	android:taskAffinity
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:104:13-58
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:101:13-80
+service#com.digits.sdk.android.ContactsUploadService
+ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:107:9-110:40
+	android:enabled
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:109:13-35
+	android:exported
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:110:13-37
+	android:name
+		ADDED from [com.digits.sdk.android:digits:2.0.0] C:\Users\Avetik\.android\build-cache\fbfa7c9fcaf12064224d0a83152ad5248de88dca\output\AndroidManifest.xml:108:13-72
+activity#com.twitter.sdk.android.core.identity.OAuthActivity
+ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:28:9-32:40
+	android:excludeFromRecents
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:31:13-46
+	android:exported
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:32:13-37
+	android:configChanges
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:30:13-59
+	android:name
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:29:13-79
+activity#com.twitter.sdk.android.core.identity.ShareEmailActivity
+ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:33:9-39:48
+	android:label
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:39:13-45
+	android:excludeFromRecents
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:36:13-46
+	android:exported
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:37:13-37
+	android:configChanges
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:35:13-59
+	android:icon
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:38:13-53
+	android:name
+		ADDED from [com.twitter.sdk.android:twitter-core:2.0.0] C:\Users\Avetik\.android\build-cache\20cf879fd5418271a5007097b7180ba509367f8c\output\AndroidManifest.xml:34:13-84
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\Avetik\.android\build-cache\88b4de45b041dc9e8696ea67b08fb10f3c033df9\output\AndroidManifest.xml:33:9-36:20
+MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:64:9-76:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\Avetik\.android\build-cache\88b4de45b041dc9e8696ea67b08fb10f3c033df9\output\AndroidManifest.xml:35:13-36
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:67:13-45
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\Avetik\.android\build-cache\88b4de45b041dc9e8696ea67b08fb10f3c033df9\output\AndroidManifest.xml:34:13-58
+meta-data#com.quickblox.ui.kit.chatmessage.adapter.media.video.thumbnails.VideoThumbnailModule
+ADDED from [com.quickblox:chat-message-adapter:2.0] C:\Users\Avetik\.android\build-cache\380438f198877825db6978745ff2b29f0ce2d08c\output\AndroidManifest.xml:13:9-15:43
+	android:value
+		ADDED from [com.quickblox:chat-message-adapter:2.0] C:\Users\Avetik\.android\build-cache\380438f198877825db6978745ff2b29f0ce2d08c\output\AndroidManifest.xml:15:13-40
+	android:name
+		ADDED from [com.quickblox:chat-message-adapter:2.0] C:\Users\Avetik\.android\build-cache\380438f198877825db6978745ff2b29f0ce2d08c\output\AndroidManifest.xml:14:13-112
+service#com.firebase.jobdispatcher.GooglePlayReceiver
+ADDED from [com.firebase:firebase-jobdispatcher-with-gcm-dep:0.8.2] C:\Users\Avetik\.android\build-cache\c86f59d366445ef391ece65b55f8927b9ef2eb1f\output\AndroidManifest.xml:32:9-39:19
+	android:exported
+		ADDED from [com.firebase:firebase-jobdispatcher-with-gcm-dep:0.8.2] C:\Users\Avetik\.android\build-cache\c86f59d366445ef391ece65b55f8927b9ef2eb1f\output\AndroidManifest.xml:34:13-36
+	android:permission
+		ADDED from [com.firebase:firebase-jobdispatcher-with-gcm-dep:0.8.2] C:\Users\Avetik\.android\build-cache\c86f59d366445ef391ece65b55f8927b9ef2eb1f\output\AndroidManifest.xml:35:13-93
+	android:name
+		ADDED from [com.firebase:firebase-jobdispatcher-with-gcm-dep:0.8.2] C:\Users\Avetik\.android\build-cache\c86f59d366445ef391ece65b55f8927b9ef2eb1f\output\AndroidManifest.xml:33:13-73
+meta-data#com.facebook.sdk.AutoLogAppEventsEnabled
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:25:9-27:36
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:27:13-33
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:26:13-68
+activity#com.firebase.ui.auth.KickoffActivity
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:29:9-33:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:32:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:31:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:33:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:30:13-64
+activity#com.firebase.ui.auth.ui.email.RecoverPasswordActivity
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:34:9-37:75
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:37:13-72
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:35:13-81
+activity#com.firebase.ui.auth.ui.email.RegisterEmailActivity
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:38:9-41:59
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:41:13-56
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:40:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:39:13-79
+activity#com.firebase.ui.auth.ui.phone.PhoneVerificationActivity
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:42:9-46:64
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:45:13-66
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:44:13-37
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:46:13-61
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:43:13-83
+activity#com.firebase.ui.auth.ui.accountlink.WelcomeBackIdpPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:47:9-50:73
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:50:13-70
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:49:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:48:13-84
+activity#com.firebase.ui.auth.ui.accountlink.WelcomeBackPasswordPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:51:9-54:78
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:54:13-75
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:53:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:52:13-89
+activity#com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:55:9-58:65
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:58:13-62
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:57:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:56:13-80
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:68:13-75:29
+action#android.intent.action.VIEW
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:69:17-69
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:69:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:72:17-78
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:72:27-75
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.1] C:\Users\Avetik\.android\build-cache\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.0.1] C:\Users\Avetik\.android\build-cache\8eb83b1005a91e94d049862f0e6466b22831204a\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:customtabs:26.0.1] C:\Users\Avetik\.android\build-cache\5be01ee12ffaf468c76142952bbf1e5bf40bfd7a\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.1] C:\Users\Avetik\.android\build-cache\cc82ad473672bd8338b1a0448b1b268c1e0a14f9\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.0.1] C:\Users\Avetik\.android\build-cache\1b084a5c1a4c1f2a184fba6253f9089c520827e5\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Avetik\.android\build-cache\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Avetik\.android\build-cache\6782415da2447f817c0d484a28637556e59078ce\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\Avetik\.android\build-cache\e8b083030a2488321ee3e4ca263c1003f2d38dee\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Avetik\.android\build-cache\8c62d95c43adf95cee0e7e039e78cf3061d5386c\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\Avetik\.android\build-cache\12bd88664cf8757d38812276a1f437d82642a605\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Avetik\.android\build-cache\b2642105b75d779bcb4f18932d3cb87900c67782\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Avetik\.android\build-cache\d1380f4c6453ca08b3b9ba6c035ea5bd676bd3cd\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Avetik\.android\build-cache\5ef54f54fcd7762bb1ea5ee094a27d0ee561b4c1\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Avetik\.android\build-cache\34f8896745313d6a95295cb58925e0a7da7d42ee\output\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.0.1] C:\Users\Avetik\.android\build-cache\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\output\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.0.1] C:\Users\Avetik\.android\build-cache\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\output\AndroidManifest.xml:27:13-51
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Avetik\.android\build-cache\246a13da54ef7b01ea796d4bf477787f19721a77\output\AndroidManifest.xml:24:18-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Avetik\.android\build-cache\f92b20edd533d15bb0b651fdaa17eca62d64070e\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Avetik\.android\build-cache\f92b20edd533d15bb0b651fdaa17eca62d64070e\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Avetik\.android\build-cache\f92b20edd533d15bb0b651fdaa17eca62d64070e\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Avetik\.android\build-cache\f92b20edd533d15bb0b651fdaa17eca62d64070e\output\AndroidManifest.xml:19:19-85
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\Avetik\.android\build-cache\e26a42662eb20663044aa4fa2067d6e72d9c4c1e\output\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\Avetik\.android\build-cache\e26a42662eb20663044aa4fa2067d6e72d9c4c1e\output\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.0.4] C:\Users\Avetik\.android\build-cache\e26a42662eb20663044aa4fa2067d6e72d9c4c1e\output\AndroidManifest.xml:23:18-87
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:33:16-90
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:31:13-34:29
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:43:18-82
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Avetik\.android\build-cache\1d8fde70596bb3290630ca6f5721ddc5e04d5244\output\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Avetik\.android\build-cache\1d8fde70596bb3290630ca6f5721ddc5e04d5244\output\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Avetik\.android\build-cache\1d8fde70596bb3290630ca6f5721ddc5e04d5244\output\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Avetik\.android\build-cache\1d8fde70596bb3290630ca6f5721ddc5e04d5244\output\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Avetik\.android\build-cache\1d8fde70596bb3290630ca6f5721ddc5e04d5244\output\AndroidManifest.xml:6:79-143

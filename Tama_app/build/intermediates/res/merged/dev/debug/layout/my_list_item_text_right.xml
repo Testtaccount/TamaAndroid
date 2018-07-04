@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:custom="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/msg_message_text_view_right"
+  style="@style/ListItemTextMessage.Right"
+  android:layout_marginBottom="10dp"
+  android:layout_gravity="right"
+  android:gravity="right"
+  custom:widget_id_bottom="@layout/custom_msg_right_bottom_widget">
+
+  <LinearLayout
+    android:id="@+id/msg_linear_frame_right"
+    style="@style/WidgetTextMessage.Right"
+    android:layout_width="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="right">
+
+
+    <LinearLayout
+      android:layout_gravity="right"
+      android:gravity="right"
+      android:layout_width="wrap_content"
+
+      android:id="@+id/msg_bubble_background"
+      style="@style/BubbleTextFrame.Right">
+
+      <LinearLayout
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+
+        android:id="@+id/msg_linear_list_item_right"
+        style="@style/LinearWidgetTextMsg.Right">
+
+        <!--LinearLayout should place its actual message widget here.-->
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:id="@+id/msg_custom_widget_frame_top"
+          style="@style/CustomWidgetFrame.Right" />
+        <TextView
+          android:id="@+id/message_timer_textview"
+          style="@style/TextViewTextMsg.Left"
+          android:layout_gravity="right"
+          android:layout_width="wrap_content"
+          android:gravity="center"
+          android:textColor="@color/text_red"
+          android:visibility="gone" />
+        <TextView
+          android:id="@+id/msg_text_time_message"
+          style="@style/TextViewTimeMsg.Right"
+          android:layout_width="wrap_content"
+
+          tools:text="current time August" />
+
+        <TextView
+          android:id="@+id/msg_text_message"
+          style="@style/TextViewTextMsg.Right"
+          android:layout_width="wrap_content"
+          android:layout_gravity="right"
+
+          tools:text="message the long one message" />
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+
+          android:id="@+id/msg_link_preview"
+          style="@style/LinkPreviewFrame.Right" />
+
+        <!--LinearLayout should place its actual message widget here.-->
+        <LinearLayout
+          android:id="@+id/msg_custom_widget_frame_bottom"
+          style="@style/CustomWidgetFrame.Right" />
+
+      </LinearLayout>
+
+      <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/message_status_image_view"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:paddingLeft="5dp"
+        android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/msg_image_avatar"
+      android:layout_gravity="bottom"
+      style="@style/AvatarImageViewStyle.Right"
+      android:visibility="visible" />
+
+  </LinearLayout>
+</LinearLayout>
+
+

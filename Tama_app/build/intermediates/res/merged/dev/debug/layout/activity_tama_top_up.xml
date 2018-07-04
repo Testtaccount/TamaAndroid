@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  tools:context="com.tama.chat.ui.activities.tamaaccount.TamaTopUpActivity">
+
+    <include
+        android:id="@+id/toolbar_tama_view"
+        layout="@layout/toolbar_tama"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_tama_view" />
+
+    <TextView
+        android:id="@+id/topup_title"
+      android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/toolbar_tama_view"
+        android:textColor="@color/tama_account_black"
+        android:textSize="15sp"
+        android:text="@string/enter_number_to_topup"/>
+
+
+    <LinearLayout
+        android:id="@+id/tama_topup_first_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topup_title"
+        android:orientation="vertical"
+        android:gravity="top"
+      android:visibility="visible"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topup_edit_text_height"
+            android:background="@drawable/edit_text_oval"
+            android:layout_gravity="center">
+            <Spinner
+                android:id="@+id/country_code_spinner"
+                style="?android:attr/spinnerDropDownItemStyle"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="start"
+              android:background="@android:color/transparent"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="end"
+                android:dropDownWidth="200dp"/>
+            <EditText
+                android:id="@+id/enter_phone_number_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topup_edit_text_height"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+              android:background="@android:color/transparent"
+                android:textColor="@color/button_red_normal"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textCursorDrawable = "@null"
+                android:inputType="phone"
+                tools:targetApi="lollipop"
+                android:layout_toRightOf="@+id/country_code_spinner"
+                android:layout_toEndOf="@+id/country_code_spinner"
+                android:layout_toLeftOf="@+id/open_contacts_list"
+                android:layout_toStartOf="@+id/open_contacts_list" />
+
+            <Button
+                android:id="@+id/open_contacts_list"
+                android:layout_width="@dimen/topup_edit_text_height"
+                android:layout_height="@dimen/topup_edit_text_height"
+                android:background="@drawable/plus_svg"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/topup_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/topup_title_text_height"
+            android:textColor="@color/button_red_normal"
+            android:paddingBottom="45dp"/>
+
+        <Button
+          android:id="@+id/topup_button_first_page"
+          android:textStyle="bold"
+          android:layout_width="@dimen/topup_button_width"
+          android:layout_height="@dimen/topup_button_height"
+          android:layout_marginBottom="5dp"
+          android:layout_gravity="center"
+          android:background="@drawable/selector_button_red_oval"
+          android:text="@string/topup_button"
+          android:textAllCaps="true"
+          android:textColor="@color/white"
+          android:textSize="@dimen/topup_button_text_size" />
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center">
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical">
+                <TextView
+                  android:id="@+id/tv_tama_helper_mobile_topup_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:paddingBottom="6dp"
+                  android:gravity="center"
+                  android:maxLines="1"
+                  android:text="@string/tama_helper_mobile_topup_title"
+                  android:textColor="@color/black"
+                  android:textSize="15sp" />
+
+                <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:weightSum="3"
+                  >
+
+                    <!--1-->
+                    <LinearLayout
+                      android:layout_margin="2dp"
+                      android:layout_weight="1"
+                      android:layout_width="0dp"
+                      android:gravity="center"
+                      android:layout_gravity="top"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+                        <RelativeLayout
+                          android:gravity="center"
+                          android:layout_margin="4dp"
+                          android:layout_width="70dp"
+                          android:layout_height="70dp">
+                            <ImageView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              app:srcCompat="@drawable/enter_number"/>
+                        </RelativeLayout>
+
+                        <TextView
+                          android:id="@+id/tv_tama_helper_mobile_you_want_topup"
+                          android:layout_width="110dp"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:padding="3dp"
+                          android:gravity="center"
+                          android:text="@string/tama_helper_mobile_you_want_topup" />
+                    </LinearLayout>
+
+                    <!--2-->
+                    <LinearLayout
+                      android:layout_margin="2dp"
+                      android:layout_weight="1"
+                      android:layout_width="0dp"
+                      android:gravity="center"
+                      android:layout_gravity="top"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+                        <RelativeLayout
+                          android:gravity="center"
+                          android:layout_margin="4dp"
+                          android:layout_width="70dp"
+                          android:layout_height="70dp">
+                            <ImageView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              app:srcCompat="@drawable/select_amount"/>
+                        </RelativeLayout>
+
+                        <TextView
+                          android:id="@+id/tv_tama_helper_mobile_select_the_am_you_want_topup"
+                          android:layout_width="110dp"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:padding="3dp"
+                          android:gravity="center"
+                          android:text="@string/tama_helper_mobile_select_the_am_you_want_topup" />
+                    </LinearLayout>
+
+                    <!--3-->
+                    <LinearLayout
+                      android:layout_margin="2dp"
+
+                      android:layout_weight="1"
+                      android:layout_width="0dp"
+                      android:gravity="center"
+                      android:layout_gravity="top"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+                        <RelativeLayout
+                          android:gravity="center"
+                          android:layout_margin="4dp"
+                          android:layout_width="70dp"
+                          android:layout_height="70dp">
+                            <ImageView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              app:srcCompat="@drawable/amount_topup"/>
+                        </RelativeLayout>
+
+                        <TextView
+                          android:id="@+id/tv_tama_helper_mobile_the_mobile_istopup"
+                          android:layout_width="110dp"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:padding="3dp"
+                          android:gravity="center"
+                          android:text="@string/tama_helper_mobile_the_mobile_istopup" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/tama_mobile_topup_instruction"/>-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tama_topup_second_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topup_title"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <GridView
+          android:gravity="center"
+          android:id="@+id/grid_view"
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="80dp"
+            android:numColumns="4"
+            android:stretchMode="spacingWidth"
+            android:verticalSpacing="25dp"
+            android:layout_above="@+id/topup_info_text"/>
+
+        <TextView
+            android:id="@+id/topup_info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/button_red_normal"
+            android:layout_above="@+id/topup_button_seconds_page"/>
+
+        <Button
+            android:id="@+id/topup_button_seconds_page"
+            android:layout_width="@dimen/topup_button_width"
+            android:layout_height="@dimen/topup_button_height"
+            android:background="@drawable/selector_button_red_oval"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="@string/topup_button"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:editable="false"
+            android:textSize="@dimen/topup_button_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>
