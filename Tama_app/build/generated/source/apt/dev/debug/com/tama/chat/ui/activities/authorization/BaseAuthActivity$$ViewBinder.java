@@ -8,10 +8,10 @@ import butterknife.ButterKnife.ViewBinder;
 public class BaseAuthActivity$$ViewBinder<T extends com.tama.chat.ui.activities.authorization.BaseAuthActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findOptionalView(source, 2131755244, null);
-    target.emailTextInputLayout = finder.castView(view, 2131755244, "field 'emailTextInputLayout'");
-    view = finder.findOptionalView(source, 2131755245, null);
-    target.emailEditText = finder.castView(view, 2131755245, "field 'emailEditText'");
+    view = finder.findOptionalView(source, 2131755241, null);
+    target.emailTextInputLayout = finder.castView(view, 2131755241, "field 'emailTextInputLayout'");
+    view = finder.findOptionalView(source, 2131755242, null);
+    target.emailEditText = finder.castView(view, 2131755242, "field 'emailEditText'");
     if (view != null) {
       ((android.widget.TextView) view).addTextChangedListener(
         new android.text.TextWatcher() {
@@ -38,10 +38,10 @@ public class BaseAuthActivity$$ViewBinder<T extends com.tama.chat.ui.activities.
           }
         });
     }
-    view = finder.findOptionalView(source, 2131755268, null);
-    target.passwordTextInputLayout = finder.castView(view, 2131755268, "field 'passwordTextInputLayout'");
-    view = finder.findOptionalView(source, 2131755269, null);
-    target.passwordEditText = finder.castView(view, 2131755269, "field 'passwordEditText'");
+    view = finder.findOptionalView(source, 2131755266, null);
+    target.passwordTextInputLayout = finder.castView(view, 2131755266, "field 'passwordTextInputLayout'");
+    view = finder.findOptionalView(source, 2131755267, null);
+    target.passwordEditText = finder.castView(view, 2131755267, "field 'passwordEditText'");
     if (view != null) {
       ((android.widget.TextView) view).addTextChangedListener(
         new android.text.TextWatcher() {

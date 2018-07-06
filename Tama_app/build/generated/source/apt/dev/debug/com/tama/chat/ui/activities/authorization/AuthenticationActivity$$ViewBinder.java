@@ -8,18 +8,18 @@ import butterknife.ButterKnife.ViewBinder;
 public class AuthenticationActivity$$ViewBinder<T extends com.tama.chat.ui.activities.authorization.AuthenticationActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755212, "field 'firstNameTextInputLayout'");
-    target.firstNameTextInputLayout = finder.castView(view, 2131755212, "field 'firstNameTextInputLayout'");
-    view = finder.findRequiredView(source, 2131755213, "field 'firstNameEditText'");
-    target.firstNameEditText = finder.castView(view, 2131755213, "field 'firstNameEditText'");
-    view = finder.findRequiredView(source, 2131755214, "field 'lastNameTextInputLayout'");
-    target.lastNameTextInputLayout = finder.castView(view, 2131755214, "field 'lastNameTextInputLayout'");
-    view = finder.findRequiredView(source, 2131755215, "field 'lastNameEditText'");
-    target.lastNameEditText = finder.castView(view, 2131755215, "field 'lastNameEditText'");
-    view = finder.findRequiredView(source, 2131755210, "field 'avatarImageView'");
-    target.avatarImageView = finder.castView(view, 2131755210, "field 'avatarImageView'");
-    view = finder.findRequiredView(source, 2131755211, "field 'chooseImage' and method 'clickChooseImage'");
-    target.chooseImage = finder.castView(view, 2131755211, "field 'chooseImage'");
+    view = finder.findRequiredView(source, 2131755209, "field 'firstNameTextInputLayout'");
+    target.firstNameTextInputLayout = finder.castView(view, 2131755209, "field 'firstNameTextInputLayout'");
+    view = finder.findRequiredView(source, 2131755210, "field 'firstNameEditText'");
+    target.firstNameEditText = finder.castView(view, 2131755210, "field 'firstNameEditText'");
+    view = finder.findRequiredView(source, 2131755211, "field 'lastNameTextInputLayout'");
+    target.lastNameTextInputLayout = finder.castView(view, 2131755211, "field 'lastNameTextInputLayout'");
+    view = finder.findRequiredView(source, 2131755212, "field 'lastNameEditText'");
+    target.lastNameEditText = finder.castView(view, 2131755212, "field 'lastNameEditText'");
+    view = finder.findRequiredView(source, 2131755207, "field 'avatarImageView'");
+    target.avatarImageView = finder.castView(view, 2131755207, "field 'avatarImageView'");
+    view = finder.findRequiredView(source, 2131755208, "field 'chooseImage' and method 'clickChooseImage'");
+    target.chooseImage = finder.castView(view, 2131755208, "field 'chooseImage'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -28,8 +28,8 @@ public class AuthenticationActivity$$ViewBinder<T extends com.tama.chat.ui.activ
           target.clickChooseImage();
         }
       });
-    view = finder.findRequiredView(source, 2131755216, "field 'finishAuthentication' and method 'clickfinishAuthentication'");
-    target.finishAuthentication = finder.castView(view, 2131755216, "field 'finishAuthentication'");
+    view = finder.findRequiredView(source, 2131755213, "field 'finishAuthentication' and method 'clickfinishAuthentication'");
+    target.finishAuthentication = finder.castView(view, 2131755213, "field 'finishAuthentication'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

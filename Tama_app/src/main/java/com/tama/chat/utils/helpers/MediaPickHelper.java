@@ -1,10 +1,7 @@
 package com.tama.chat.utils.helpers;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-
-import com.tama.chat.ui.activities.authorization.AuthenticationActivity;
 import com.tama.chat.ui.fragments.mediapicker.MediaPickHelperFragment;
 import com.tama.chat.ui.fragments.mediapicker.MediaSourcePickDialogFragment;
 

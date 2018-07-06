@@ -299,7 +299,7 @@ public class MainActivity extends BaseLoggableActivity {
     private void setTamaToolbar() {
 //        checkVisibilityTamaUserIcon(tamaToolbarUserIcon);
 
-        tamaToolbarTitle.setText(getString(R.string.my_tama_account));
+        tamaToolbarTitle.setText(getString(R.string.tama_family));
         tamaToolbarSubtitle.setText(getString(R.string.my_account));
     }
 

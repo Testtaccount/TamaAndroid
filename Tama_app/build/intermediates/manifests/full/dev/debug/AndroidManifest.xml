@@ -175,6 +175,9 @@
             android:name="com.tama.chat.ui.activities.about.AboutActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.tama.chat.tamaAccount.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.tama.chat.ui.activities.others.PreviewImageActivity"
             android:screenOrientation="portrait" />
         <activity

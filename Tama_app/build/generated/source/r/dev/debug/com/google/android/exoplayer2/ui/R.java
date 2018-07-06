@@ -35,7 +35,7 @@ public final class R {
         public static final int use_controller = 0x7f0101ca;
     }
     public static final class color {
-        public static final int exo_edit_mode_background_color = 0x7f0f0068;
+        public static final int exo_edit_mode_background_color = 0x7f0f0069;
     }
     public static final class dimen {
         public static final int exo_media_button_height = 0x7f0b00dc;

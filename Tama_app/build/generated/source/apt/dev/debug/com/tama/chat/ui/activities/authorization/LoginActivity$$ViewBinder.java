@@ -9,8 +9,8 @@ public class LoginActivity$$ViewBinder<T extends com.tama.chat.ui.activities.aut
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755270, "field 'rememberMeSwitch' and method 'rememberMeCheckedChanged'");
-    target.rememberMeSwitch = finder.castView(view, 2131755270, "field 'rememberMeSwitch'");
+    view = finder.findRequiredView(source, 2131755268, "field 'rememberMeSwitch' and method 'rememberMeCheckedChanged'");
+    target.rememberMeSwitch = finder.castView(view, 2131755268, "field 'rememberMeSwitch'");
     ((android.widget.CompoundButton) view).setOnCheckedChangeListener(
       new android.widget.CompoundButton.OnCheckedChangeListener() {
         @Override public void onCheckedChanged(
@@ -20,7 +20,7 @@ public class LoginActivity$$ViewBinder<T extends com.tama.chat.ui.activities.aut
           target.rememberMeCheckedChanged(p1);
         }
       });
-    view = finder.findRequiredView(source, 2131755271, "method 'loginQB'");
+    view = finder.findRequiredView(source, 2131755269, "method 'loginQB'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -29,7 +29,7 @@ public class LoginActivity$$ViewBinder<T extends com.tama.chat.ui.activities.aut
           target.loginQB(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755272, "method 'loginFB'");
+    view = finder.findRequiredView(source, 2131755270, "method 'loginFB'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -38,7 +38,7 @@ public class LoginActivity$$ViewBinder<T extends com.tama.chat.ui.activities.aut
           target.loginFB(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755273, "method 'forgotPassword'");
+    view = finder.findRequiredView(source, 2131755271, "method 'forgotPassword'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

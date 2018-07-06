@@ -393,10 +393,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_tama_account">MY TAMA ACCOUNT</string>
     <string name="my_account">MY ACCOUNT</string>
-    <string name="topup_my_account">TOPUP MY\nACCOUNT</string>
+    <string name="topup_my_account">TOPUP MY ACCOUNT</string>
     <string name="topup_my_account_one_line">TOPUP MY ACCOUNT</string>
     <string name="send_credit">SEND\n CREDIT</string>
-    <string name="tama_express">TAMA\nEXPRESS</string>
+    <string name="tama_express">TAMA EXPRESS</string>
     <string name="tama_express_one_line">TAMA EXPRESS</string>
     <string name="tama_topup">TAMA TOPUP</string>
     <string name="tama_request">REQUEST</string>
@@ -487,7 +487,7 @@
 
     <string name="history_all">All</string>
     <string name="my_tama">MyTama</string>
-    <string name="tama_family">TamaFamily</string>
+    <string name="tama_family">Tama Family</string>
     <string name="history_tama_express">TamaExpress</string>
     <string name="history_tama_topup">TamaTopup</string>
     <string name="history_balance_transfer">BalanceTransfer</string>

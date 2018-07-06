@@ -8,10 +8,10 @@ import butterknife.ButterKnife.ViewBinder;
 public class GlobalSearchFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.search.GlobalSearchFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755481, "field 'swipyRefreshLayout'");
-    target.swipyRefreshLayout = finder.castView(view, 2131755481, "field 'swipyRefreshLayout'");
-    view = finder.findRequiredView(source, 2131755482, "field 'contactsRecyclerView' and method 'touchContactsList'");
-    target.contactsRecyclerView = finder.castView(view, 2131755482, "field 'contactsRecyclerView'");
+    view = finder.findRequiredView(source, 2131755480, "field 'swipyRefreshLayout'");
+    target.swipyRefreshLayout = finder.castView(view, 2131755480, "field 'swipyRefreshLayout'");
+    view = finder.findRequiredView(source, 2131755481, "field 'contactsRecyclerView' and method 'touchContactsList'");
+    target.contactsRecyclerView = finder.castView(view, 2131755481, "field 'contactsRecyclerView'");
     view.setOnTouchListener(
       new android.view.View.OnTouchListener() {
         @Override public boolean onTouch(

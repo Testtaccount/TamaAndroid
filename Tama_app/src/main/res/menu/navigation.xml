@@ -4,12 +4,12 @@
     <item
         android:id="@+id/navigation_chats"
         android:icon="@drawable/ic_chat"
-        android:title="@string/navigation_chats" />
+        android:title="" />
 
     <item
         android:id="@+id/navigation_contacts"
         android:icon="@drawable/ic_contacts"
-        android:title="@string/navigation_contacts" />
+        android:title="" />
 
     <!--<item-->
         <!--android:id="@+id/navigation_map"-->
@@ -19,10 +19,10 @@
     <item
         android:id="@+id/navigation_account"
         android:icon="@drawable/ic_tama_account"
-        android:title="@string/navigation_my_tama" />
+        android:title="" />
 
     <item
         android:id="@+id/navigation_settings"
         android:icon="@drawable/ic_settings"
-        android:title="@string/navigation_settings" />
+        android:title="" />
 </menu>

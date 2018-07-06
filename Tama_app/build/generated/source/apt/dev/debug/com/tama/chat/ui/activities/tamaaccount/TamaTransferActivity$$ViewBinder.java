@@ -9,8 +9,8 @@ public class TamaTransferActivity$$ViewBinder<T extends com.tama.chat.ui.activit
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755316, "field 'amountNumberLayout' and method 'clickOnAmountLayout'");
-    target.amountNumberLayout = finder.castView(view, 2131755316, "field 'amountNumberLayout'");
+    view = finder.findRequiredView(source, 2131755314, "field 'amountNumberLayout' and method 'clickOnAmountLayout'");
+    target.amountNumberLayout = finder.castView(view, 2131755314, "field 'amountNumberLayout'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -19,10 +19,10 @@ public class TamaTransferActivity$$ViewBinder<T extends com.tama.chat.ui.activit
           target.clickOnAmountLayout();
         }
       });
-    view = finder.findRequiredView(source, 2131755302, "field 'bodyLayout'");
-    target.bodyLayout = finder.castView(view, 2131755302, "field 'bodyLayout'");
-    view = finder.findRequiredView(source, 2131755353, "field 'transferButton' and method 'clickOnTransferButton'");
-    target.transferButton = finder.castView(view, 2131755353, "field 'transferButton'");
+    view = finder.findRequiredView(source, 2131755300, "field 'bodyLayout'");
+    target.bodyLayout = finder.castView(view, 2131755300, "field 'bodyLayout'");
+    view = finder.findRequiredView(source, 2131755352, "field 'transferButton' and method 'clickOnTransferButton'");
+    target.transferButton = finder.castView(view, 2131755352, "field 'transferButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -33,12 +33,12 @@ public class TamaTransferActivity$$ViewBinder<T extends com.tama.chat.ui.activit
       });
     view = finder.findRequiredView(source, 2131755181, "field 'checkBox'");
     target.checkBox = finder.castView(view, 2131755181, "field 'checkBox'");
-    view = finder.findRequiredView(source, 2131755317, "field 'amountText'");
-    target.amountText = finder.castView(view, 2131755317, "field 'amountText'");
-    view = finder.findRequiredView(source, 2131755318, "field 'amountErrorText'");
-    target.amountErrorText = finder.castView(view, 2131755318, "field 'amountErrorText'");
-    view = finder.findRequiredView(source, 2131755330, "field 'phoneErrorText'");
-    target.phoneErrorText = finder.castView(view, 2131755330, "field 'phoneErrorText'");
+    view = finder.findRequiredView(source, 2131755315, "field 'amountText'");
+    target.amountText = finder.castView(view, 2131755315, "field 'amountText'");
+    view = finder.findRequiredView(source, 2131755316, "field 'amountErrorText'");
+    target.amountErrorText = finder.castView(view, 2131755316, "field 'amountErrorText'");
+    view = finder.findRequiredView(source, 2131755328, "field 'phoneErrorText'");
+    target.phoneErrorText = finder.castView(view, 2131755328, "field 'phoneErrorText'");
   }
 
   @Override public void unbind(T target) {

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+  android:background="@color/red"
+    android:orientation="vertical">
+
+    <RelativeLayout
+      android:background="@color/red"
+      android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <TextView
+          android:maxLines="1"
+          android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+          android:text="@string/tama_family"
+            tools:text="@string/tama_family"/>
+
+        <ImageView
+            android:id="@+id/tama_toolbar_user_icon"
+            android:layout_width="48dp"
+          android:visibility="gone"
+            android:layout_height="48dp"
+            android:src="@drawable/placeholder_rect_user"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -13,6 +13,7 @@
     <color name="tama_light_green">#007f11</color>
     <color name="tama_light_orange_normal">#fd5401</color>
     <color name="tama_light_orange_pressed">#cc4401</color>
+    <color name="color_background_E5E5E5">#E5E5E5</color>
 
     <color name="white">#fff</color>
     <color name="black">#000000</color>

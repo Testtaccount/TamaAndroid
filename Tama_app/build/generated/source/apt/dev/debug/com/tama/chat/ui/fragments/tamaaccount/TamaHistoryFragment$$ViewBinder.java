@@ -8,12 +8,12 @@ import butterknife.ButterKnife.ViewBinder;
 public class TamaHistoryFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.tamaaccount.TamaHistoryFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755533, "field 'historyElementList'");
-    target.historyElementList = finder.castView(view, 2131755533, "field 'historyElementList'");
-    view = finder.findRequiredView(source, 2131755265, "field 'errorMessageText'");
-    target.errorMessageText = finder.castView(view, 2131755265, "field 'errorMessageText'");
-    view = finder.findRequiredView(source, 2131755528, "field 'historyAll' and method 'onClickHistoryAll'");
-    target.historyAll = finder.castView(view, 2131755528, "field 'historyAll'");
+    view = finder.findRequiredView(source, 2131755545, "field 'historyElementList'");
+    target.historyElementList = finder.castView(view, 2131755545, "field 'historyElementList'");
+    view = finder.findRequiredView(source, 2131755262, "field 'errorMessageText'");
+    target.errorMessageText = finder.castView(view, 2131755262, "field 'errorMessageText'");
+    view = finder.findRequiredView(source, 2131755540, "field 'historyAll' and method 'onClickHistoryAll'");
+    target.historyAll = finder.castView(view, 2131755540, "field 'historyAll'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -22,8 +22,8 @@ public class TamaHistoryFragment$$ViewBinder<T extends com.tama.chat.ui.fragment
           target.onClickHistoryAll();
         }
       });
-    view = finder.findRequiredView(source, 2131755529, "field 'historyMyTama' and method 'onClickHistoryMyTama'");
-    target.historyMyTama = finder.castView(view, 2131755529, "field 'historyMyTama'");
+    view = finder.findRequiredView(source, 2131755541, "field 'historyMyTama' and method 'onClickHistoryMyTama'");
+    target.historyMyTama = finder.castView(view, 2131755541, "field 'historyMyTama'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -32,8 +32,8 @@ public class TamaHistoryFragment$$ViewBinder<T extends com.tama.chat.ui.fragment
           target.onClickHistoryMyTama();
         }
       });
-    view = finder.findRequiredView(source, 2131755530, "field 'historyTamaExpress' and method 'onClickHistoryTamaExpress'");
-    target.historyTamaExpress = finder.castView(view, 2131755530, "field 'historyTamaExpress'");
+    view = finder.findRequiredView(source, 2131755542, "field 'historyTamaExpress' and method 'onClickHistoryTamaExpress'");
+    target.historyTamaExpress = finder.castView(view, 2131755542, "field 'historyTamaExpress'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -42,8 +42,8 @@ public class TamaHistoryFragment$$ViewBinder<T extends com.tama.chat.ui.fragment
           target.onClickHistoryTamaExpress();
         }
       });
-    view = finder.findRequiredView(source, 2131755531, "field 'historyTamaTopup' and method 'onClickHistoryTamaTopup'");
-    target.historyTamaTopup = finder.castView(view, 2131755531, "field 'historyTamaTopup'");
+    view = finder.findRequiredView(source, 2131755543, "field 'historyTamaTopup' and method 'onClickHistoryTamaTopup'");
+    target.historyTamaTopup = finder.castView(view, 2131755543, "field 'historyTamaTopup'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

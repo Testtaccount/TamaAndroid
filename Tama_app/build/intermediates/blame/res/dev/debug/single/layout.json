@@ -416,6 +416,10 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\fragment_search.xml"
     },
     {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\toolbar_tama_family.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\toolbar_tama_family.xml"
+    },
+    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\topup_dialog_with_two_btn.xml",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\topup_dialog_with_two_btn.xml"
     },

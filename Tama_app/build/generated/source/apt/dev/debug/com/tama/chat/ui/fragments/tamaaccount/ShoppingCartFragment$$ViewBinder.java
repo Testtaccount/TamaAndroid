@@ -8,12 +8,12 @@ import butterknife.ButterKnife.ViewBinder;
 public class ShoppingCartFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.tamaaccount.ShoppingCartFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755518, "field 'grandTotalView'");
-    target.grandTotalView = finder.castView(view, 2131755518, "field 'grandTotalView'");
-    view = finder.findRequiredView(source, 2131755516, "field 'productListView'");
-    target.productListView = finder.castView(view, 2131755516, "field 'productListView'");
-    view = finder.findRequiredView(source, 2131755519, "field 'continueShoppingBtn' and method 'OnClickContinueShopping'");
-    target.continueShoppingBtn = finder.castView(view, 2131755519, "field 'continueShoppingBtn'");
+    view = finder.findRequiredView(source, 2131755530, "field 'grandTotalView'");
+    target.grandTotalView = finder.castView(view, 2131755530, "field 'grandTotalView'");
+    view = finder.findRequiredView(source, 2131755528, "field 'productListView'");
+    target.productListView = finder.castView(view, 2131755528, "field 'productListView'");
+    view = finder.findRequiredView(source, 2131755531, "field 'continueShoppingBtn' and method 'OnClickContinueShopping'");
+    target.continueShoppingBtn = finder.castView(view, 2131755531, "field 'continueShoppingBtn'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -22,8 +22,8 @@ public class ShoppingCartFragment$$ViewBinder<T extends com.tama.chat.ui.fragmen
           target.OnClickContinueShopping();
         }
       });
-    view = finder.findRequiredView(source, 2131755520, "field 'checkoutBtn' and method 'onClickCheckOutBtn'");
-    target.checkoutBtn = finder.castView(view, 2131755520, "field 'checkoutBtn'");
+    view = finder.findRequiredView(source, 2131755532, "field 'checkoutBtn' and method 'onClickCheckOutBtn'");
+    target.checkoutBtn = finder.castView(view, 2131755532, "field 'checkoutBtn'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

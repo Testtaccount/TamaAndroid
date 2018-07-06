@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import butterknife.Bind;
-import butterknife.OnClick;
 import com.tama.chat.R;
 import com.tama.chat.ui.activities.agreements.UserAgreementActivity;
 import com.tama.chat.ui.activities.base.BaseLoggableActivity;
@@ -42,7 +41,7 @@ public class AboutActivity extends BaseLoggableActivity {
         appVersionTextView.setText(StringObfuscator.getAppVersionName());
     }
 
-    @OnClick(R.id.license_button)
+//    @OnClick(R.id.license_button)
     void openUserAgreement(View view) {
         UserAgreementActivity.start(this);
     }

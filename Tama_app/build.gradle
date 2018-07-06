@@ -116,6 +116,12 @@ android {
         changeApkFileName(variant)
     }
 
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.all {
+//            outputFileName = "${variant.name}-${variant.versionName}.apk"
+//        }
+//    }
+
     productFlavors {
 
         dev {
@@ -197,6 +203,8 @@ def changeApkFileName(variant) {
     }
 
 }
+
+
 
 crashlytics {
     enableNdk false

@@ -369,10 +369,10 @@
     <string name="success">SUCCESS</string>
     <string name="switch_camera">Switch camera</string>
     <string name="switch_speaker">Switch speaker</string>
-    <string name="tama_express">TAMA\nEXPRESS</string>
+    <string name="tama_express">TAMA EXPRESS</string>
     <string name="tama_express_confirm_text">Confirm that you want to pay from %1$s</string>
     <string name="tama_express_one_line">TAMA EXPRESS</string>
-    <string name="tama_family">TamaFamily</string>
+    <string name="tama_family">Tama Family</string>
     <string name="tama_helper_how_to_purchase_choose_the_country">Choose the country where you want to send the good</string>
     <string name="tama_helper_how_to_purchase_choose_the_good_tosend">Choose the good you want to send</string>
     <string name="tama_helper_how_to_purchase_give_the_number">Give the number and name of the beneficiary</string>
@@ -393,7 +393,7 @@
     <string name="topup">Topup</string>
     <string name="topup_button">TOPUP</string>
     <string name="topup_info_text">Confirm that you want to topup %1$s to the number %2$s</string>
-    <string name="topup_my_account">TOPUP MY\nACCOUNT</string>
+    <string name="topup_my_account">TOPUP MY ACCOUNT</string>
     <string name="topup_my_account_one_line">TOPUP MY ACCOUNT</string>
     <string name="topup_my_mobile_request">TOPUP MY MOBILE\nREQUEST</string>
     <string name="topup_rqt_confirm_text">Confirm that you want to add your account %1$s € from payer %2$s</string>

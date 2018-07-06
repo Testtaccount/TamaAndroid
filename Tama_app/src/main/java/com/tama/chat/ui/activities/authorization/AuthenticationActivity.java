@@ -24,6 +24,7 @@ import com.tama.chat.R;
 import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.base.BaseLoggableActivity;
+import com.tama.chat.utils.KeyboardUtils;
 import com.tama.chat.utils.MediaUtils;
 import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.ValidationUtils;
@@ -168,6 +169,7 @@ public class AuthenticationActivity extends BaseLoggableActivity implements OnMe
 
   @OnClick(R.id.finishAuthentication)
   public void clickfinishAuthentication() {
+    KeyboardUtils.hideKeyboard(this);
     if (checkNetworkAvailableWithError()) {
         updateUser();
     }

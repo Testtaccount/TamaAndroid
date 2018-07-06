@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activities.profile.UserProfileActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755246, "field 'avatarImageView' and method 'showUserAvatar'");
-    target.avatarImageView = finder.castView(view, 2131755246, "field 'avatarImageView'");
+    view = finder.findRequiredView(source, 2131755243, "field 'avatarImageView' and method 'showUserAvatar'");
+    target.avatarImageView = finder.castView(view, 2131755243, "field 'avatarImageView'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -18,15 +18,15 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
           target.showUserAvatar();
         }
       });
-    view = finder.findRequiredView(source, 2131755247, "field 'nameTextView'");
-    target.nameTextView = finder.castView(view, 2131755247, "field 'nameTextView'");
-    view = finder.findRequiredView(source, 2131755364, "field 'timestampTextView'");
-    target.timestampTextView = finder.castView(view, 2131755364, "field 'timestampTextView'");
-    view = finder.findRequiredView(source, 2131755365, "field 'phoneView'");
+    view = finder.findRequiredView(source, 2131755244, "field 'nameTextView'");
+    target.nameTextView = finder.castView(view, 2131755244, "field 'nameTextView'");
+    view = finder.findRequiredView(source, 2131755363, "field 'timestampTextView'");
+    target.timestampTextView = finder.castView(view, 2131755363, "field 'timestampTextView'");
+    view = finder.findRequiredView(source, 2131755364, "field 'phoneView'");
     target.phoneView = view;
-    view = finder.findRequiredView(source, 2131755366, "field 'phoneTextView'");
-    target.phoneTextView = finder.castView(view, 2131755366, "field 'phoneTextView'");
-    view = finder.findRequiredView(source, 2131755368, "method 'sendMessage'");
+    view = finder.findRequiredView(source, 2131755365, "field 'phoneTextView'");
+    target.phoneTextView = finder.castView(view, 2131755365, "field 'phoneTextView'");
+    view = finder.findRequiredView(source, 2131755367, "method 'sendMessage'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -35,7 +35,7 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
           target.sendMessage(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755369, "method 'audioCall'");
+    view = finder.findRequiredView(source, 2131755368, "method 'audioCall'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -44,7 +44,7 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
           target.audioCall(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755370, "method 'videoCall'");
+    view = finder.findRequiredView(source, 2131755369, "method 'videoCall'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -53,7 +53,7 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
           target.videoCall(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755371, "method 'deleteChatHistory'");
+    view = finder.findRequiredView(source, 2131755370, "method 'deleteChatHistory'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -62,7 +62,7 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
           target.deleteChatHistory(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755372, "method 'removeContactAndChatHistory'");
+    view = finder.findRequiredView(source, 2131755371, "method 'removeContactAndChatHistory'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

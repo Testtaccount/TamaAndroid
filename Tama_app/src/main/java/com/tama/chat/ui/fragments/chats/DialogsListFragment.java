@@ -170,7 +170,7 @@ public class DialogsListFragment extends BaseLoaderFragment<List<DialogWrapper>>
 //                SettingsActivity.startForResult(this);
 //                break;
 //            case R.id.action_start_about:
-//                AboutActivity.start(getActivity());
+//                AboutUsActivity.start(getActivity());
 //                break;
             default:
                 return super.onOptionsItemSelected(item);
@@ -853,7 +853,7 @@ public class DialogsListFragment extends BaseLoaderFragment<List<DialogWrapper>>
 ////                SettingsActivity.startForResult(this);
 ////                break;
 ////            case R.id.action_start_about:
-////                AboutActivity.start(getActivity());
+////                AboutUsActivity.start(getActivity());
 ////                break;
 //            default:
 //                return super.onOptionsItemSelected(item);

@@ -39,17 +39,17 @@ public final class R {
         public static final int zOrderOnTop = 0x7f01017a;
     }
     public static final class color {
-        public static final int common_google_signin_btn_text_dark = 0x7f0f00f0;
+        public static final int common_google_signin_btn_text_dark = 0x7f0f00f1;
         public static final int common_google_signin_btn_text_dark_default = 0x7f0f0002;
         public static final int common_google_signin_btn_text_dark_disabled = 0x7f0f0003;
         public static final int common_google_signin_btn_text_dark_focused = 0x7f0f0004;
         public static final int common_google_signin_btn_text_dark_pressed = 0x7f0f0005;
-        public static final int common_google_signin_btn_text_light = 0x7f0f00f1;
+        public static final int common_google_signin_btn_text_light = 0x7f0f00f2;
         public static final int common_google_signin_btn_text_light_default = 0x7f0f0006;
         public static final int common_google_signin_btn_text_light_disabled = 0x7f0f0007;
         public static final int common_google_signin_btn_text_light_focused = 0x7f0f0008;
         public static final int common_google_signin_btn_text_light_pressed = 0x7f0f0009;
-        public static final int common_google_signin_btn_tint = 0x7f0f00f2;
+        public static final int common_google_signin_btn_tint = 0x7f0f00f3;
     }
     public static final class drawable {
         public static final int common_full_open_on_phone = 0x7f02008a;
@@ -73,7 +73,7 @@ public final class R {
         public static final int common_google_signin_btn_text_light_normal_background = 0x7f02009c;
         public static final int googleg_disabled_color_18 = 0x7f020508;
         public static final int googleg_standard_color_18 = 0x7f020509;
-        public static final int quantum_ic_art_track_grey600_48 = 0x7f0205c6;
+        public static final int quantum_ic_art_track_grey600_48 = 0x7f0205c7;
     }
     public static final class id {
         public static final int adjust_height = 0x7f10006f;
@@ -82,21 +82,21 @@ public final class R {
         public static final int button = 0x7f10008b;
         public static final int center = 0x7f10003e;
         public static final int dark = 0x7f100082;
-        public static final int email = 0x7f100231;
+        public static final int email = 0x7f10023d;
         public static final int hybrid = 0x7f100071;
         public static final int icon_only = 0x7f10007f;
         public static final int light = 0x7f100083;
         public static final int none = 0x7f10003d;
         public static final int normal = 0x7f100047;
-        public static final int progressBar = 0x7f10014b;
+        public static final int progressBar = 0x7f10014a;
         public static final int radio = 0x7f1000af;
         public static final int satellite = 0x7f100072;
         public static final int standard = 0x7f100080;
-        public static final int status_text = 0x7f100217;
+        public static final int status_text = 0x7f100223;
         public static final int terrain = 0x7f100073;
         public static final int text = 0x7f100022;
         public static final int text2 = 0x7f100023;
-        public static final int toolbar = 0x7f1002d0;
+        public static final int toolbar = 0x7f1002dc;
         public static final int wide = 0x7f100081;
         public static final int wrap_content = 0x7f10005b;
     }

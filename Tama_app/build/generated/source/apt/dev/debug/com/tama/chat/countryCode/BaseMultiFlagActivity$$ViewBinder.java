@@ -9,14 +9,14 @@ public class BaseMultiFlagActivity$$ViewBinder<T extends com.tama.chat.countryCo
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755305, "field 'countryCodeSpinnerFirst'");
-    target.countryCodeSpinnerFirst = finder.castView(view, 2131755305, "field 'countryCodeSpinnerFirst'");
-    view = finder.findRequiredView(source, 2131755311, "field 'countryCodeSpinnerSecond'");
-    target.countryCodeSpinnerSecond = finder.castView(view, 2131755311, "field 'countryCodeSpinnerSecond'");
-    view = finder.findRequiredView(source, 2131755306, "field 'enterPhoneNumberTextFirst'");
-    target.enterPhoneNumberTextFirst = finder.castView(view, 2131755306, "field 'enterPhoneNumberTextFirst'");
-    view = finder.findRequiredView(source, 2131755312, "field 'enterPhoneNumberTextSecond'");
-    target.enterPhoneNumberTextSecond = finder.castView(view, 2131755312, "field 'enterPhoneNumberTextSecond'");
+    view = finder.findRequiredView(source, 2131755303, "field 'countryCodeSpinnerFirst'");
+    target.countryCodeSpinnerFirst = finder.castView(view, 2131755303, "field 'countryCodeSpinnerFirst'");
+    view = finder.findRequiredView(source, 2131755309, "field 'countryCodeSpinnerSecond'");
+    target.countryCodeSpinnerSecond = finder.castView(view, 2131755309, "field 'countryCodeSpinnerSecond'");
+    view = finder.findRequiredView(source, 2131755304, "field 'enterPhoneNumberTextFirst'");
+    target.enterPhoneNumberTextFirst = finder.castView(view, 2131755304, "field 'enterPhoneNumberTextFirst'");
+    view = finder.findRequiredView(source, 2131755310, "field 'enterPhoneNumberTextSecond'");
+    target.enterPhoneNumberTextSecond = finder.castView(view, 2131755310, "field 'enterPhoneNumberTextSecond'");
   }
 
   @Override public void unbind(T target) {
