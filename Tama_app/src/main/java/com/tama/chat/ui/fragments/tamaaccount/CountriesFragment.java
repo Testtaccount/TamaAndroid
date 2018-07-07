@@ -23,6 +23,7 @@ import com.tama.chat.tamaAccount.ProductsItemToSave;
 import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
+import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity.CountriesItem;
 import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.image.ImageLoaderUtils;
 import java.util.ArrayList;
@@ -37,7 +38,7 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
 
     private String mParam;
     private List<CountriesItem> countriesItems;
-    private TamaExpressActivity mListener;
+    private TamaExpressActivity mActivity;
 
     public CountriesFragment() {}
 
@@ -56,8 +57,8 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
             mParam = getArguments().getString(ARG_PARAM);
             countriesItems = getListFromJson(mParam);
         }
-        mListener.setVisibleShoppingButton(VISIBLE);
-        mListener.refreshProductCountInButton();
+        mActivity.setVisibleShoppingButton(VISIBLE);
+        mActivity.refreshProductCountInButton();
     }
 
     @Override
@@ -71,13 +72,13 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                mListener.setCurrentCountry(countriesItems.get(position).country_name);
-                List<ProductsItemToSave> prodList = mListener.getProductsListToSave();
+                mActivity.setCurrentCountry(countriesItems.get(position).country_name);
+                List<ProductsItemToSave> prodList = mActivity.getProductsListToSave();
 
                 Log.d("testt", String.valueOf(checkProductList(prodList)));
                 if(prodList!=null){
 //                    Log.d("testt", prodList.get(0).country);
-                    Log.d("testt", mListener.getCurrentCountry());
+                    Log.d("testt", mActivity.getCurrentCountry());
                 }
 
                 if(checkProductList(prodList)) {
@@ -96,13 +97,14 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
 
     private boolean checkProductList(List<ProductsItemToSave> prodList) {
 
-        return (prodList == null || prodList.isEmpty()) || prodList.get(0).country.equalsIgnoreCase(mListener.getCurrentCountry());
+        return (prodList == null || prodList.isEmpty()) || prodList.get(0).country.equalsIgnoreCase(
+            mActivity.getCurrentCountry());
 
     }
 
     protected void createDialog(final List<ProductsItemToSave> prodList){
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(mListener);
-        LayoutInflater inflater = mListener.getLayoutInflater();
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(mActivity);
+        LayoutInflater inflater = mActivity.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.topup_dialog_with_two_btn, null);
         dialogBuilder.setView(dialogView);
         final AlertDialog alertDialog = dialogBuilder.create();
@@ -120,8 +122,8 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
             public void onClick(View v) {
                 alertDialog.cancel();
                 prodList.clear();
-                mListener.setProductsListToSave(prodList);
-                mListener.refreshProductCountInButton();
+                mActivity.setProductsListToSave(prodList);
+                mActivity.refreshProductCountInButton();
                 new TamaAccountHelper().getListOfCategories(accountHelperListener);
             }
         });
@@ -147,7 +149,7 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
             jsonObject = new JSONObject(data);
             JSONArray jsonDataList = jsonObject.getJSONArray("data");
             for(int i = 0 ; i < jsonDataList.length(); ++i){
-                CountriesItem item = new CountriesItem();
+                CountriesItem item = new CountriesItem("","","");
                 JSONObject jsonItem = jsonDataList.getJSONObject(i);
                 item.country_name = jsonItem.getString("country_name");
                 item.country_img_path = jsonItem.getString("country_img_path");
@@ -174,8 +176,8 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
 
 //    // TODO: Rename method, update argument and hook method into UI event
 //    public void onButtonPressed(Uri uri) {
-//        if (mListener != null) {
-//            mListener.onFragmentInteraction(uri);
+//        if (mActivity != null) {
+//            mActivity.onFragmentInteraction(uri);
 //        }
 //    }
 
@@ -183,7 +185,7 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
     public void onAttach(Context context) {
         super.onAttach(context);
         if (context instanceof TamaExpressActivity) {
-            mListener = (TamaExpressActivity) context;
+            mActivity = (TamaExpressActivity) context;
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
@@ -193,12 +195,12 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
     @Override
     public void onDetach() {
         super.onDetach();
-        mListener = null;
+        mActivity = null;
     }
 
     @Override
     public void requestSuccess(String data) {
-        mListener.setCurrentFragment(CategoriesFragment.newInstance(data,false));
+        mActivity.setCurrentFragment(CategoriesFragment.newInstance(data,false));
     }
 
     @Override
@@ -216,16 +218,6 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
         return getContext();
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
 //    public interface OnFragmentInteractionListener {
 //        // TODO: Update argument type and name
 //        void onFragmentInteraction(Uri uri);
@@ -277,13 +269,13 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
             CountriesItem countriesItem = data.get(position);
             ImageView view = (ImageView) vi.findViewById(R.id.item_countries_image);
             loadImageByUri(countriesItem.country_img_path,view);
-            String countryName = FirstCharToUpperCase(countriesItem.country_name);
+            String countryName = firstCharToUpperCase(countriesItem.country_name);
             // countriesItem.country_name.substring(0,1).toUpperCase() + countriesItem.country_name.substring(1).toLowerCase();
             ((TextView) vi.findViewById(R.id.item_countries_name)).setText(countryName);
             return vi;
         }
 
-        private String FirstCharToUpperCase(String str){
+        private String firstCharToUpperCase(String str){
             str = str.substring(0,1).toUpperCase() + str.substring(1).toLowerCase();
             for(int i=0;i<str.length();i++){
                 if((str.charAt(i)=='-'||str.charAt(i)==' ')&& str.length()>i){
@@ -294,9 +286,5 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
         }
     }
 
-    public class CountriesItem{
-        public String country_name;
-        public String country_img_path;
-        public String url;
-    }
+
 }

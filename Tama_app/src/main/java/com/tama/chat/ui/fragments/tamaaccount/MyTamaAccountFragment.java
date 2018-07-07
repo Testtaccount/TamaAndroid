@@ -250,7 +250,8 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
     }
 
     if (promotionTxtTv != null) {
-      promotionTxtTv.setText( getValueByKeyFromParseJSon(json, "promotion_txt"));
+      String s =  getValueByKeyFromParseJSon(json, "promotion_txt");
+      promotionTxtTv.setText(s);
     }
 
     canTopup= AppUtil.intToBoolean(Integer.valueOf(getValueByKeyFromParseJSon(json,"tamatopup")));

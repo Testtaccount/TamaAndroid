@@ -94,11 +94,11 @@ public class SharedHelper extends CoreSharedHelper {
     }
 
 
-    public String getTamaAccountExpiresIn() {
-        return getPref(Constants.TAMA_ACCOUNT_EXPIRES_IN, null);
+    public long getTamaAccountExpiresIn() {
+        return getPref(Constants.TAMA_ACCOUNT_EXPIRES_IN, 0L);
     }
 
-    public void saveTamaAccountExpiresIn(String expiresIn) {
+    public void saveTamaAccountExpiresIn(long expiresIn) {
         savePref(Constants.TAMA_ACCOUNT_EXPIRES_IN, expiresIn);
     }
 
@@ -112,7 +112,7 @@ public class SharedHelper extends CoreSharedHelper {
 
 
     public String getTamaAccountRefreshToken() {
-        return getPref(Constants.TAMA_ACCOUNT_REFRESH_TOKEN, null);
+        return getPref(Constants.TAMA_ACCOUNT_REFRESH_TOKEN, "DEFAULT");
     }
 
     public void saveTamaAccountRefreshToken(String refreshToken) {

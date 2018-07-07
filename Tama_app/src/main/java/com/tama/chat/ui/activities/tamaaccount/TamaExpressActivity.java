@@ -2,6 +2,7 @@ package com.tama.chat.ui.activities.tamaaccount;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
+import static com.tama.chat.tamaAccount.TamaAccountHelper.parse;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -20,7 +21,12 @@ import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.helpers.SharedHelper;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 //import com.google.gson.reflect.TypeToken;
 
@@ -30,6 +36,7 @@ public class TamaExpressActivity extends TamaAccountBaseActivity {
     private String currentCountry;
     private int screenWidth;
 //    private List<ProductsItemToSave> productsListToSave = new ArrayList<>();
+private List<CountriesItem> countriesItems;
 
     @Override
     protected int getContentResId() {
@@ -41,6 +48,17 @@ public class TamaExpressActivity extends TamaAccountBaseActivity {
         super.onCreate(savedInstanceState);
         setTamaToolbar(R.string.tama_express_one_line,R.string.tama_express_one_line);
         initFields();
+    }
+
+    private void initFields() {
+        countriesItems=new ArrayList<>();
+        String user_id =new SharedHelper(this).getTamaAccountId();
+        if(isNetworkAvailable()) {
+            new TamaAccountHelper().getListOfCountries(this);
+        }else{
+            Toast.makeText(this, getString(R.string.no_internet_conection), Toast.LENGTH_SHORT).show();
+        }
+        screenWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
     }
 
     public List<ProductsItemToSave> getProductsListToSave(){
@@ -102,15 +120,6 @@ public class TamaExpressActivity extends TamaAccountBaseActivity {
         }
     }
 
-    private void initFields() {
-        String user_id =new SharedHelper(this).getTamaAccountId();
-        if(isNetworkAvailable()) {
-            new TamaAccountHelper().getListOfCountries(this);
-        }else{
-            Toast.makeText(this, getString(R.string.no_internet_conection), Toast.LENGTH_SHORT).show();
-        }
-        screenWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
-    }
 
     public void startCartAnimation(){
         Animation anim = AnimationUtils.loadAnimation(this, R.anim.shoping_cart_animation);
@@ -145,6 +154,72 @@ public class TamaExpressActivity extends TamaAccountBaseActivity {
     @Override
     public void requestSuccess(String data) {
         super.requestSuccess(data);
+
+      JSONObject object = null;
+      Map<String, String> map = new HashMap<>();
+      try {
+        object = new JSONObject(data);
+        JSONObject jsonObject = object.getJSONObject("data");
+        parse(jsonObject, map);
+      } catch (JSONException e) {
+        e.printStackTrace();
+      }
+
+
+//        {
+//            "data": {
+//            "code": "0",
+//                "http_code": 200,
+//                "message": "Countries fetched",
+//                "result": [
+//            {
+//                "country_name": "Cameroon",
+//                "country_img_path": "http://tamaexpress.com:585/images/sendtama/cm.png",
+//                "url": "http://tamaexpress.com:585/api/sendtama/cm"
+//            },
+//            {
+//                "country_name": "Ivorycost",
+//                "country_img_path": "http://tamaexpress.com:585/images/sendtama/ci.png",
+//                "url": "http://tamaexpress.com:585/api/sendtama/ci"
+//            },
+//            {
+//                "country_name": "Mali",
+//                "country_img_path": "http://tamaexpress.com:585/images/sendtama/ml.png",
+//                "url": "http://tamaexpress.com:585/api/sendtama/ml"
+//            },
+//            {
+//                "country_name": "Senegal",
+//                "country_img_path": "http://tamaexpress.com:585/images/sendtama/sn.png",
+//                "url": "http://tamaexpress.com:585/api/sendtama/sn"
+//            }
+//    ]
+//        }
+//        }
+
+
+
+
+      String message = map.get("message");
+      String countrys = map.get("result");
+        Map<String, String> cMap = new HashMap<>();
+        JSONArray jsonarray=null;
+
+        try {
+            jsonarray = new JSONArray(countrys);
+            for(int i=0; i < jsonarray.length(); i++) {
+                JSONObject jsonobject = jsonarray.getJSONObject(i);
+                String country_name    = jsonobject.getString("country_name");
+                String country_img_path  = jsonobject.getString("country_img_path");
+                String url = jsonobject.getString("url");
+                CountriesItem item = new CountriesItem(country_name,country_img_path,url);
+                countriesItems.add(item);
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
         setCurrentFragment(CountriesFragment.newInstance(data));
     }
 
@@ -159,5 +234,17 @@ public class TamaExpressActivity extends TamaAccountBaseActivity {
         return this;
     }
 
+
+  public static class CountriesItem{
+    public String country_name;
+    public String country_img_path;
+    public String url;
+
+    public CountriesItem(String country_name, String country_img_path, String url) {
+      this.country_name = country_name;
+      this.country_img_path = country_img_path;
+      this.url = url;
+    }
+  }
 
 }

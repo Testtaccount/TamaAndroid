@@ -1,6 +1,7 @@
 package com.tama.chat.ui.activities.tamaaccount;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,9 +17,10 @@ import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class TopupMyAccountActivity extends TamaAccountBaseActivity implements TamaAccountHelperListener {
+public class TopupMyAccountActivity extends TamaAccountBaseActivity implements
+    TamaAccountHelperListener {
 
-    private double currentBalance = 0, topupBalance =0;
+    private double currentBalance = 0, topupBalance = 0;
 
     @Bind(R.id.topup_voucher_text)
     EditText topupVoucherText;
@@ -38,51 +40,112 @@ public class TopupMyAccountActivity extends TamaAccountBaseActivity implements T
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initFields();
-        setTamaToolbar(R.string.account_topup,R.string.topup_my_account_one_line);
+        setTamaToolbar(R.string.account_topup, R.string.topup_my_account_one_line);
     }
 
     @OnClick(R.id.topup_button)
-    public void sendTopupRequest(){
+    public void sendTopupRequest() {
         topupErrorText.setText("");
-        if(checkNumberCount()) {
-            if(isNetworkAvailable()){
+        if (checkNumberCount()) {
+            if (isNetworkAvailable()) {
                 topupButton.setEnabled(false);
-                new TamaAccountHelper().sendTopupRequest(this,this, topupVoucherText.getText().toString());
-            }else{
+                new TamaAccountHelper().sendTopupRequest(this, this, topupVoucherText.getText().toString());
+            } else {
                 topupErrorText.setText(getString(R.string.no_internet_conection));
             }
             hideSoftKeyboard();
-        }else{
+        } else {
             topupErrorText.setText(getString(R.string.number_count_error));
+            topupErrorText.setTextColor(Color.RED);
         }
     }
 
-    private void initFields(){
+    private void initFields() {
         Bundle bundle = getIntent().getExtras();
-        if(bundle!=null) {
+        if (bundle != null) {
             String message = bundle.getString(CURRENT_BALANCE);
             currentBalance = getDouble(message);
         }
     }
 
-    private boolean checkNumberCount(){
+    private boolean checkNumberCount() {
         String number = topupVoucherText.getText().toString();
-        return number.length()==9;
+        return number.length() == 9;
     }
 
     @Override
     public void requestSuccess(String data) {
 
-        topupBalance = getDouble(data) - currentBalance;
-        createDialog(String.valueOf(topupBalance),getString(R.string.d_m_account_with),"");
-        currentBalance = getDouble(data);
-        topupVoucherText.setText("");
-        topupButton.setEnabled(true);
+        String result = getValueByKeyFromParseJSon(data, "result");
+        if (result != null) {
+            String message = getValueByKeyFromParseJSon(data, "message");
+            topupErrorText.setText(message);
+            topupButton.setEnabled(true);
+            return;
+        } else {
+            String promotionTxt = getValueByKeyFromParseJSon(data, "promotion_txt");
+            if (promotionTxt != null) {
+//        Promo Voucher Card Transaction Response
+                JSONObject object = null;
+                Map<String, String> out = new HashMap<>();
+                try {
+                    object = new JSONObject(data);
+                    JSONObject info = object.getJSONObject("data");
+                    parse(info, out);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                String message = out.get("message");
+                String balance = out.get("balance");
+                String tamaexpress = out.get("tamaexpress");
+                String tamatopup = out.get("tamatopup");
+                String tamavoucher = out.get("tamavoucher");
+                String min_order_amount_tamaexpress = out.get("min_order_amount_tamaexpress");
+                String min_order_amount_tamatopup = out.get("min_order_amount_tamatopup");
+                String shipping_free_amount = out.get("shipping_free_amount");
+                String promo_tamaexpress_balance = out.get("promo_tamaexpress_balance");
+                String promo_tamatopup_balance = out.get("promo_tamatopup_balance");
+                String promotion_txt = out.get("promotion_txt");
+
+                topupErrorText.setTextColor(Color.GREEN);
+                topupErrorText.setText(getResources().getString(R.string.success));
+//        topupBalance = getDouble(data) - currentBalance;
+                createDialog("", message, "");
+//        currentBalance = getDouble(data);
+                topupVoucherText.setText("");
+                topupButton.setEnabled(true);
+            } else {
+                //        Successful Response
+                JSONObject object = null;
+                Map<String, String> out = new HashMap<>();
+                try {
+                    object = new JSONObject(data);
+                    JSONObject info = object.getJSONObject("data");
+                    parse(info, out);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+                String message = out.get("message");
+                String balance = out.get("balance");
+                String balance_ws = out.get("balance_ws");
+
+                topupErrorText.setText(message);
+                topupErrorText.setTextColor(Color.GREEN);
+                topupBalance = getDouble(balance_ws) - currentBalance;
+                createDialog(String.valueOf(topupBalance), getString(R.string.d_m_account_with), "");
+                currentBalance = getDouble(balance_ws);
+                topupVoucherText.setText("");
+                topupButton.setEnabled(true);
+
+            }
+        }
     }
 
     @Override
     public void requestError(String data) {
         topupErrorText.setText(data);
+        topupErrorText.setTextColor(Color.RED);
         topupButton.setEnabled(true);
     }
 
@@ -90,6 +153,7 @@ public class TopupMyAccountActivity extends TamaAccountBaseActivity implements T
     public void alertDialogCancelListener() {
         super.alertDialogCancelListener();
         topupVoucherText.setText("");
+//        topupErrorText.setTextColor(Color.RED);
     }
 
     @Override
@@ -112,7 +176,6 @@ public class TopupMyAccountActivity extends TamaAccountBaseActivity implements T
             e.printStackTrace();
         }
 
-
 //        Validation Response
 //        {
 //            "data": {
@@ -126,52 +189,48 @@ public class TopupMyAccountActivity extends TamaAccountBaseActivity implements T
 //            }
 //        }
 //        }
-
-
 //        Invalid Voucher Response
 //        {
 //            "data": {
 //            "code": "0",
-//                "http_code": 200,
-//                "message": "Invalid voucher!",
-//                "result": []
+//            "http_code": 200,
+//            "message": "Invalid voucher!",
+//            "result": []
 //        }
 //        }
-
 //        Promo Voucher Card Transaction Response
 //        {
 //            "data": {
 //            "code": 0,
-//                "http_code": 200,
-//                "message": "Your Promotion voucher topup has been successful!",
-//                "result": {
-//                "balance": "€5.00",
-//                "tamaexpress": 1,
-//                "tamatopup": 1,
-//                "tamavoucher": 1,
-//                "min_order_amount_tamaexpress": "10",
-//                "min_order_amount_tamatopup": "2",
-//                "shipping_free_amount": "20",
-//                "promo_tamaexpress_balance": "€18.00",
-//                "promo_tamatopup_balance": "€2.00",
-//                "promotion_txt": "Promo Balance: TamaExpress: €18.00 / TamaTopup: €2.00"
+//            "http_code": 200,
+//            "message": "Your Promotion voucher topup has been successful!",
+//            "result": {
+//            "balance": "€5.00",
+//            "tamaexpress": 1,
+//            "tamatopup": 1,
+//            "tamavoucher": 1,
+//            "min_order_amount_tamaexpress": "10",
+//            "min_order_amount_tamatopup": "2",
+//            "shipping_free_amount": "20",
+//            "promo_tamaexpress_balance": "€18.00",
+//            "promo_tamatopup_balance": "€2.00",
+//            "promotion_txt": "Promo Balance: TamaExpress: €18.00 / TamaTopup: €2.00"
 //            }
 //        }
 //        }
-
+//
 //        Successful Response
 //        {
 //            "data": {
 //            "code": "0",
-//                "http_code": 200,
-//                "message": "Your Voucher recharge was successful!",
-//                "result": {
-//                "balance": "€60.78",
-//                "balance_ws": "60.78"
+//            "http_code": 200,
+//            "message": "Your Voucher recharge was successful!",
+//            "result": {
+//            "balance": "€60.78",
+//            "balance_ws": "60.78"
 //            }
 //        }
 //        }
-
 
         String balance = out.get("balance");
         String balance_ws = out.get("balance_ws");
@@ -202,12 +261,6 @@ public class TopupMyAccountActivity extends TamaAccountBaseActivity implements T
 //            + state + " Country : " + country + " postal " + postal);
 
 //    System.out.println("ALL VALUE " + out);
-
-
-
-
-
-
 
 //    String value = null;
 //    JSONObject jsonObject = new JSONObject(data);

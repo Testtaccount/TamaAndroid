@@ -329,7 +329,7 @@ public class AuthenticationActivity extends BaseLoggableActivity implements OnMe
     AppSession.getSession().setTamaAccountId(response[0]);
     appSharedHelper.saveTamaAccountId(response[0]);
     appSharedHelper.saveTamaAccountTokenType(response[1]);
-    appSharedHelper.saveTamaAccountExpiresIn(response[2]);
+    appSharedHelper.saveTamaAccountExpiresIn(System.currentTimeMillis()+Long.valueOf(response[2]));
     appSharedHelper.saveTamaAccountAccessToken(response[3]);
     appSharedHelper.saveTamaAccountRefreshToken(response[4]);
     //appSharedHelper.saveTamaIsEurope(response[1].equals("1"));
