@@ -7,7 +7,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,13 +18,14 @@ import android.widget.TextView;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
 import com.tama.chat.R;
+import com.tama.chat.tamaAccount.CountriesItem;
 import com.tama.chat.tamaAccount.ProductsItemToSave;
 import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
-import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity.CountriesItem;
 import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.image.ImageLoaderUtils;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONArray;
@@ -36,16 +36,17 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
 
     private static final String ARG_PARAM = "param";
 
-    private String mParam;
+    //    private String mParam;
     private List<CountriesItem> countriesItems;
     private TamaExpressActivity mActivity;
+    private String url;
 
     public CountriesFragment() {}
 
-    public static CountriesFragment newInstance(String param) {
+    public static CountriesFragment newInstance(List<CountriesItem> countriesItems) {
         CountriesFragment fragment = new CountriesFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM, param);
+        args.putSerializable(ARG_PARAM, (Serializable) countriesItems);
         fragment.setArguments(args);
         return fragment;
     }
@@ -54,8 +55,8 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam = getArguments().getString(ARG_PARAM);
-            countriesItems = getListFromJson(mParam);
+            countriesItems = (List<CountriesItem>) getArguments().getSerializable(ARG_PARAM);
+//            countriesItems = getListFromJson(mParam);
         }
         mActivity.setVisibleShoppingButton(VISIBLE);
         mActivity.refreshProductCountInButton();
@@ -63,7 +64,7 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+        Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_countries, container, false);
 //        GridView gridView = (GridView) view.findViewById(R.id.grid_countries_view);
         ExpandableHeightGridView gridView = (ExpandableHeightGridView) view.findViewById(R.id.grid_countries_view);
@@ -72,19 +73,22 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                mActivity.setCurrentCountry(countriesItems.get(position).country_name);
+                CountriesItem countriesItem = countriesItems.get(position);
+                url=countriesItem.url;
+                mActivity.setCurrentCountry(countriesItem.country_name);
                 List<ProductsItemToSave> prodList = mActivity.getProductsListToSave();
 
-                Log.d("testt", String.valueOf(checkProductList(prodList)));
-                if(prodList!=null){
-//                    Log.d("testt", prodList.get(0).country);
-                    Log.d("testt", mActivity.getCurrentCountry());
-                }
+//                Log.d("testt", String.valueOf(checkProductList(prodList)));
+//                if(prodList!=null){
+////                    Log.d("testt", prodList.get(0).country);
+//                    Log.d("testt", mActivity.getCurrentCountry());
+//                }
 
+                //TODO: make call in TamaExpressActivity
                 if(checkProductList(prodList)) {
-                    new TamaAccountHelper().getListOfCategories(accountHelperListener);
+                    new TamaAccountHelper().getListOfCategories(accountHelperListener,countriesItem.url);
                 }else{
-                    createDialog(prodList);
+                    createDialog(prodList,countriesItem.url);
                 }
             }
         });
@@ -102,7 +106,7 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
 
     }
 
-    protected void createDialog(final List<ProductsItemToSave> prodList){
+    protected void createDialog(final List<ProductsItemToSave> prodList, final String url){
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(mActivity);
         LayoutInflater inflater = mActivity.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.topup_dialog_with_two_btn, null);
@@ -124,7 +128,7 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
                 prodList.clear();
                 mActivity.setProductsListToSave(prodList);
                 mActivity.refreshProductCountInButton();
-                new TamaAccountHelper().getListOfCategories(accountHelperListener);
+                new TamaAccountHelper().getListOfCategories(accountHelperListener,url);
             }
         });
 
@@ -163,15 +167,15 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
     }
 
     private void loadImageByUri(String logoUrl,final ImageView v) {
-       ImageLoader.getInstance().loadImage(logoUrl,
-           ImageLoaderUtils.UIL_USER_AVATAR_DISPLAY_OPTIONS,
-           new SimpleImageLoadingListener(){
-               @Override
-               public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-                   super.onLoadingComplete(imageUri, view, loadedImage);
-                   v.setImageBitmap(loadedImage);
-               }
-           });
+        ImageLoader.getInstance().loadImage(logoUrl,
+            ImageLoaderUtils.UIL_USER_AVATAR_DISPLAY_OPTIONS,
+            new SimpleImageLoadingListener(){
+                @Override
+                public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+                    super.onLoadingComplete(imageUri, view, loadedImage);
+                    v.setImageBitmap(loadedImage);
+                }
+            });
     }
 
 //    // TODO: Rename method, update argument and hook method into UI event
@@ -188,7 +192,7 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
             mActivity = (TamaExpressActivity) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                + " must implement OnFragmentInteractionListener");
         }
     }
 
@@ -200,7 +204,7 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
 
     @Override
     public void requestSuccess(String data) {
-        mActivity.setCurrentFragment(CategoriesFragment.newInstance(data,false));
+        mActivity.setCurrentFragment(CategoriesFragment.newInstance(url,data,false));
     }
 
     @Override

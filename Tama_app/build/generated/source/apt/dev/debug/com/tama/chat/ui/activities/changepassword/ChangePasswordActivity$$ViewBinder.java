@@ -8,10 +8,10 @@ import butterknife.ButterKnife.ViewBinder;
 public class ChangePasswordActivity$$ViewBinder<T extends com.tama.chat.ui.activities.changepassword.ChangePasswordActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755216, "field 'oldPasswordTextInputLayout'");
-    target.oldPasswordTextInputLayout = finder.castView(view, 2131755216, "field 'oldPasswordTextInputLayout'");
-    view = finder.findRequiredView(source, 2131755217, "field 'oldPasswordEditText' and method 'onTextChangedOldPassword'");
-    target.oldPasswordEditText = finder.castView(view, 2131755217, "field 'oldPasswordEditText'");
+    view = finder.findRequiredView(source, 2131755214, "field 'oldPasswordTextInputLayout'");
+    target.oldPasswordTextInputLayout = finder.castView(view, 2131755214, "field 'oldPasswordTextInputLayout'");
+    view = finder.findRequiredView(source, 2131755215, "field 'oldPasswordEditText' and method 'onTextChangedOldPassword'");
+    target.oldPasswordEditText = finder.castView(view, 2131755215, "field 'oldPasswordEditText'");
     ((android.widget.TextView) view).addTextChangedListener(
       new android.text.TextWatcher() {
         @Override public void onTextChanged(
@@ -36,10 +36,10 @@ public class ChangePasswordActivity$$ViewBinder<T extends com.tama.chat.ui.activ
           
         }
       });
-    view = finder.findRequiredView(source, 2131755219, "field 'newPasswordTextInputLayout'");
-    target.newPasswordTextInputLayout = finder.castView(view, 2131755219, "field 'newPasswordTextInputLayout'");
-    view = finder.findRequiredView(source, 2131755218, "field 'newPasswordEditText' and method 'onTextChangedNewPassword'");
-    target.newPasswordEditText = finder.castView(view, 2131755218, "field 'newPasswordEditText'");
+    view = finder.findRequiredView(source, 2131755217, "field 'newPasswordTextInputLayout'");
+    target.newPasswordTextInputLayout = finder.castView(view, 2131755217, "field 'newPasswordTextInputLayout'");
+    view = finder.findRequiredView(source, 2131755216, "field 'newPasswordEditText' and method 'onTextChangedNewPassword'");
+    target.newPasswordEditText = finder.castView(view, 2131755216, "field 'newPasswordEditText'");
     ((android.widget.TextView) view).addTextChangedListener(
       new android.text.TextWatcher() {
         @Override public void onTextChanged(

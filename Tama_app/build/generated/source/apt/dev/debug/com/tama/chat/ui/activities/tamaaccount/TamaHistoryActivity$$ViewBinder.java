@@ -9,8 +9,8 @@ public class TamaHistoryActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755262, "field 'errorMessageText'");
-    target.errorMessageText = finder.castView(view, 2131755262, "field 'errorMessageText'");
+    view = finder.findRequiredView(source, 2131755260, "field 'errorMessageText'");
+    target.errorMessageText = finder.castView(view, 2131755260, "field 'errorMessageText'");
   }
 
   @Override public void unbind(T target) {

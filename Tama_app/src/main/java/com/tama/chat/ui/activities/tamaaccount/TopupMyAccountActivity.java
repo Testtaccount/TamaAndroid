@@ -1,5 +1,7 @@
 package com.tama.chat.ui.activities.tamaaccount;
 
+import static com.tama.chat.tamaAccount.TamaAccountHelper.parse;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -12,7 +14,6 @@ import com.tama.chat.R;
 import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -277,23 +278,4 @@ public class TopupMyAccountActivity extends TamaAccountBaseActivity implements
         return out.get(key);
     }
 
-    public static Map<String, String> parse(JSONObject json, Map<String, String> out)
-        throws JSONException {
-        Iterator<String> keys = json.keys();
-        while (keys.hasNext()) {
-            String key = keys.next();
-            String val = null;
-            try {
-                JSONObject value = json.getJSONObject(key);
-                parse(value, out);
-            } catch (Exception e) {
-                val = json.getString(key);
-            }
-
-            if (val != null) {
-                out.put(key, val);
-            }
-        }
-        return out;
-    }
 }

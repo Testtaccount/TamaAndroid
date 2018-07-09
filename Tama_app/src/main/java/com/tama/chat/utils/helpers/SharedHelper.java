@@ -54,6 +54,10 @@ public class SharedHelper extends CoreSharedHelper {
         public static final String TAMA_ACCOUNT_EXPIRES_IN = "TAMA_ACCOUNT_EXPIRES_IN";
         public static final String TAMA_ACCOUNT_ACCESS_TOKEN = "TAMA_ACCOUNT_ACCESS_TOKEN";
         public static final String TAMA_ACCOUNT_REFRESH_TOKEN = "TAMA_ACCOUNT_REFRESH_TOKEN";
+        public static final String TAMA_PAY_BY_BALANCE = "TAMA_PAY_BY_BALANCE";
+        public static final String TAMA_PAY_BY_RETAILER = "TAMA_PAY_BY_RETAILER";
+        public static final String TAMA_PROMO_TAMAEXPRESS_BALANCE = "TAMA_PROMO_TAMAEXPRESS_BALANCE";
+        public static final String TAMA_PROMO_TAMATOPUP_BALANCE = "TAMA_PROMO_TAMATOPUP_BALANCE";
     }
 
     public SharedHelper(Context context) {
@@ -120,20 +124,45 @@ public class SharedHelper extends CoreSharedHelper {
     }
 
 
-    public Boolean getTamaIsEurope() {
-        return getPref(Constants.USER_IS_EUROPEAN, false);
-    }
-
-    public void saveTamaIsEurope(boolean bool) {
-        savePref(Constants.USER_IS_EUROPEAN, bool);
-    }
-
     public String getTamaAccountPhoneNumber() {
         return getPref(Constants.TAMA_ACCOUNT_PHONE_NUMBER, null);
     }
 
     public void saveTamaAccountPhoneNumber(String number) {
         savePref(Constants.TAMA_ACCOUNT_PHONE_NUMBER, number);
+    }
+
+    public Boolean getTamaPayByBalance() {
+        return getPref(Constants.TAMA_PAY_BY_BALANCE, false);
+    }
+
+    public void saveTamaIsPayByBalance(boolean bool) {
+        savePref(Constants.TAMA_PAY_BY_BALANCE, bool);
+    }
+
+
+    public Boolean getTamaPayByRetailer() {
+        return getPref(Constants.TAMA_PAY_BY_RETAILER, false);
+    }
+
+    public void saveTamaPayByRetailer(boolean bool) {
+        savePref(Constants.TAMA_PAY_BY_RETAILER, bool);
+    }
+
+    public String getPromoTamaexpressBalance() {
+        return getPref(Constants.TAMA_PROMO_TAMAEXPRESS_BALANCE, "0.00");
+    }
+
+    public void savePromoTamaexpressBalance(String promoTamaexpressBalance) {
+        savePref(Constants.TAMA_PROMO_TAMAEXPRESS_BALANCE, promoTamaexpressBalance);
+    }
+
+    public String getPromoTamatopupBalance() {
+        return getPref(Constants.TAMA_PROMO_TAMATOPUP_BALANCE, "0.00");
+    }
+
+    public void savePromoTamatopupBalance(String promoTamaetopupBalance) {
+        savePref(Constants.TAMA_PROMO_TAMATOPUP_BALANCE, promoTamaetopupBalance);
     }
 
     public String getProductsList() {

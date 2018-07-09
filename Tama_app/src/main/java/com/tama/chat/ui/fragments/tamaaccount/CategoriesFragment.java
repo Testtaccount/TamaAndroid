@@ -1,5 +1,7 @@
 package com.tama.chat.ui.fragments.tamaaccount;
 
+import static com.tama.chat.tamaAccount.TamaAccountHelper.parse;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -15,33 +17,39 @@ import android.widget.TextView;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
 import com.tama.chat.R;
+import com.tama.chat.tamaAccount.CategoriesItem;
 import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
 import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.image.ImageLoaderUtils;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class CategoriesFragment extends Fragment implements TamaAccountHelperListener {
 
+    private static final String ARG_PARAM_0 = "param_url";
     private static final String ARG_PARAM_1 = "param";
     private static final String ARG_PARAM_2 = "boolean";
 
     private String mParam;
     private boolean isSubCategories;
     private List<CategoriesItem> categoriesItems;
-    private TamaExpressActivity mListener;
+    private TamaExpressActivity mActivity;
+    private String  url;
 
-    public CategoriesFragment() {}
+    public CategoriesFragment() {
+    }
 
-    public static CategoriesFragment newInstance(String param, boolean isSubCategories) {
+    public static CategoriesFragment newInstance(String url,String param, boolean isSubCategories) {
         CategoriesFragment fragment = new CategoriesFragment();
         Bundle args = new Bundle();
+        args.putString(ARG_PARAM_0, url);
         args.putString(ARG_PARAM_1, param);
         args.putBoolean(ARG_PARAM_2, isSubCategories);
         fragment.setArguments(args);
@@ -52,11 +60,12 @@ public class CategoriesFragment extends Fragment implements TamaAccountHelperLis
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+            url = getArguments().getString(ARG_PARAM_0);
             mParam = getArguments().getString(ARG_PARAM_1);
             isSubCategories = getArguments().getBoolean(ARG_PARAM_2);
-            if(isSubCategories){
+            if (isSubCategories) {
                 categoriesItems = getListFromSubJson(mParam);
-            }else {
+            } else {
                 categoriesItems = getListFromJson(mParam);
             }
         }
@@ -64,88 +73,120 @@ public class CategoriesFragment extends Fragment implements TamaAccountHelperLis
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+        Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_categories, container, false);
         ListView listView = (ListView) view.findViewById(R.id.categories_list_view);
         final TamaAccountHelperListener accountHelperListener = this;
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(categoriesItems.get(position).isSubCategoriesEmpty()){
-                    new TamaAccountHelper().getListOfProducts(accountHelperListener,mListener.getCurrentCountry(),categoriesItems.get(position).category_id);
-                }else{
-                    mListener.setCurrentFragment(CategoriesFragment.newInstance(categoriesItems.get(position).sub_category,true));
+                if (categoriesItems.get(position).isSubCategoriesEmpty()) {
+                    new TamaAccountHelper().getListOfProducts(accountHelperListener, url,
+                        categoriesItems.get(position).category_id);
+                } else {
+                    mActivity.setCurrentFragment(
+                        CategoriesFragment.newInstance(url,categoriesItems.get(position).sub_category, true));
                 }
             }
         });
-        if(!categoriesItems.isEmpty()) {
+        if (!categoriesItems.isEmpty()) {
             listView.setAdapter(new CategoriesListAdapter(categoriesItems));
         }
         return view;
     }
 
-    private List<CategoriesItem> getListFromSubJson(String data){
-        if (data == null)
+    private List<CategoriesItem> getListFromSubJson(String data) {
+
+        if (data == null) {
             return null;
+        }
         List<CategoriesItem> items = new ArrayList<>();
+
+        Map<String, String> cMap = new HashMap<>();
+        JSONArray jsonarray = null;
+
         try {
-            JSONObject jsonObject = null;
-            jsonObject = new JSONObject(data);
-            Iterator<String> keys= jsonObject.keys();
-            while (keys.hasNext())
-            {
-                String keyValue = (String)keys.next();
-                JSONObject jsonItem = jsonObject.getJSONObject(keyValue);
-                CategoriesItem item = new CategoriesItem();
-                item.category_id = jsonItem.getString("category_id");
-                item.parent_id = jsonItem.getString("parent_id");
-                item.category_name = jsonItem.getString("category_name");
-                item.category_desc = jsonItem.getString("category_desc");
-                item.category_image = jsonItem.getString("category_image");
-                item.sub_category = jsonItem.optString("sub_category");
+            jsonarray = new JSONArray(data);
+            for (int i = 0; i < jsonarray.length(); i++) {
+                JSONObject jsonobject = jsonarray.getJSONObject(i);
+
+                String category_id = jsonobject.getString("category_id");
+                String parent_id = jsonobject.getString("parent_id");
+                String category_name = jsonobject.getString("category_name");
+                String category_desc = jsonobject.getString("category_desc");
+                String category_image = jsonobject.getString("category_image");
+                String trans_lang = jsonobject.getString("trans_lang");
+                String sub_category = jsonobject.getString("sub_category");
+
+                CategoriesItem item = new CategoriesItem(category_id, parent_id, category_name,
+                    category_desc, category_image, trans_lang, sub_category);
+
+//        CountriesItem item = new CountriesItem(country_name, country_img_path, url);
                 items.add(item);
             }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
         return items;
     }
 
-    private List<CategoriesItem> getListFromJson(String data){
-        if (data == null)
+    private List<CategoriesItem> getListFromJson(String data) {
+        if (data == null) {
             return null;
+        }
         List<CategoriesItem> items = new ArrayList<>();
+
+        JSONObject object = null;
+        Map<String, String> map = new HashMap<>();
         try {
-            JSONObject jsonObject = null;
-            jsonObject = new JSONObject(data);
-            JSONArray jsonDataList = jsonObject.getJSONArray("data");
-            for(int i = 0 ; i < jsonDataList.length(); ++i){
-                CategoriesItem item = new CategoriesItem();
-                JSONObject jsonItem = jsonDataList.getJSONObject(i);
-                item.category_id = jsonItem.getString("category_id");
-                item.parent_id = jsonItem.getString("parent_id");
-                item.category_name = jsonItem.getString("category_name");
-                item.category_desc = jsonItem.getString("category_desc");
-                item.category_image = jsonItem.getString("category_image");
-                item.sub_category = jsonItem.optString("sub_category");
+            object = new JSONObject(data);
+            JSONObject jsonObject = object.getJSONObject("data");
+            parse(jsonObject, map);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        String message = map.get("message");
+        String categorys = map.get("result");
+        Map<String, String> cMap = new HashMap<>();
+        JSONArray jsonarray = null;
+
+        try {
+            jsonarray = new JSONArray(categorys);
+            for (int i = 0; i < jsonarray.length(); i++) {
+                JSONObject jsonobject = jsonarray.getJSONObject(i);
+
+                String category_id = jsonobject.getString("category_id");
+                String parent_id = jsonobject.getString("parent_id");
+                String category_name = jsonobject.getString("category_name");
+                String category_desc = jsonobject.getString("category_desc");
+                String category_image = jsonobject.getString("category_image");
+                String trans_lang = jsonobject.getString("trans_lang");
+                String sub_category = jsonobject.getString("sub_category");
+
+                CategoriesItem item = new CategoriesItem(category_id, parent_id, category_name,
+                    category_desc, category_image, trans_lang, sub_category);
+
+//        CountriesItem item = new CountriesItem(country_name, country_img_path, url);
                 items.add(item);
             }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
         return items;
     }
 
-    private void loadImageByUri(String logoUrl,final ImageView v) {
+    private void loadImageByUri(String logoUrl, final ImageView v) {
         ImageLoader.getInstance().loadImage(logoUrl,
             ImageLoaderUtils.UIL_USER_AVATAR_DISPLAY_OPTIONS,
-            new SimpleImageLoadingListener(){
+            new SimpleImageLoadingListener() {
                 @Override
                 public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
                     super.onLoadingComplete(imageUri, view, loadedImage);
-                    if(loadedImage!=null) {
+                    if (loadedImage != null) {
                         v.setImageBitmap(loadedImage);
-                    }else{
+                    } else {
                         v.setImageResource(R.drawable.world_icon);
                     }
                 }
@@ -154,8 +195,8 @@ public class CategoriesFragment extends Fragment implements TamaAccountHelperLis
 
 //    // TODO: Rename method, update argument and hook method into UI event
 //    public void onButtonPressed(Uri uri) {
-//        if (mListener != null) {
-//            mListener.onFragmentInteraction(uri);
+//        if (mActivity != null) {
+//            mActivity.onFragmentInteraction(uri);
 //        }
 //    }
 
@@ -163,22 +204,22 @@ public class CategoriesFragment extends Fragment implements TamaAccountHelperLis
     public void onAttach(Context context) {
         super.onAttach(context);
         if (context instanceof TamaExpressActivity) {
-            mListener = (TamaExpressActivity) context;
+            mActivity = (TamaExpressActivity) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                + " must implement OnFragmentInteractionListener");
         }
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        mListener = null;
+        mActivity = null;
     }
 
     @Override
     public void requestSuccess(String data) {
-        mListener.setCurrentFragment(ProductsFragment.newInstance(data));
+        mActivity.setCurrentFragment(ProductsFragment.newInstance(data));
     }
 
     @Override
@@ -202,7 +243,7 @@ public class CategoriesFragment extends Fragment implements TamaAccountHelperLis
 
         private LayoutInflater inflater = null;
 
-        public CategoriesListAdapter( List<CategoriesItem> data) {
+        public CategoriesListAdapter(List<CategoriesItem> data) {
             this.data = data;
             inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
@@ -237,26 +278,15 @@ public class CategoriesFragment extends Fragment implements TamaAccountHelperLis
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             View vi = convertView;
-            if (vi == null)
+            if (vi == null) {
                 vi = inflater.inflate(R.layout.item_categories_list, null);
+            }
             CategoriesItem categoriesItem = data.get(position);
             ImageView view = (ImageView) vi.findViewById(R.id.item_categories_image);
-            loadImageByUri(categoriesItem.category_image,view);
+            loadImageByUri(categoriesItem.category_image, view);
             ((TextView) vi.findViewById(R.id.item_categories_name)).setText(categoriesItem.category_name);
             return vi;
         }
     }
 
-    public class CategoriesItem{
-        public String category_id;
-        public String parent_id;
-        public String category_name;
-        public String category_desc;
-        public String category_image;
-        public String sub_category;
-
-        public boolean isSubCategoriesEmpty(){
-            return sub_category.length()<10;
-        }
-    }
 }

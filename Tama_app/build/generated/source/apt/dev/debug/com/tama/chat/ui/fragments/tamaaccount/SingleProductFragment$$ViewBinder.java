@@ -8,16 +8,16 @@ import butterknife.ButterKnife.ViewBinder;
 public class SingleProductFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.tamaaccount.SingleProductFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755534, "field 'itemProductsImage'");
-    target.itemProductsImage = finder.castView(view, 2131755534, "field 'itemProductsImage'");
-    view = finder.findRequiredView(source, 2131755533, "field 'productNameText'");
-    target.productNameText = finder.castView(view, 2131755533, "field 'productNameText'");
-    view = finder.findRequiredView(source, 2131755537, "field 'productDescription'");
-    target.productDescription = finder.castView(view, 2131755537, "field 'productDescription'");
-    view = finder.findRequiredView(source, 2131755536, "field 'productPrice'");
-    target.productPrice = finder.castView(view, 2131755536, "field 'productPrice'");
-    view = finder.findRequiredView(source, 2131755538, "field 'btnAddToCart' and method 'OnClickAddToCart'");
-    target.btnAddToCart = finder.castView(view, 2131755538, "field 'btnAddToCart'");
+    view = finder.findRequiredView(source, 2131755537, "field 'itemProductsImage'");
+    target.itemProductsImage = finder.castView(view, 2131755537, "field 'itemProductsImage'");
+    view = finder.findRequiredView(source, 2131755536, "field 'productNameText'");
+    target.productNameText = finder.castView(view, 2131755536, "field 'productNameText'");
+    view = finder.findRequiredView(source, 2131755540, "field 'productDescription'");
+    target.productDescription = finder.castView(view, 2131755540, "field 'productDescription'");
+    view = finder.findRequiredView(source, 2131755539, "field 'productPrice'");
+    target.productPrice = finder.castView(view, 2131755539, "field 'productPrice'");
+    view = finder.findRequiredView(source, 2131755541, "field 'btnAddToCart' and method 'OnClickAddToCart'");
+    target.btnAddToCart = finder.castView(view, 2131755541, "field 'btnAddToCart'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -26,8 +26,8 @@ public class SingleProductFragment$$ViewBinder<T extends com.tama.chat.ui.fragme
           target.OnClickAddToCart();
         }
       });
-    view = finder.findRequiredView(source, 2131755539, "field 'btnBack' and method 'OnClickBack'");
-    target.btnBack = finder.castView(view, 2131755539, "field 'btnBack'");
+    view = finder.findRequiredView(source, 2131755542, "field 'btnBack' and method 'OnClickBack'");
+    target.btnBack = finder.castView(view, 2131755542, "field 'btnBack'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

@@ -12,12 +12,11 @@ import android.webkit.WebViewClient;
 import com.tama.chat.R;
 import com.tama.chat.ui.activities.base.BaseActivity;
 
-public class AboutUsActivity extends BaseActivity implements View.OnClickListener,
+public class TamaPayOnlineActivity extends BaseActivity implements View.OnClickListener,
     SwipeRefreshLayout.OnRefreshListener {
 
-  private static final String LOG_TAG = AboutUsActivity.class.getSimpleName();
-  public static final String URL = "http://tamaexpress.com:585/app-about-us";
-//  public static final String URL = "http://tamaexpress.com:585/app-checkout";
+  private static final String LOG_TAG = TamaPayOnlineActivity.class.getSimpleName();
+  public static final String URL = "http://tamaexpress.com:585/app-checkout";
 
   private Bundle mArgumentData;
   private WebView mWv;
@@ -26,7 +25,7 @@ public class AboutUsActivity extends BaseActivity implements View.OnClickListene
 
   @Override
   protected int getContentResId() {
-    return R.layout.activity_about;
+    return R.layout.activity_tama_pay_online;
   }
 
   @Override
@@ -63,7 +62,7 @@ public class AboutUsActivity extends BaseActivity implements View.OnClickListene
   }
 
   private void findViews() {
-    mWv = (WebView) findViewById(R.id.wv_about);
+    mWv = (WebView) findViewById(R.id.wv_pay_online);
     mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.srl_about);
   }
 

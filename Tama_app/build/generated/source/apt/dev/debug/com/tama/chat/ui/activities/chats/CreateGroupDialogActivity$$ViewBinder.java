@@ -9,8 +9,8 @@ public class CreateGroupDialogActivity$$ViewBinder<T extends com.tama.chat.ui.ac
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755229, "field 'photoImageView' and method 'selectPhoto'");
-    target.photoImageView = finder.castView(view, 2131755229, "field 'photoImageView'");
+    view = finder.findRequiredView(source, 2131755227, "field 'photoImageView' and method 'selectPhoto'");
+    target.photoImageView = finder.castView(view, 2131755227, "field 'photoImageView'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -19,10 +19,10 @@ public class CreateGroupDialogActivity$$ViewBinder<T extends com.tama.chat.ui.ac
           target.selectPhoto(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755230, "field 'groupNameEditText'");
-    target.groupNameEditText = finder.castView(view, 2131755230, "field 'groupNameEditText'");
-    view = finder.findRequiredView(source, 2131755231, "field 'participantsCountTextView'");
-    target.participantsCountTextView = finder.castView(view, 2131755231, "field 'participantsCountTextView'");
+    view = finder.findRequiredView(source, 2131755228, "field 'groupNameEditText'");
+    target.groupNameEditText = finder.castView(view, 2131755228, "field 'groupNameEditText'");
+    view = finder.findRequiredView(source, 2131755229, "field 'participantsCountTextView'");
+    target.participantsCountTextView = finder.castView(view, 2131755229, "field 'participantsCountTextView'");
   }
 
   @Override public void unbind(T target) {

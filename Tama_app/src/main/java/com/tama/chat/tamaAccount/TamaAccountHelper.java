@@ -16,7 +16,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.concurrent.ExecutionException;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpGet;
@@ -41,7 +40,7 @@ public class TamaAccountHelper {
   private static final String GET_BALANCE = MY_TAMA_URL + "v1/balance/";
   private static final String GET_HEARTBEAT = MY_TAMA_URL + "heartbeat/";
   private static final String GET_COUTRIES_LIST = MY_TAMA_URL + "sendtama";
-  private static final String GET_COTEGORIES_LIST = MY_TAMA_URL + "sendtama/categories";
+  private static final String GET_COTEGORIES_LIST = MY_TAMA_URL + "sendtama/sn";
   private static final String GET_INCOMING_REQUEST = MY_TAMA_URL + "requests/";
   private static final String GET_OUTGOING_REQUEST = MY_TAMA_URL + "request/sent/";
   private static final String CONFIRM = MY_TAMA_URL + "sendtama/confirm";
@@ -74,32 +73,19 @@ public class TamaAccountHelper {
 
   private String getAccessToken() {
 
-    if (System.currentTimeMillis() < App.getInstance().getAppSharedHelper()
-        .getTamaAccountExpiresIn()) {
-      return App.getInstance().getAppSharedHelper().getTamaAccountAccessToken();
-    } else {
-//      String refreshToken =
-      return App.getInstance().getAppSharedHelper().getTamaAccountRefreshToken();
-//      new RefreshAccessTokenTask().execute(REFRESH_TOKEN + getLanguages(), refreshToken);
-//      refreshToken;
-//      accessToken=getRefreshAccessToken(refreshToken);
-    }
+//    if (System.currentTimeMillis() < App.getInstance().getAppSharedHelper()
+//        .getTamaAccountExpiresIn()) {
+    return App.getInstance().getAppSharedHelper().getTamaAccountAccessToken();
+//    } else {
+//      new RefreshAccessTokenTask(new AsyncResponse() {
+//        @Override
+//        public void processFinish(String output) {
+//          getAccessToken();
+//        }
+//      }).execute();
+//    }
+//    return App.getInstance().getAppSharedHelper().getTamaAccountAccessToken();
 
-  }
-
-  private String getRefreshAccessToken(String refreshToken) {
-
-    String accessToken = null;
-    try {
-      accessToken = new RefreshAccessTokenTask()
-          .execute(REFRESH_TOKEN + getLanguages(), refreshToken).get();
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    } catch (ExecutionException e) {
-      e.printStackTrace();
-    }
-
-    return accessToken;
   }
 
 
@@ -132,17 +118,17 @@ public class TamaAccountHelper {
     new GetCountriesOrCotegoriesListTask().execute(GET_COUTRIES_LIST + getLanguages());
   }
 
-  public void getListOfCategories(TamaAccountHelperListener listener) {
+  public void getListOfCategories(TamaAccountHelperListener listener, String url) {
     this.listener = listener;
-    new GetCountriesOrCotegoriesListTask().execute(GET_COTEGORIES_LIST + getLanguages());
+//    new GetCountriesOrCotegoriesListTask().execute(GET_COTEGORIES_LIST + getLanguages());
+    new GetCountriesOrCotegoriesListTask().execute(url + getLanguages());
   }
 
-  public void getListOfProducts(TamaAccountHelperListener listener, String country,
+  public void getListOfProducts(TamaAccountHelperListener listener, String url,
       String category_id) {
     this.listener = listener;
     new GetCountriesOrCotegoriesListTask()
-        .execute(
-            GET_COUTRIES_LIST + "/" + country + "/" + category_id + "/products" + getLanguages());
+        .execute(url + "/" + category_id + "/products" + getLanguages());
   }
 
   public void checkTamaUserOrNot(TamaAccountHelperListener listener, String country_code,
@@ -192,13 +178,11 @@ public class TamaAccountHelper {
             payer_no, topup_country_code, topup_no, amount);
   }
 
-  public void setConfirm(TamaAccountHelperListener listener, String user_id, String products,
-      String sender_name,
-      String sender_mobile, String receiver_name, String receiver_mobile, String requestType) {
+  public void setConfirm(TamaAccountHelperListener listener, String productIds, String sender_name,
+      String sender_mobile, String receiver_name, String receiver_mobile, String pay_by,String use_promo) {
     this.listener = listener;
-    new ConfirmTask()
-        .execute(CONFIRM + getLanguages(), user_id, products, sender_name, sender_mobile,
-            receiver_name, receiver_mobile, requestType);
+    new ConfirmTask().execute(CONFIRM + getLanguages(), productIds, sender_name, sender_mobile,
+            receiver_name, receiver_mobile, pay_by,use_promo);
   }
 
   public void setRevokeAccount(TamaAccountHelperListener listener, String user_id) {
@@ -507,13 +491,13 @@ public class TamaAccountHelper {
 
       try {
         JSONObject json = new JSONObject();
-        json.put("user_id", params[1]);
-        json.put("products", params[2]);
-        json.put("sender_name", params[3]);
-        json.put("sender_mobile", params[4]);
-        json.put("receiver_name", params[5]);
-        json.put("receiver_mobile", params[6]);
-        json.put("pay_by", params[7]);
+        json.put("products", params[1]);
+        json.put("sender_name", params[2]);
+        json.put("sender_mobile", params[3]);
+        json.put("receiver_name", params[4]);
+        json.put("receiver_mobile", params[5]);
+        json.put("pay_by", params[6]);
+        json.put("use_promo", params[7]);
 
         StringEntity paramsStr = new StringEntity(json.toString());
 
@@ -537,34 +521,35 @@ public class TamaAccountHelper {
     }
 
     @Override
-    protected void onPostExecute(String str) {
-      super.onPostExecute(str);
-      if (str != null) {
-        JSONObject jsonObject = null;
+    protected void onPostExecute(String json) {
+      super.onPostExecute(json);
+      if (json != null) {
+
+        JSONObject object = null;
+        Map<String, String> map = new HashMap<>();
         try {
-          jsonObject = new JSONObject(str);
+          object = new JSONObject(json);
+          JSONObject jsonObject = object.getJSONObject("data");
+          parse(jsonObject, map);
         } catch (JSONException e) {
           e.printStackTrace();
         }
-        if (jsonObject != null) {
-          JSONObject jsonData = jsonObject.optJSONObject("error");
-          if (jsonData != null) {
-            error = jsonData.optString("message");
-            if (error != null) {
-              listener.requestError(error);
-            }
-          } else {
-            try {
-              listener.requestSuccess(parseJSon(str, "message"));
-            } catch (JSONException e) {
-              error = e.getMessage();
-              listener.requestError(error);
-              e.printStackTrace();
-            }
-          }
+        String code = map.get("code");
+        String http_code = map.get("http_code");
+        String message = map.get("message");
+        String balance = map.get("balance");
+        String history_id = map.get("history_id");
+
+
+        if(http_code.equals("400")){
+          listener.requestError(message);
+        }else if(code.equals("1")){
+          listener.requestError(message);
+        }else if(code.equals("0")){
+          listener.requestSuccess(message);
         }
       } else {
-        listener.requestError(error);
+        listener.requestError("The given data failed to pass validation.");
       }
     }
   }
@@ -1052,23 +1037,29 @@ public class TamaAccountHelper {
 
   private class RefreshAccessTokenTask extends AsyncTask<String, Void, String> {
 
+    public AsyncResponse delegate = null;
+
+    public RefreshAccessTokenTask(AsyncResponse delegate) {
+      this.delegate = delegate;
+    }
+
     @Override
     protected String doInBackground(String... params) {
 
       try {
         JSONObject json = new JSONObject();
-        json.put("refresh-token", params[1]);
+        json.put("refresh_token",
+            App.getInstance().getAppSharedHelper().getTamaAccountRefreshToken());
 
         StringEntity paramsStr = new StringEntity(json.toString());
 
         DefaultHttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost(params[0]);
+        HttpPost httppost = new HttpPost(REFRESH_TOKEN + getLanguages());
         httppost.setEntity(paramsStr);
         httppost.setHeader("Accept", "application/json");
         httppost.setHeader("Content-type", "application/json");
-//                httppost.setHeader("Content-type", "application/x-www-form-urlencoded");
-//                httppost.setHeader("Content-type", "multipart/form-data; boundary=WebKitFormBoundary7MA4YWxkTrZu0gW");
-        httppost.setHeader("Authorization", "Bearer " + params[1]);
+
+        httppost.setHeader("Authorization", "Bearer " + App.getInstance().getAppSharedHelper().getTamaAccountAccessToken());
 
         ResponseHandler responseHandler = new BasicResponseHandler();
         String responseBody = (String) httpclient.execute(httppost, responseHandler);
@@ -1125,6 +1116,9 @@ public class TamaAccountHelper {
                 .saveTamaAccountAccessToken(out.get("access_token"));
             App.getInstance().getAppSharedHelper()
                 .saveTamaAccountRefreshToken(out.get("refresh_token"));
+
+            delegate.processFinish(out.get("access_token"));
+
 //            listener.requestSuccess(str);
           }
         }
@@ -1150,7 +1144,7 @@ public class TamaAccountHelper {
         ResponseHandler responseHandler = new BasicResponseHandler();
         String responseBody = (String) httpclient.execute(httpGet, responseHandler);
         return responseBody;
-      } catch (Exception e) {//{"data":{"code":"0","http_code":200,"message":"Countries fetched","result":[{"country_name":"Cameroon","country_img_path":"http:\/\/tamaexpress.com:585\/images\/sendtama\/cm.png","url":"http:\/\/tamaexpress.com:585\/api\/sendtama\/cm"},{"country_name":"Ivorycost","country_img_path":"http:\/\/tamaexpress.com:585\/images\/sendtama\/ci.png","url":"http:\/\/tamaexpress.com:585\/api\/sendtama\/ci"},{"country_name":"Mali","country_img_path":"http:\/\/tamaexpress.com:585\/images\/sendtama\/ml.png","url":"http:\/\/tamaexpress.com:585\/api\/sendtama\/ml"},{"country_name":"Senegal","country_img_path":"http:\/\/tamaexpress.com:585\/images\/sendtama\/sn.png","url":"http:\/\/tamaexpress.com:585\/api\/sendtama\/sn"}]}}
+      } catch (Exception e) {
         error = e.getMessage();
         e.printStackTrace();
       }
@@ -1550,6 +1544,10 @@ public class TamaAccountHelper {
     return holder;
   }
 
+  public interface AsyncResponse {
+
+    void processFinish(String output);
+  }
 
   public static Map<String, String> parse(JSONObject json, Map<String, String> out)
       throws JSONException {

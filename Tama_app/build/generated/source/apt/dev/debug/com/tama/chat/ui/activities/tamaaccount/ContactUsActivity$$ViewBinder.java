@@ -9,12 +9,12 @@ public class ContactUsActivity$$ViewBinder<T extends com.tama.chat.ui.activities
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755224, "field 'franceNumber'");
-    target.franceNumber = finder.castView(view, 2131755224, "field 'franceNumber'");
-    view = finder.findRequiredView(source, 2131755226, "field 'germanyNumber'");
-    target.germanyNumber = finder.castView(view, 2131755226, "field 'germanyNumber'");
-    view = finder.findRequiredView(source, 2131755228, "field 'emailText'");
-    target.emailText = finder.castView(view, 2131755228, "field 'emailText'");
+    view = finder.findRequiredView(source, 2131755222, "field 'franceNumber'");
+    target.franceNumber = finder.castView(view, 2131755222, "field 'franceNumber'");
+    view = finder.findRequiredView(source, 2131755224, "field 'germanyNumber'");
+    target.germanyNumber = finder.castView(view, 2131755224, "field 'germanyNumber'");
+    view = finder.findRequiredView(source, 2131755226, "field 'emailText'");
+    target.emailText = finder.castView(view, 2131755226, "field 'emailText'");
   }
 
   @Override public void unbind(T target) {

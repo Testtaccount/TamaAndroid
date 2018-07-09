@@ -9,10 +9,10 @@ public class LandingActivity$$ViewBinder<T extends com.tama.chat.ui.activities.a
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755265, "field 'appVersionTextView'");
-    target.appVersionTextView = finder.castView(view, 2131755265, "field 'appVersionTextView'");
-    view = finder.findRequiredView(source, 2131755264, "field 'phoneNumberConnectButton' and method 'phoneNumberConnect'");
-    target.phoneNumberConnectButton = finder.castView(view, 2131755264, "field 'phoneNumberConnectButton'");
+    view = finder.findRequiredView(source, 2131755263, "field 'appVersionTextView'");
+    target.appVersionTextView = finder.castView(view, 2131755263, "field 'appVersionTextView'");
+    view = finder.findRequiredView(source, 2131755262, "field 'phoneNumberConnectButton' and method 'phoneNumberConnect'");
+    target.phoneNumberConnectButton = finder.castView(view, 2131755262, "field 'phoneNumberConnectButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

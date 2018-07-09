@@ -55,6 +55,7 @@
         android:columnWidth="110dp"
         android:gravity="center"
         android:numColumns="2"
+        tools:listitem="@layout/item_countries_list"
         android:stretchMode="spacingWidthUniform" />
 
 

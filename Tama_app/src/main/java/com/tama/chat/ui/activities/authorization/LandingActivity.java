@@ -15,13 +15,11 @@ import butterknife.Bind;
 import butterknife.OnClick;
 import com.quickblox.users.model.QBUser;
 import com.tama.chat.R;
-import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.utils.StringObfuscator;
 import com.tama.chat.utils.ToastUtils;
 import com.tama.q_municate_core.models.AppSession;
 import com.tama.q_municate_core.models.LoginType;
-import java.io.UnsupportedEncodingException;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -196,7 +194,7 @@ public class LandingActivity extends BaseAuthActivity implements TamaAccountHelp
     }
     AppSession.getSession().setTamaAccountId(response[0]);
     appSharedHelper.saveTamaAccountId(response[0]);
-    appSharedHelper.saveTamaIsEurope(response[1].equals("1"));
+//    appSharedHelper.saveTamaIsEurope(response[1].equals("1"));
     startMainActivity();
 
   }

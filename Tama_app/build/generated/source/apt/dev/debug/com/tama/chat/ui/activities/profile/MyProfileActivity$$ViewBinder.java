@@ -8,12 +8,12 @@ import butterknife.ButterKnife.ViewBinder;
 public class MyProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activities.profile.MyProfileActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755229, "field 'photoImageView'");
-    target.photoImageView = finder.castView(view, 2131755229, "field 'photoImageView'");
-    view = finder.findRequiredView(source, 2131755298, "field 'fullNameTextInputLayout'");
-    target.fullNameTextInputLayout = finder.castView(view, 2131755298, "field 'fullNameTextInputLayout'");
-    view = finder.findRequiredView(source, 2131755299, "field 'fullNameEditText' and method 'onTextChangedFullName'");
-    target.fullNameEditText = finder.castView(view, 2131755299, "field 'fullNameEditText'");
+    view = finder.findRequiredView(source, 2131755227, "field 'photoImageView'");
+    target.photoImageView = finder.castView(view, 2131755227, "field 'photoImageView'");
+    view = finder.findRequiredView(source, 2131755296, "field 'fullNameTextInputLayout'");
+    target.fullNameTextInputLayout = finder.castView(view, 2131755296, "field 'fullNameTextInputLayout'");
+    view = finder.findRequiredView(source, 2131755297, "field 'fullNameEditText' and method 'onTextChangedFullName'");
+    target.fullNameEditText = finder.castView(view, 2131755297, "field 'fullNameEditText'");
     ((android.widget.TextView) view).addTextChangedListener(
       new android.text.TextWatcher() {
         @Override public void onTextChanged(
@@ -38,7 +38,7 @@ public class MyProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activities
           
         }
       });
-    view = finder.findRequiredView(source, 2131755297, "method 'changePhoto'");
+    view = finder.findRequiredView(source, 2131755295, "method 'changePhoto'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

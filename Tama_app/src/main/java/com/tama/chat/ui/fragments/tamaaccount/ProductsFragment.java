@@ -1,5 +1,7 @@
 package com.tama.chat.ui.fragments.tamaaccount;
 
+import static com.tama.chat.tamaAccount.TamaAccountHelper.parse;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -20,7 +22,9 @@ import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
 import com.tama.chat.utils.image.ImageLoaderUtils;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,9 +35,10 @@ public class ProductsFragment extends Fragment implements TamaAccountHelperListe
 
     private String mParam;
     private List<ProductsItem> productsItems;
-    private TamaExpressActivity mListener;
+    private TamaExpressActivity mActivity;
 
-    public ProductsFragment() {}
+    public ProductsFragment() {
+    }
 
     public static ProductsFragment newInstance(String param) {
         ProductsFragment fragment = new ProductsFragment();
@@ -54,7 +59,7 @@ public class ProductsFragment extends Fragment implements TamaAccountHelperListe
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+        Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_products, container, false);
         GridView gridView = (GridView) view.findViewById(R.id.grid_products_view);
         final TamaAccountHelperListener accountHelperListener = this;
@@ -62,50 +67,89 @@ public class ProductsFragment extends Fragment implements TamaAccountHelperListe
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 //                new TamaAccountHelper().getListOfCategories(accountHelperListener);
-                mListener.setCurrentFragment(SingleProductFragment.newInstance(productsItems.get(position)));
+                mActivity
+                    .setCurrentFragment(SingleProductFragment.newInstance(productsItems.get(position)));
             }
         });
-        if(!productsItems.isEmpty()) {
+        if (!productsItems.isEmpty()) {
             gridView.setAdapter(new ProductsListAdapter(productsItems));
         }
         return view;
     }
 
-
-
-    private List<ProductsItem> getListFromJson(String data){
-        if (data == null)
+    private List<ProductsItem> getListFromJson(String data) {
+        if (data == null) {
             return null;
+        }
         List<ProductsItem> items = new ArrayList<>();
+
+        JSONObject object = null;
+        Map<String, String> map = new HashMap<>();
         try {
-            JSONObject jsonObject = null;
-            jsonObject = new JSONObject(data);
-            JSONArray jsonDataList = jsonObject.getJSONArray("data");
-            for(int i = 0 ; i < jsonDataList.length(); ++i){
-                ProductsItem item = new ProductsItem();
-                JSONObject jsonItem = jsonDataList.getJSONObject(i);
-                item.translation = jsonItem.optString("translation");
-                item.product_id = jsonItem.getString("product_id");
-                item.product_name = jsonItem.getString("product_name");
-                item.product_tags = jsonItem.getString("product_tags");
-                item.product_desc = jsonItem.getString("product_desc");
-                item.product_category = jsonItem.getString("product_category");
-                item.product_image = jsonItem.getString("product_image");
-                item.country = jsonItem.getString("country");
-                item.product_cost = jsonItem.getString("product_cost");
-                item.status = jsonItem.getString("status");
+            object = new JSONObject(data);
+            JSONObject jsonObject = object.getJSONObject("data");
+            parse(jsonObject, map);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        String message = map.get("message");
+        String products = map.get("result");
+        Map<String, String> cMap = new HashMap<>();
+        JSONArray jsonarray = null;
+
+        try {
+            jsonarray = new JSONArray(products);
+            for (int i = 0; i < jsonarray.length(); i++) {
+                JSONObject jsonobject = jsonarray.getJSONObject(i);
+
+                String product_id = jsonobject.getString("product_id");
+                String product_name = jsonobject.getString("product_name");
+                String product_tags = jsonobject.getString("product_tags");
+                String product_desc = jsonobject.getString("product_desc");
+                String category_name = jsonobject.getString("category_name");
+                String product_image = jsonobject.getString("product_image");
+                String product_country = jsonobject.getString("product_country");
+                String product_cost = jsonobject.getString("product_cost");
+                String product_cost_ws = jsonobject.getString("product_cost_ws");
+                String shipping_available = jsonobject.getString("shipping_available");
+                String free_shipping = jsonobject.getString("free_shipping");
+                String min_to_order = jsonobject.getString("min_to_order");
+                String max_to_order = jsonobject.getString("max_to_order");
+                String shipping_cost = jsonobject.getString("shipping_cost");
+                String shipping_cost_ws = jsonobject.getString("shipping_cost_ws");
+                String lang = jsonobject.getString("lang");
+
+                ProductsItem item = new ProductsItem(
+                    product_id,
+                    product_name,
+                    product_tags,
+                    product_desc,
+                    category_name,
+                    product_image,
+                    product_country,
+                    product_cost,
+                    product_cost_ws,
+                    shipping_available,
+                    free_shipping,
+                    min_to_order,
+                    max_to_order,
+                    shipping_cost,
+                    shipping_cost_ws,
+                    lang
+                );
                 items.add(item);
             }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
         return items;
     }
 
-    private void loadImageByUri(String logoUrl,final ImageView v) {
+    private void loadImageByUri(String logoUrl, final ImageView v) {
         ImageLoader.getInstance().loadImage(logoUrl,
             ImageLoaderUtils.UIL_USER_AVATAR_DISPLAY_OPTIONS,
-            new SimpleImageLoadingListener(){
+            new SimpleImageLoadingListener() {
                 @Override
                 public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
                     super.onLoadingComplete(imageUri, view, loadedImage);
@@ -116,8 +160,8 @@ public class ProductsFragment extends Fragment implements TamaAccountHelperListe
 
 //    // TODO: Rename method, update argument and hook method into UI event
 //    public void onButtonPressed(Uri uri) {
-//        if (mListener != null) {
-//            mListener.onFragmentInteraction(uri);
+//        if (mActivity != null) {
+//            mActivity.onFragmentInteraction(uri);
 //        }
 //    }
 
@@ -125,22 +169,22 @@ public class ProductsFragment extends Fragment implements TamaAccountHelperListe
     public void onAttach(Context context) {
         super.onAttach(context);
         if (context instanceof TamaExpressActivity) {
-            mListener = (TamaExpressActivity) context;
+            mActivity = (TamaExpressActivity) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                + " must implement OnFragmentInteractionListener");
         }
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        mListener = null;
+        mActivity = null;
     }
 
     @Override
     public void requestSuccess(String data) {
-        mListener.setCurrentFragment(CategoriesFragment.newInstance(data,false));
+        mActivity.setCurrentFragment(CategoriesFragment.newInstance("url", data, false));
     }
 
     @Override
@@ -180,7 +224,7 @@ public class ProductsFragment extends Fragment implements TamaAccountHelperListe
 
         private LayoutInflater inflater = null;
 
-        public ProductsListAdapter( List<ProductsItem> data) {
+        public ProductsListAdapter(List<ProductsItem> data) {
             this.data = data;
             inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
@@ -215,13 +259,14 @@ public class ProductsFragment extends Fragment implements TamaAccountHelperListe
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             View vi = convertView;
-            if (vi == null)
+            if (vi == null) {
                 vi = inflater.inflate(R.layout.item_products_list, null);
+            }
             ProductsItem product = data.get(position);
             ImageView view = (ImageView) vi.findViewById(R.id.item_products_image);
-            loadImageByUri(product.product_image,view);
+            loadImageByUri(product.product_image, view);
             ((TextView) vi.findViewById(R.id.item_products_name))
-                    .setText(product.product_name + " " + product.product_cost);
+                .setText(product.product_name + " " + product.product_cost);
             return vi;
         }
     }

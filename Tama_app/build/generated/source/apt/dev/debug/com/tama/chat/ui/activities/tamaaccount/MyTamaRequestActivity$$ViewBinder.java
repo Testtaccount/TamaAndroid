@@ -9,8 +9,8 @@ public class MyTamaRequestActivity$$ViewBinder<T extends com.tama.chat.ui.activi
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755318, "field 'btnMyTamaTopUp' and method 'startMytamaTopUpRqt'");
-    target.btnMyTamaTopUp = finder.castView(view, 2131755318, "field 'btnMyTamaTopUp'");
+    view = finder.findRequiredView(source, 2131755316, "field 'btnMyTamaTopUp' and method 'startMytamaTopUpRqt'");
+    target.btnMyTamaTopUp = finder.castView(view, 2131755316, "field 'btnMyTamaTopUp'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -19,8 +19,8 @@ public class MyTamaRequestActivity$$ViewBinder<T extends com.tama.chat.ui.activi
           target.startMytamaTopUpRqt();
         }
       });
-    view = finder.findRequiredView(source, 2131755320, "field 'btnMobileTopUp' and method 'startMyTamaMobileTopUpRequestActivity'");
-    target.btnMobileTopUp = finder.castView(view, 2131755320, "field 'btnMobileTopUp'");
+    view = finder.findRequiredView(source, 2131755318, "field 'btnMobileTopUp' and method 'startMyTamaMobileTopUpRequestActivity'");
+    target.btnMobileTopUp = finder.castView(view, 2131755318, "field 'btnMobileTopUp'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -29,8 +29,8 @@ public class MyTamaRequestActivity$$ViewBinder<T extends com.tama.chat.ui.activi
           target.startMyTamaMobileTopUpRequestActivity();
         }
       });
-    view = finder.findRequiredView(source, 2131755321, "field 'btnPayTamaExpress' and method 'startPayTamaExpressRequestActivity'");
-    target.btnPayTamaExpress = finder.castView(view, 2131755321, "field 'btnPayTamaExpress'");
+    view = finder.findRequiredView(source, 2131755319, "field 'btnPayTamaExpress' and method 'startPayTamaExpressRequestActivity'");
+    target.btnPayTamaExpress = finder.castView(view, 2131755319, "field 'btnPayTamaExpress'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -39,8 +39,8 @@ public class MyTamaRequestActivity$$ViewBinder<T extends com.tama.chat.ui.activi
           target.startPayTamaExpressRequestActivity();
         }
       });
-    view = finder.findRequiredView(source, 2131755322, "field 'btnIncomingRqt' and method 'startIncomingRequestActivity'");
-    target.btnIncomingRqt = finder.castView(view, 2131755322, "field 'btnIncomingRqt'");
+    view = finder.findRequiredView(source, 2131755320, "field 'btnIncomingRqt' and method 'startIncomingRequestActivity'");
+    target.btnIncomingRqt = finder.castView(view, 2131755320, "field 'btnIncomingRqt'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

@@ -8,10 +8,10 @@ import butterknife.ButterKnife.ViewBinder;
 public class MapsActivity$$ViewBinder<T extends com.tama.chat.ui.activities.location.MapsActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755277, "field 'sendTextView'");
-    target.sendTextView = finder.castView(view, 2131755277, "field 'sendTextView'");
-    view = finder.findRequiredView(source, 2131755275, "field 'sendLocationPanel' and method 'sendLocationButtonClicked'");
-    target.sendLocationPanel = finder.castView(view, 2131755275, "field 'sendLocationPanel'");
+    view = finder.findRequiredView(source, 2131755275, "field 'sendTextView'");
+    target.sendTextView = finder.castView(view, 2131755275, "field 'sendTextView'");
+    view = finder.findRequiredView(source, 2131755273, "field 'sendLocationPanel' and method 'sendLocationButtonClicked'");
+    target.sendLocationPanel = finder.castView(view, 2131755273, "field 'sendLocationPanel'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

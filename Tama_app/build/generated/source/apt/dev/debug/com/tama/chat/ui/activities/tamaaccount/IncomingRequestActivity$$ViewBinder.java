@@ -9,18 +9,18 @@ public class IncomingRequestActivity$$ViewBinder<T extends com.tama.chat.ui.acti
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755258, "field 'requestItemShowLayout'");
-    target.requestItemShowLayout = finder.castView(view, 2131755258, "field 'requestItemShowLayout'");
-    view = finder.findRequiredView(source, 2131755252, "field 'titleLayout'");
-    target.titleLayout = finder.castView(view, 2131755252, "field 'titleLayout'");
-    view = finder.findRequiredView(source, 2131755257, "field 'incomingRequestList'");
-    target.incomingRequestList = finder.castView(view, 2131755257, "field 'incomingRequestList'");
-    view = finder.findRequiredView(source, 2131755259, "field 'itemShowText'");
-    target.itemShowText = finder.castView(view, 2131755259, "field 'itemShowText'");
-    view = finder.findRequiredView(source, 2131755262, "field 'errorMessageText'");
-    target.errorMessageText = finder.castView(view, 2131755262, "field 'errorMessageText'");
-    view = finder.findRequiredView(source, 2131755253, "field 'allTextBtn' and method 'onClickAllTextBtn'");
-    target.allTextBtn = finder.castView(view, 2131755253, "field 'allTextBtn'");
+    view = finder.findRequiredView(source, 2131755256, "field 'requestItemShowLayout'");
+    target.requestItemShowLayout = finder.castView(view, 2131755256, "field 'requestItemShowLayout'");
+    view = finder.findRequiredView(source, 2131755250, "field 'titleLayout'");
+    target.titleLayout = finder.castView(view, 2131755250, "field 'titleLayout'");
+    view = finder.findRequiredView(source, 2131755255, "field 'incomingRequestList'");
+    target.incomingRequestList = finder.castView(view, 2131755255, "field 'incomingRequestList'");
+    view = finder.findRequiredView(source, 2131755257, "field 'itemShowText'");
+    target.itemShowText = finder.castView(view, 2131755257, "field 'itemShowText'");
+    view = finder.findRequiredView(source, 2131755260, "field 'errorMessageText'");
+    target.errorMessageText = finder.castView(view, 2131755260, "field 'errorMessageText'");
+    view = finder.findRequiredView(source, 2131755251, "field 'allTextBtn' and method 'onClickAllTextBtn'");
+    target.allTextBtn = finder.castView(view, 2131755251, "field 'allTextBtn'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -29,8 +29,8 @@ public class IncomingRequestActivity$$ViewBinder<T extends com.tama.chat.ui.acti
           target.onClickAllTextBtn();
         }
       });
-    view = finder.findRequiredView(source, 2131755254, "field 'myTamaTextBtn' and method 'onClickMyTamaTextBtn'");
-    target.myTamaTextBtn = finder.castView(view, 2131755254, "field 'myTamaTextBtn'");
+    view = finder.findRequiredView(source, 2131755252, "field 'myTamaTextBtn' and method 'onClickMyTamaTextBtn'");
+    target.myTamaTextBtn = finder.castView(view, 2131755252, "field 'myTamaTextBtn'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -39,8 +39,8 @@ public class IncomingRequestActivity$$ViewBinder<T extends com.tama.chat.ui.acti
           target.onClickMyTamaTextBtn();
         }
       });
-    view = finder.findRequiredView(source, 2131755255, "field 'tamaExpressTextBtn' and method 'onClickTamaExpressTextBtn'");
-    target.tamaExpressTextBtn = finder.castView(view, 2131755255, "field 'tamaExpressTextBtn'");
+    view = finder.findRequiredView(source, 2131755253, "field 'tamaExpressTextBtn' and method 'onClickTamaExpressTextBtn'");
+    target.tamaExpressTextBtn = finder.castView(view, 2131755253, "field 'tamaExpressTextBtn'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -49,8 +49,8 @@ public class IncomingRequestActivity$$ViewBinder<T extends com.tama.chat.ui.acti
           target.onClickTamaExpressTextBtn();
         }
       });
-    view = finder.findRequiredView(source, 2131755256, "field 'tamaTopupTextBtn' and method 'onClickTamaTopupTextBtn'");
-    target.tamaTopupTextBtn = finder.castView(view, 2131755256, "field 'tamaTopupTextBtn'");
+    view = finder.findRequiredView(source, 2131755254, "field 'tamaTopupTextBtn' and method 'onClickTamaTopupTextBtn'");
+    target.tamaTopupTextBtn = finder.castView(view, 2131755254, "field 'tamaTopupTextBtn'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -59,12 +59,12 @@ public class IncomingRequestActivity$$ViewBinder<T extends com.tama.chat.ui.acti
           target.onClickTamaTopupTextBtn();
         }
       });
-    view = finder.findRequiredView(source, 2131755260, "field 'btnItemOk'");
-    target.btnItemOk = finder.castView(view, 2131755260, "field 'btnItemOk'");
-    view = finder.findRequiredView(source, 2131755261, "field 'btnItemDenied'");
-    target.btnItemDenied = finder.castView(view, 2131755261, "field 'btnItemDenied'");
-    view = finder.findRequiredView(source, 2131755250, "field 'btnIncomingRequest' and method 'onClickIncomingBtn'");
-    target.btnIncomingRequest = finder.castView(view, 2131755250, "field 'btnIncomingRequest'");
+    view = finder.findRequiredView(source, 2131755258, "field 'btnItemOk'");
+    target.btnItemOk = finder.castView(view, 2131755258, "field 'btnItemOk'");
+    view = finder.findRequiredView(source, 2131755259, "field 'btnItemDenied'");
+    target.btnItemDenied = finder.castView(view, 2131755259, "field 'btnItemDenied'");
+    view = finder.findRequiredView(source, 2131755248, "field 'btnIncomingRequest' and method 'onClickIncomingBtn'");
+    target.btnIncomingRequest = finder.castView(view, 2131755248, "field 'btnIncomingRequest'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -73,8 +73,8 @@ public class IncomingRequestActivity$$ViewBinder<T extends com.tama.chat.ui.acti
           target.onClickIncomingBtn();
         }
       });
-    view = finder.findRequiredView(source, 2131755251, "field 'btnOutgoingRequest' and method 'onClickOutGoingBtn'");
-    target.btnOutgoingRequest = finder.castView(view, 2131755251, "field 'btnOutgoingRequest'");
+    view = finder.findRequiredView(source, 2131755249, "field 'btnOutgoingRequest' and method 'onClickOutGoingBtn'");
+    target.btnOutgoingRequest = finder.castView(view, 2131755249, "field 'btnOutgoingRequest'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

@@ -68,7 +68,7 @@ public class SingleProductFragment extends Fragment implements TamaAccountHelper
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+        Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_single_product, container, false);
         ButterKnife.bind(this, view);
         initFields();
@@ -114,7 +114,7 @@ public class SingleProductFragment extends Fragment implements TamaAccountHelper
             mListener = (TamaExpressActivity) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                + " must implement OnFragmentInteractionListener");
         }
     }
 
@@ -126,7 +126,7 @@ public class SingleProductFragment extends Fragment implements TamaAccountHelper
 
     @Override
     public void requestSuccess(String data) {
-        mListener.setCurrentFragment(CategoriesFragment.newInstance(data,false));
+        mListener.setCurrentFragment(CategoriesFragment.newInstance("url",data,false));
     }
 
     @Override

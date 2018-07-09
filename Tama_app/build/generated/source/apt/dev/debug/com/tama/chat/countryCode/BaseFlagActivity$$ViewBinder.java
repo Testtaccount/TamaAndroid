@@ -9,10 +9,10 @@ public class BaseFlagActivity$$ViewBinder<T extends com.tama.chat.countryCode.Ba
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755325, "field 'countryCodeSpinner'");
-    target.countryCodeSpinner = finder.castView(view, 2131755325, "field 'countryCodeSpinner'");
-    view = finder.findRequiredView(source, 2131755326, "field 'enterPhoneNumberText'");
-    target.enterPhoneNumberText = finder.castView(view, 2131755326, "field 'enterPhoneNumberText'");
+    view = finder.findRequiredView(source, 2131755323, "field 'countryCodeSpinner'");
+    target.countryCodeSpinner = finder.castView(view, 2131755323, "field 'countryCodeSpinner'");
+    view = finder.findRequiredView(source, 2131755324, "field 'enterPhoneNumberText'");
+    target.enterPhoneNumberText = finder.castView(view, 2131755324, "field 'enterPhoneNumberText'");
   }
 
   @Override public void unbind(T target) {

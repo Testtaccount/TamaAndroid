@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tama.chat.ui.fragments.tamaAccount.SingleProductFragment">
+    tools:context="com.tama.chat.ui.fragments.tamaaccount.SingleProductFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

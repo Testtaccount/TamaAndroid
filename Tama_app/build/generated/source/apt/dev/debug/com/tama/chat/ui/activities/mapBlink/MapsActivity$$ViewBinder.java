@@ -8,18 +8,18 @@ import butterknife.ButterKnife.ViewBinder;
 public class MapsActivity$$ViewBinder<T extends com.tama.chat.ui.activities.mapBlink.MapsActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755292, "field 'tvDistance'");
-    target.tvDistance = finder.castView(view, 2131755292, "field 'tvDistance'");
-    view = finder.findRequiredView(source, 2131755293, "field 'tvDuration'");
-    target.tvDuration = finder.castView(view, 2131755293, "field 'tvDuration'");
-    view = finder.findRequiredView(source, 2131755294, "field 'mapTypeNormal'");
-    target.mapTypeNormal = finder.castView(view, 2131755294, "field 'mapTypeNormal'");
-    view = finder.findRequiredView(source, 2131755295, "field 'mapTypeSatellite'");
-    target.mapTypeSatellite = finder.castView(view, 2131755295, "field 'mapTypeSatellite'");
-    view = finder.findRequiredView(source, 2131755296, "field 'mapTypeHybrid'");
-    target.mapTypeHybrid = finder.castView(view, 2131755296, "field 'mapTypeHybrid'");
-    view = finder.findRequiredView(source, 2131755291, "field 'modeSpinner' and method 'snapChatTimeChange'");
-    target.modeSpinner = finder.castView(view, 2131755291, "field 'modeSpinner'");
+    view = finder.findRequiredView(source, 2131755290, "field 'tvDistance'");
+    target.tvDistance = finder.castView(view, 2131755290, "field 'tvDistance'");
+    view = finder.findRequiredView(source, 2131755291, "field 'tvDuration'");
+    target.tvDuration = finder.castView(view, 2131755291, "field 'tvDuration'");
+    view = finder.findRequiredView(source, 2131755292, "field 'mapTypeNormal'");
+    target.mapTypeNormal = finder.castView(view, 2131755292, "field 'mapTypeNormal'");
+    view = finder.findRequiredView(source, 2131755293, "field 'mapTypeSatellite'");
+    target.mapTypeSatellite = finder.castView(view, 2131755293, "field 'mapTypeSatellite'");
+    view = finder.findRequiredView(source, 2131755294, "field 'mapTypeHybrid'");
+    target.mapTypeHybrid = finder.castView(view, 2131755294, "field 'mapTypeHybrid'");
+    view = finder.findRequiredView(source, 2131755289, "field 'modeSpinner' and method 'snapChatTimeChange'");
+    target.modeSpinner = finder.castView(view, 2131755289, "field 'modeSpinner'");
     ((android.widget.AdapterView<?>) view).setOnItemSelectedListener(
       new android.widget.AdapterView.OnItemSelectedListener() {
         @Override public void onItemSelected(

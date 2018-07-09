@@ -172,10 +172,10 @@
             android:screenOrientation="portrait" />
         <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
         <activity
-            android:name="com.tama.chat.ui.activities.about.AboutActivity"
+            android:name="com.tama.chat.tamaAccount.TamaPayOnlineActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.tama.chat.tamaAccount.AboutUsActivity"
+            android:name="com.tama.chat.tamaAccount.TamaAboutUsActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.tama.chat.ui.activities.others.PreviewImageActivity"
