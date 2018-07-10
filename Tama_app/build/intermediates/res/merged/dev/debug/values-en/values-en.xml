@@ -422,6 +422,6 @@
     <string name="yesterday">Yesterday</string>
     <string name="you_have_no_history">You have no history</string>
     <string name="you_have_transfered">You have transfered</string>
-    <string name="you_topup_done_with">You topup is done with</string>
+    <string name="you_topup_done_with">You topup is done</string>
     <string name="your_personal_details">Your Personal Details</string>
 </resources>

@@ -20,13 +20,13 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
       });
     view = finder.findRequiredView(source, 2131755242, "field 'nameTextView'");
     target.nameTextView = finder.castView(view, 2131755242, "field 'nameTextView'");
-    view = finder.findRequiredView(source, 2131755364, "field 'timestampTextView'");
-    target.timestampTextView = finder.castView(view, 2131755364, "field 'timestampTextView'");
-    view = finder.findRequiredView(source, 2131755365, "field 'phoneView'");
+    view = finder.findRequiredView(source, 2131755365, "field 'timestampTextView'");
+    target.timestampTextView = finder.castView(view, 2131755365, "field 'timestampTextView'");
+    view = finder.findRequiredView(source, 2131755366, "field 'phoneView'");
     target.phoneView = view;
-    view = finder.findRequiredView(source, 2131755366, "field 'phoneTextView'");
-    target.phoneTextView = finder.castView(view, 2131755366, "field 'phoneTextView'");
-    view = finder.findRequiredView(source, 2131755368, "method 'sendMessage'");
+    view = finder.findRequiredView(source, 2131755367, "field 'phoneTextView'");
+    target.phoneTextView = finder.castView(view, 2131755367, "field 'phoneTextView'");
+    view = finder.findRequiredView(source, 2131755369, "method 'sendMessage'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -35,7 +35,7 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
           target.sendMessage(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755369, "method 'audioCall'");
+    view = finder.findRequiredView(source, 2131755370, "method 'audioCall'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -44,7 +44,7 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
           target.audioCall(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755370, "method 'videoCall'");
+    view = finder.findRequiredView(source, 2131755371, "method 'videoCall'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -53,7 +53,7 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
           target.videoCall(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755371, "method 'deleteChatHistory'");
+    view = finder.findRequiredView(source, 2131755372, "method 'deleteChatHistory'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -62,7 +62,7 @@ public class UserProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
           target.deleteChatHistory(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755372, "method 'removeContactAndChatHistory'");
+    view = finder.findRequiredView(source, 2131755373, "method 'removeContactAndChatHistory'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

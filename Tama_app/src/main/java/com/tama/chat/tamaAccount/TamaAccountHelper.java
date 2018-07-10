@@ -137,13 +137,14 @@ public class TamaAccountHelper {
     new CheckTamaUserTask().execute(CHECK_TAMA_USER + getLanguages(), country_code, phone_no);
   }
 
-  public void confirmTamaTopUp(TamaAccountHelperListener listener, String user_id,
-      String country_code, String topup_no,
-      String euro_amount, String local_amount, String dest_currency) {
+  public void confirmTamaTopUp(TamaAccountHelperListener listener, String topup_no,
+      String country_code,
+      String euro_amount, String local_amount, String dest_currency, String pay_by,
+      String use_promo) {
     this.listener = listener;
     new ConfirmTamaTopUpTask()
-        .execute(CONFIRM_TOPUP + getLanguages(), user_id, country_code, topup_no, euro_amount,
-            local_amount, dest_currency);
+        .execute(CONFIRM_TOPUP + getLanguages(), topup_no, country_code, euro_amount, local_amount,
+            dest_currency, pay_by, use_promo);
   }
 
   public void sendMyTamaAccountTopUpRqt(TamaAccountHelperListener listener, String user_id,
@@ -179,10 +180,11 @@ public class TamaAccountHelper {
   }
 
   public void setConfirm(TamaAccountHelperListener listener, String productIds, String sender_name,
-      String sender_mobile, String receiver_name, String receiver_mobile, String pay_by,String use_promo) {
+      String sender_mobile, String receiver_name, String receiver_mobile, String pay_by,
+      String use_promo) {
     this.listener = listener;
     new ConfirmTask().execute(CONFIRM + getLanguages(), productIds, sender_name, sender_mobile,
-            receiver_name, receiver_mobile, pay_by,use_promo);
+        receiver_name, receiver_mobile, pay_by, use_promo);
   }
 
   public void setRevokeAccount(TamaAccountHelperListener listener, String user_id) {
@@ -195,11 +197,11 @@ public class TamaAccountHelper {
     new ContactUSTask().execute(CONTACT_US + getLanguages());
   }
 
-  public void getDenominations(TamaAccountHelperListener listener, String user_id,
-      String country_code, String topup_no) {
+  public void getDenominations(TamaAccountHelperListener listener, String topup_no,
+      String country_code) {
     this.listener = listener;
     new MobileTopUpGetDenominations()
-        .execute(MOBILE_TOPUP + getLanguages(), user_id, country_code, topup_no);
+        .execute(MOBILE_TOPUP + getLanguages(), topup_no, country_code);
   }
 
   public void getBalance(Context context, TamaAccountHelperListener listener, String user_id) {
@@ -250,63 +252,6 @@ public class TamaAccountHelper {
         .execute(GET_OUTGOING_REQUEST + user_id + "/" + type + getLanguages());
   }
 
-  private class ConfirmTamaTopUpTask extends AsyncTask<String, Void, String> {
-
-    @Override
-    protected String doInBackground(String... params) {
-
-      try {
-        JSONObject json = new JSONObject();
-        json.put("user_id", params[1]);
-        json.put("country_code", params[2]);
-        json.put("topup_no", params[3]);
-        json.put("euro_amount", params[4]);
-        json.put("local_amount", params[5]);
-        json.put("dest_currency", params[6]);
-        StringEntity paramsStr = new StringEntity(json.toString());
-        DefaultHttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost(params[0]);
-        httppost.setEntity(paramsStr);
-        httppost.setHeader("Accept", "application/json");
-        httppost.setHeader("Content-type", "application/json");
-        httppost.setHeader("Authorization", "Bearer " + getAccessToken());
-        ResponseHandler responseHandler = new BasicResponseHandler();
-        return (String) httpclient.execute(httppost, responseHandler);
-//                return "{\"data\":{\"user_id\":\"16\",\"balance\":\"371.22 \\u20ac\",\"history_id\":246}}";
-      } catch (Exception e) {
-        error = e.getMessage();
-        e.printStackTrace();
-      }
-      return null;
-    }
-
-    @Override
-    protected void onPostExecute(String str) {
-      super.onPostExecute(str);
-      if (str != null) {
-        JSONObject jsonObject = null;
-        try {
-          jsonObject = new JSONObject(str);
-        } catch (JSONException e) {
-          e.printStackTrace();
-        }
-        if (jsonObject != null) {
-          JSONObject jsonData = jsonObject.optJSONObject("error");
-          if (jsonData != null) {
-            error = jsonData.optString("message");
-            if (error != null) {
-              listener.requestError(error);
-            }
-          } else {
-            listener.requestSuccess(str);
-          }
-        }
-      } else {
-        listener.requestError(error);
-      }
-    }
-  }
-
   private class MobileTopUpGetDenominations extends AsyncTask<String, Void, String> {
 
     @Override
@@ -314,9 +259,8 @@ public class TamaAccountHelper {
 
       try {
         JSONObject json = new JSONObject();
-        json.put("user_id", params[1]);
+        json.put("topup_no", params[1]);
         json.put("country_code", params[2]);
-        json.put("topup_no", params[3]);
         StringEntity paramsStr = new StringEntity(json.toString());
         DefaultHttpClient httpclient = new DefaultHttpClient();
         HttpPost httppost = new HttpPost(params[0]);
@@ -325,8 +269,8 @@ public class TamaAccountHelper {
         httppost.setHeader("Content-type", "application/json");
         httppost.setHeader("Authorization", "Bearer " + getAccessToken());
         ResponseHandler responseHandler = new BasicResponseHandler();
-        return (String) httpclient.execute(httppost, responseHandler);
-//                return "{\"data\":{\"mobile_number\":\"918122535488\\r\",\"country\":\"India\\r\",\"operator\":\"Vodafone Chennai India\\r\",\"destination_currency\":\"INR\\r\",\"product_list\":{\"0\":\"10\",\"1\":\"20\",\"2\":\"30\",\"3\":\"50\",\"4\":\"100\",\"5\":\"112\",\"6\":\"351\",\"7\":\"500\\r\"},\"retail_price_list\":{\"0\":\"0.30\",\"1\":\"0.50\",\"2\":\"0.70\",\"3\":\"1.10\",\"4\":\"2.10\",\"5\":\"2.30\",\"6\":\"7.00\",\"7\":\"10.00\\r\"}}}";
+        String responseBody = (String) httpclient.execute(httppost, responseHandler);
+        return responseBody;
       } catch (Exception e) {
         error = e.getMessage();
         e.printStackTrace();
@@ -335,31 +279,191 @@ public class TamaAccountHelper {
     }
 
     @Override
-    protected void onPostExecute(String s) {
-      super.onPostExecute(s);
-      if (s != null) {
-        JSONObject jsonObject = null;
+    protected void onPostExecute(String json) {
+      super.onPostExecute(json);
+      if (json != null) {
+        JSONObject object = null;
+        Map<String, String> map = new HashMap<>();
         try {
-          jsonObject = new JSONObject(s);
+          object = new JSONObject(json);
+          JSONObject jsonObject = object.getJSONObject("data");
+          parse(jsonObject, map);
         } catch (JSONException e) {
           e.printStackTrace();
         }
-        if (jsonObject != null) {
-          JSONObject jsonData = jsonObject.optJSONObject("error");
-          if (jsonData != null) {
-            error = jsonData.optString("message");
-            if (error != null) {
-              listener.requestError(error);
-            }
-          } else {
-            listener.requestSuccess(s);
-          }
+
+        String code = map.get("code");
+        String http_code = map.get("http_code");
+        String message = map.get("message");
+
+        String country_code = map.get("country_code");
+        String topup_no = map.get("topup_no");
+
+        String mobile_number = map.get("mobile_number");
+        String country = map.get("country");
+        String operator = map.get("operator");
+        String destination_currency = map.get("destination_currency");
+        String product_list = map.get("product_list");
+        String retail_price_list = map.get("retail_price_list");
+
+        if (http_code.equals("400")) {
+          listener.requestError(message);
+        } else if (http_code.equals("200") && code.equals("0")) {
+          listener.requestSuccess(json);
+        } else {
+          listener.requestError(message);
         }
+//
+//
+//        JSONObject jsonObject = null;
+//        try {
+//          jsonObject = new JSONObject(s);
+//        } catch (JSONException e) {
+//          e.printStackTrace();
+//        }
+//        if (jsonObject != null) {
+//          JSONObject jsonData = jsonObject.optJSONObject("error");
+//          if (jsonData != null) {
+//            error = jsonData.optString("message");
+//            if (error != null) {
+//              listener.requestError(error);
+//            }
+//          } else {
+//            listener.requestSuccess(s);
+//          }
+//        }
       } else {
-        listener.requestError(error);
+        listener.requestError("The given data failed to pass validation.");
       }
     }
   }
+
+  private class ConfirmTamaTopUpTask extends AsyncTask<String, Void, String> {
+
+    @Override
+    protected String doInBackground(String... params) {
+      try {
+        JSONObject json = new JSONObject();
+        json.put("topup_no", params[1]);
+        json.put("country_code", params[2]);
+        json.put("euro_amount", params[3]);
+        json.put("local_amount", params[4]);
+        json.put("dest_currency", params[5]);
+        json.put("pay_by", params[6]);
+        json.put("use_promo", params[7]);
+        StringEntity paramsStr = new StringEntity(json.toString());
+        DefaultHttpClient httpclient = new DefaultHttpClient();
+        HttpPost httppost = new HttpPost(params[0]);
+        httppost.setEntity(paramsStr);
+        httppost.setHeader("Accept", "application/json");
+        httppost.setHeader("Content-type", "application/json");
+        httppost.setHeader("Authorization", "Bearer " + getAccessToken());
+        ResponseHandler responseHandler = new BasicResponseHandler();
+        String responseBody = (String) httpclient.execute(httppost, responseHandler);
+        return responseBody;
+      } catch (Exception e) {
+        error = e.getMessage();
+        e.printStackTrace();
+      }
+      return null;
+    }
+
+    /*{
+  "data": {
+    "code": "1",
+    "http_code": 200,
+    "message": "Request Timeout",
+    "result": []
+  }
+}*/
+    /*{
+  "data": {
+    "code": "0",
+    "http_code": 200,
+    "message": "Your Recharge was successful!",
+    "result": {
+      "balance": "€3.53",
+      "history_id": ""
+    }
+  }
+}*/
+    /*{
+"data": {
+"code": "1",
+"http_code": 200,
+"message": "Your account does not a have enough balance to make this order!",
+"result": [],
+}
+}*/
+
+    /*{
+"data": {
+"code": "1",
+"http_code": 200,
+"message": "Unable to confirm you order, try again later",
+"result": [],
+}
+}*/
+
+
+    @Override
+    protected void onPostExecute(String json) {
+      super.onPostExecute(json);
+      if (json != null) {
+
+        JSONObject object = null;
+        Map<String, String> map = new HashMap<>();
+        try {
+          object = new JSONObject(json);
+          JSONObject jsonObject = object.getJSONObject("data");
+          parse(jsonObject, map);
+        } catch (JSONException e) {
+          e.printStackTrace();
+        }
+
+        String code = map.get("code");
+        String http_code = map.get("http_code");
+        String message = map.get("message");
+
+        String balance = map.get("balance");
+        String history_id = map.get("history_id");
+
+        if (http_code.equals("400")) {
+          listener.requestError(message);
+        }
+        else if (http_code.equals("200") && code.equals("0") && balance!=null) {
+          listener.requestSuccess(json);
+        } else {
+          listener.requestError(message);
+        }
+//
+
+        ///////////////////
+//        if (str != null) {
+//          JSONObject jsonObject = null;
+//          try {
+//            jsonObject = new JSONObject(str);
+//          } catch (JSONException e) {
+//            e.printStackTrace();
+//          }
+//          if (jsonObject != null) {
+//            JSONObject jsonData = jsonObject.optJSONObject("error");
+//            if (jsonData != null) {
+//              error = jsonData.optString("message");
+//              if (error != null) {
+//                listener.requestError(error);
+//              }
+//            } else {
+//              listener.requestSuccess(str);
+//            }
+//          }
+//        }
+      } else {
+        listener.requestError("Unable to confirm you order, try again later");
+      }
+    }
+  }
+
 
   private class TopupRequestTask extends AsyncTask<String, Void, String> {
 
@@ -540,12 +644,11 @@ public class TamaAccountHelper {
         String balance = map.get("balance");
         String history_id = map.get("history_id");
 
-
-        if(http_code.equals("400")){
+        if (http_code.equals("400")) {
           listener.requestError(message);
-        }else if(code.equals("1")){
+        } else if (code.equals("1")) {
           listener.requestError(message);
-        }else if(code.equals("0")){
+        } else if (code.equals("0")) {
           listener.requestSuccess(message);
         }
       } else {
@@ -1059,7 +1162,8 @@ public class TamaAccountHelper {
         httppost.setHeader("Accept", "application/json");
         httppost.setHeader("Content-type", "application/json");
 
-        httppost.setHeader("Authorization", "Bearer " + App.getInstance().getAppSharedHelper().getTamaAccountAccessToken());
+        httppost.setHeader("Authorization",
+            "Bearer " + App.getInstance().getAppSharedHelper().getTamaAccountAccessToken());
 
         ResponseHandler responseHandler = new BasicResponseHandler();
         String responseBody = (String) httpclient.execute(httppost, responseHandler);

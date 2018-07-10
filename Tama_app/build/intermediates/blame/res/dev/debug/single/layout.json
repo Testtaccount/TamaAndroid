@@ -72,16 +72,16 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\fragment_dialogs_list.xml"
     },
     {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_tama_about_us.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_tama_about_us.xml"
+    },
+    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_create_group_dialog.xml",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_create_group_dialog.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\view_controls_video_call.xml",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\view_controls_video_call.xml"
-    },
-    {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_tama_about_us.xml",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_tama_about_us.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\item_country_drop.xml",
@@ -396,12 +396,12 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\layout\\messenger_button_send_blue_large.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_user_profile.xml",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_user_profile.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_user_profile.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_user_profile.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
@@ -946,10 +946,6 @@
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\exo_playback_control_view.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\4da027b0a51c0d7670538b68873e4c1271d0be69\\output\\res\\layout\\exo_playback_control_view.xml"
-    },
-    {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_about.xml",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_about.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_landing.xml",

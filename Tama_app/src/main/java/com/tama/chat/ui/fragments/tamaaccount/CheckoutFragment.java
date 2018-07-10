@@ -408,7 +408,7 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
   private SharedHelper sharedHelper;
   private String productIds;
   private String productCountry;
-  private boolean usePromo;
+  private boolean useExpress;
   private String balance;
   private double grandTotal;
 
@@ -419,8 +419,8 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
   @Bind(R.id.request_order_btn)
   Button btnRequestOrder;
 
-  @Bind(R.id.checkbox_promo)
-  CheckBox promoCheckBox;
+  @Bind(R.id.checkbox_express)
+  CheckBox expressCheckBox;
 
   @Bind(R.id.country_code_spinner_first)
   protected Spinner countryCodeSpinnerFirst;
@@ -539,7 +539,7 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
     enterPhoneNumberTextFirst.setImeOptions(EditorInfo.IME_ACTION_SEND);
     enterPhoneNumberTextFirst.setImeActionLabel(getString(R.string.label_send), EditorInfo.IME_ACTION_SEND);
     String expressBalance=sharedHelper.getPromoTamaexpressBalance();
-    promoCheckBox.setText("Use My Tama Express Balance "+ expressBalance);
+    expressCheckBox.setText("Use My Tama Express Balance "+ expressBalance);
   }
 
   protected void initCodes() {
@@ -591,12 +591,12 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
     secondPhoneNumber = mActivity.getSecondNumber();
   }
 
-  @OnCheckedChanged(R.id.checkbox_promo)
+  @OnCheckedChanged(R.id.checkbox_express)
   public void usePromoCheckBoxCheck(CompoundButton button, boolean checked) {
     if (checked) {
-      usePromo = true;
+      useExpress = true;
     } else {
-      usePromo = false;
+      useExpress = false;
     }
   }
 
@@ -632,7 +632,7 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
     String sender_mobile = getFullPhoneNumberFirst();// enterPhoneNumberTextFirst.getText().toString();
     String receiver_name = beneficiaryName.getText().toString();
     String receiver_mobile = getFullPhoneNumberSecond();
-    String use_promo = usePromo ? "yes" : "no";
+    String use_promo = useExpress ? "yes" : "no";
     new TamaAccountHelper().setConfirm(this, productIds, sender_name, sender_mobile, receiver_name, receiver_mobile,pay_by, use_promo);
   }
 

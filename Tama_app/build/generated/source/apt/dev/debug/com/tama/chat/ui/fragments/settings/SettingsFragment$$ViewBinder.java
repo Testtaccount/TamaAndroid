@@ -12,8 +12,8 @@ public class SettingsFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.s
     target.avatarImageView = finder.castView(view, 2131755241, "field 'avatarImageView'");
     view = finder.findRequiredView(source, 2131755297, "field 'fullNameTextView'");
     target.fullNameTextView = finder.castView(view, 2131755297, "field 'fullNameTextView'");
-    view = finder.findRequiredView(source, 2131755517, "field 'pushNotificationSwitch' and method 'enablePushNotification'");
-    target.pushNotificationSwitch = finder.castView(view, 2131755517, "field 'pushNotificationSwitch'");
+    view = finder.findRequiredView(source, 2131755516, "field 'pushNotificationSwitch' and method 'enablePushNotification'");
+    target.pushNotificationSwitch = finder.castView(view, 2131755516, "field 'pushNotificationSwitch'");
     ((android.widget.CompoundButton) view).setOnCheckedChangeListener(
       new android.widget.CompoundButton.OnCheckedChangeListener() {
         @Override public void onCheckedChanged(
@@ -23,8 +23,8 @@ public class SettingsFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.s
           target.enablePushNotification(p1);
         }
       });
-    view = finder.findRequiredView(source, 2131755525, "field 'savePhotoVideoSwitch' and method 'enableSavePhotoVideo'");
-    target.savePhotoVideoSwitch = finder.castView(view, 2131755525, "field 'savePhotoVideoSwitch'");
+    view = finder.findRequiredView(source, 2131755524, "field 'savePhotoVideoSwitch' and method 'enableSavePhotoVideo'");
+    target.savePhotoVideoSwitch = finder.castView(view, 2131755524, "field 'savePhotoVideoSwitch'");
     ((android.widget.CompoundButton) view).setOnCheckedChangeListener(
       new android.widget.CompoundButton.OnCheckedChangeListener() {
         @Override public void onCheckedChanged(
@@ -34,8 +34,8 @@ public class SettingsFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.s
           target.enableSavePhotoVideo(p1);
         }
       });
-    view = finder.findRequiredView(source, 2131755523, "field 'snapChatSpinner' and method 'snapChatTimeChange'");
-    target.snapChatSpinner = finder.castView(view, 2131755523, "field 'snapChatSpinner'");
+    view = finder.findRequiredView(source, 2131755522, "field 'snapChatSpinner' and method 'snapChatTimeChange'");
+    target.snapChatSpinner = finder.castView(view, 2131755522, "field 'snapChatSpinner'");
     ((android.widget.AdapterView<?>) view).setOnItemSelectedListener(
       new android.widget.AdapterView.OnItemSelectedListener() {
         @Override public void onItemSelected(
@@ -52,8 +52,8 @@ public class SettingsFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.s
           
         }
       });
-    view = finder.findRequiredView(source, 2131755526, "field 'appLanguageSpinner' and method 'setAppLanguageSpinnerChange'");
-    target.appLanguageSpinner = finder.castView(view, 2131755526, "field 'appLanguageSpinner'");
+    view = finder.findRequiredView(source, 2131755525, "field 'appLanguageSpinner' and method 'setAppLanguageSpinnerChange'");
+    target.appLanguageSpinner = finder.castView(view, 2131755525, "field 'appLanguageSpinner'");
     ((android.widget.AdapterView<?>) view).setOnItemSelectedListener(
       new android.widget.AdapterView.OnItemSelectedListener() {
         @Override public void onItemSelected(
@@ -70,7 +70,7 @@ public class SettingsFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.s
           
         }
       });
-    view = finder.findRequiredView(source, 2131755515, "method 'editProfile'");
+    view = finder.findRequiredView(source, 2131755514, "method 'editProfile'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -79,7 +79,7 @@ public class SettingsFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.s
           target.editProfile();
         }
       });
-    view = finder.findRequiredView(source, 2131755519, "method 'inviteFriends'");
+    view = finder.findRequiredView(source, 2131755518, "method 'inviteFriends'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -88,7 +88,7 @@ public class SettingsFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.s
           target.inviteFriends();
         }
       });
-    view = finder.findRequiredView(source, 2131755521, "method 'giveFeedback'");
+    view = finder.findRequiredView(source, 2131755520, "method 'giveFeedback'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -97,7 +97,7 @@ public class SettingsFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.s
           target.giveFeedback();
         }
       });
-    view = finder.findRequiredView(source, 2131755527, "method 'logout'");
+    view = finder.findRequiredView(source, 2131755526, "method 'logout'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -106,7 +106,7 @@ public class SettingsFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.s
           target.logout();
         }
       });
-    view = finder.findRequiredView(source, 2131755529, "method 'deleteAccount'");
+    view = finder.findRequiredView(source, 2131755528, "method 'deleteAccount'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

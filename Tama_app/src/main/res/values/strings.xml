@@ -422,7 +422,7 @@
     <string name="confirm_btn_text">Confirm</string>
     <string name="confirm_text_topup_my_mobile_request">Confirm that you want to transfer %1$s € from payer %2$s to the number %3$s</string>
     <string name="topup_rqt_confirm_text">Confirm that you want to add your account %1$s € from payer %2$s</string>
-    <string name="you_topup_done_with">You topup is done with</string>
+    <string name="you_topup_done_with">You topup is done</string>
     <string name="transfer">TRANSFER</string>
     <string name="balance_transfer">BALANCE TRANSFER</string>
     <string name="you_have_transfered">You have transfered</string>

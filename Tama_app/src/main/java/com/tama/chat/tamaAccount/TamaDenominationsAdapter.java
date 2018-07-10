@@ -24,12 +24,12 @@ public class TamaDenominationsAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return data.productList.size();
+        return data.product_list.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return data.productList.get(position);
+        return data.product_list.get(position);
     }
 
     @Override
@@ -43,8 +43,8 @@ public class TamaDenominationsAdapter extends BaseAdapter {
         if (vi == null)
             vi = inflater.inflate(R.layout.item_denominations, null);
 
-        String str_1 = data.productList.get(position) + " " + data.destination_currency;
-        String str_2 = data.retilPriceList.get(position) + " " + "€";
+        String str_1 = data.product_list.get(position) + " " + data.destination_currency;
+        String str_2 = data.retail_price_list.get(position) + " " + "€";
 
         ((TextView) vi.findViewById(R.id.denomination_text_1)).setText(str_1);
         ((TextView) vi.findViewById(R.id.denomination_text_2)).setText(str_2);

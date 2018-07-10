@@ -9,18 +9,18 @@ public class TamaTopUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755349, "field 'tamaTopupSecondPage'");
-    target.tamaTopupSecondPage = finder.castView(view, 2131755349, "field 'tamaTopupSecondPage'");
-    view = finder.findRequiredView(source, 2131755350, "field 'gridView'");
-    target.gridView = finder.castView(view, 2131755350, "field 'gridView'");
     view = finder.findRequiredView(source, 2131755342, "field 'tamaTopupFirstPage'");
     target.tamaTopupFirstPage = finder.castView(view, 2131755342, "field 'tamaTopupFirstPage'");
+    view = finder.findRequiredView(source, 2131755349, "field 'tamaTopupSecondPage'");
+    target.tamaTopupSecondPage = finder.castView(view, 2131755349, "field 'tamaTopupSecondPage'");
     view = finder.findRequiredView(source, 2131755341, "field 'topupTitle'");
     target.topupTitle = finder.castView(view, 2131755341, "field 'topupTitle'");
     view = finder.findRequiredView(source, 2131755343, "field 'topupErrorText'");
     target.topupErrorText = finder.castView(view, 2131755343, "field 'topupErrorText'");
     view = finder.findRequiredView(source, 2131755351, "field 'topupInfoText'");
     target.topupInfoText = finder.castView(view, 2131755351, "field 'topupInfoText'");
+    view = finder.findRequiredView(source, 2131755350, "field 'gridView'");
+    target.gridView = finder.castView(view, 2131755350, "field 'gridView'");
     view = finder.findRequiredView(source, 2131755344, "field 'topupButtonFirst' and method 'onClickTopUpFirstButton'");
     target.topupButtonFirst = finder.castView(view, 2131755344, "field 'topupButtonFirst'");
     view.setOnClickListener(
@@ -31,8 +31,8 @@ public class TamaTopUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities
           target.onClickTopUpFirstButton();
         }
       });
-    view = finder.findRequiredView(source, 2131755352, "field 'topupButtonSeconds' and method 'onClickTopUpSecondsButton'");
-    target.topupButtonSeconds = finder.castView(view, 2131755352, "field 'topupButtonSeconds'");
+    view = finder.findRequiredView(source, 2131755353, "field 'topupButtonSeconds' and method 'onClickTopUpSecondsButton'");
+    target.topupButtonSeconds = finder.castView(view, 2131755353, "field 'topupButtonSeconds'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -51,19 +51,31 @@ public class TamaTopUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities
           target.clickOpenContactsList();
         }
       });
+    view = finder.findRequiredView(source, 2131755352, "field 'promoCheckBox' and method 'usePromoCheckBoxCheck'");
+    target.promoCheckBox = finder.castView(view, 2131755352, "field 'promoCheckBox'");
+    ((android.widget.CompoundButton) view).setOnCheckedChangeListener(
+      new android.widget.CompoundButton.OnCheckedChangeListener() {
+        @Override public void onCheckedChanged(
+          android.widget.CompoundButton p0,
+          boolean p1
+        ) {
+          target.usePromoCheckBoxCheck(p0, p1);
+        }
+      });
   }
 
   @Override public void unbind(T target) {
     super.unbind(target);
 
-    target.tamaTopupSecondPage = null;
-    target.gridView = null;
     target.tamaTopupFirstPage = null;
+    target.tamaTopupSecondPage = null;
     target.topupTitle = null;
     target.topupErrorText = null;
     target.topupInfoText = null;
+    target.gridView = null;
     target.topupButtonFirst = null;
     target.topupButtonSeconds = null;
     target.openContactsList = null;
+    target.promoCheckBox = null;
   }
 }

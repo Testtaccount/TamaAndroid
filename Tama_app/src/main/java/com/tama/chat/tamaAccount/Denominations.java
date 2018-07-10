@@ -9,17 +9,17 @@ import java.util.List;
 
 public class Denominations{
 
-    String country;
+    public String mobile_number;
+    public String country;
+    public String operator;
     public String destination_currency;
-    String operator;
-    String mobileNumber;
-    public List<String> productList = new ArrayList<>();
-    public List<String> retilPriceList = new ArrayList<>();
+    public List<String> product_list = new ArrayList<>();
+    public List<String> retail_price_list = new ArrayList<>();
 
-    public Denominations(String country, String destination, String operator, String mobileNumber){
+    public Denominations(String mobile_number,String country, String operator,String destination ){
+        this.mobile_number = mobile_number;
         this.country = country;
-        this.destination_currency = destination;
         this.operator = operator;
-        this.mobileNumber = mobileNumber;
+        this.destination_currency = destination;
     }
 }

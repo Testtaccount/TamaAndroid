@@ -15,6 +15,7 @@
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
     android:background="@drawable/selector_button_red_oval">
+
     <TextView
         android:id="@+id/denomination_text_1"
         android:layout_width="wrap_content"
@@ -22,7 +23,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="10 USD"
-        android:textColor="@color/tama_account_text"
+        android:textColor="@color/text_red"
         android:textSize="12sp"
         android:textStyle="bold"/>
     <TextView
@@ -33,7 +34,7 @@
         android:layout_alignParentBottom="true"
         android:text="0.300 €"
       android:maxLines="1"
-        android:textColor="@color/tama_account_text"
+      android:textColor="@color/text_red"
         android:layout_marginBottom="3dp"
         android:textSize="20sp"
         android:textStyle="bold"/>

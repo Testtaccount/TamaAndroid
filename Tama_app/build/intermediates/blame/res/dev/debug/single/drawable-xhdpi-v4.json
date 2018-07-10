@@ -524,12 +524,12 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\f92b20edd533d15bb0b651fdaa17eca62d64070e\\output\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xhdpi-v4\\ic_contacts.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-xhdpi\\ic_contacts.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xhdpi-v4\\ic_dynamic_off_sm.png",

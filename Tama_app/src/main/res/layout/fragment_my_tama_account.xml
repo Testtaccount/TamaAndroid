@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:card_view="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/root_coordinator_layout"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:background="@color/color_background_E5E5E5">
+<!--<android.support.design.widget.CoordinatorLayout -->
+  <!--android:id="@+id/root_coordinator_layout"-->
+  <!--android:layout_width="match_parent"-->
+  <!--android:layout_height="match_parent"-->
+  <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+  <!--&gt;-->
 
   <!--<android.support.design.widget.AppBarLayout-->
   <!--android:id="@+id/appBar"-->
@@ -21,41 +19,28 @@
 
   <!--</android.support.design.widget.AppBarLayout>-->
 
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/transparent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
 
     <!--Content-->
-    <android.support.v4.widget.NestedScrollView
+    <ScrollView
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:background="@color/color_background_E5E5E5"
+      android:scrollingCache="false"
+      android:animationCache="false"
       android:id="@+id/nscw"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:fitsSystemWindows="true"
-      android:scrollbars="none"
-      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+      android:scrollbars="none">
 
       <!-- your content here -->
       <LinearLayout
         android:id="@+id/ll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:paddingTop="0dp"
         android:orientation="vertical"
-        android:visibility="visible"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-
-        <LinearLayout
-          android:id="@+id/ll_content"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="vertical"
-          android:visibility="visible">
+        android:visibility="visible">
 
 
           <android.support.v7.widget.CardView
@@ -187,19 +172,17 @@
                     android:layout_gravity="top"
                     android:gravity="center"
                     android:orientation="vertical">
-                    <RelativeLayout
-                      android:layout_width="70dp"
-                      android:layout_height="70dp"
-                      android:layout_margin="4dp"
-                      android:background="@drawable/shape_oval_background"
-                      android:gravity="center">
+                    <!--<RelativeLayout-->
+                      <!--android:layout_width="70dp"-->
+                      <!--android:layout_height="70dp"-->
+                      <!--android:layout_margin="4dp"-->
+                      <!--android:gravity="center">-->
                       <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/tama_express_logo"
-                        android:tint="@color/red" />
-                    </RelativeLayout>
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/tama_express" />
+                    <!--</RelativeLayout>-->
 
                     <TextView
                       android:id="@+id/tv_tama_helper_mobile_you_want_topup"
@@ -223,23 +206,20 @@
                     android:layout_gravity="top"
                     android:gravity="center"
                     android:orientation="vertical">
-                    <RelativeLayout
-                      android:layout_width="70dp"
-                      android:layout_height="70dp"
-                      android:layout_margin="4dp"
-                      android:background="@drawable/shape_oval_background"
-                      android:gravity="center">
+                    <!--<RelativeLayout-->
+                      <!--android:layout_width="70dp"-->
+                      <!--android:layout_height="70dp"-->
+                      <!--android:layout_margin="4dp"-->
+                      <!--android:gravity="center">-->
                       <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/tama_topup_logo"
-                        android:tint="@color/red" />
-                    </RelativeLayout>
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/tama_topup"/>
+                    <!--</RelativeLayout>-->
 
                     <TextView
                       android:id="@+id/tv_tama_helper_mobile_select_the_am_you_want_topup"
-
                       android:layout_width="110dp"
                       android:layout_height="wrap_content"
                       android:layout_gravity="center"
@@ -261,19 +241,17 @@
                     android:layout_gravity="top"
                     android:gravity="center"
                     android:orientation="vertical">
-                    <RelativeLayout
-                      android:layout_width="70dp"
-                      android:layout_height="70dp"
-                      android:layout_margin="4dp"
-                      android:background="@drawable/shape_oval_background"
-                      android:gravity="center">
+                    <!--<RelativeLayout-->
+                      <!--android:layout_width="70dp"-->
+                      <!--android:layout_height="70dp"-->
+                      <!--android:layout_margin="4dp"-->
+                      <!--android:gravity="center">-->
                       <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/history_logo"
-                        android:tint="@color/red" />
-                    </RelativeLayout>
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/history"/>
+                    <!--</RelativeLayout>-->
 
                     <TextView
                       android:id="@+id/tv_tama_helper_mobile_the_mobile_istopup"
@@ -291,299 +269,6 @@
 
 
               </LinearLayout>
-
-
-              <!--<LinearLayout-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="wrap_content"-->
-              <!--android:paddingTop="5dp"-->
-              <!--android:paddingBottom="5dp"-->
-              <!--android:gravity="center"-->
-              <!--android:orientation="horizontal">-->
-
-
-              <!--<LinearLayout-->
-              <!--android:layout_width="0dp"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:layout_weight="1">-->
-              <!--<LinearLayout-->
-              <!--android:id="@+id/button_tama_express"-->
-              <!--android:layout_width="145dp"-->
-              <!--android:layout_height="53dp"-->
-              <!--android:layout_margin="5dp"-->
-              <!--android:layout_gravity="center"-->
-              <!--android:background="@drawable/selector_button_red_oval"-->
-              <!--android:clickable="true"-->
-              <!--android:gravity="center_vertical|start"-->
-              <!--android:orientation="horizontal"-->
-              <!--android:paddingEnd="7dp"-->
-              <!--android:paddingLeft="9dp"-->
-              <!--android:paddingRight="7dp"-->
-              <!--android:paddingStart="9dp">-->
-
-              <!--<ImageView-->
-              <!--android:layout_width="32dp"-->
-              <!--android:layout_height="32dp"-->
-              <!--android:scaleType="centerInside"-->
-              <!--android:src="@drawable/tama_express_logo" />-->
-
-              <!--<TextView-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:paddingEnd="0dp"-->
-              <!--android:paddingLeft="5dp"-->
-              <!--android:paddingRight="0dp"-->
-              <!--android:paddingStart="5dp"-->
-              <!--android:text="@string/tama_express"-->
-              <!--android:textColor="@color/tama_account_text"-->
-              <!--android:textSize="14sp"-->
-              <!--android:textStyle="bold" />-->
-              <!--</LinearLayout>-->
-
-
-              <!--</LinearLayout>-->
-
-              <!--<LinearLayout-->
-              <!--android:layout_width="0dp"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:visibility="gone"-->
-              <!--android:layout_weight="1">-->
-
-              <!--<LinearLayout-->
-              <!--android:id="@+id/button_send_credit"-->
-              <!--android:layout_width="145dp"-->
-              <!--android:layout_height="53dp"-->
-              <!--android:layout_margin="5dp"-->
-              <!--android:layout_gravity="center"-->
-              <!--android:background="@drawable/selector_button_red_oval"-->
-              <!--android:clickable="true"-->
-              <!--android:gravity="center_vertical|start"-->
-              <!--android:orientation="horizontal"-->
-              <!--android:paddingEnd="7dp"-->
-              <!--android:paddingLeft="9dp"-->
-              <!--android:paddingRight="7dp"-->
-              <!--android:paddingStart="9dp">-->
-
-              <!--<ImageView-->
-              <!--android:layout_width="32dp"-->
-              <!--android:layout_height="32dp"-->
-              <!--android:scaleType="centerInside"-->
-              <!--android:src="@drawable/send_credit_logo" />-->
-
-              <!--<TextView-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:paddingEnd="0dp"-->
-              <!--android:paddingLeft="5dp"-->
-              <!--android:paddingRight="0dp"-->
-              <!--android:paddingStart="5dp"-->
-              <!--android:text="@string/send_credit"-->
-              <!--android:textColor="@color/tama_account_text"-->
-              <!--android:textSize="14sp"-->
-              <!--android:textStyle="bold" />-->
-              <!--</LinearLayout>-->
-
-              <!--</LinearLayout>-->
-
-              <!--</LinearLayout>-->
-
-              <!--<LinearLayout-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="wrap_content"-->
-              <!--android:gravity="center"-->
-              <!--android:paddingTop="5dp"-->
-              <!--android:paddingBottom="5dp"-->
-              <!--android:orientation="horizontal">-->
-
-              <!--<LinearLayout-->
-              <!--android:layout_width="0dp"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:layout_weight="1">-->
-
-              <!--<LinearLayout-->
-              <!--android:id="@+id/button_tama_topup"-->
-              <!--android:layout_width="145dp"-->
-              <!--android:layout_height="53dp"-->
-              <!--android:layout_margin="5dp"-->
-              <!--android:layout_gravity="center"-->
-              <!--android:background="@drawable/selector_button_red_oval"-->
-              <!--android:clickable="true"-->
-              <!--android:gravity="center_vertical|start"-->
-              <!--android:orientation="horizontal"-->
-              <!--android:paddingEnd="7dp"-->
-              <!--android:paddingLeft="9dp"-->
-              <!--android:paddingRight="7dp"-->
-              <!--android:paddingStart="9dp">-->
-
-              <!--<ImageView-->
-              <!--android:layout_width="32dp"-->
-              <!--android:layout_height="32dp"-->
-              <!--android:scaleType="centerInside"-->
-              <!--android:src="@drawable/tama_topup_logo" />-->
-
-              <!--<TextView-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:paddingEnd="0dp"-->
-              <!--android:paddingLeft="5dp"-->
-              <!--android:paddingRight="0dp"-->
-              <!--android:paddingStart="5dp"-->
-              <!--android:text="@string/tama_topup"-->
-              <!--android:textColor="@color/tama_account_text"-->
-              <!--android:textSize="14sp"-->
-              <!--android:textStyle="bold" />-->
-              <!--</LinearLayout>-->
-
-
-              <!--</LinearLayout>-->
-
-              <!--<LinearLayout-->
-              <!--android:layout_width="0dp"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:layout_weight="1">-->
-
-              <!--<LinearLayout-->
-              <!--android:id="@+id/button_tama_contact_us"-->
-              <!--android:layout_width="145dp"-->
-              <!--android:layout_height="53dp"-->
-              <!--android:layout_margin="5dp"-->
-              <!--android:layout_gravity="center"-->
-              <!--android:background="@drawable/selector_button_red_oval"-->
-              <!--android:clickable="true"-->
-              <!--android:drawableLeft="@drawable/request_logo"-->
-              <!--android:drawableStart="@drawable/request_logo"-->
-              <!--android:gravity="center_vertical|start"-->
-              <!--android:orientation="horizontal"-->
-              <!--android:paddingEnd="7dp"-->
-              <!--android:paddingLeft="9dp"-->
-              <!--android:paddingRight="7dp"-->
-              <!--android:paddingStart="9dp">-->
-
-              <!--<ImageView-->
-              <!--android:layout_width="32dp"-->
-              <!--android:layout_height="32dp"-->
-              <!--android:scaleType="centerInside"-->
-              <!--android:src="@drawable/contact_logo" />-->
-
-              <!--<TextView-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:paddingEnd="0dp"-->
-              <!--android:paddingLeft="5dp"-->
-              <!--android:paddingRight="0dp"-->
-              <!--android:paddingStart="5dp"-->
-              <!--android:text="@string/contact_us"-->
-              <!--android:textColor="@color/tama_account_text"-->
-              <!--android:textSize="14sp"-->
-              <!--android:textStyle="bold" />-->
-              <!--</LinearLayout>-->
-
-              <!--</LinearLayout>-->
-
-              <!--</LinearLayout>-->
-
-              <!--<LinearLayout-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="wrap_content"-->
-              <!--android:gravity="center"-->
-              <!--android:paddingTop="5dp"-->
-              <!--android:paddingBottom="5dp"-->
-              <!--android:orientation="horizontal">-->
-
-              <!--<LinearLayout-->
-              <!--android:layout_width="0dp"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:layout_weight="1">-->
-
-              <!--<LinearLayout-->
-              <!--android:id="@+id/button_tama_history"-->
-              <!--android:layout_width="145dp"-->
-              <!--android:layout_height="53dp"-->
-              <!--android:layout_margin="5dp"-->
-              <!--android:layout_gravity="center"-->
-              <!--android:background="@drawable/selector_button_red_oval"-->
-              <!--android:clickable="true"-->
-              <!--android:gravity="center_vertical|start"-->
-              <!--android:orientation="horizontal"-->
-              <!--android:paddingEnd="7dp"-->
-              <!--android:paddingLeft="9dp"-->
-              <!--android:paddingRight="7dp"-->
-              <!--android:paddingStart="9dp">-->
-
-              <!--<ImageView-->
-              <!--android:layout_width="32dp"-->
-              <!--android:layout_height="32dp"-->
-              <!--android:scaleType="centerInside"-->
-              <!--android:src="@drawable/history_logo" />-->
-
-              <!--<TextView-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:paddingEnd="0dp"-->
-              <!--android:paddingLeft="5dp"-->
-              <!--android:paddingRight="0dp"-->
-              <!--android:paddingStart="5dp"-->
-              <!--android:text="@string/history"-->
-              <!--android:textColor="@color/tama_account_text"-->
-              <!--android:textSize="14sp"-->
-              <!--android:textStyle="bold" />-->
-              <!--</LinearLayout>-->
-
-
-              <!--<LinearLayout-->
-              <!--android:id="@+id/button_tama_request"-->
-              <!--android:layout_width="145dp"-->
-              <!--android:layout_height="53dp"-->
-              <!--android:layout_margin="5dp"-->
-              <!--android:layout_row="2"-->
-              <!--android:layout_column="0"-->
-              <!--android:visibility="gone"-->
-              <!--android:layout_gravity="center"-->
-              <!--android:background="@drawable/selector_button_red_oval"-->
-              <!--android:clickable="true"-->
-              <!--android:drawableLeft="@drawable/request_logo"-->
-              <!--android:drawableStart="@drawable/request_logo"-->
-              <!--android:gravity="center_vertical|start"-->
-              <!--android:orientation="horizontal"-->
-              <!--android:paddingEnd="7dp"-->
-              <!--android:paddingLeft="9dp"-->
-              <!--android:paddingRight="7dp"-->
-              <!--android:paddingStart="9dp">-->
-
-              <!--<ImageView-->
-              <!--android:layout_width="32dp"-->
-              <!--android:layout_height="32dp"-->
-              <!--android:scaleType="centerInside"-->
-              <!--android:src="@drawable/request_logo" />-->
-
-              <!--<TextView-->
-              <!--android:layout_width="match_parent"-->
-              <!--android:layout_height="match_parent"-->
-              <!--android:gravity="center"-->
-              <!--android:paddingEnd="0dp"-->
-              <!--android:paddingLeft="5dp"-->
-              <!--android:paddingRight="0dp"-->
-              <!--android:paddingStart="5dp"-->
-              <!--android:text="@string/tama_request"-->
-              <!--android:textColor="@color/tama_account_text"-->
-              <!--android:textSize="14sp"-->
-              <!--android:textStyle="bold" />-->
-              <!--</LinearLayout>-->
-
-
-              <!--</LinearLayout>-->
-
-              <!--</LinearLayout>-->
 
             </LinearLayout>
           </android.support.v7.widget.CardView>
@@ -631,16 +316,17 @@
                     android:layout_gravity="top"
                     android:gravity="center"
                     android:orientation="vertical">
-                    <RelativeLayout
-                      android:layout_width="70dp"
-                      android:layout_height="70dp"
-                      android:layout_margin="4dp"
-                      android:gravity="center">
+                    <!--<RelativeLayout-->
+                      <!--android:layout_width="70dp"-->
+                      <!--android:layout_height="70dp"-->
+                      <!--android:layout_margin="4dp"-->
+                      <!--android:gravity="center">-->
                       <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="4dp"
                         app:srcCompat="@drawable/goto_tama_shop" />
-                    </RelativeLayout>
+                    <!--</RelativeLayout>-->
 
                     <TextView
                       android:layout_width="110dp"
@@ -663,17 +349,17 @@
                     android:layout_gravity="top"
                     android:gravity="center"
                     android:orientation="vertical">
-                    <RelativeLayout
-                      android:layout_width="70dp"
-                      android:layout_height="70dp"
-                      android:layout_margin="4dp"
-                      android:gravity="center">
+                    <!--<RelativeLayout-->
+                      <!--android:layout_width="70dp"-->
+                      <!--android:layout_height="70dp"-->
+                      <!--android:layout_margin="4dp"-->
+                      <!--android:gravity="center">-->
                       <ImageView
-                        android:layout_width= "wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_about"
-                        />
-                    </RelativeLayout>
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/about"/>
+                    <!--</RelativeLayout>-->
 
                     <TextView
                       android:layout_width="110dp"
@@ -683,8 +369,7 @@
                       android:fontFamily="sans-serif-medium"
                       android:gravity="center"
                       android:text="ABOUT US"
-                      android:textColor="@color/black"
-                      android:textSize="13sp" />
+                      android:textColor="@color/black" />
                   </LinearLayout>
 
                   <!--3-->
@@ -697,19 +382,17 @@
                     android:layout_gravity="top"
                     android:gravity="center"
                     android:orientation="vertical">
-                    <RelativeLayout
-                      android:layout_width="70dp"
-                      android:layout_height="70dp"
-                      android:layout_margin="4dp"
-                      android:background="@drawable/shape_oval_background"
-                      android:gravity="center">
+                    <!--<RelativeLayout-->
+                      <!--android:layout_width="70dp"-->
+                      <!--android:layout_height="70dp"-->
+                      <!--android:layout_margin="4dp"-->
+                      <!--android:gravity="center">-->
                       <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/contact_logo"
-                        android:tint="@color/red" />
-                    </RelativeLayout>
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/contact" />
+                    <!--</RelativeLayout>-->
 
                     <TextView
                       android:layout_width="110dp"
@@ -724,199 +407,100 @@
 
                 </LinearLayout>
 
-
-              </LinearLayout>
-
-              <LinearLayout
-                android:id="@+id/button_tama_request"
-                android:layout_width="145dp"
-                android:layout_height="53dp"
-                android:layout_margin="5dp"
-                android:layout_column="0"
-                android:layout_gravity="center"
-                android:layout_row="2"
-                android:paddingStart="9dp"
-                android:paddingEnd="7dp"
-                android:paddingLeft="9dp"
-                android:paddingRight="7dp"
-                android:background="@drawable/selector_button_red_oval"
-                android:clickable="true"
-                android:drawableLeft="@drawable/request_logo"
-                android:drawableStart="@drawable/request_logo"
-                android:gravity="center_vertical|start"
-                android:orientation="horizontal"
-                android:visibility="gone">
-
-                <ImageView
-                  android:layout_width="32dp"
-                  android:layout_height="32dp"
-                  android:scaleType="centerInside"
-                  android:src="@drawable/request_logo" />
-
-                <TextView
-                  android:textStyle="bold"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:paddingStart="5dp"
-                  android:paddingEnd="0dp"
-                  android:paddingLeft="5dp"
-                  android:paddingRight="0dp"
-                  android:gravity="center"
-                  android:text="@string/tama_request"
-                  android:textColor="@color/tama_account_text"
-                  android:textSize="14sp" />
-              </LinearLayout>
-              <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:visibility="gone"
-                android:layout_weight="1">
-
-                <LinearLayout
-                  android:id="@+id/button_send_credit"
-                  android:layout_width="145dp"
-                  android:layout_height="53dp"
-                  android:layout_margin="5dp"
-                  android:layout_gravity="center"
-                  android:background="@drawable/selector_button_red_oval"
-                  android:clickable="true"
-                  android:gravity="center_vertical|start"
-                  android:orientation="horizontal"
-                  android:paddingEnd="7dp"
-                  android:paddingLeft="9dp"
-                  android:paddingRight="7dp"
-                  android:paddingStart="9dp">
-
-                  <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/send_credit_logo" />
-
-                  <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:paddingEnd="0dp"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="0dp"
-                    android:paddingStart="5dp"
-                    android:text="@string/send_credit"
-                    android:textColor="@color/tama_account_text"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-                </LinearLayout>
-
               </LinearLayout>
             </LinearLayout>
           </android.support.v7.widget.CardView>
+        <LinearLayout
+          android:id="@+id/button_tama_request"
+          android:layout_width="145dp"
+          android:layout_height="53dp"
+          android:layout_margin="5dp"
+          android:layout_column="0"
+          android:layout_gravity="center"
+          android:layout_row="2"
+          android:paddingStart="9dp"
+          android:paddingEnd="7dp"
+          android:paddingLeft="9dp"
+          android:paddingRight="7dp"
+          android:background="@drawable/selector_button_red_oval"
+          android:clickable="true"
+          android:drawableLeft="@drawable/request_logo"
+          android:drawableStart="@drawable/request_logo"
+          android:gravity="center_vertical|start"
+          android:orientation="horizontal"
+          android:visibility="gone">
 
+          <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/request_logo" />
+
+          <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:gravity="center"
+            android:text="@string/tama_request"
+            android:textColor="@color/tama_account_text"
+            android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:visibility="gone"
+          android:layout_weight="1">
+
+          <LinearLayout
+            android:id="@+id/button_send_credit"
+            android:layout_width="145dp"
+            android:layout_height="53dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_button_red_oval"
+            android:clickable="true"
+            android:gravity="center_vertical|start"
+            android:orientation="horizontal"
+            android:paddingEnd="7dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="7dp"
+            android:paddingStart="9dp">
+
+            <ImageView
+              android:layout_width="32dp"
+              android:layout_height="32dp"
+              android:scaleType="centerInside"
+              android:src="@drawable/send_credit_logo" />
+
+            <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:paddingEnd="0dp"
+              android:paddingLeft="5dp"
+              android:paddingRight="0dp"
+              android:paddingStart="5dp"
+              android:text="@string/send_credit"
+              android:textColor="@color/tama_account_text"
+              android:textSize="14sp"
+              android:textStyle="bold" />
+          </LinearLayout>
 
         </LinearLayout>
-
         <Space
           android:id="@+id/space"
           android:layout_width="match_parent"
           android:layout_height="6dp"
           android:focusable="true" />
-
       </LinearLayout>
 
-
-    </android.support.v4.widget.NestedScrollView>
-
-  </LinearLayout>
+    </ScrollView>
 
 
-</android.support.design.widget.CoordinatorLayout>
 
-  <!--/////////////////////////////////////////////////////////////////////////////////////--><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--xmlns:grid="http://schemas.android.com/tools"--><!--android:background="@color/bg_main"--><!--android:orientation="vertical">-->
-
-  <!--<include layout="@layout/toolbar_tama_family" />-->
-
-  <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="30dp"--><!--android:layout_marginLeft="22dp"--><!--android:layout_marginStart="22dp"--><!--android:textSize="22sp"--><!--android:textStyle="bold"--><!--android:textColor="@color/tama_account_black"--><!--android:text="@string/balance"/>-->
-
-  <!--<TextView--><!--android:id="@+id/tama_account_balance"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="0dp"--><!--android:layout_marginLeft="50dp"--><!--android:layout_marginStart="20dp"--><!--android:layout_marginBottom="30dp"--><!--android:textSize="55sp"--><!--android:textStyle="bold"--><!--android:textColor="@color/button_red_normal"--><!--android:text="0.00"/>-->
-
-  <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:paddingTop="5dp"--><!--android:paddingBottom="5dp"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
-
-  <!--<LinearLayout--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:layout_weight="1">-->
-
-  <!--<LinearLayout--><!--android:id="@+id/button_topup_myacc"--><!--android:layout_width="145dp"--><!--android:layout_height="53dp"--><!--android:layout_margin="5dp"--><!--android:layout_gravity="center"--><!--android:background="@drawable/selector_button_red_oval"--><!--android:clickable="true"--><!--android:gravity="center_vertical|start"--><!--android:orientation="horizontal"--><!--android:paddingEnd="7dp"--><!--android:paddingLeft="7dp"--><!--android:paddingRight="7dp"--><!--android:paddingStart="7dp">-->
-
-  <!--<ImageView--><!--android:layout_width="32dp"--><!--android:layout_height="32dp"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/topup_myacc_logo" />-->
-
-  <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:paddingEnd="0dp"--><!--android:paddingLeft="1dp"--><!--android:paddingRight="0dp"--><!--android:paddingStart="1dp"--><!--android:text="@string/topup_my_account"--><!--android:textColor="@color/tama_account_text"--><!--android:textSize="14sp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
-
-  <!--</LinearLayout>-->
-
-  <!--<LinearLayout--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:layout_weight="1">--><!--<LinearLayout--><!--android:id="@+id/button_tama_express"--><!--android:layout_width="145dp"--><!--android:layout_height="53dp"--><!--android:layout_margin="5dp"--><!--android:layout_gravity="center"--><!--android:background="@drawable/selector_button_red_oval"--><!--android:clickable="true"--><!--android:gravity="center_vertical|start"--><!--android:orientation="horizontal"--><!--android:paddingEnd="7dp"--><!--android:paddingLeft="9dp"--><!--android:paddingRight="7dp"--><!--android:paddingStart="9dp">-->
-
-  <!--<ImageView--><!--android:layout_width="32dp"--><!--android:layout_height="32dp"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/tama_express_logo" />-->
-
-  <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:paddingEnd="0dp"--><!--android:paddingLeft="5dp"--><!--android:paddingRight="0dp"--><!--android:paddingStart="5dp"--><!--android:text="@string/tama_express"--><!--android:textColor="@color/tama_account_text"--><!--android:textSize="14sp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
-
-
-  <!--</LinearLayout>-->
-
-  <!--<LinearLayout--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:visibility="gone"--><!--android:layout_weight="1">-->
-
-  <!--<LinearLayout--><!--android:id="@+id/button_send_credit"--><!--android:layout_width="145dp"--><!--android:layout_height="53dp"--><!--android:layout_margin="5dp"--><!--android:layout_gravity="center"--><!--android:background="@drawable/selector_button_red_oval"--><!--android:clickable="true"--><!--android:gravity="center_vertical|start"--><!--android:orientation="horizontal"--><!--android:paddingEnd="7dp"--><!--android:paddingLeft="9dp"--><!--android:paddingRight="7dp"--><!--android:paddingStart="9dp">-->
-
-  <!--<ImageView--><!--android:layout_width="32dp"--><!--android:layout_height="32dp"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/send_credit_logo" />-->
-
-  <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:paddingEnd="0dp"--><!--android:paddingLeft="5dp"--><!--android:paddingRight="0dp"--><!--android:paddingStart="5dp"--><!--android:text="@string/send_credit"--><!--android:textColor="@color/tama_account_text"--><!--android:textSize="14sp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
-
-  <!--</LinearLayout>-->
-
-  <!--</LinearLayout>-->
-
-  <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:gravity="center"--><!--android:paddingTop="5dp"--><!--android:paddingBottom="5dp"--><!--android:orientation="horizontal">-->
-
-  <!--<LinearLayout--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:layout_weight="1">-->
-
-  <!--<LinearLayout--><!--android:id="@+id/button_tama_topup"--><!--android:layout_width="145dp"--><!--android:layout_height="53dp"--><!--android:layout_margin="5dp"--><!--android:layout_gravity="center"--><!--android:background="@drawable/selector_button_red_oval"--><!--android:clickable="true"--><!--android:gravity="center_vertical|start"--><!--android:orientation="horizontal"--><!--android:paddingEnd="7dp"--><!--android:paddingLeft="9dp"--><!--android:paddingRight="7dp"--><!--android:paddingStart="9dp">-->
-
-  <!--<ImageView--><!--android:layout_width="32dp"--><!--android:layout_height="32dp"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/tama_topup_logo" />-->
-
-  <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:paddingEnd="0dp"--><!--android:paddingLeft="5dp"--><!--android:paddingRight="0dp"--><!--android:paddingStart="5dp"--><!--android:text="@string/tama_topup"--><!--android:textColor="@color/tama_account_text"--><!--android:textSize="14sp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
-
-
-  <!--</LinearLayout>-->
-
-  <!--<LinearLayout--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:layout_weight="1">-->
-
-  <!--<LinearLayout--><!--android:id="@+id/button_tama_contact_us"--><!--android:layout_width="145dp"--><!--android:layout_height="53dp"--><!--android:layout_margin="5dp"--><!--android:layout_gravity="center"--><!--android:background="@drawable/selector_button_red_oval"--><!--android:clickable="true"--><!--android:drawableLeft="@drawable/request_logo"--><!--android:drawableStart="@drawable/request_logo"--><!--android:gravity="center_vertical|start"--><!--android:orientation="horizontal"--><!--android:paddingEnd="7dp"--><!--android:paddingLeft="9dp"--><!--android:paddingRight="7dp"--><!--android:paddingStart="9dp">-->
-
-  <!--<ImageView--><!--android:layout_width="32dp"--><!--android:layout_height="32dp"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/contact_logo" />-->
-
-  <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:paddingEnd="0dp"--><!--android:paddingLeft="5dp"--><!--android:paddingRight="0dp"--><!--android:paddingStart="5dp"--><!--android:text="@string/contact_us"--><!--android:textColor="@color/tama_account_text"--><!--android:textSize="14sp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
-
-  <!--</LinearLayout>-->
-
-  <!--</LinearLayout>-->
-
-  <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:gravity="center"--><!--android:paddingTop="5dp"--><!--android:paddingBottom="5dp"--><!--android:orientation="horizontal">-->
-
-  <!--<LinearLayout--><!--android:layout_width="0dp"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:layout_weight="1">-->
-
-  <!--<LinearLayout--><!--android:id="@+id/button_tama_history"--><!--android:layout_width="145dp"--><!--android:layout_height="53dp"--><!--android:layout_margin="5dp"--><!--android:layout_gravity="center"--><!--android:background="@drawable/selector_button_red_oval"--><!--android:clickable="true"--><!--android:gravity="center_vertical|start"--><!--android:orientation="horizontal"--><!--android:paddingEnd="7dp"--><!--android:paddingLeft="9dp"--><!--android:paddingRight="7dp"--><!--android:paddingStart="9dp">-->
-
-  <!--<ImageView--><!--android:layout_width="32dp"--><!--android:layout_height="32dp"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/history_logo" />-->
-
-  <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:paddingEnd="0dp"--><!--android:paddingLeft="5dp"--><!--android:paddingRight="0dp"--><!--android:paddingStart="5dp"--><!--android:text="@string/history"--><!--android:textColor="@color/tama_account_text"--><!--android:textSize="14sp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
-
-
-  <!--<LinearLayout--><!--android:id="@+id/button_tama_request"--><!--android:layout_width="145dp"--><!--android:layout_height="53dp"--><!--android:layout_margin="5dp"--><!--android:layout_row="2"--><!--android:layout_column="0"--><!--android:visibility="gone"--><!--android:layout_gravity="center"--><!--android:background="@drawable/selector_button_red_oval"--><!--android:clickable="true"--><!--android:drawableLeft="@drawable/request_logo"--><!--android:drawableStart="@drawable/request_logo"--><!--android:gravity="center_vertical|start"--><!--android:orientation="horizontal"--><!--android:paddingEnd="7dp"--><!--android:paddingLeft="9dp"--><!--android:paddingRight="7dp"--><!--android:paddingStart="9dp">-->
-
-  <!--<ImageView--><!--android:layout_width="32dp"--><!--android:layout_height="32dp"--><!--android:scaleType="centerInside"--><!--android:src="@drawable/request_logo" />-->
-
-  <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center"--><!--android:paddingEnd="0dp"--><!--android:paddingLeft="5dp"--><!--android:paddingRight="0dp"--><!--android:paddingStart="5dp"--><!--android:text="@string/tama_request"--><!--android:textColor="@color/tama_account_text"--><!--android:textSize="14sp"--><!--android:textStyle="bold" />--><!--</LinearLayout>-->
-
-
-  <!--</LinearLayout>-->
-
-  <!--</LinearLayout>-->
-
-  <!--</LinearLayout>-->
+<!--</android.support.design.widget.CoordinatorLayout>-->

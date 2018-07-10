@@ -66,20 +66,20 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
   @Bind(R.id.button_topup_myacc)
   LinearLayout buttonTopupMyAcc;
 
-  @Bind(R.id.button_tama_history)
-  LinearLayout buttonTamaHistory;
+  @Bind(R.id.button_tama_express)
+  LinearLayout buttonTamaExpress;
 
   @Bind(R.id.button_tama_topup)
   LinearLayout buttonTamaTopUp;
+
+  @Bind(R.id.button_tama_history)
+  LinearLayout buttonTamaHistory;
 
   @Bind(R.id.button_send_credit)
   LinearLayout buttonSendCredit;
 
   @Bind(R.id.button_tama_request)
   LinearLayout buttonTamaRequest;
-
-  @Bind(R.id.button_tama_express)
-  LinearLayout buttonTamaExpress;
 
   @Bind(R.id.button_tama_contact_us)
   LinearLayout buttonTamaContactUs;

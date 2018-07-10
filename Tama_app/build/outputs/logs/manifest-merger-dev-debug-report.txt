@@ -768,7 +768,6 @@ ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
 		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:334:13-79
 uses-sdk
 INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\Avetik\.android\build-cache\2d969044b49db1c0ae60c9b65329f33fbfbd8f56\output\AndroidManifest.xml:18:5-42
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:7:5-43
 MERGED from [com.crashlytics.sdk.android:beta:1.2.6] C:\Users\Avetik\.android\build-cache\002b52ee859c4a539193424c436caeac872c3a95\output\AndroidManifest.xml:7:5-43
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.4.0] C:\Users\Avetik\.android\build-cache\571d39b289e96d09fb803a33bf3fe5bc2c7e0632\output\AndroidManifest.xml:50:5-43
@@ -791,6 +790,7 @@ MERGED from [com.google.android.exoplayer:exoplayer-hls:r2.5.1] C:\Users\Avetik\
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:r2.5.1] C:\Users\Avetik\.android\build-cache\d153b6e68bcdc7fbd67f49c828040352d290ff28\output\AndroidManifest.xml:21:5-23:41
 MERGED from [com.google.android.exoplayer:exoplayer-ui:r2.5.1] C:\Users\Avetik\.android\build-cache\4da027b0a51c0d7670538b68873e4c1271d0be69\output\AndroidManifest.xml:21:5-23:41
 MERGED from [com.google.android.exoplayer:exoplayer-core:r2.5.1] C:\Users\Avetik\.android\build-cache\ab2951fc86580e90ec06e085dbbec6fbfb742f1d\output\AndroidManifest.xml:21:5-23:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Avetik\.android\build-cache\2d969044b49db1c0ae60c9b65329f33fbfbd8f56\output\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-gcm:11.0.4] C:\Users\Avetik\.android\build-cache\e4cbb0b91941f1786ea425a0481fa83947f65048\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-iid:11.0.4] C:\Users\Avetik\.android\build-cache\2b022205da417e9c8ac4fde3a9d48d710a07b6fb\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Avetik\.android\build-cache\81117dbf97871483679f2df3b9efa3aa4455ae57\output\AndroidManifest.xml:23:5-43
