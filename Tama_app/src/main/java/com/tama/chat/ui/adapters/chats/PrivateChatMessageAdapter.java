@@ -404,7 +404,7 @@ public class PrivateChatMessageAdapter extends BaseChatMessagesAdapter implement
 //    }
 //  }
 //
-//        if(!State.READ.equals(chatMessage.getState())&&!ownMessage &&baseActivity.isNetworkAvailable()&&isMessageShowing)
+//        if(!State.READ.equals(chatMessage.getState())&&!ownMessage &&baseActivity.isConnected()&&isMessageShowing)
 //
 //  {
 //    chatMessage.setState(State.READ);

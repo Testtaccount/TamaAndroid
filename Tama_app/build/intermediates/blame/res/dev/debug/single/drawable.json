@@ -252,6 +252,10 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable\\selector_button_grey_rect.xml"
     },
     {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\denom_text_color.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable\\denom_text_color.xml"
+    },
+    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\f92b20edd533d15bb0b651fdaa17eca62d64070e\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
@@ -444,12 +448,12 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\fbfa7c9fcaf12064224d0a83152ad5248de88dca\\output\\res\\drawable\\dgts__digits_btn.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\com_facebook_auth_dialog_header_background.xml",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\messenger_button_white_bg_round.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable\\messenger_button_white_bg_round.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\com_facebook_auth_dialog_header_background.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\selector_button_red_under_line.xml",
@@ -690,6 +694,10 @@
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\call_toggle_button_background.xml",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable\\call_toggle_button_background.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\selector_denom.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable\\selector_denom.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\selector_button_end_call.xml",

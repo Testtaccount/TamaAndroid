@@ -76,6 +76,7 @@ public class TamaAccountHelper {
 //    if (System.currentTimeMillis() < App.getInstance().getAppSharedHelper()
 //        .getTamaAccountExpiresIn()) {
     return App.getInstance().getAppSharedHelper().getTamaAccountAccessToken();
+//    return "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjE1MGUxM2FiMTBlYWU3YzZjMGNlMTc1MWUzMjZmMWIzMDNkYmFjOGQ4YmYyOGEyNDZhNzE4ZjI0N2ZmY2NhMjIxMzljZTk0ZmRjNWMxMGU3In0.eyJhdWQiOiIyIiwianRpIjoiMTUwZTEzYWIxMGVhZTdjNmMwY2UxNzUxZTMyNmYxYjMwM2RiYWM4ZDhiZjI4YTI0NmE3MThmMjQ3ZmZjY2EyMjEzOWNlOTRmZGM1YzEwZTciLCJpYXQiOjE1MzEzNzk1MzQsIm5iZiI6MTUzMTM3OTUzNCwiZXhwIjoxNTYyOTE1NTM0LCJzdWIiOiI3OSIsInNjb3BlcyI6WyIqIl19.qGwD8IMT9wwkrpUCpN0VIclEc6jClxoeT9TZq3onmdDl-nQkgKyGUbcKMCusgr2UGvdMCT6rlTSbKBZpKgSyMQx8JXfeTx6kj6XjhCbXaD35TbCJgy8whGwrzpNnk9KrrJjPHD8p4RXFTC2dnkQp038VtYhIF0ahIt_e4SioK1JC8w3oKhmupbcMHGhGE1vXk7ghyqWeJdwjXupAfJwl5skAEZ8VqepwEXdqshLsGOWH0GjzYtqAcM3Otq1Osdf874itm5qRpK55AvViRNRODCcpTqUuxuYYIbPhJArKY9L8FylYpv6G54SW5eotgG1RNmi-KG5rlQwkEftan79KsgUkX2o64aQJnY2qe0DW24Ho1ZUtEB6jeDpXSeb__t1F2UdODTaubUY6Qwl0JANgt7eWTr6W_Mb4GDyEcGqj6jGtxMvLeuNjcYnOz41q-rkeZZdhZ9RFhxUA45m_5m9xqz-DItqvS4egfJc3O7IqO1gazf2AlTIgVFQ12EW9aN-e9GN6GCB-0DEpWs8ws_NFum0W_K09tn9h3Oz-aHQJA6rit7tLBwbB0yamo91cC_2Xss_wWkw9bVfMXbvuoEC-JfCfy5ArGbiv5yFFAHnZn9mpJ-eirzt42YmZS2ZzzdbCal37iyVz3Hn7SGYaR99gMZWIMNAOiT_wVv2uwjUHJDM";
 //    } else {
 //      new RefreshAccessTokenTask(new AsyncResponse() {
 //        @Override
@@ -226,11 +227,11 @@ public class TamaAccountHelper {
     new TopupRequestTask().execute(TOPUP_ACCOUNT_BY_VAUCHER + getLanguages(), voucherNo, PAY_BY);
   }
 
-  public void getHistory(TamaAccountHelperListener listener, String user_id, String history_type) {
+  public void getHistory(TamaAccountHelperListener listener, String history_type) {
     this.listener = listener;
 
 //        new GetHistoryTask().execute(GET_HISTORY + 1 + "/" + history_type);
-    new GetHistoryTask().execute(GET_HISTORY + user_id + "/" + history_type + getLanguages());
+    new GetHistoryTask().execute(GET_HISTORY  + "/" + history_type + getLanguages());
   }
 
   public void getSingleHistory(TamaAccountHelperListener listener, String user_id,

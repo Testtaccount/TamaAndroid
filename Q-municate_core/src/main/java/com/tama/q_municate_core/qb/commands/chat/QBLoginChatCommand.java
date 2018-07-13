@@ -12,10 +12,7 @@ import com.tama.q_municate_core.models.AppSession;
 import com.tama.q_municate_core.qb.helpers.QBChatRestHelper;
 import com.tama.q_municate_core.service.QBService;
 import com.tama.q_municate_core.service.QBServiceConsts;
-import com.tama.q_municate_core.utils.ConnectivityUtils;
-import com.tama.q_municate_core.utils.ConstsCore;
 import java.io.IOException;
-import java.util.Date;
 import org.jivesoftware.smack.SmackException;
 import org.jivesoftware.smack.XMPPException;
 
@@ -69,7 +66,7 @@ public class QBLoginChatCommand extends ServiceCommand {
 //        while (!chatRestHelper.isLoggedIn() && (currentTime - startTime) < ConstsCore.LOGIN_TIMEOUT) {
 //            currentTime = new Date().getTime();
 //            try {
-//                if (ConnectivityUtils.isNetworkAvailable(context)) {
+//                if (NetworkUtil.isConnected(context)) {
 //                    chatRestHelper.login(currentUser);
 //                }
 //            } catch (SmackException ignore) {

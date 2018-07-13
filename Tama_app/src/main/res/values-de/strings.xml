@@ -411,7 +411,7 @@
   <string name="countries">LÄNDER</string>
   <string name="click_on_your_country_to_find_out_the_products_available">Klicken Sie auf Ihr Land, um die verfügbaren Produkte zu finden</string>
   <string name="categories">KATEGORIEN</string>
-  <string name="products">PRODUKTE</string>
+  <string name="historyProducts">PRODUKTE</string>
   <string name="add_to_cart">IN DEN WARENKORB LEGEN</string>
   <string name="shopping_cart">EINKAUFSWAGEN</string>
   <string name="image">Bild</string>

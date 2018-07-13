@@ -34,31 +34,31 @@ public final class R {
         public static final int tw__permission_title_text_size = 0x7f0b0160;
     }
     public static final class drawable {
-        public static final int tw__ic_logo_default = 0x7f02060f;
-        public static final int tw__login_btn = 0x7f020610;
-        public static final int tw__login_btn_default = 0x7f020611;
-        public static final int tw__login_btn_default_light = 0x7f020612;
-        public static final int tw__login_btn_disabled = 0x7f020613;
-        public static final int tw__login_btn_light = 0x7f020614;
-        public static final int tw__login_btn_pressed = 0x7f020615;
-        public static final int tw__login_btn_pressed_light = 0x7f020616;
-        public static final int tw__login_btn_text_color_light = 0x7f020617;
-        public static final int tw__share_email_header = 0x7f020618;
-        public static final int tw__transparent = 0x7f020619;
+        public static final int tw__ic_logo_default = 0x7f020611;
+        public static final int tw__login_btn = 0x7f020612;
+        public static final int tw__login_btn_default = 0x7f020613;
+        public static final int tw__login_btn_default_light = 0x7f020614;
+        public static final int tw__login_btn_disabled = 0x7f020615;
+        public static final int tw__login_btn_light = 0x7f020616;
+        public static final int tw__login_btn_pressed = 0x7f020617;
+        public static final int tw__login_btn_pressed_light = 0x7f020618;
+        public static final int tw__login_btn_text_color_light = 0x7f020619;
+        public static final int tw__share_email_header = 0x7f02061a;
+        public static final int tw__transparent = 0x7f02061b;
     }
     public static final class id {
         public static final int height = 0x7f100092;
-        public static final int imageView = 0x7f1002f2;
-        public static final int tw__allow_btn = 0x7f1002f5;
-        public static final int tw__not_now_btn = 0x7f1002f4;
-        public static final int tw__share_email_desc = 0x7f1002f3;
-        public static final int tw__spinner = 0x7f1002f1;
-        public static final int tw__web_view = 0x7f1002f0;
+        public static final int imageView = 0x7f1002f5;
+        public static final int tw__allow_btn = 0x7f1002f8;
+        public static final int tw__not_now_btn = 0x7f1002f7;
+        public static final int tw__share_email_desc = 0x7f1002f6;
+        public static final int tw__spinner = 0x7f1002f4;
+        public static final int tw__web_view = 0x7f1002f3;
         public static final int width = 0x7f100093;
     }
     public static final class layout {
-        public static final int tw__activity_oauth = 0x7f0300e9;
-        public static final int tw__activity_share_email = 0x7f0300ea;
+        public static final int tw__activity_oauth = 0x7f0300ea;
+        public static final int tw__activity_share_email = 0x7f0300eb;
     }
     public static final class raw {
         public static final int tw__cacerts = 0x7f070002;
@@ -72,12 +72,12 @@ public final class R {
         public static final int tw__share_email_title = 0x7f080076;
     }
     public static final class style {
-        public static final int tw__Button = 0x7f0c0266;
-        public static final int tw__ButtonBar = 0x7f0c0268;
-        public static final int tw__Button_Light = 0x7f0c0267;
-        public static final int tw__Permission_Container = 0x7f0c0269;
-        public static final int tw__Permission_Description = 0x7f0c026a;
-        public static final int tw__Permission_Title = 0x7f0c026b;
+        public static final int tw__Button = 0x7f0c0268;
+        public static final int tw__ButtonBar = 0x7f0c026a;
+        public static final int tw__Button_Light = 0x7f0c0269;
+        public static final int tw__Permission_Container = 0x7f0c026b;
+        public static final int tw__Permission_Description = 0x7f0c026c;
+        public static final int tw__Permission_Title = 0x7f0c026d;
     }
     public static final class styleable {
         public static final int[] tw__AspectRatioImageView = { 0x7f010223, 0x7f010224 };

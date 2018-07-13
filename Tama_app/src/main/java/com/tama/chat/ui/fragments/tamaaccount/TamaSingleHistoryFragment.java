@@ -32,7 +32,7 @@ public class TamaSingleHistoryFragment extends Fragment implements TamaAccountHe
 //    private SingleHistoryElement element;
 
     private String user_id;
-    private String history_id;
+    private long history_id;
     private static final String ARG_PARAM_1 = "param_1";
     private static final String ARG_PARAM_2 = "param_2";
 //    private TamaHistoryActivity activity;
@@ -91,11 +91,11 @@ public class TamaSingleHistoryFragment extends Fragment implements TamaAccountHe
 
 
 
-    public static TamaSingleHistoryFragment newInstance(String user_id, String history_id) {
+    public static TamaSingleHistoryFragment newInstance(String user_id, long history_id) {
         TamaSingleHistoryFragment fragment = new TamaSingleHistoryFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM_1, user_id);
-        args.putString(ARG_PARAM_2, history_id);
+        args.putLong(ARG_PARAM_2, history_id);
         fragment.setArguments(args);
         return fragment;
     }
@@ -105,9 +105,9 @@ public class TamaSingleHistoryFragment extends Fragment implements TamaAccountHe
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             user_id = getArguments().getString(ARG_PARAM_1);
-            history_id = getArguments().getString(ARG_PARAM_2);
+            history_id = getArguments().getLong(ARG_PARAM_2);
         }
-        new TamaAccountHelper().getSingleHistory(this,user_id,history_id);
+        new TamaAccountHelper().getSingleHistory(this,user_id,String.valueOf(history_id));
     }
 
     @Nullable

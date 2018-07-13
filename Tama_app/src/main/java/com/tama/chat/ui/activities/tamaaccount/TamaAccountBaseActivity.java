@@ -35,7 +35,7 @@ import com.tama.chat.utils.image.ImageLoaderUtils;
 import com.tama.chat.utils.image.ImageUtils;
 import com.tama.q_municate_core.models.AppSession;
 import com.tama.q_municate_core.models.UserCustomData;
-import com.tama.q_municate_core.utils.ConnectivityUtils;
+import com.tama.q_municate_core.utils.NetworkUtil;
 import com.tama.q_municate_core.utils.Utils;
 
 public abstract class TamaAccountBaseActivity extends BaseActivity implements TamaAccountHelperListener {
@@ -92,7 +92,7 @@ public abstract class TamaAccountBaseActivity extends BaseActivity implements Ta
     }
 
     public boolean isNetworkAvailable() {
-        return ConnectivityUtils.isNetworkAvailable(this);
+        return NetworkUtil.isConnected(this);
     }
 
     private void checkVisibilityTamaUserIcon(ImageView v) {
@@ -169,8 +169,10 @@ public abstract class TamaAccountBaseActivity extends BaseActivity implements Ta
         InputMethodManager inputMethodManager =
                 (InputMethodManager) getSystemService(
                         Activity.INPUT_METHOD_SERVICE);
-        inputMethodManager.hideSoftInputFromWindow(
-                getCurrentFocus().getWindowToken(), 0);
+        if (inputMethodManager != null) {
+            inputMethodManager.hideSoftInputFromWindow(
+                    getCurrentFocus().getWindowToken(), 0);
+        }
     }
 
     public void showSoftKeyboard(View view) {

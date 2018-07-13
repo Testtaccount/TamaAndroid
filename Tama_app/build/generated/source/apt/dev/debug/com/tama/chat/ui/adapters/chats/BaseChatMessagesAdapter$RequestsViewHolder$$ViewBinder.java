@@ -8,16 +8,16 @@ import butterknife.ButterKnife.ViewBinder;
 public class BaseChatMessagesAdapter$RequestsViewHolder$$ViewBinder<T extends com.tama.chat.ui.adapters.chats.BaseChatMessagesAdapter.RequestsViewHolder> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findOptionalView(source, 2131755634, null);
-    target.messageTextView = finder.castView(view, 2131755634, "field 'messageTextView'");
-    view = finder.findOptionalView(source, 2131755633, null);
-    target.timeTextMessageTextView = finder.castView(view, 2131755633, "field 'timeTextMessageTextView'");
-    view = finder.findOptionalView(source, 2131755637, null);
-    target.acceptFriendImageView = finder.castView(view, 2131755637, "field 'acceptFriendImageView'");
     view = finder.findOptionalView(source, 2131755636, null);
-    target.dividerView = view;
+    target.messageTextView = finder.castView(view, 2131755636, "field 'messageTextView'");
     view = finder.findOptionalView(source, 2131755635, null);
-    target.rejectFriendImageView = finder.castView(view, 2131755635, "field 'rejectFriendImageView'");
+    target.timeTextMessageTextView = finder.castView(view, 2131755635, "field 'timeTextMessageTextView'");
+    view = finder.findOptionalView(source, 2131755639, null);
+    target.acceptFriendImageView = finder.castView(view, 2131755639, "field 'acceptFriendImageView'");
+    view = finder.findOptionalView(source, 2131755638, null);
+    target.dividerView = view;
+    view = finder.findOptionalView(source, 2131755637, null);
+    target.rejectFriendImageView = finder.castView(view, 2131755637, "field 'rejectFriendImageView'");
   }
 
   @Override public void unbind(T target) {

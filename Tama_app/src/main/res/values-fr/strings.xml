@@ -416,7 +416,7 @@
     <string name="countries">DES PAYS</string>
     <string name="click_on_your_country_to_find_out_the_products_available">Appuyez sur votre pays pour trouver les produits disponibles</string>
     <string name="categories">CATÉGORIES</string>
-    <string name="products">DES PRODUITS</string>
+    <string name="historyProducts">DES PRODUITS</string>
     <string name="add_to_cart">AJOUTER AU PANIER</string>
     <string name="shopping_cart">CHARIOT</string>
     <string name="image">Image</string>

@@ -20,7 +20,7 @@ import com.tama.chat.utils.listeners.UserStatusChangingListener;
 import com.tama.q_municate_core.qb.helpers.QBChatHelper;
 import com.tama.q_municate_core.qb.helpers.QBFriendListHelper;
 import com.tama.q_municate_core.service.QBService;
-import com.tama.q_municate_core.utils.ConnectivityUtils;
+import com.tama.q_municate_core.utils.NetworkUtil;
 
 public abstract class BaseFragment extends Fragment implements UserStatusChangingListener, ServiceConnectionListener {
 
@@ -120,7 +120,7 @@ public abstract class BaseFragment extends Fragment implements UserStatusChangin
     }
 
     public boolean isNetworkAvailable() {
-        return ConnectivityUtils.isNetworkAvailable(baseActivity);
+        return NetworkUtil.isConnected(baseActivity);
     }
 
     protected boolean isExistActivity() {

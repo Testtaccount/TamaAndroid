@@ -15,8 +15,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.support.annotation.DrawableRes;
+import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -68,7 +70,7 @@ import com.tama.q_municate_core.qb.helpers.QBChatHelper;
 import com.tama.q_municate_core.qb.helpers.QBFriendListHelper;
 import com.tama.q_municate_core.service.QBService;
 import com.tama.q_municate_core.service.QBServiceConsts;
-import com.tama.q_municate_core.utils.ConnectivityUtils;
+import com.tama.q_municate_core.utils.NetworkUtil;
 import com.tama.q_municate_db.utils.ErrorUtils;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -80,7 +82,7 @@ import org.jivesoftware.smack.XMPPConnection;
 
 public abstract class BaseActivity extends AppCompatActivity implements ActionBarBridge, ConnectionBridge, LoadingBridge, SnackbarBridge {
 
-    private static final String TAG = BaseActivity.class.getSimpleName();
+    public static final String TAG = BaseActivity.class.getSimpleName();
     protected static boolean appInitialized;
 
     protected App app;
@@ -119,6 +121,7 @@ public abstract class BaseActivity extends AppCompatActivity implements ActionBa
     private ViewGroup root;
     private boolean isUIDisabled;
     public static final String PAGE="PAGE";
+    private TabLayout mTabLayout;
 
     protected abstract int getContentResId();
 
@@ -132,6 +135,7 @@ public abstract class BaseActivity extends AppCompatActivity implements ActionBa
 
         initFields();
         activateButterKnife();
+        mTabLayout = (TabLayout) findViewById(R.id.ctl);
 
         if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
             Window window = this.getWindow();
@@ -258,7 +262,7 @@ public abstract class BaseActivity extends AppCompatActivity implements ActionBa
 
     @Override
     public boolean isNetworkAvailable() {
-        return ConnectivityUtils.isNetworkAvailable(this);
+        return NetworkUtil.isConnected(this);
     }
 
     @Override
@@ -275,6 +279,11 @@ public abstract class BaseActivity extends AppCompatActivity implements ActionBa
             createSnackBar(titleResId, duration);
             snackbar.show();
         }
+    }
+
+    @Nullable
+    protected TabLayout getTabLayout() {
+        return mTabLayout;
     }
 
 //    @Override

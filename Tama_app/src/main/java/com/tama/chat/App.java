@@ -28,8 +28,6 @@ import com.twitter.sdk.android.core.TwitterAuthConfig;
 import com.twitter.sdk.android.core.TwitterCore;
 import io.fabric.sdk.android.Fabric;
 
-//import com.quickblox.auth.session.QBSettings;
-
 public class App extends MultiDexApplication {
 
   private static final String TAG = App.class.getSimpleName();
@@ -50,7 +48,7 @@ public class App extends MultiDexApplication {
 
     super.onCreate();
     Log.i(TAG, "onCreate with update");
-    isSimulator=true;
+    isSimulator=false;
 
     initFabric();
     initApplication();

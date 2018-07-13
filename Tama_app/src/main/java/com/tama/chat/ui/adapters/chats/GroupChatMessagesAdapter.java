@@ -184,7 +184,7 @@ public class GroupChatMessagesAdapter extends BaseChatMessagesAdapter {
 //        if (chatMessage.getState() != null) {
 //
 //            if (State.READ.equals(chatMessage.getState()) && chatMessage.getSnapMessage()) {
-////                if (baseActivity.isNetworkAvailable()) {
+////                if (baseActivity.isConnected()) {
 ////                    chatMessage.setState(State.SYNC);
 ////                    QBUpdateStatusMessageCommand.start(baseActivity, chatDialog, chatMessage, false);
 ////                }

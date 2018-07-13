@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\12bd88664cf8757d38812276a1f437d82642a605\\output\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\design_bottom_sheet_dialog.xml",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_dialog.xml",
@@ -56,16 +56,16 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\my_widget_item_attach_right.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_main.xml",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\widget_link_preview.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\380438f198877825db6978745ff2b29f0ce2d08c\\output\\res\\layout\\widget_link_preview.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\emojicons.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\ba349513ecd4bc5b86431111b522ce1d08b1011c\\output\\res\\layout\\emojicons.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\widget_link_preview.xml",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\380438f198877825db6978745ff2b29f0ce2d08c\\output\\res\\layout\\widget_link_preview.xml"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_main.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\fragment_dialogs_list.xml",
@@ -192,12 +192,12 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\item_invite_friend.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\design_layout_tab_text.xml",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\layout\\design_layout_tab_text.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\layout\\design_layout_tab_text.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\item_dialog.xml",
@@ -212,12 +212,12 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\fragment_settings.xml",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\fragment_settings.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\md_dialog_input_check.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\879e4c391d93a1c4d3b2e1b2b3b111a18c5aaea7\\output\\res\\layout\\md_dialog_input_check.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\fragment_settings.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\fragment_settings.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_incoming_request.xml",
@@ -264,24 +264,24 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\fragment_products.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\item_outgoing_request.xml",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\item_outgoing_request.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\item_friend_selectable.xml",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\item_friend_selectable.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\item_outgoing_request.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\item_outgoing_request.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\item_local_search.xml",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\item_local_search.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\layout\\design_layout_snackbar.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\item_private_message_opponent.xml",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\item_private_message_opponent.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\92cbf4d438eaf5b8a3476defa69d6f9b924595c7\\output\\res\\layout\\design_layout_snackbar.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\md_dialog_progress_indeterminate.xml",
@@ -490,6 +490,10 @@
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\widget_text_msg_frame.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\380438f198877825db6978745ff2b29f0ce2d08c\\output\\res\\layout\\widget_text_msg_frame.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\include_layout_tab.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\include_layout_tab.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_tama_pay_online.xml",

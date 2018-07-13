@@ -1032,7 +1032,7 @@ public abstract class BaseDialogActivity extends BaseLoggableActivity implements
 //    }
 //
 //    private void createChatLocally() {
-//        if (isNetworkAvailable()) {
+//        if (isConnected()) {
 //            if (service != null) {
 //                baseChatHelper = (QBBaseChatHelper) service.getHelper(chatHelperIdentifier);
 //                Log.d("Fix double message", "baseChatHelper = " + baseChatHelper + "\n dialog = " + dialog);

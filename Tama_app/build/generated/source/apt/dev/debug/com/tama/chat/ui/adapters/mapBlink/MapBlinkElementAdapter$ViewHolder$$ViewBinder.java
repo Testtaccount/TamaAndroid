@@ -8,20 +8,20 @@ import butterknife.ButterKnife.ViewBinder;
 public class MapBlinkElementAdapter$ViewHolder$$ViewBinder<T extends com.tama.chat.ui.adapters.mapBlink.MapBlinkElementAdapter.ViewHolder> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755645, "field 'mapBlinkImageView'");
-    target.mapBlinkImageView = finder.castView(view, 2131755645, "field 'mapBlinkImageView'");
-    view = finder.findRequiredView(source, 2131755644, "field 'nameTextView'");
-    target.nameTextView = finder.castView(view, 2131755644, "field 'nameTextView'");
-    view = finder.findRequiredView(source, 2131755646, "field 'mapBlinkRatingText'");
-    target.mapBlinkRatingText = finder.castView(view, 2131755646, "field 'mapBlinkRatingText'");
-    view = finder.findRequiredView(source, 2131755648, "field 'mapBlinkDescription'");
-    target.mapBlinkDescription = finder.castView(view, 2131755648, "field 'mapBlinkDescription'");
-    view = finder.findRequiredView(source, 2131755649, "field 'mapBlinkIsOpen'");
-    target.mapBlinkIsOpen = finder.castView(view, 2131755649, "field 'mapBlinkIsOpen'");
-    view = finder.findRequiredView(source, 2131755650, "field 'mapBlink'");
-    target.mapBlink = finder.castView(view, 2131755650, "field 'mapBlink'");
-    view = finder.findRequiredView(source, 2131755647, "field 'mapBlinkRatingBar'");
-    target.mapBlinkRatingBar = finder.castView(view, 2131755647, "field 'mapBlinkRatingBar'");
+    view = finder.findRequiredView(source, 2131755647, "field 'mapBlinkImageView'");
+    target.mapBlinkImageView = finder.castView(view, 2131755647, "field 'mapBlinkImageView'");
+    view = finder.findRequiredView(source, 2131755646, "field 'nameTextView'");
+    target.nameTextView = finder.castView(view, 2131755646, "field 'nameTextView'");
+    view = finder.findRequiredView(source, 2131755648, "field 'mapBlinkRatingText'");
+    target.mapBlinkRatingText = finder.castView(view, 2131755648, "field 'mapBlinkRatingText'");
+    view = finder.findRequiredView(source, 2131755650, "field 'mapBlinkDescription'");
+    target.mapBlinkDescription = finder.castView(view, 2131755650, "field 'mapBlinkDescription'");
+    view = finder.findRequiredView(source, 2131755651, "field 'mapBlinkIsOpen'");
+    target.mapBlinkIsOpen = finder.castView(view, 2131755651, "field 'mapBlinkIsOpen'");
+    view = finder.findRequiredView(source, 2131755652, "field 'mapBlink'");
+    target.mapBlink = finder.castView(view, 2131755652, "field 'mapBlink'");
+    view = finder.findRequiredView(source, 2131755649, "field 'mapBlinkRatingBar'");
+    target.mapBlinkRatingBar = finder.castView(view, 2131755649, "field 'mapBlinkRatingBar'");
   }
 
   @Override public void unbind(T target) {

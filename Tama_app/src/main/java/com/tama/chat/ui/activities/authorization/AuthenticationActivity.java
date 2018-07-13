@@ -374,4 +374,8 @@ public class AuthenticationActivity extends BaseLoggableActivity implements OnMe
     return byteBuffer.toByteArray();
   }
 
+  @Override
+  public void onBackPressed() {
+//    super.onBackPressed();
+  }
 }

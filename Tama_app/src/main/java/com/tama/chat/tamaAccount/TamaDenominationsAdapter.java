@@ -48,6 +48,7 @@ public class TamaDenominationsAdapter extends BaseAdapter {
 
         ((TextView) vi.findViewById(R.id.denomination_text_1)).setText(str_1);
         ((TextView) vi.findViewById(R.id.denomination_text_2)).setText(str_2);
+        vi.setSelected(true);
         return vi;
     }
 }

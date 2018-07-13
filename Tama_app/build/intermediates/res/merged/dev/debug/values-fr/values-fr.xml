@@ -417,6 +417,7 @@ numéro de téléphone et/ou votre email.</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="higher_amount">Pardon! Ce montant est supérieur au montant disponible dans votre compte. S\'il vous plaît entrer un montant valide</string>
     <string name="history">HISTOIRE</string>
+    <string name="historyProducts">DES PRODUITS</string>
     <string name="history_all">Tout</string>
     <string name="history_balance_transfer">Transfert de solde</string>
     <string name="history_tama_express">TamaExpress</string>
@@ -498,7 +499,6 @@ numéro de téléphone et/ou votre email.</string>
     <string name="price">Prix</string>
     <string name="price_">Prix:</string>
     <string name="product">Produit</string>
-    <string name="products">DES PRODUITS</string>
     <string name="profile_change_photo">Changer la photo</string>
     <string name="profile_first_name_not_entered">Please enter First Name</string>
     <string name="profile_full_name">Nom complet</string>

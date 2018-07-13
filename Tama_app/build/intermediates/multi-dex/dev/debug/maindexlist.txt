@@ -2,6 +2,7 @@ com/orangegangsters/github/swipyrefreshlayout/library/MaterialProgressDrawable.c
 android/support/customtabs/CustomTabsIntent$Builder.class
 android/support/v7/widget/SnapHelper.class
 android/support/annotation/VisibleForTesting.class
+com/tama/chat/tamaAccount/entry/historyPojos/UpdatedAt.class
 android/support/v4/media/session/MediaSessionCompatApi21.class
 com/google/android/exoplayer2/drm/DrmSession$DrmSessionException.class
 android/support/v4/app/NotificationCompat$Extender.class
@@ -70,6 +71,7 @@ android/support/v7/graphics/drawable/DrawerArrowDrawable.class
 com/google/android/exoplayer2/extractor/PositionHolder.class
 android/support/transition/ViewGroupUtils.class
 com/bumptech/glide/load/DecodeFormat.class
+com/tama/chat/tamaAccount/entry/historyPojos/HistoryResult.class
 android/support/design/widget/VisibilityAwareImageButton.class
 com/google/android/exoplayer2/source/MergingMediaSource.class
 javax/inject/Qualifier.class
@@ -459,6 +461,7 @@ org/apache/http/conn/scheme/HostNameResolver.class
 android/support/v7/recyclerview/R.class
 org/intellij/lang/annotations/JdkConstants.class
 com/annimon/stream/function/ThrowablePredicate.class
+com/tama/chat/tamaAccount/entry/historyPojos/HistoryData.class
 android/support/design/R$dimen.class
 android/support/design/widget/CoordinatorLayout.class
 com/twitter/sdk/android/core/models/User.class
@@ -523,6 +526,7 @@ org/apache/http/conn/params/ConnManagerPNames.class
 android/support/v4/view/MenuItemCompat$OnActionExpandListener.class
 com/bumptech/glide/GenericRequestBuilder.class
 com/twitter/sdk/android/core/Session.class
+com/tama/chat/tamaAccount/entry/historyPojos/TamaHistoryElement.class
 com/google/android/exoplayer2/extractor/mp4/Atom$LeafAtom.class
 com/google/android/gms/dynamic/zzq.class
 org/apache/http/impl/conn/tsccm/RefQueueHandler.class
@@ -843,6 +847,7 @@ com/google/android/exoplayer2/audio/AudioProcessor.class
 com/firebase/jobdispatcher/Driver.class
 com/google/android/exoplayer2/C$Encoding.class
 com/quickblox/q_municate_user_service/cache/QMUserCache.class
+com/tama/chat/tamaAccount/entry/historyPojos/HistoryProduct.class
 com/google/android/exoplayer2/video/VideoRendererEventListener.class
 com/quickblox/users/model/QBUser.class
 com/quickblox/customobjects/model/QBEntityAction.class

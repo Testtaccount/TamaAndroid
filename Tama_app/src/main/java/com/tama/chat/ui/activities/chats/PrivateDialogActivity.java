@@ -96,7 +96,7 @@ public class PrivateDialogActivity extends BaseDialogActivity {
 //
 //        setUpActionBarWithUpButton();
 //
-////        if (isNetworkAvailable()) {
+////        if (isConnected()) {
 ////            deleteTempMessages();
 ////        }
 //
@@ -125,7 +125,7 @@ public class PrivateDialogActivity extends BaseDialogActivity {
 //
 ////        checkForCorrectChat();
 //
-//        if (isNetworkAvailable()) {
+//        if (isConnected()) {
 //            startLoadDialogMessages(false);
 //        }
 //
@@ -291,7 +291,7 @@ public class PrivateDialogActivity extends BaseDialogActivity {
 
     @Override
     protected void checkMessageSendingPossibility() {
-//        boolean enable = dataManager.getFriendDataManager().existsByUserId(opponentUser.getId()) && isNetworkAvailable();
+//        boolean enable = dataManager.getFriendDataManager().existsByUserId(opponentUser.getId()) && isConnected();
 //        checkMessageSendingPossibility(enable);
 
         checkMessageSendingPossibility(isNetworkAvailable());//Avetik

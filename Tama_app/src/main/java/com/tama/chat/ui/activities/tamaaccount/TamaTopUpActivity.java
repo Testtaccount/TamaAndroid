@@ -7,6 +7,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -31,7 +32,7 @@ import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class TamaTopUpActivity extends BaseFlagActivity {
+public class TamaTopUpActivity extends BaseFlagActivity implements OnItemClickListener {
 
   private Denominations denominations;
   private String country_code;
@@ -40,6 +41,7 @@ public class TamaTopUpActivity extends BaseFlagActivity {
   private String local_amount;
   private String dest_currency;
   private boolean usePromo;
+  private View selectedView;
 
   @Bind(R.id.tama_topup_first_page)
   LinearLayout tamaTopupFirstPage;
@@ -83,6 +85,7 @@ public class TamaTopUpActivity extends BaseFlagActivity {
     setTamaToolbar(R.string.mobile_topup, R.string.tama_topup);
 
     createFirstPage();
+    gridView.setOnItemClickListener(this);
   }
 
   @Override
@@ -125,18 +128,32 @@ public class TamaTopUpActivity extends BaseFlagActivity {
     tamaTopupSecondPage.setVisibility(View.VISIBLE);
     topupTitle.setText(R.string.select_amunt);
     topupButtonSeconds.setEnabled(false);
-    gridView.setAdapter(new TamaDenominationsAdapter(this, denominations));
+    gridView.invalidateViews();
+    final TamaDenominationsAdapter tamaDenominationsAdapter=new TamaDenominationsAdapter(this, denominations);
+    gridView.setAdapter(tamaDenominationsAdapter);
+
+//    gridView.post(new Runnable() {
+//      @Override
+//      public void run() {
+//
+//        View child = gridView.getChildAt(0);
+//        child.setSelected(true);
+//        onItemClick(gridView,child,0,0);
+//        onItemClick(gridView,child,0,0);
+//
+//      }
+//    });
+
     hideProgress();
-    gridView.setOnItemClickListener(getGridViewItemClickListener());
   }
 
   @OnClick(R.id.topup_button_first_page)
   void onClickTopUpFirstButton() {
-    if (getPhoneNumber().isEmpty()) {
-      topupErrorText.setText(R.string.enter_number);
-    } else if (getPhoneNumber().length() > 12 || getPhoneNumber().length() < 4) {
-      topupErrorText.setText(R.string.wrong_number_quantity);
-    } else {
+//    if (getPhoneNumber().isEmpty()) {
+//      topupErrorText.setText(R.string.enter_number);
+//    } else if (getPhoneNumber().length() > 12 || getPhoneNumber().length() < 4) {
+//      topupErrorText.setText(R.string.wrong_number_quantity);
+//    } else {
       showProgress();
       String user_id = getTamaUserId();
       String country_code = getCountryCode();
@@ -144,11 +161,14 @@ public class TamaTopUpActivity extends BaseFlagActivity {
       topupButtonFirst.setEnabled(false);
       hideSoftKeyboard();            //////////////////////////////////////////////////////
       new TamaAccountHelper().getDenominations(this,topup_no, country_code);
-    }
+//      new TamaAccountHelper().getDenominations(this,"8122535488", "91");
+//    }
   }
 
   @OnClick(R.id.topup_button_seconds_page)
   void onClickTopUpSecondsButton() {
+    showProgress();
+
     String use_promo = usePromo ? "yes" : "no";
     String pay_by = "balance";
 
@@ -183,25 +203,6 @@ public class TamaTopUpActivity extends BaseFlagActivity {
         items.add(s);
       }
     return items;
-  }
-
-  private AdapterView.OnItemClickListener getGridViewItemClickListener() {
-    return new AdapterView.OnItemClickListener() {
-      @Override
-      public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        String str_local = ((TextView) view.findViewById(R.id.denomination_text_1)).getText()
-            .toString();
-        String str_euro = ((TextView) view.findViewById(R.id.denomination_text_2)).getText()
-            .toString();
-        topupInfoText.setText(getString(R.string.topup_info_text, str_euro, getFullPhoneNumber()));
-        topupButtonSeconds.setEnabled(true);
-        country_code = getCountryCode();
-        topup_no = getPhoneNumber();
-        euro_amount = str_euro.replace(" €", "");
-        dest_currency = denominations.destination_currency;
-        local_amount = str_local.replace(" " + dest_currency, "");
-      }
-    };
   }
 
   @OnClick(R.id.open_contacts_list)
@@ -286,8 +287,13 @@ public class TamaTopUpActivity extends BaseFlagActivity {
           topupInfoText.setText(message);
           topupButtonSeconds.setEnabled(false);
         }
+        hideProgress();
 
+      }
+    if (selectedView!=null) {
+      selectedView.setSelected(false);
     }
+
   }
 
   @Override
@@ -302,6 +308,10 @@ public class TamaTopUpActivity extends BaseFlagActivity {
       topupButtonSeconds.setEnabled(false);
       clearRequestData();
     }
+
+    if (selectedView!=null) {
+      selectedView.setSelected(false);
+    }
     hideProgress();
   }
 
@@ -310,4 +320,22 @@ public class TamaTopUpActivity extends BaseFlagActivity {
     return this;
   }
 
+  @Override
+  public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+    view.setSelected(true);
+    this.selectedView=view;
+    TextView textView1=view.findViewById(R.id.denomination_text_1);
+    TextView textView2=view.findViewById(R.id.denomination_text_2);
+//        textView1.setTextColor(getResources().getColor(R.color.white));
+//        textView2.setTextColor(getResources().getColor(R.color.white));
+    String str_local = textView1.getText().toString();
+    String str_euro =textView2.getText().toString();
+    topupInfoText.setText(getString(R.string.topup_info_text, str_euro, getFullPhoneNumber()));
+    topupButtonSeconds.setEnabled(true);
+    country_code = getCountryCode();
+    topup_no = getPhoneNumber();
+    euro_amount = str_euro.replace(" €", "");
+    dest_currency = denominations.destination_currency;
+    local_amount = str_local.replace(" " + dest_currency, "");
+  }
 }

@@ -418,6 +418,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="higher_amount">Scusate! Questo importo è superiore a quello disponibile sul tuo account. Inserisci un importo valido</string>
     <string name="history">STORIA</string>
+    <string name="historyProducts">PRODOTTI</string>
     <string name="history_all">Tutti</string>
     <string name="history_balance_transfer">BalanceTransfer</string>
     <string name="history_tama_express">TamaExpress</string>
@@ -499,7 +500,6 @@
     <string name="price">Prezzo</string>
     <string name="price_">Prezzo:</string>
     <string name="product">Prodotto</string>
-    <string name="products">PRODOTTI</string>
     <string name="profile_change_photo">Cambia foto</string>
     <string name="profile_first_name_not_entered">Please enter First Name</string>
     <string name="profile_full_name">Nome completo</string>

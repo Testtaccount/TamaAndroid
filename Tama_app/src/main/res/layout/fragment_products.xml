@@ -14,7 +14,7 @@
           android:layout_height="wrap_content"
           android:padding="3dp"
           android:background="@color/button_red_normal"
-          android:text="@string/products"
+          android:text="@string/historyProducts"
           android:textColor="@color/tama_account_text"
           android:textSize="15sp" />
 

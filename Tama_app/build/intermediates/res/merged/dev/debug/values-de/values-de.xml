@@ -433,6 +433,7 @@ anhand Deiner Telefonnummer und/oder E-Mail Adresse finden können.</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="higher_amount">Es tut uns leid! Dieser Betrag ist höher als der auf Ihrem Konto verfügbare Betrag. Bitte geben Sie einen gültigen Betrag ein</string>
     <string name="history">HISTORIE</string>
+    <string name="historyProducts">PRODUKTE</string>
     <string name="history_all">Alle</string>
     <string name="history_balance_transfer">GUTHABENÜBERTRAGUNG</string>
     <string name="history_tama_express">TamaExpress</string>
@@ -514,7 +515,6 @@ anhand Deiner Telefonnummer und/oder E-Mail Adresse finden können.</string>
     <string name="price">Preis</string>
     <string name="price_">Preis:</string>
     <string name="product">Produkt</string>
-    <string name="products">PRODUKTE</string>
     <string name="profile_change_photo">Foto ändern</string>
     <string name="profile_first_name_not_entered">Please enter First Name</string>
     <string name="profile_full_name">Voller Name</string>

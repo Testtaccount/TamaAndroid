@@ -459,9 +459,9 @@
     <string name="please_enter_the_tamaexpress_pin">Please enter the TamaExpress PIN</string>
     <string name="denied">DENIED</string>
     <string name="countries">COUNTRIES</string>
-    <string name="click_on_your_country_to_find_out_the_products_available">Click on your country to find out the products available</string>
+    <string name="click_on_your_country_to_find_out_the_products_available">Click on your country to find out the historyProducts available</string>
     <string name="categories">CATEGORIES</string>
-    <string name="products">PRODUCTS</string>
+    <string name="historyProducts">PRODUCTS</string>
     <string name="add_to_cart">ADD TO CART</string>
     <string name="shopping_cart">SHOPPING CART</string>
     <string name="image">Image</string>
@@ -515,7 +515,7 @@
     <string name="it">it</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="alertTextFromCountry">You have some products in product list from %1$s. If you choose continue, these products will be delete</string>
+    <string name="alertTextFromCountry">You have some historyProducts in product list from %1$s. If you choose continue, these historyProducts will be delete</string>
     <string name="contact_alert_message">Please select contact, with country code \u0020</string>
     <string name="contact_us">Contact Us</string>
     <string name="contact_us_uppercase">CONTACT US</string>

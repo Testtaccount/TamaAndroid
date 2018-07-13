@@ -124,7 +124,7 @@ public class ActivityLifecycleHandler implements Application.ActivityLifecycleCa
 //        boolean isLoggedIn = AppSession.getSession().isLoggedIn();
 //        Log.d(TAG, "isSessionExist()" + isLoggedIn);
 //        boolean canLogin = chatDestroyed && isLoggedIn;
-//        boolean networkAvailable = ((BaseActivity) activity).isNetworkAvailable();
+//        boolean networkAvailable = ((BaseActivity) activity).isConnected();
 //        Log.d(TAG, "networkAvailable" + networkAvailable);
 //        if (canLogin) {
 //          QBLoginChatCompositeCommand.start(activity);

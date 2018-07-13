@@ -14,14 +14,14 @@ public class MainActivity$$ViewBinder<T extends com.tama.chat.ui.activities.main
     target.toolbarView = finder.castView(view, 2131755213, "field 'toolbarView'");
     view = finder.findRequiredView(source, 2131755218, "field 'toolbarTamaView'");
     target.toolbarTamaView = finder.castView(view, 2131755218, "field 'toolbarTamaView'");
-    view = finder.findRequiredView(source, 2131755747, "field 'tamaToolbarLogo'");
-    target.tamaToolbarLogo = finder.castView(view, 2131755747, "field 'tamaToolbarLogo'");
-    view = finder.findRequiredView(source, 2131755749, "field 'tamaToolbarUserIcon'");
-    target.tamaToolbarUserIcon = finder.castView(view, 2131755749, "field 'tamaToolbarUserIcon'");
-    view = finder.findRequiredView(source, 2131755748, "field 'tamaToolbarTitle'");
-    target.tamaToolbarTitle = finder.castView(view, 2131755748, "field 'tamaToolbarTitle'");
-    view = finder.findRequiredView(source, 2131755750, "field 'tamaToolbarSubtitle'");
-    target.tamaToolbarSubtitle = finder.castView(view, 2131755750, "field 'tamaToolbarSubtitle'");
+    view = finder.findRequiredView(source, 2131755750, "field 'tamaToolbarLogo'");
+    target.tamaToolbarLogo = finder.castView(view, 2131755750, "field 'tamaToolbarLogo'");
+    view = finder.findRequiredView(source, 2131755752, "field 'tamaToolbarUserIcon'");
+    target.tamaToolbarUserIcon = finder.castView(view, 2131755752, "field 'tamaToolbarUserIcon'");
+    view = finder.findRequiredView(source, 2131755751, "field 'tamaToolbarTitle'");
+    target.tamaToolbarTitle = finder.castView(view, 2131755751, "field 'tamaToolbarTitle'");
+    view = finder.findRequiredView(source, 2131755753, "field 'tamaToolbarSubtitle'");
+    target.tamaToolbarSubtitle = finder.castView(view, 2131755753, "field 'tamaToolbarSubtitle'");
   }
 
   @Override public void unbind(T target) {
