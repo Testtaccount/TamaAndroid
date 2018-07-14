@@ -1,6 +1,5 @@
 package com.tama.chat.ui.fragments.tamaaccount;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -20,7 +19,7 @@ import com.tama.chat.tamaAccount.HistoryAdapter;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryData;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryResult;
 import com.tama.chat.tamaAccount.entry.historyPojos.TamaHistoryElement;
-import com.tama.chat.ui.activities.tamaaccount.TamaHistoryActivity;
+import com.tama.chat.utils.ToastUtils;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONArray;
@@ -29,25 +28,20 @@ import org.json.JSONObject;
 
 public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHistoryItemClickListener {
 
-//    private ArrayList<TamaHistoryElement> elements = new ArrayList<>();
-    private String HISTORY_ALL = "all";
-    private String HISTORY_MYTAMA = "mytama";
-    private String HISTORY_TAMATOPUP = "tama-topup";
-    private String HISTORY_TAMAEXPRESS = "tamaexpress";
-    private String HISTORY_TRANSFER = "transfer";
+//    private ArrayList<TamaHistoryElement> mHistoryResultList = new ArrayList<>();
+
     private static final String ARG_PARAM = "param";
-    private TamaHistoryActivity activity;
 //    private RecyclerView mRecyclerView;
     private HistoryAdapter mAdapter;
     private LinearLayoutManager layoutManager;;
-
-    private List<HistoryResult> elements;
+    private List<HistoryResult> mHistoryResultList;
 
 //    @Bind(R.id.list_view)
-//    ListView historyElementList;
+//    ListView mRecyclerView;
+
 
     @Bind(R.id.history_recycler_view)
-    RecyclerView historyElementList;
+    RecyclerView mRecyclerView;
 
     @Bind(R.id.error_message_text)
     TextView errorMessageText;
@@ -92,18 +86,14 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
 //        onClickHistoryType(historyBalanceTransfer,HISTORY_TRANSFER);
 //    }
 
-    public static Fragment newInstance(List<HistoryResult> tamaHistoryElements) {
-        TamaHistoryFragment fragment = new TamaHistoryFragment();
-        Bundle args = new Bundle();
-        args.putParcelableArrayList(ARG_PARAM, (ArrayList) tamaHistoryElements);
-        fragment.setArguments(args);
-        return fragment;
+    public static TamaHistoryFragment newInstance() {
+        return new TamaHistoryFragment();
     }
 
-    public static TamaHistoryFragment newInstance(String param) {
+    public static Fragment newInstance(List<HistoryResult> historyResultList) {
         TamaHistoryFragment fragment = new TamaHistoryFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM, param);
+        args.putParcelableArrayList(ARG_PARAM, (ArrayList) historyResultList);
         fragment.setArguments(args);
         return fragment;
     }
@@ -114,55 +104,77 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
 
     }
 
-    private void initRecyclerView() {
-        // Set up the recycler view
-        layoutManager = new LinearLayoutManager(getActivity());
-        historyElementList.setLayoutManager(layoutManager);
-        historyElementList.setItemAnimator(new DefaultItemAnimator());
-
-        mAdapter = new HistoryAdapter((ArrayList<HistoryResult>)elements, this);
-//        mAdapter.setHasStableIds(true);
-        historyElementList.setAdapter(mAdapter);
-    }
-
-
-    @Override
-    public void onResume() {
-        super.onResume();
-//        onClickHistoryType(historyAll,HISTORY_ALL);
-    }
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tama_history, container, false);
         ButterKnife.bind(this, view);
-      elements =new ArrayList<>();
-      if (getArguments() != null) {
-        elements = getArguments().getParcelableArrayList(ARG_PARAM);
-//            elements = getHistoryElementListFromJson(mParam);
-      }
-      initRecyclerView();
-//        historyElementList.setOnItemClickListener(getItemClickListener());
-//        historyElementList.setAdapter(new TamaHistoryAdapter(elements));
+        mHistoryResultList =new ArrayList<>();
+        getData();
+        initRecyclerView();
+        setListeners();
+
+//        mRecyclerView.setOnItemClickListener(getItemClickListener());
+//        mRecyclerView.setAdapter(new TamaHistoryAdapter(mHistoryResultList));
         return view;
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof TamaHistoryActivity) {
-            activity = (TamaHistoryActivity) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+    private void initRecyclerView() {
+        // Set up the recycler view
+        layoutManager = new LinearLayoutManager(getActivity());
+        mRecyclerView.setLayoutManager(layoutManager);
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+
+        mAdapter = new HistoryAdapter(mHistoryResultList, this);
+//        mAdapter.setHasStableIds(true);
+        mRecyclerView.setAdapter(mAdapter);
+//        if(mHistoryResultList.isEmpty()){
+//            errorMessageText.setVisibility(View.VISIBLE);
+//            errorMessageText.setText(getString(R.string.you_have_no_history));
+//        }else {
+//            errorMessageText.setVisibility(View.GONE);
+//            errorMessageText.setText(getString(R.string.you_have_no_history));
+//        }
+    }
+
+
+    public void getData() {
+        if (getArguments() != null) {
+            mHistoryResultList = getArguments().getParcelableArrayList(ARG_PARAM);
+//            mHistoryResultList = getHistoryElementListFromJson(mParam);
         }
     }
 
+    private void setListeners() {
+
+    }
+
+    public void setHistoryResultList(List<HistoryResult> historyResultList) {
+        mAdapter.set(historyResultList);
+        if(mHistoryResultList.isEmpty()){
+            errorMessageText.setVisibility(View.VISIBLE);
+            errorMessageText.setText(getString(R.string.you_have_no_history));
+        }else {
+            errorMessageText.setVisibility(View.GONE);
+            errorMessageText.setText(getString(R.string.you_have_no_history));
+        }
+    }
+
+
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof TamaHistoryActivity) {
+//            activity = (TamaHistoryActivity) context;
+//        } else {
+//            throw new RuntimeException(context.toString()
+//                    + " must implement OnFragmentInteractionListener");
+//        }
+//    }
+
     private void onClickHistoryType(TextView textView, String history_type) {
         setTextColorAndBackGround(textView);
-        setButtonEnable(false);
-        historyElementList.setAdapter(null);
+        mRecyclerView.setAdapter(null);
         errorMessageText.setVisibility(View.GONE);
 //        new TamaAccountHelper().getHistory(this,history_type);
     }
@@ -178,7 +190,7 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
         return new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                HistoryResult element = elements.get(position);
+                HistoryResult element = mHistoryResultList.get(position);
 //                activity.setCurrentFragment(TamaSingleHistoryFragment.newInstance(user_id,element.getHistoryId()));
             }
         };
@@ -208,13 +220,6 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
         currentTextView.setBackgroundResource(R.drawable.selector_button_red_under_line);
     }
 
-    private void setButtonEnable(boolean b){
-//        historyAll.setEnabled(b);
-//        historyMyTama.setEnabled(b);
-//        historyTamaExpress.setEnabled(b);
-//        historyTamaTopup.setEnabled(b);
-//        historyBalanceTransfer.setEnabled(b);
-    }
 
     private ArrayList<TamaHistoryElement> getHistoryElementListFromJson(String data) {
         if (data == null)
@@ -294,6 +299,6 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
 
     @Override
     public void onOilHistoryItemClick(HistoryResult result) {
-
+        ToastUtils.shortToast(result.getHistoryName());
     }
 }

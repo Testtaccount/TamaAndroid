@@ -9,20 +9,20 @@ public class TamaTopUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755348, "field 'tamaTopupFirstPage'");
-    target.tamaTopupFirstPage = finder.castView(view, 2131755348, "field 'tamaTopupFirstPage'");
-    view = finder.findRequiredView(source, 2131755355, "field 'tamaTopupSecondPage'");
-    target.tamaTopupSecondPage = finder.castView(view, 2131755355, "field 'tamaTopupSecondPage'");
-    view = finder.findRequiredView(source, 2131755347, "field 'topupTitle'");
-    target.topupTitle = finder.castView(view, 2131755347, "field 'topupTitle'");
-    view = finder.findRequiredView(source, 2131755349, "field 'topupErrorText'");
-    target.topupErrorText = finder.castView(view, 2131755349, "field 'topupErrorText'");
-    view = finder.findRequiredView(source, 2131755357, "field 'topupInfoText'");
-    target.topupInfoText = finder.castView(view, 2131755357, "field 'topupInfoText'");
-    view = finder.findRequiredView(source, 2131755356, "field 'gridView'");
-    target.gridView = finder.castView(view, 2131755356, "field 'gridView'");
-    view = finder.findRequiredView(source, 2131755350, "field 'topupButtonFirst' and method 'onClickTopUpFirstButton'");
-    target.topupButtonFirst = finder.castView(view, 2131755350, "field 'topupButtonFirst'");
+    view = finder.findRequiredView(source, 2131755343, "field 'tamaTopupFirstPage'");
+    target.tamaTopupFirstPage = finder.castView(view, 2131755343, "field 'tamaTopupFirstPage'");
+    view = finder.findRequiredView(source, 2131755350, "field 'tamaTopupSecondPage'");
+    target.tamaTopupSecondPage = finder.castView(view, 2131755350, "field 'tamaTopupSecondPage'");
+    view = finder.findRequiredView(source, 2131755342, "field 'topupTitle'");
+    target.topupTitle = finder.castView(view, 2131755342, "field 'topupTitle'");
+    view = finder.findRequiredView(source, 2131755344, "field 'topupErrorText'");
+    target.topupErrorText = finder.castView(view, 2131755344, "field 'topupErrorText'");
+    view = finder.findRequiredView(source, 2131755352, "field 'topupInfoText'");
+    target.topupInfoText = finder.castView(view, 2131755352, "field 'topupInfoText'");
+    view = finder.findRequiredView(source, 2131755351, "field 'gridView'");
+    target.gridView = finder.castView(view, 2131755351, "field 'gridView'");
+    view = finder.findRequiredView(source, 2131755345, "field 'topupButtonFirst' and method 'onClickTopUpFirstButton'");
+    target.topupButtonFirst = finder.castView(view, 2131755345, "field 'topupButtonFirst'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -31,8 +31,8 @@ public class TamaTopUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities
           target.onClickTopUpFirstButton();
         }
       });
-    view = finder.findRequiredView(source, 2131755359, "field 'topupButtonSeconds' and method 'onClickTopUpSecondsButton'");
-    target.topupButtonSeconds = finder.castView(view, 2131755359, "field 'topupButtonSeconds'");
+    view = finder.findRequiredView(source, 2131755354, "field 'topupButtonSeconds' and method 'onClickTopUpSecondsButton'");
+    target.topupButtonSeconds = finder.castView(view, 2131755354, "field 'topupButtonSeconds'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -51,8 +51,8 @@ public class TamaTopUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities
           target.clickOpenContactsList();
         }
       });
-    view = finder.findRequiredView(source, 2131755358, "field 'promoCheckBox' and method 'usePromoCheckBoxCheck'");
-    target.promoCheckBox = finder.castView(view, 2131755358, "field 'promoCheckBox'");
+    view = finder.findRequiredView(source, 2131755353, "field 'promoCheckBox' and method 'usePromoCheckBoxCheck'");
+    target.promoCheckBox = finder.castView(view, 2131755353, "field 'promoCheckBox'");
     ((android.widget.CompoundButton) view).setOnCheckedChangeListener(
       new android.widget.CompoundButton.OnCheckedChangeListener() {
         @Override public void onCheckedChanged(

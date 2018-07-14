@@ -22,6 +22,10 @@ public class HttpRequestManager {
     public static final int LOG_OUT = 2;
     public static final int ITEM = 3;
     public static final int HISTORIES = 4;
+    public static final int HISTORIES_MYTAMA = 5;
+    public static final int HISTORIES_TAMA_TOPUP = 6;
+    public static final int HISTORIES_TAMAEXPRESS = 7;
+    public static final int HISTORIES_TRANSFER = 8;
   }
 
   // ===========================================================
@@ -45,15 +49,12 @@ public class HttpRequestManager {
       case RestHttpClient.RequestMethod.POST:
         httpConnection = RestHttpClient.executePostRequest(context, url, bundle);
         break;
-
       case RestHttpClient.RequestMethod.GET:
         httpConnection = RestHttpClient.executeGetRequest(context, url, bundle);
         break;
-
       case RestHttpClient.RequestMethod.PATCH:
         httpConnection = RestHttpClient.executePatchRequest(context, url, bundle);
         break;
-
       case RestHttpClient.RequestMethod.PUT:
         httpConnection = RestHttpClient.executePutRequest(context, url, bundle);
         break;

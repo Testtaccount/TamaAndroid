@@ -9,8 +9,12 @@ public class TamaHistoryActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755345, "field 'mViewPager'");
-    target.mViewPager = finder.castView(view, 2131755345, "field 'mViewPager'");
+    view = finder.findRequiredView(source, 2131755339, "field 'mProgressBar'");
+    target.mProgressBar = finder.castView(view, 2131755339, "field 'mProgressBar'");
+    view = finder.findRequiredView(source, 2131755611, "field 'mTabLayout'");
+    target.mTabLayout = finder.castView(view, 2131755611, "field 'mTabLayout'");
+    view = finder.findRequiredView(source, 2131755340, "field 'mViewPager'");
+    target.mViewPager = finder.castView(view, 2131755340, "field 'mViewPager'");
     view = finder.findRequiredView(source, 2131755260, "field 'errorMessageText'");
     target.errorMessageText = finder.castView(view, 2131755260, "field 'errorMessageText'");
   }
@@ -18,6 +22,8 @@ public class TamaHistoryActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
   @Override public void unbind(T target) {
     super.unbind(target);
 
+    target.mProgressBar = null;
+    target.mTabLayout = null;
     target.mViewPager = null;
     target.errorMessageText = null;
   }

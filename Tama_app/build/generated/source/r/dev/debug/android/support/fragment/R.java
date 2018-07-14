@@ -64,30 +64,30 @@ public final class R {
         public static final int notify_panel_notification_icon_bg = 0x7f0205a3;
     }
     public static final class id {
-        public static final int action_container = 0x7f1002ce;
-        public static final int action_divider = 0x7f1002d5;
-        public static final int action_image = 0x7f1002cf;
-        public static final int action_text = 0x7f1002d0;
-        public static final int actions = 0x7f1002de;
+        public static final int action_container = 0x7f1002c9;
+        public static final int action_divider = 0x7f1002d0;
+        public static final int action_image = 0x7f1002ca;
+        public static final int action_text = 0x7f1002cb;
+        public static final int actions = 0x7f1002d9;
         public static final int async = 0x7f100069;
         public static final int blocking = 0x7f10006a;
-        public static final int chronometer = 0x7f1002da;
+        public static final int chronometer = 0x7f1002d5;
         public static final int forever = 0x7f10006b;
         public static final int icon = 0x7f10009c;
-        public static final int icon_group = 0x7f1002df;
-        public static final int info = 0x7f1002db;
+        public static final int icon_group = 0x7f1002da;
+        public static final int info = 0x7f1002d6;
         public static final int italic = 0x7f10006c;
         public static final int line1 = 0x7f100019;
         public static final int line3 = 0x7f10001a;
         public static final int normal = 0x7f100047;
-        public static final int notification_background = 0x7f1002dc;
-        public static final int notification_main_column = 0x7f1002d7;
-        public static final int notification_main_column_container = 0x7f1002d6;
-        public static final int right_icon = 0x7f1002dd;
-        public static final int right_side = 0x7f1002d8;
+        public static final int notification_background = 0x7f1002d7;
+        public static final int notification_main_column = 0x7f1002d2;
+        public static final int notification_main_column_container = 0x7f1002d1;
+        public static final int right_icon = 0x7f1002d8;
+        public static final int right_side = 0x7f1002d3;
         public static final int text = 0x7f100022;
         public static final int text2 = 0x7f100023;
-        public static final int time = 0x7f1002d9;
+        public static final int time = 0x7f1002d4;
         public static final int title = 0x7f100026;
     }
     public static final class integer {

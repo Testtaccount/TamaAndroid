@@ -1,118 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@+id/activity_tama_history_id"
+<android.support.design.widget.CoordinatorLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:orientation="vertical"
-  tools:context="com.tama.chat.ui.activities.tamaaccount.TamaHistoryActivity"
   xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.design.widget.AppBarLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
 
-        <include
-          android:id="@+id/toolbar_tama_view"
-          layout="@layout/toolbar_tama"
-          android:layout_height="wrap_content"
-          android:layout_width="match_parent"/>
-        <include
-          android:visibility="gone"
-          layout="@layout/include_layout_tab"/>
-      <HorizontalScrollView
-      android:layout_width="match_parent"
-      android:layout_height="33dp">
-      <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="33dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-          android:id="@+id/history_all"
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:clickable="true"
-          android:layout_margin="4dp"
-          android:layout_weight="1"
-          android:gravity="center"
-          android:textStyle="bold"
-          android:textColor="@color/text_dark"
-          android:background="@drawable/selector_button_red_under_line"
-          android:text="@string/history_all"/>
+  <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-        <TextView
-          android:id="@+id/history_my_tama"
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:clickable="true"
-          android:layout_margin="4dp"
-          android:layout_weight="1"
-          android:gravity="center"
-          android:textStyle="bold"
-          android:textColor="@color/button_red_normal"
-          android:text="@string/tama_family"/>
+    <include
+      android:visibility="visible"
+      android:id="@+id/toolbar_tama_view"
+      layout="@layout/toolbar_tama"/>
 
-        <TextView
-          android:id="@+id/history_tama_express"
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:clickable="true"
-          android:layout_margin="4dp"
-          android:layout_weight="1"
-          android:gravity="center"
-          android:textStyle="bold"
-          android:textColor="@color/button_red_normal"
-          android:text="@string/history_tama_express"/>
+    <include
+      layout="@layout/include_layout_tab"/>
 
-        <TextView
-          android:id="@+id/history_tama_topup"
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:clickable="true"
-          android:layout_margin="4dp"
-          android:layout_weight="1"
-          android:gravity="center"
-          android:textStyle="bold"
-          android:textColor="@color/button_red_normal"
-          android:text="@string/history_tama_topup"/>
+  </android.support.design.widget.AppBarLayout>
+  <TextView
+  android:fitsSystemWindows="true"
+  android:id="@+id/error_message_text"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+    android:layout_marginTop="120dp"
+  android:textSize="@dimen/topup_title_text_height"
+  android:text="jkvbfnvkjfnvjkfkjvk"
+  android:textColor="@color/button_red_normal"
+  android:paddingBottom="0dp"
+  android:visibility="gone"/>
+  <ProgressBar
+    android:visibility="gone"
+    android:layout_marginTop="16dp"
+    android:id="@+id/progress_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" />
+  <android.support.v4.view.ViewPager
+    android:id="@+id/vp_history_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
-        <TextView
-          android:id="@+id/history_balance_transfer"
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:clickable="true"
-          android:layout_margin="4dp"
-          android:layout_weight="1"
-          android:gravity="center"
-          android:textStyle="bold"
-          android:visibility="gone"
-          android:textColor="@color/button_red_normal"
-          android:text="@string/history_balance_transfer"/>
-      </LinearLayout>
-    </HorizontalScrollView>
-    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+  <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout android:id="@+id/activity_tama_history_id"-->
+  <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+  <!--xmlns:tools="http://schemas.android.com/tools"-->
+  <!--android:layout_width="match_parent"-->
+  <!--android:layout_height="match_parent"-->
+  <!--android:orientation="vertical"-->
+  <!--tools:context="com.tama.chat.ui.activities.tamaaccount.TamaHistoryActivity"-->
+  <!--xmlns:app="http://schemas.android.com/apk/res-auto">-->
+    <!--<android.support.design.widget.AppBarLayout-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content">-->
+
+        <!--<include-->
+          <!--android:id="@+id/toolbar_tama_view"-->
+          <!--layout="@layout/toolbar_tama"-->
+          <!--android:layout_height="wrap_content"-->
+          <!--android:layout_width="match_parent"/>-->
+        <!--<include-->
+          <!--layout="@layout/include_layout_tab"/>-->
+      <!--&lt;!&ndash;<HorizontalScrollView&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_height="33dp">&ndash;&gt;-->
+      <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="33dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+          <!--&lt;!&ndash;android:id="@+id/history_all"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_margin="4dp"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textColor="@color/text_dark"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:background="@drawable/selector_button_red_under_line"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:text="@string/history_all"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+          <!--&lt;!&ndash;android:id="@+id/history_my_tama"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_margin="4dp"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textColor="@color/button_red_normal"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:text="@string/tama_family"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+          <!--&lt;!&ndash;android:id="@+id/history_tama_express"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_margin="4dp"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textColor="@color/button_red_normal"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:text="@string/history_tama_express"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+          <!--&lt;!&ndash;android:id="@+id/history_tama_topup"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_margin="4dp"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textColor="@color/button_red_normal"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:text="@string/history_tama_topup"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+          <!--&lt;!&ndash;android:id="@+id/history_balance_transfer"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_margin="4dp"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:textColor="@color/button_red_normal"&ndash;&gt;-->
+          <!--&lt;!&ndash;android:text="@string/history_balance_transfer"/>&ndash;&gt;-->
+      <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;</HorizontalScrollView>&ndash;&gt;-->
+    <!--</android.support.design.widget.AppBarLayout>-->
 
 
-    <!--<FrameLayout-->
-        <!--android:id="@+id/container_fragment"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"/>-->
+    <!--&lt;!&ndash;<FrameLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/container_fragment"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"/>&ndash;&gt;-->
 
-    <android.support.v4.view.ViewPager
-      android:layout_marginTop="110dp"
-      android:fitsSystemWindows="true"
-      android:id="@+id/vp_history_list"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
-    <TextView
-      android:id="@+id/error_message_text"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:textSize="@dimen/topup_title_text_height"
-      android:text="jkvbfnvkjfnvjkfkjvk"
-      android:textColor="@color/button_red_normal"
-      android:paddingBottom="0dp"
-      android:visibility="gone"/>
+    <!--<android.support.v4.view.ViewPager-->
+      <!--android:layout_marginTop="110dp"-->
+      <!--android:fitsSystemWindows="true"-->
+      <!--android:id="@+id/vp_history_list"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="match_parent"-->
+      <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+    <!--<TextView-->
+      <!--android:id="@+id/error_message_text"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:textSize="@dimen/topup_title_text_height"-->
+      <!--android:text="jkvbfnvkjfnvjkfkjvk"-->
+      <!--android:textColor="@color/button_red_normal"-->
+      <!--android:paddingBottom="0dp"-->
+      <!--android:visibility="gone"/>-->
 
-</android.support.constraint.ConstraintLayout>
+<!--</android.support.constraint.ConstraintLayout>-->

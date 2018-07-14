@@ -9,7 +9,7 @@ public class PrivateDialogActivity$$ViewBinder<T extends com.tama.chat.ui.activi
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755745, "method 'openProfile'");
+    view = finder.findRequiredView(source, 2131755740, "method 'openProfile'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

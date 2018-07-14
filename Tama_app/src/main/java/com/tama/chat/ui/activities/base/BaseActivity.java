@@ -15,10 +15,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.support.annotation.DrawableRes;
-import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 import android.support.design.widget.Snackbar;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -121,7 +119,6 @@ public abstract class BaseActivity extends AppCompatActivity implements ActionBa
     private ViewGroup root;
     private boolean isUIDisabled;
     public static final String PAGE="PAGE";
-    private TabLayout mTabLayout;
 
     protected abstract int getContentResId();
 
@@ -135,7 +132,6 @@ public abstract class BaseActivity extends AppCompatActivity implements ActionBa
 
         initFields();
         activateButterKnife();
-        mTabLayout = (TabLayout) findViewById(R.id.ctl);
 
         if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
             Window window = this.getWindow();
@@ -281,10 +277,7 @@ public abstract class BaseActivity extends AppCompatActivity implements ActionBa
         }
     }
 
-    @Nullable
-    protected TabLayout getTabLayout() {
-        return mTabLayout;
-    }
+
 
 //    @Override
 //    public void showSnackbar(int titleResId, int duration, int buttonTitleResId, View.OnClickListener onClickListener) {

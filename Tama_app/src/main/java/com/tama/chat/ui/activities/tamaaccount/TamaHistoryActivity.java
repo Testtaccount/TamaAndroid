@@ -5,9 +5,11 @@ import static com.tama.chat.rest.util.APIUtil.getLanguages;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import butterknife.Bind;
 import com.google.gson.Gson;
@@ -18,7 +20,6 @@ import com.tama.chat.rest.Logger;
 import com.tama.chat.rest.RestHttpClient;
 import com.tama.chat.rest.entity.HttpConnection;
 import com.tama.chat.rest.util.APIUtil;
-import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryData;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryResult;
 import com.tama.chat.tamaAccount.entry.historyPojos.TamaHistoryElement;
@@ -35,10 +36,22 @@ import java.util.List;
 
 public class TamaHistoryActivity extends TamaAccountBaseActivity implements  ViewPager.OnPageChangeListener {
 
-  private String HISTORY_ALL = "all";
+  private final String HISTORY_ALL = "all";
+  private final String HISTORY_MYTAMA = "mytama";
+  private final String HISTORY_TAMA_TOPUP = "tama-topup";
+  private final String HISTORY_TAMAEXPRESS = "tamaexpress";
+  private final String HISTORY_TRANSFER = "transfer";
+
+  @Bind(R.id.progress_bar)
+  public ProgressBar mProgressBar;
+
+
+  @Bind(R.id.ctl)
+  TabLayout mTabLayout;
 
   @Bind(R.id.vp_history_list)
   ViewPager mViewPager;
+
 
   private TabFragmentAdapter mFragmentAdapter;
 
@@ -55,13 +68,21 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
     super.onCreate(savedInstanceState);
     setTamaToolbar(R.string.mytama_history, R.string.history);
 //        initFields();
-    TamaHistoryElementAsyncTask asyncTask = new TamaHistoryElementAsyncTask();
-    asyncTask.execute();
+    setupTabs();
+    loadHistory(0);
+  }
+
+  private void loadHistory(int position) {
+    TamaHistoryFragment fragment=((TamaHistoryFragment)mFragmentAdapter.getItem(position));
+    if (fragment!=null) {
+      mProgressBar.setVisibility(View.VISIBLE);
+    }
+    new TamaHistoryElementAsyncTask().execute(String.valueOf(position));
   }
 
     private void initFields() {
 //        user_id = new SharedHelper(this).getTamaAccountId();
-        new TamaAccountHelper().getHistory(this,HISTORY_ALL);
+//        new TamaAccountHelper().getHistory(this,HISTORY_ALL);
     }
 
   @Override
@@ -88,7 +109,7 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 
   @Override
   public void requestSuccess(String data) {
-    setCurrentFragment(TamaHistoryFragment.newInstance(data));
+//    setCurrentFragment(TamaHistoryFragment.newInstance(data));
   }
 
   @Override
@@ -101,7 +122,7 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
   public void onPageSelected(int position) {
     Log.d(TAG, "onPageSelected - " + position);
 //    setActionBarTitle(String.valueOf(mFragmentAdapter.getPageTitle(position)));
-//    loadProduct(mProductArrayList.get(position).getId());
+    loadHistory(position);
   }
 
   @Override
@@ -110,31 +131,41 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 
   }
 
-  private class TamaHistoryElementAsyncTask extends AsyncTask<URL, Void, List<HistoryResult>> {
-
+  private class TamaHistoryElementAsyncTask extends AsyncTask<String, Void, List<HistoryResult>> {
+    int position;
     @Override
-    protected  List<HistoryResult> doInBackground(URL... urls) {
+    protected  List<HistoryResult> doInBackground(String... params) {
       String jsonResponse = "";
+      String url="";
+
+      position = Integer.valueOf(params[0]);
+      switch (position){
+        case 0:
+           url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES,getLanguages(getAppContext()));
+          break;
+        case 1:
+           url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_MYTAMA,getLanguages(getAppContext()));
+          break;
+        case 2:
+           url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_TAMA_TOPUP,getLanguages(getAppContext()));
+          break;
+        case 3:
+           url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_TAMAEXPRESS,getLanguages(getAppContext()));
+          break;
+        case 4:
+           url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_TRANSFER,getLanguages(getAppContext()));
+          break;
+      }
 
       HttpConnection httpConnection =HttpRequestManager
           .executeRequest(getAppContext(),
               RestHttpClient.RequestMethod.GET,
-              APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES,getLanguages(getAppContext())),
+              url,
               App.getInstance().getAppSharedHelper().getTamaAccountAccessToken(),
               null);
 
 
       if (httpConnection.isHttpConnectionSucceeded()) {
-        String token = httpConnection.getHttpResponseHeader().getToken();
-        if (token != null) {
-          Logger.i(TAG, token);
-
-          // Save necessary historyData after success login
-        } else {
-//          BusProvider.getInstance().post(new ApiEvent(Event.EventType.Api.Error.UNKNOWN,
-//              subscriber));
-        }
-
         StringBuilder jsonResponseStringBuilder =httpConnection.getHttpResponseBody();
         jsonResponse=jsonResponseStringBuilder.toString();
 
@@ -193,12 +224,12 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 
 
     @Override
-    protected void onPostExecute( List<HistoryResult> historyHistoryResultList) {
+    protected void onPostExecute(List<HistoryResult> historyHistoryResultList) {
       if (historyHistoryResultList == null) {
         return;
       }
+      updateUi(position,historyHistoryResultList);
 
-        updateUi(historyHistoryResultList);
     }
 
     /**
@@ -273,33 +304,40 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
     }
   }
 
-  private void setupTabs(List<HistoryResult> historyHistoryResultList) {
-    if (mViewPager != null && getTabLayout() != null) {
+  private void setupTabs() {
+    if (mViewPager != null && mTabLayout != null) {
       mFragmentAdapter = new TabFragmentAdapter(getSupportFragmentManager());
 
 //      for (HistoryResult product : historyHistoryResultList) {
-        mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(historyHistoryResultList), "ALL");
+        mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "All");
+        mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "Tama Family");
+        mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "Tama Express");
+        mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "Tama Topup");
+//        mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "Tama Transfer");
 //      }
 
       mViewPager.setAdapter(mFragmentAdapter);
-//      getTabLayout().post(new Runnable() {
+//      mTabLayout.post(new Runnable() {
 //        @Override
 //        public void run() {
-//          getTabLayout().setupWithViewPager(mViewPager);
+//          mTabLayout.setupWithViewPager(mViewPager);
 //        }
 //      });
-//      getTabLayout().setupWithViewPager(mViewPager);
+      mTabLayout.setupWithViewPager(mViewPager);
+      mViewPager.addOnPageChangeListener(this);
 
 //      getTabLayout().getTabAt(0).setIcon(R.drawable.icon1);
 //      getTabLayout().getTabAt(0).setText("ALL");
     }
   }
 
-  private void updateUi(List<HistoryResult> historyHistoryResults) {
-    setupTabs(historyHistoryResults);
-    if (getTabLayout() != null) {
-      getTabLayout().setupWithViewPager(mViewPager);
+  private void updateUi(int position,List<HistoryResult> historyHistoryResults) {
+    TamaHistoryFragment fragment=((TamaHistoryFragment)mFragmentAdapter.getItem(position));
+    if (fragment!=null){
+      mProgressBar.setVisibility(View.GONE);
+      fragment.setHistoryResultList(historyHistoryResults);
     }
+
 
 //    customizeActionBar();
 //    loadHistoryResult(mFragmentAdapter.getItem(0).getId());

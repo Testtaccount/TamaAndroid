@@ -41,18 +41,27 @@ public class APIUtil {
             case HttpRequestManager.RequestType.LOG_IN:
                 apiUrl = getHost() + "/api/auth/login/";
                 break;
-
             case HttpRequestManager.RequestType.LOG_OUT:
                 apiUrl = getHost() + "/api/auth/logout/";
                 break;
-
             case HttpRequestManager.RequestType.ITEM:
                 apiUrl = getHost() + "/api/items/" + id;
                 break;
                 case HttpRequestManager.RequestType.HISTORIES:
                 apiUrl = getHost() + "history" + param;
                 break;
-
+            case HttpRequestManager.RequestType.HISTORIES_MYTAMA:
+                apiUrl = getHost() + "history/mytama" + param;
+                break;
+            case HttpRequestManager.RequestType.HISTORIES_TAMA_TOPUP:
+                apiUrl = getHost() + "history/tama-topup" + param;
+                break;
+            case HttpRequestManager.RequestType.HISTORIES_TAMAEXPRESS:
+                apiUrl = getHost() + "history/tamaexpress" + param;
+                break;
+                case HttpRequestManager.RequestType.HISTORIES_TRANSFER:
+                apiUrl = getHost() + "history/transfer" + param;
+                break;
             default:
                 apiUrl = "";
                 break;

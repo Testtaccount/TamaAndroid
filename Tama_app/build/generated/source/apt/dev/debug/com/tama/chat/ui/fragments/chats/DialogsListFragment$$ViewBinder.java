@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class DialogsListFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.chats.DialogsListFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755485, "field 'dialogsListView' and method 'startChat'");
-    target.dialogsListView = finder.castView(view, 2131755485, "field 'dialogsListView'");
+    view = finder.findRequiredView(source, 2131755479, "field 'dialogsListView' and method 'startChat'");
+    target.dialogsListView = finder.castView(view, 2131755479, "field 'dialogsListView'");
     ((android.widget.AdapterView<?>) view).setOnItemClickListener(
       new android.widget.AdapterView.OnItemClickListener() {
         @Override public void onItemClick(
@@ -21,8 +21,8 @@ public class DialogsListFragment$$ViewBinder<T extends com.tama.chat.ui.fragment
           target.startChat(p2);
         }
       });
-    view = finder.findRequiredView(source, 2131755486, "field 'emptyListTextView'");
-    target.emptyListTextView = finder.castView(view, 2131755486, "field 'emptyListTextView'");
+    view = finder.findRequiredView(source, 2131755480, "field 'emptyListTextView'");
+    target.emptyListTextView = finder.castView(view, 2131755480, "field 'emptyListTextView'");
   }
 
   @Override public void unbind(T target) {

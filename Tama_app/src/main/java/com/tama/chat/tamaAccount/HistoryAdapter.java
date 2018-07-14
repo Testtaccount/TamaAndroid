@@ -12,53 +12,35 @@ import android.widget.TextView;
 import com.tama.chat.R;
 import com.tama.chat.tamaAccount.HistoryAdapter.HistoryViewHolder;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryResult;
-import java.util.ArrayList;
+import java.util.List;
 
 public class HistoryAdapter extends RecyclerView.Adapter<HistoryViewHolder> {
 
-  private ArrayList<HistoryResult> mOilArrayList;
+  private List<HistoryResult> mHistoryResults;
   private OnHistoryItemClickListener itemClickListener;
-  private int counterNumber;
-  boolean asc;
 
-  public HistoryAdapter(ArrayList<HistoryResult> oilArrayList,
+  public HistoryAdapter(List<HistoryResult> historyResults,
       OnHistoryItemClickListener itemClickListener) {
-    this.mOilArrayList = oilArrayList;
+    this.mHistoryResults = historyResults;
     this.itemClickListener = itemClickListener;
-    counterNumber = mOilArrayList.size();
-    asc = false;
+
   }
 
-//  public void setGeofencePlaces(List<Oil> places) {
-//
-//    if (places == null || places.size() == 0) {
+  public void set(List<HistoryResult> historyResults) {
+
+//    if (historyResults == null || historyResults.size() == 0) {
 //      return;
 //    }
-//    if (places != null && places.size() > 0) {
-//      this.mOilArrayList.clear();
-//    }
-//    this.mOilArrayList.addAll(places);
-//    notifyDataSetChanged();
-//
-//  }
-//
-//  public void addGeofencePlace(Oil spinnerItem) {
-//    this.mOilArrayList.add(spinnerItem);
-//    notifyDataSetChanged();
-//  }
-//
-//  public void deleteGeofencePlace(int placeId) {
-//    for (Oil spinnerItem: mOilArrayList) {
-//      if (placeId == spinnerItem.getId()) {
-//        this.mOilArrayList.remove(spinnerItem);
-//        notifyDataSetChanged();
-//        return;
-//      }
-//    }
-//  }
+    if (historyResults != null && historyResults.size() > 0) {
+      this.mHistoryResults.clear();
+      this.mHistoryResults.addAll(historyResults);
+
+    }
+    notifyDataSetChanged();
+  }
 
   public boolean isEmpty() {
-    return mOilArrayList.size() == 0;
+    return mHistoryResults.size() == 0;
   }
 
   @Override
@@ -72,10 +54,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryViewHolder> {
   @Override
   public void onBindViewHolder(HistoryViewHolder holder, int position) {
 
-    holder.bindData(mOilArrayList.get(position));
-
-//    holder.itemView.setTag(mOilArrayList.get(position).getPlaceId());
-
+    holder.bindData(mHistoryResults.get(position));
   }
 
 
@@ -86,10 +65,10 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryViewHolder> {
 
   @Override
   public int getItemCount() {
-    if (mOilArrayList.isEmpty()) {
+    if (mHistoryResults.isEmpty()) {
       return 0;
     }
-    return mOilArrayList.size();
+    return mHistoryResults.size();
   }
 
 

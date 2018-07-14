@@ -9,8 +9,8 @@ public class SelectableFriendsAdapter$ViewHolder$$ViewBinder<T extends com.tama.
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755634, "field 'selectFriendCheckBox'");
-    target.selectFriendCheckBox = finder.castView(view, 2131755634, "field 'selectFriendCheckBox'");
+    view = finder.findRequiredView(source, 2131755629, "field 'selectFriendCheckBox'");
+    target.selectFriendCheckBox = finder.castView(view, 2131755629, "field 'selectFriendCheckBox'");
   }
 
   @Override public void unbind(T target) {

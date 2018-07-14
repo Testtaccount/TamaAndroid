@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class CheckoutFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.tamaaccount.CheckoutFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755466, "field 'btnConfirm' and method 'OnClickConfirmBtn'");
-    target.btnConfirm = finder.castView(view, 2131755466, "field 'btnConfirm'");
+    view = finder.findRequiredView(source, 2131755460, "field 'btnConfirm' and method 'OnClickConfirmBtn'");
+    target.btnConfirm = finder.castView(view, 2131755460, "field 'btnConfirm'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -18,8 +18,8 @@ public class CheckoutFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.t
           target.OnClickConfirmBtn();
         }
       });
-    view = finder.findRequiredView(source, 2131755467, "field 'btnRequestOrder' and method 'OnClickRequestOrder'");
-    target.btnRequestOrder = finder.castView(view, 2131755467, "field 'btnRequestOrder'");
+    view = finder.findRequiredView(source, 2131755461, "field 'btnRequestOrder' and method 'OnClickRequestOrder'");
+    target.btnRequestOrder = finder.castView(view, 2131755461, "field 'btnRequestOrder'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -28,8 +28,8 @@ public class CheckoutFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.t
           target.OnClickRequestOrder();
         }
       });
-    view = finder.findRequiredView(source, 2131755465, "field 'expressCheckBox' and method 'usePromoCheckBoxCheck'");
-    target.expressCheckBox = finder.castView(view, 2131755465, "field 'expressCheckBox'");
+    view = finder.findRequiredView(source, 2131755459, "field 'expressCheckBox' and method 'usePromoCheckBoxCheck'");
+    target.expressCheckBox = finder.castView(view, 2131755459, "field 'expressCheckBox'");
     ((android.widget.CompoundButton) view).setOnCheckedChangeListener(
       new android.widget.CompoundButton.OnCheckedChangeListener() {
         @Override public void onCheckedChanged(
@@ -47,12 +47,12 @@ public class CheckoutFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.t
     target.enterPhoneNumberTextFirst = finder.castView(view, 2131755302, "field 'enterPhoneNumberTextFirst'");
     view = finder.findRequiredView(source, 2131755308, "field 'enterPhoneNumberTextSecond'");
     target.enterPhoneNumberTextSecond = finder.castView(view, 2131755308, "field 'enterPhoneNumberTextSecond'");
-    view = finder.findRequiredView(source, 2131755464, "field 'phoneNumberTextSecond'");
-    target.phoneNumberTextSecond = finder.castView(view, 2131755464, "field 'phoneNumberTextSecond'");
-    view = finder.findRequiredView(source, 2131755459, "field 'senderName'");
-    target.senderName = finder.castView(view, 2131755459, "field 'senderName'");
-    view = finder.findRequiredView(source, 2131755463, "field 'beneficiaryName'");
-    target.beneficiaryName = finder.castView(view, 2131755463, "field 'beneficiaryName'");
+    view = finder.findRequiredView(source, 2131755458, "field 'phoneNumberTextSecond'");
+    target.phoneNumberTextSecond = finder.castView(view, 2131755458, "field 'phoneNumberTextSecond'");
+    view = finder.findRequiredView(source, 2131755453, "field 'senderName'");
+    target.senderName = finder.castView(view, 2131755453, "field 'senderName'");
+    view = finder.findRequiredView(source, 2131755457, "field 'beneficiaryName'");
+    target.beneficiaryName = finder.castView(view, 2131755457, "field 'beneficiaryName'");
     view = finder.findRequiredView(source, 2131755303, "field 'openContactsListFirst' and method 'clickOpenContactsListFirst'");
     target.openContactsListFirst = finder.castView(view, 2131755303, "field 'openContactsListFirst'");
     view.setOnClickListener(
@@ -73,7 +73,7 @@ public class CheckoutFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.t
           target.clickOpenContactsListSecond();
         }
       });
-    view = finder.findRequiredView(source, 2131755468, "method 'OnClickPayOnline'");
+    view = finder.findRequiredView(source, 2131755462, "method 'OnClickPayOnline'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
