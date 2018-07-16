@@ -235,6 +235,7 @@
     <string name="higher_amount">“Sorry! This amount is higher than the amount available on your account. Please enter a valid amount.”</string>
     <string name="history">HISTORY</string>
     <string name="historyProducts">PRODUCTS</string>
+    <string name="history_action_text">History</string>
     <string name="history_all">All</string>
     <string name="history_balance_transfer">BalanceTransfer</string>
     <string name="history_tama_express">TamaExpress</string>
@@ -264,7 +265,7 @@
     <string name="location_title">Location</string>
     <string name="message_available_european_users">These options are only available to European users</string>
     <string name="minutes_short">%1$dm</string>
-    <string name="mobile">Mobile +</string>
+    <string name="mobile">Mobile</string>
     <string name="mobile_topup">MOBILE TOPUP</string>
     <string name="my_account">MY ACCOUNT</string>
     <string name="my_tama">MyTama</string>
@@ -369,7 +370,7 @@
     <string name="success">SUCCESS</string>
     <string name="switch_camera">Switch camera</string>
     <string name="switch_speaker">Switch speaker</string>
-    <string name="tama_express">TAMA EXPRESS</string>
+    <string name="tama_express">Tama Express</string>
     <string name="tama_express_confirm_text">Confirm that you want to pay from %1$s</string>
     <string name="tama_express_one_line">TAMA EXPRESS</string>
     <string name="tama_family">Tama Family</string>

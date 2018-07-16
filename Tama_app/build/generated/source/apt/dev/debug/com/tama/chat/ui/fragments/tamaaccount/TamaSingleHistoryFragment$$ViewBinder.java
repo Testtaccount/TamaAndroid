@@ -4,8 +4,9 @@ package com.tama.chat.ui.fragments.tamaaccount;
 import android.view.View;
 import butterknife.ButterKnife.Finder;
 import butterknife.ButterKnife.ViewBinder;
+import com.tama.chat.ui.activities.tamaaccount.TamaSingleHistoryActivity;
 
-public class TamaSingleHistoryFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.tamaaccount.TamaSingleHistoryFragment> implements ViewBinder<T> {
+public class TamaSingleHistoryFragment$$ViewBinder<T extends TamaSingleHistoryActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
     view = finder.findRequiredView(source, 2131755260, "field 'errorMessageText'");

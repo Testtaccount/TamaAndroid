@@ -1,4 +1,4 @@
-#Sat Jul 14 15:36:16 AMT 2018
+#Mon Jul 16 18:46:10 AMT 2018
 base.0=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\10000\\instant-run-bootstrap_de8c848a17a0745ee10b089160f24d18a5db1f96
 renamed.1=classes2.dex
 renamed.0=classes.dex

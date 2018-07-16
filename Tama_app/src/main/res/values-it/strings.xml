@@ -348,11 +348,12 @@
   <string name="topup_my_account">RICARICA IL MIO CONTO</string>
   <string name="topup_my_account_one_line">RICARICA IL MIO CONTO</string>
   <string name="send_credit">INVIA CREDITO</string>
-  <string name="tama_express">TAMA EXPRESS</string>
+  <string name="tama_express">Tama Express</string>
   <string name="tama_express_one_line">TAMA EXPRESS</string>
   <string name="tama_topup">TAMA RICARICA</string>
   <string name="tama_request">RICHIESTA</string>
   <string name="history">STORIA</string>
+  <string name="history_action_text">Storia</string>
   <string name="balance">SOLDI</string>
   <string name="account_topup">RICARICA CONTO</string>
   <string name="please_enter_the_voucher_number">Inserisci il numero del buono</string>
@@ -446,7 +447,7 @@
   <string name="success">SUCCESSO</string>
   <string name="view">Vista</string>
   <string name="order_no">Numero d\'ordine</string>
-  <string name="mobile">Mobile +</string>
+  <string name="mobile">Mobile</string>
   <string name="amount">Quantità</string>
   <string name="succes">SUCCESSO</string>
   <string name="sender_number">Numero del mittente</string>
@@ -499,5 +500,6 @@
 
   <string name="message_available_european_users">Queste opzioni sono disponibili solo per gli utenti europei</string>
   <string name="you_have_no_history">Non hai storia</string>
+
 
 </resources>

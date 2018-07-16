@@ -1,8 +1,10 @@
 package com.tama.chat.ui.activities.tamaaccount;
 
 import static com.tama.chat.rest.util.APIUtil.getLanguages;
+import static com.tama.chat.ui.activities.tamaaccount.TamaSingleHistoryActivity.EXTRA_HISTORY_SINGLE_ELEMENT;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -23,6 +25,8 @@ import com.tama.chat.rest.util.APIUtil;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryData;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryResult;
 import com.tama.chat.tamaAccount.entry.historyPojos.TamaHistoryElement;
+import com.tama.chat.tamaAccount.entry.historyPojos.historySinglePojos.HistorySingle;
+import com.tama.chat.tamaAccount.entry.historyPojos.historySinglePojos.HistorySingleData;
 import com.tama.chat.ui.fragments.tamaaccount.TamaHistoryFragment;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -34,7 +38,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.List;
 
-public class TamaHistoryActivity extends TamaAccountBaseActivity implements  ViewPager.OnPageChangeListener {
+public class TamaHistoryActivity extends TamaAccountBaseActivity implements  ViewPager.OnPageChangeListener ,TamaHistoryFragment.OnHistoryFragmentInteractionListener{
 
   private final String HISTORY_ALL = "all";
   private final String HISTORY_MYTAMA = "mytama";
@@ -77,7 +81,7 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
     if (fragment!=null) {
       mProgressBar.setVisibility(View.VISIBLE);
     }
-    new TamaHistoryElementAsyncTask().execute(String.valueOf(position));
+    new TamaHistoryElementsAsyncTask().execute(String.valueOf(position));
   }
 
     private void initFields() {
@@ -131,7 +135,13 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 
   }
 
-  private class TamaHistoryElementAsyncTask extends AsyncTask<String, Void, List<HistoryResult>> {
+  @Override
+  public void onHistoryItemViewClickListener(HistoryResult result) {
+    new TamaHistorySingleAsyncTask().execute(String.valueOf(result.getHistoryId()));
+  }
+
+
+  private class TamaHistoryElementsAsyncTask extends AsyncTask<String, Void, List<HistoryResult>> {
     int position;
     @Override
     protected  List<HistoryResult> doInBackground(String... params) {
@@ -304,6 +314,169 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
     }
   }
 
+  private class TamaHistorySingleAsyncTask extends AsyncTask<String, Void, HistoryResult> {
+
+    @Override
+    protected  HistoryResult doInBackground(String... params) {
+      String jsonResponse = "";
+
+      int id  = Integer.valueOf(params[0]);
+
+
+      HttpConnection httpConnection =HttpRequestManager
+          .executeRequest(getAppContext(),
+              RestHttpClient.RequestMethod.GET,
+              APIUtil.getURL(HttpRequestManager.RequestType.HISTORY_SINGLE,id,getLanguages(getAppContext())),
+              App.getInstance().getAppSharedHelper().getTamaAccountAccessToken(),
+              null);
+
+
+      if (httpConnection.isHttpConnectionSucceeded()) {
+        StringBuilder jsonResponseStringBuilder =httpConnection.getHttpResponseBody();
+        jsonResponse=jsonResponseStringBuilder.toString();
+
+      } else {
+        Logger.e(TAG, httpConnection.getHttpConnectionMessage());
+        HttpRequestManager.handleFailedRequest( httpConnection);
+      }
+
+
+
+      /////////////////////////////////////////////////////////////////////////////////////////////
+//      // Create URL object
+//      URL url = createUrl("http://tamaexpress.com:585/api/history?lang=en");
+//
+//
+//      // Perform HTTP request to the URL and receive a JSON response back
+//      String jsonResponse = "";
+//
+//      try {
+//        DefaultHttpClient httpclient = new DefaultHttpClient();
+//        HttpGet httpGet = new HttpGet("http://tamaexpress.com:585/api/history?lang=en");
+//        httpGet.setHeader("Accept", "application/json");
+//        httpGet.setHeader("Content-type", "application/json");
+//        httpGet.setHeader("Authorization", "Bearer " + App.getInstance().getAppSharedHelper().getTamaAccountAccessToken());
+//        ResponseHandler responseHandler = new BasicResponseHandler();
+//        jsonResponse= (String) httpclient.execute(httpGet, responseHandler);
+//
+//      } catch (Exception e) {
+//        e.printStackTrace();
+//      }
+//      TamaHistoryElement historyElement = extractFeatureFromJson(jsonResponse);
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//
+//      try {
+//        jsonResponse = makeHttpRequest(url);
+//      } catch (IOException e) {
+//        // TODO Handle the IOException
+//      }
+
+      // Extract relevant fields from the JSON response and create an {@link Event} object
+
+      // Return the {@link Event} object as the result fo the {@link TsunamiAsyncTask}
+
+      HistorySingle historySingle = new Gson().fromJson(jsonResponse, HistorySingle.class);
+//          extractFeatureFromJson(jsonResponse.toString());
+
+      HistorySingleData historyData = historySingle.getData();
+      HistoryResult historyResult = historyData.getResult();
+      return historyResult;
+    }
+
+
+    @Override
+    protected void onPostExecute(HistoryResult historyResult) {
+      if (historyResult == null) {
+        return;
+      }
+      openSingleHistoryActivity(historyResult);
+//      setCurrentFragment(TamaSingleHistoryActivity.newInstance(historyResult));
+    }
+
+    /**
+     * Returns new URL object from the given string URL.
+     */
+    private URL createUrl(String stringUrl) {
+      URL url = null;
+      try {
+        url = new URL(stringUrl);
+      } catch (MalformedURLException exception) {
+//        Log.e(TAG, "Error with creating URL", exception);
+        return null;
+      }
+      return url;
+    }
+
+    /**
+     * Make an HTTP request to the given URL and return a String as the response.
+     */
+    private String makeHttpRequest(URL url) throws IOException {
+      String jsonResponse = "";
+      HttpURLConnection urlConnection = null;
+      InputStream inputStream = null;
+      try {
+        urlConnection = (HttpURLConnection) url.openConnection();
+        urlConnection.setRequestMethod("GET");
+        urlConnection.setReadTimeout(10000 /* milliseconds */);
+        urlConnection.setConnectTimeout(15000 /* milliseconds */);
+        urlConnection.connect();
+        inputStream = urlConnection.getInputStream();
+        jsonResponse = readFromStream(inputStream);
+      } catch (IOException e) {
+        // TODO: Handle the exception
+      } finally {
+        if (urlConnection != null) {
+          urlConnection.disconnect();
+        }
+        if (inputStream != null) {
+          // function must handle java.io.IOException here
+          inputStream.close();
+        }
+      }
+      return jsonResponse;
+    }
+
+    /**
+     * Convert the {@link InputStream} into a String which contains the
+     * whole JSON response from the server.
+     */
+    private String readFromStream(InputStream inputStream) throws IOException {
+      StringBuilder output = new StringBuilder();
+      if (inputStream != null) {
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream,
+            Charset.forName("UTF-8"));
+        BufferedReader reader = new BufferedReader(inputStreamReader);
+        String line = reader.readLine();
+        while (line != null) {
+          output.append(line);
+          line = reader.readLine();
+        }
+      }
+      return output.toString();
+    }
+
+
+    private TamaHistoryElement extractFeatureFromJson(String dataJSON) {
+
+      TamaHistoryElement data1 = new Gson().fromJson(dataJSON, TamaHistoryElement.class);
+
+      return data1;
+
+    }
+  }
+
+  private void openSingleHistoryActivity(HistoryResult historyResult) {
+    Intent intent=new Intent(this, TamaSingleHistoryActivity.class);
+    intent.putExtra(EXTRA_HISTORY_SINGLE_ELEMENT,historyResult);
+    startActivity(intent);
+  }
+
+
   private void setupTabs() {
     if (mViewPager != null && mTabLayout != null) {
       mFragmentAdapter = new TabFragmentAdapter(getSupportFragmentManager());
@@ -313,7 +486,7 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
         mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "Tama Family");
         mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "Tama Express");
         mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "Tama Topup");
-//        mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "Tama Transfer");
+        //        mFragmentAdapter.addFragment(TamaHistoryFragment.newInstance(), "Tama Transfer");
 //      }
 
       mViewPager.setAdapter(mFragmentAdapter);

@@ -71,6 +71,7 @@
                   android:layout_toRightOf="@+id/history_image"
                   android:layout_toEndOf="@+id/history_image"/>
                 <TextView
+                  android:layout_marginLeft="16dp"
                   android:id="@+id/history_mobile_no"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
@@ -81,6 +82,7 @@
                   android:layout_toRightOf="@+id/mobile_text"
                   android:layout_toEndOf="@+id/mobile_text"/>
                 <TextView
+                  android:ellipsize="end"
                   android:id="@+id/history_status"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"

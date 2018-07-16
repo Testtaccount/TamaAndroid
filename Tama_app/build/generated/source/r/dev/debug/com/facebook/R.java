@@ -127,23 +127,23 @@ public final class R {
         public static final int bottom = 0x7f10002e;
         public static final int box_count = 0x7f10008a;
         public static final int button = 0x7f10008b;
-        public static final int cancel_button = 0x7f100173;
+        public static final int cancel_button = 0x7f100192;
         public static final int center = 0x7f10003e;
-        public static final int com_facebook_body_frame = 0x7f100175;
-        public static final int com_facebook_button_xout = 0x7f100177;
-        public static final int com_facebook_device_auth_instructions = 0x7f100171;
-        public static final int com_facebook_device_dialog_title = 0x7f100170;
-        public static final int com_facebook_fragment_container = 0x7f10016f;
-        public static final int com_facebook_login_activity_progress_bar = 0x7f100174;
-        public static final int com_facebook_tooltip_bubble_view_bottom_pointer = 0x7f100179;
-        public static final int com_facebook_tooltip_bubble_view_text_body = 0x7f100178;
-        public static final int com_facebook_tooltip_bubble_view_top_pointer = 0x7f100176;
-        public static final int confirmation_code = 0x7f100172;
+        public static final int com_facebook_body_frame = 0x7f100194;
+        public static final int com_facebook_button_xout = 0x7f100196;
+        public static final int com_facebook_device_auth_instructions = 0x7f100190;
+        public static final int com_facebook_device_dialog_title = 0x7f10018f;
+        public static final int com_facebook_fragment_container = 0x7f10018e;
+        public static final int com_facebook_login_activity_progress_bar = 0x7f100193;
+        public static final int com_facebook_tooltip_bubble_view_bottom_pointer = 0x7f100198;
+        public static final int com_facebook_tooltip_bubble_view_text_body = 0x7f100197;
+        public static final int com_facebook_tooltip_bubble_view_top_pointer = 0x7f100195;
+        public static final int confirmation_code = 0x7f100191;
         public static final int display_always = 0x7f10008e;
         public static final int inline = 0x7f10008c;
         public static final int large = 0x7f100090;
         public static final int left = 0x7f100030;
-        public static final int messenger_send_button = 0x7f1002bb;
+        public static final int messenger_send_button = 0x7f1002bc;
         public static final int never_display = 0x7f10008f;
         public static final int normal = 0x7f100047;
         public static final int open_graph = 0x7f100087;
@@ -156,16 +156,16 @@ public final class R {
         public static final int unknown = 0x7f100089;
     }
     public static final class layout {
-        public static final int com_facebook_activity_layout = 0x7f030040;
-        public static final int com_facebook_device_auth_dialog_fragment = 0x7f030041;
-        public static final int com_facebook_login_fragment = 0x7f030042;
-        public static final int com_facebook_tooltip_bubble = 0x7f030043;
-        public static final int messenger_button_send_blue_large = 0x7f0300c0;
-        public static final int messenger_button_send_blue_round = 0x7f0300c1;
-        public static final int messenger_button_send_blue_small = 0x7f0300c2;
-        public static final int messenger_button_send_white_large = 0x7f0300c3;
-        public static final int messenger_button_send_white_round = 0x7f0300c4;
-        public static final int messenger_button_send_white_small = 0x7f0300c5;
+        public static final int com_facebook_activity_layout = 0x7f030042;
+        public static final int com_facebook_device_auth_dialog_fragment = 0x7f030043;
+        public static final int com_facebook_login_fragment = 0x7f030044;
+        public static final int com_facebook_tooltip_bubble = 0x7f030045;
+        public static final int messenger_button_send_blue_large = 0x7f0300c1;
+        public static final int messenger_button_send_blue_round = 0x7f0300c2;
+        public static final int messenger_button_send_blue_small = 0x7f0300c3;
+        public static final int messenger_button_send_white_large = 0x7f0300c4;
+        public static final int messenger_button_send_white_round = 0x7f0300c5;
+        public static final int messenger_button_send_white_small = 0x7f0300c6;
     }
     public static final class string {
         public static final int com_facebook_device_auth_instructions = 0x7f080013;

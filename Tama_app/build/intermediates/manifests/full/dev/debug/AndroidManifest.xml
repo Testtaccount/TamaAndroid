@@ -289,11 +289,11 @@
             android:name="com.tama.chat.ui.activities.mapBlink.MapBlinkElementActivity"
             android:label="@string/title_activity_map_blink_element"
             android:screenOrientation="portrait" />
-        //chka
+    //chka
         <activity
             android:name="com.tama.chat.ui.activities.mapBlink.MapsActivity"
             android:screenOrientation="portrait" />
-        //avelacnel
+    //avelacnel
         <activity
             android:name="com.tama.chat.ui.activities.location.MapsActivity"
             android:screenOrientation="portrait" />
@@ -334,11 +334,19 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name="com.tama.chat.ui.activities.tamaaccount.ContactUsActivity" />
-        <activity android:name="com.tama.chat.ui.activities.tamaaccount.ProfileInfoActivity" />
+        <activity
+            android:name="com.tama.chat.ui.activities.tamaaccount.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tama.chat.ui.activities.tamaaccount.ProfileInfoActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.tama.chat.ui.activities.authorization.AuthenticationActivity"
-            android:label="@string/title_activity_authentication" />
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tama.chat.ui.activities.tamaaccount.TamaSingleHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.tama.chat.ui.activities.tamaaccount.FindARatailerActivity" />
 
         <provider
             android:name="com.crashlytics.android.CrashlyticsInitProvider"

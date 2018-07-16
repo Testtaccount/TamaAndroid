@@ -419,6 +419,7 @@
     <string name="higher_amount">Scusate! Questo importo è superiore a quello disponibile sul tuo account. Inserisci un importo valido</string>
     <string name="history">STORIA</string>
     <string name="historyProducts">PRODOTTI</string>
+    <string name="history_action_text">Storia</string>
     <string name="history_all">Tutti</string>
     <string name="history_balance_transfer">BalanceTransfer</string>
     <string name="history_tama_express">TamaExpress</string>
@@ -449,7 +450,7 @@
     <string name="message_available_european_users">Queste opzioni sono disponibili solo per gli utenti europei</string>
     <string name="messenger_send_button_text">Invia</string>
     <string name="minutes_short">%1$dm</string>
-    <string name="mobile">Mobile +</string>
+    <string name="mobile">Mobile</string>
     <string name="mobile_topup">RICARICA MOBILE</string>
     <string name="my_account">IL MIO ACCOUNT</string>
     <string name="my_tama">MyTama</string>
@@ -555,7 +556,7 @@
     <string name="success">SUCCESSO</string>
     <string name="switch_camera">Cambiare la fotocamera</string>
     <string name="switch_speaker">Commutare altoparlante</string>
-    <string name="tama_express">TAMA EXPRESS</string>
+    <string name="tama_express">Tama Express</string>
     <string name="tama_express_confirm_text">Conferma di voler pagare %1$s</string>
     <string name="tama_express_one_line">TAMA EXPRESS</string>
     <string name="tama_family">Tama Family</string>

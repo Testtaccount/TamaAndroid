@@ -347,11 +347,12 @@
   <string name="topup_my_account">MEIN KONTO AUFLADEN</string>
   <string name="topup_my_account_one_line">MEIN KONTO AUFLADEN</string>
   <string name="send_credit">KREDIT SENDEN</string>
-  <string name="tama_express">TAMA EXPRESS</string>
+  <string name="tama_express">Tama Express</string>
   <string name="tama_express_one_line">TAMA EXPRESS</string>
   <string name="tama_topup">TAMA AUFLADUNG</string>
   <string name="tama_request">ANTRAG</string>
   <string name="history">HISTORIE</string>
+  <string name="history_action_text">Historie</string>
   <string name="balance">GUTHABEN</string>
   <string name="account_topup">KONTO AUFLADUNG</string>
   <string name="please_enter_the_voucher_number">Bitte geben Sie die Gutscheinnummer ein</string>
@@ -445,7 +446,7 @@
   <string name="success">Erfolgreich</string>
   <string name="view">Aussicht</string>
   <string name="order_no">Bestell-Nr</string>
-  <string name="mobile">Handy +</string>
+  <string name="mobile">Handy</string>
   <string name="amount">Betrag</string>
   <string name="succes">Erfolgreich</string>
   <string name="sender_number">Absender Nummer</string>

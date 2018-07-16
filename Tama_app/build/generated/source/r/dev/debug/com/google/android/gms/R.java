@@ -82,7 +82,7 @@ public final class R {
         public static final int button = 0x7f10008b;
         public static final int center = 0x7f10003e;
         public static final int dark = 0x7f100082;
-        public static final int email = 0x7f10023b;
+        public static final int email = 0x7f10023c;
         public static final int hybrid = 0x7f100071;
         public static final int icon_only = 0x7f10007f;
         public static final int light = 0x7f100083;
@@ -92,11 +92,11 @@ public final class R {
         public static final int radio = 0x7f1000af;
         public static final int satellite = 0x7f100072;
         public static final int standard = 0x7f100080;
-        public static final int status_text = 0x7f100221;
+        public static final int status_text = 0x7f100159;
         public static final int terrain = 0x7f100073;
         public static final int text = 0x7f100022;
         public static final int text2 = 0x7f100023;
-        public static final int toolbar = 0x7f1002dc;
+        public static final int toolbar = 0x7f1002dd;
         public static final int wide = 0x7f100081;
         public static final int wrap_content = 0x7f10005b;
     }
@@ -121,7 +121,7 @@ public final class R {
         public static final int common_open_on_phone = 0x7f080032;
         public static final int common_signin_button_text = 0x7f080033;
         public static final int common_signin_button_text_long = 0x7f080034;
-        public static final int fcm_fallback_notification_channel_label = 0x7f080282;
+        public static final int fcm_fallback_notification_channel_label = 0x7f080283;
     }
     public static final class styleable {
         public static final int[] LoadingImageView = { 0x7f010168, 0x7f010169, 0x7f01016a };

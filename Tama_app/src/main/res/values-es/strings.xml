@@ -348,11 +348,12 @@
   <string name="topup_my_account">RECARGAR MI CUENTA</string>
   <string name="topup_my_account_one_line">RECARGAR MI CUENTA</string>
   <string name="send_credit">ENVIAR CRÉDITO</string>
-  <string name="tama_express">TAMA EXPRESS</string>
+  <string name="tama_express">Tama Express</string>
   <string name="tama_express_one_line">TAMA EXPRESS</string>
   <string name="tama_topup">TAMA RECARGA</string>
   <string name="tama_request">SOLICITUD</string>
   <string name="history">HISTORIA</string>
+  <string name="history_action_text">Historia</string>
   <string name="balance">IMPORTE</string>
   <string name="account_topup">RECARGAR CUENTA</string>
   <string name="please_enter_the_voucher_number">Ingrese el número del cupón</string>
@@ -446,7 +447,7 @@
   <string name="success">ÉXITO</string>
   <string name="view">Ver</string>
   <string name="order_no">Número de orden</string>
-  <string name="mobile">Móvil +</string>
+  <string name="mobile">Móvil</string>
   <string name="amount">Cantidad</string>
   <string name="succes">ÉXITO</string>
   <string name="sender_number">Número de remitente</string>

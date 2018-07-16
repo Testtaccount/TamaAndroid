@@ -24,6 +24,7 @@ import com.tama.chat.tamaAccount.TamaAboutUsActivity;
 import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.tamaaccount.ContactUsActivity;
+import com.tama.chat.ui.activities.tamaaccount.FindARatailerActivity;
 import com.tama.chat.ui.activities.tamaaccount.MyTamaRequestActivity;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
 import com.tama.chat.ui.activities.tamaaccount.TamaHistoryActivity;
@@ -166,6 +167,13 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
   public void startTamaHistoryActivity() {
     setButtonEnable(false);
     Intent intent = new Intent(baseActivity, TamaHistoryActivity.class);
+    startActivity(intent);
+  }
+
+  @OnClick(R.id.button_tama_find_a_retailer)
+  public void startTamaFindARatailerActivity() {
+    setButtonEnable(false);
+    Intent intent = new Intent(baseActivity, FindARatailerActivity.class);
     startActivity(intent);
   }
 
@@ -357,8 +365,12 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
       tamaAccountBalance.setText(this.balance);
     }
 
-    if (promotionTxtTv != null) {
+    if (promotionTxtTv != null && getDouble(removeFirstChar(promo_tamaexpress_balance) )!=0||getDouble(removeFirstChar(promo_tamatopup_balance) )!=0) {
+      promotionTxtTv.setVisibility(View.VISIBLE);
       promotionTxtTv.setText(promotion_txt);
+    }else {
+      promotionTxtTv.setVisibility(View.GONE);
+      promotionTxtTv.setText("");
     }
 
   }
@@ -373,4 +385,7 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
     return getContext();
   }
 
+  public String removeFirstChar(String s){
+    return s.substring(1);
+  }
 }

@@ -48,7 +48,7 @@ public class App extends MultiDexApplication {
 
     super.onCreate();
     Log.i(TAG, "onCreate with update");
-    isSimulator=false;
+    isSimulator=true;
 
     initFabric();
     initApplication();

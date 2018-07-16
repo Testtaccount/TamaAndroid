@@ -59,8 +59,11 @@ public class APIUtil {
             case HttpRequestManager.RequestType.HISTORIES_TAMAEXPRESS:
                 apiUrl = getHost() + "history/tamaexpress" + param;
                 break;
-                case HttpRequestManager.RequestType.HISTORIES_TRANSFER:
+            case HttpRequestManager.RequestType.HISTORIES_TRANSFER:
                 apiUrl = getHost() + "history/transfer" + param;
+                break;
+            case HttpRequestManager.RequestType.HISTORY_SINGLE:
+                apiUrl = getHost() + "history/view/" + id + param;
                 break;
             default:
                 apiUrl = "";

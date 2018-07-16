@@ -1,24 +1,24 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:2:1-338:12
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:2:1-346:12
 	package
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:4:5-28
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:4:3-26
 		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
 		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
 		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:3:3-49
 	xmlns:android
 		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
 		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
 		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
 	android:installLocation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:5:5-45
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:5:3-43
 uses-permission#android.permission.INTERNET
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:7:5-67
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:7:3-65
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:9:5-67
 MERGED from [com.crashlytics.sdk.android:beta:1.2.6] C:\Users\Avetik\.android\build-cache\002b52ee859c4a539193424c436caeac872c3a95\output\AndroidManifest.xml:9:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.4.0] C:\Users\Avetik\.android\build-cache\571d39b289e96d09fb803a33bf3fe5bc2c7e0632\output\AndroidManifest.xml:52:5-67
@@ -39,9 +39,9 @@ MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.and
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:7:20-62
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:8:5-79
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:8:3-77
 MERGED from [Tama Android:Q-municate_core:unspecified] E:\Android\Project\Tama Android\Q-municate_core\build\intermediates\bundles\default\AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Avetik\.android\build-cache\81117dbf97871483679f2df3b9efa3aa4455ae57\output\AndroidManifest.xml:19:5-78
 MERGED from [com.google.android.gms:play-services-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\441643bf9727b4d5efccd5acbeac2c14c27cbb7d\output\AndroidManifest.xml:21:5-78
@@ -52,128 +52,128 @@ MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.and
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:8:20-74
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:9:5-76
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:9:3-74
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:9:22-73
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:9:20-71
 uses-permission#android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:10:5-101
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:10:3-99
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:10:22-98
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:10:20-96
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:11:5-80
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:11:3-78
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:11:22-77
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:11:20-75
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:12:5-81
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:12:3-79
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:12:20-76
 uses-permission#android.permission.CAMERA
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:13:5-65
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:13:3-63
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:13:22-62
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:13:20-60
 uses-permission#android.permission.WAKE_LOCK
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:14:5-68
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:14:3-66
 MERGED from [com.google.android.gms:play-services-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\441643bf9727b4d5efccd5acbeac2c14c27cbb7d\output\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\d857eb6f6fc7e35061a2630ba49f50e7c39798a1\output\AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Avetik\.android\build-cache\6d30051c98f8234b621d2fab960f3a6616a67f60\output\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Avetik\.android\build-cache\4558ef6476bf0cfce60e36174ebaa41394279545\output\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:14:22-65
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:14:20-63
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:15:5-80
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:15:3-78
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:15:22-77
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:15:20-75
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:16:5-71
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:16:3-69
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:16:22-68
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:16:20-66
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:17:5-82
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:17:3-80
 MERGED from [com.google.android.gms:play-services-gcm:11.0.4] C:\Users\Avetik\.android\build-cache\e4cbb0b91941f1786ea425a0481fa83947f65048\output\AndroidManifest.xml:20:5-81
 MERGED from [com.google.android.gms:play-services-iid:11.0.4] C:\Users\Avetik\.android\build-cache\2b022205da417e9c8ac4fde3a9d48d710a07b6fb\output\AndroidManifest.xml:20:5-81
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Avetik\.android\build-cache\1d797e46210278f374cb91a1cfd13b8315d1c552\output\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:17:22-79
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:17:20-77
 uses-permission#android.permission.VIBRATE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:18:5-66
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:18:3-64
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:18:22-63
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:18:20-61
 uses-permission#android.permission.GET_TASKS
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:19:5-68
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:19:3-66
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:19:22-65
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:19:20-63
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:20:5-70
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:20:3-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:20:22-67
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:20:20-65
 uses-permission#android.permission.READ_CONTACTS
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:21:5-72
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:21:3-70
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:21:22-69
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:21:20-67
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:22:5-81
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:22:3-79
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:22:22-78
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:22:20-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:23:5-79
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:23:3-77
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:23:22-76
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:23:20-74
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:24:5-75
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:24:3-73
 MERGED from [Tama Android:Q-municate_core:unspecified] E:\Android\Project\Tama Android\Q-municate_core\build\intermediates\bundles\default\AndroidManifest.xml:10:5-75
 MERGED from [Tama Android:Q-municate_db:unspecified] E:\Android\Project\Tama Android\Q-municate_db\build\intermediates\bundles\default\AndroidManifest.xml:11:5-75
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:24:22-72
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:24:20-70
 uses-permission#android.Manifest.permission.READ_PHONE_STATE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:25:5-84
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:25:3-82
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:25:22-81
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:25:20-79
 permission#com.example.app.permission.MAPS_RECEIVE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:27:5-29:47
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:27:3-29:43
 	android:protectionLevel
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:29:9-44
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:29:5-40
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:28:9-63
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:28:5-59
 uses-permission#com.example.app.permission.MAPS_RECEIVE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:32:5-79
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:32:3-77
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:32:22-76
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:32:20-74
 uses-feature#android.hardware.camera
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:34:5-37:32
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:34:3-37:28
 	tools:node
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:37:9-29
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:37:5-25
 	android:required
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:36:9-33
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:36:5-29
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:35:9-47
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:35:5-43
 uses-feature#android.hardware.camera.autofocus
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:38:5-41:32
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:38:3-41:28
 	tools:node
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:41:9-29
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:41:5-25
 	android:required
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:40:9-33
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:40:5-29
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:39:9-57
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:39:5-53
 uses-feature#android.hardware.camera.flash
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:42:5-45:32
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:42:3-45:28
 	tools:node
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:45:9-29
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:45:5-25
 	android:required
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:44:9-33
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:44:5-29
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:43:9-53
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:43:5-49
 uses-feature#0x00020000
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:46:5-48:35
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:46:3-48:31
 MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Avetik\.android\build-cache\81117dbf97871483679f2df3b9efa3aa4455ae57\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:47:9-41
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:47:5-37
 	android:required
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:48:9-32
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:48:5-28
 application
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:50:5-336:19
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:50:3-344:17
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:11:5-17:19
 MERGED from [com.crashlytics.sdk.android:beta:1.2.6] C:\Users\Avetik\.android\build-cache\002b52ee859c4a539193424c436caeac872c3a95\output\AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.4.0] C:\Users\Avetik\.android\build-cache\571d39b289e96d09fb803a33bf3fe5bc2c7e0632\output\AndroidManifest.xml:54:5-20
@@ -233,539 +233,553 @@ MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\Avetik\.androi
 MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\Avetik\.android\build-cache\5ef54f54fcd7762bb1ea5ee094a27d0ee561b4c1\output\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Avetik\.android\build-cache\34f8896745313d6a95295cb58925e0a7da7d42ee\output\AndroidManifest.xml:25:5-29:19
 	android:label
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:54:9-41
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:53:5-37
 	android:supportsRtl
 		ADDED from [com.quickblox:chat-message-adapter:2.0] C:\Users\Avetik\.android\build-cache\380438f198877825db6978745ff2b29f0ce2d08c\output\AndroidManifest.xml:12:9-35
 	android:allowBackup
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:52:9-35
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:51:5-31
 	android:icon
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:53:9-45
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:52:5-41
 	android:largeHeap
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:55:9-33
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:54:5-29
 	android:theme
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:56:9-40
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:56:5-36
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:51:9-28
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:55:5-24
 activity#com.tama.chat.ui.activities.authorization.SplashActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:57:9-67:20
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:57:5-67:16
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:61:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:61:7-43
 	android:launchMode
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:60:13-48
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:59:7-42
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:59:13-97
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:58:7-91
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:58:13-71
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:60:7-65
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:62:13-66:29
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:62:7-66:23
 action#android.intent.action.MAIN
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:63:17-69
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:63:9-61
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:63:25-66
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:63:17-58
 category#android.intent.category.LAUNCHER
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:65:17-77
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:65:9-69
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:65:27-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:65:19-66
 service#com.tama.chat.service.SessionJobService
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:69:9-75:19
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:69:5-75:15
 	android:exported
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:71:13-37
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:70:7-31
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:70:13-54
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:71:7-48
 intent-filter#com.firebase.jobdispatcher.ACTION_EXECUTE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:72:13-74:29
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:72:7-74:23
 action#com.firebase.jobdispatcher.ACTION_EXECUTE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:73:17-84
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:73:9-76
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:73:25-81
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:73:17-73
 activity#com.tama.chat.ui.activities.authorization.LandingActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:77:9-81:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:77:5-81:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:81:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:81:7-43
 	android:launchMode
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:80:13-44
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:79:7-38
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:79:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:78:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:78:13-72
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:80:7-66
 activity#com.tama.chat.ui.activities.authorization.LoginActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:82:9-86:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:82:5-86:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:86:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:86:7-43
 	android:launchMode
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:85:13-44
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:84:7-38
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:84:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:83:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:83:13-70
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:85:7-64
 activity#com.tama.chat.ui.activities.authorization.SignUpActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:87:9-91:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:87:5-91:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:91:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:91:7-43
 	android:launchMode
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:90:13-44
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:89:7-38
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:89:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:88:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:88:13-71
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:90:7-65
 activity#com.facebook.FacebookActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:92:9-97:45
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:92:5-97:39
 MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\Avetik\.android\build-cache\88b4de45b041dc9e8696ea67b08fb10f3c033df9\output\AndroidManifest.xml:29:9-32:75
 MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:59:9-63:48
 	android:label
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:95:13-45
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:94:7-39
 	tools:ignore
 		ADDED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:63:13-45
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:94:13-96
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:93:7-90
 	android:theme
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:96:13-72
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:96:7-66
 		REJECTED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\Avetik\.android\build-cache\88b4de45b041dc9e8696ea67b08fb10f3c033df9\output\AndroidManifest.xml:32:13-72
 	tools:replace
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:97:13-42
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:97:7-36
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:93:13-57
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:95:7-51
 activity#com.tama.chat.ui.activities.main.MainActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:98:9-100:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:98:5-100:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:100:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:100:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:99:13-60
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:99:7-54
 activity#com.tama.chat.ui.activities.invitefriends.InviteFriendsActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:101:9-104:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:101:5-104:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:104:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:104:7-43
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:103:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:102:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:102:13-78
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:103:7-72
 activity#com.tama.chat.ui.activities.feedback.FeedbackActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:105:9-108:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:105:5-108:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:108:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:108:7-43
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:107:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:106:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:106:13-68
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:107:7-62
 activity#com.tama.chat.ui.activities.profile.UserProfileActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:109:9-112:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:109:5-112:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:112:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:112:7-43
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:111:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:110:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:110:13-70
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:111:7-64
 activity#com.tama.chat.ui.activities.call.CallActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:113:9-117:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:113:5-117:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:117:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:117:7-43
 	android:launchMode
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:116:13-43
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:115:7-37
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:115:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:114:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:114:13-60
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:116:7-54
 activity#com.tama.chat.ui.activities.chats.NewMessageActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:118:9-120:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:118:5-120:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:120:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:120:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:119:13-67
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:119:7-61
 activity#com.tama.chat.ui.activities.chats.MapBlinkActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:121:9-123:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:121:5-123:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:123:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:123:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:122:13-65
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:122:7-59
 activity#com.tama.chat.ui.activities.chats.NewGroupDialogActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:124:9-127:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:124:5-127:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:127:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:127:7-43
 	android:noHistory
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:126:13-37
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:126:7-31
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:125:13-71
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:125:7-65
 activity#com.tama.chat.ui.activities.chats.CreateGroupDialogActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:128:9-131:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:128:5-131:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:131:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:131:7-43
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:130:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:129:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:129:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:130:7-68
 activity#com.tama.chat.ui.activities.chats.PrivateDialogActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:132:9-136:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:132:5-136:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:136:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:136:7-43
 	android:launchMode
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:135:13-43
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:134:7-37
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:134:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:133:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:133:13-70
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:135:7-64
 activity#com.tama.chat.ui.activities.chats.GroupDialogActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:137:9-141:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:137:5-141:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:141:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:141:7-43
 	android:launchMode
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:140:13-43
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:139:7-37
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:139:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:138:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:138:13-68
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:140:7-62
 activity#com.tama.chat.ui.activities.chats.GroupDialogDetailsActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:142:9-145:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:142:5-145:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:145:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:145:7-43
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:144:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:143:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:143:13-75
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:144:7-69
 activity#com.tama.chat.ui.activities.profile.MyProfileActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:146:9-148:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:146:5-148:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:148:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:148:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:147:13-68
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:147:7-62
 activity#com.tama.chat.ui.activities.chats.AddFriendsToGroupActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:149:9-152:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:149:5-152:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:152:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:152:7-43
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:151:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:150:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:150:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:151:7-68
 activity#com.tama.chat.ui.activities.changepassword.ChangePasswordActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:153:9-156:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:153:5-156:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:156:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:156:7-43
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:155:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:154:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:154:13-80
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:155:7-74
 activity#com.tama.chat.ui.activities.forgotpassword.ForgotPasswordActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:157:9-160:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:157:5-160:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:160:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:160:7-43
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:159:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:158:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:158:13-80
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:159:7-74
 activity#com.tama.chat.ui.activities.agreements.UserAgreementActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:161:9-164:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:161:5-164:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:164:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:164:7-43
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:163:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:162:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:162:13-75
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:163:7-69
 activity#com.soundcloud.android.crop.CropImageActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:165:9-82
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:165:5-78
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:165:19-79
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:165:15-75
 activity#com.tama.chat.tamaAccount.TamaPayOnlineActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:166:9-168:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:166:5-168:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:168:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:168:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:167:13-62
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:167:7-56
 activity#com.tama.chat.tamaAccount.TamaAboutUsActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:169:9-171:50
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:169:5-171:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:171:11-47
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:171:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:170:11-58
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:170:7-54
 activity#com.tama.chat.ui.activities.others.PreviewImageActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:172:9-174:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:172:5-174:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:174:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:174:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:173:13-70
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:173:7-64
 activity#com.quickblox.ui.kit.chatmessage.adapter.media.video.ui.VideoPlayerActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:175:9-189:20
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:175:5-189:16
 	android:launchMode
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:178:13-43
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:177:7-37
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:177:13-122
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:176:7-116
 	android:theme
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:179:13-52
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:179:7-46
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:176:13-103
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:178:7-97
 intent-filter#android.intent.category.DEFAULT
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:180:13-188:29
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:180:7-188:23
 category#android.intent.category.DEFAULT
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:181:17-76
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:181:9-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:181:27-73
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:181:19-65
 data
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:183:17-47
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:183:9-39
 	android:scheme
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:183:23-44
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:183:15-36
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:191:9-194:45
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:191:5-194:39
 MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:22:9-24:63
 	android:value
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:193:13-50
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:193:7-44
 		REJECTED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:24:13-60
 	tools:replace
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:194:13-42
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:194:7-36
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:192:13-58
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:192:7-52
 meta-data#com.google.android.gms.version
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:195:9-197:69
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:195:5-197:63
 MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:16:9-18:69
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Avetik\.android\build-cache\3141c1ccdd7383ee86f33a9517ab4b8408e3ed85\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:197:13-66
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:197:7-60
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:196:13-58
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:196:7-52
 meta-data#com.quickblox.messages.TYPE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:198:9-200:35
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:198:5-200:29
 	android:value
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:200:13-32
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:200:7-26
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:199:13-55
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:199:7-49
 meta-data#com.quickblox.messages.SENDER_ID
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:201:9-203:49
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:201:5-203:43
 	android:value
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:203:13-46
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:203:7-40
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:202:13-60
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:202:7-54
 meta-data#com.quickblox.messages.QB_ENVIRONMENT
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:204:9-206:42
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:204:5-206:36
 	android:value
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:206:13-39
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:206:7-33
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:205:13-65
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:205:7-59
 meta-data#com.google.android.geo.API_KEY
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:207:9-209:55
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:207:5-209:49
 	android:value
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:209:13-52
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:209:7-46
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:208:13-58
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:208:7-52
 receiver#com.tama.chat.gcm.GcmBroadcastReceiver
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:211:9-220:20
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:211:5-220:16
 	android:permission
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:213:13-73
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:213:7-67
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:212:13-53
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:212:7-47
 intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.quickblox.qmunicate
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:214:13-219:29
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:214:7-219:23
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:215:17-81
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:215:9-73
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:215:25-78
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:215:17-70
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:216:17-86
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:216:9-78
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:216:25-83
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:216:17-75
 category#com.quickblox.qmunicate
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:218:17-68
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:218:9-60
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:218:27-65
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:218:19-57
 receiver#com.tama.chat.utils.broadcasts.NetworkChangeReceiver
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:221:9-227:20
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:221:5-227:16
 	android:label
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:223:13-50
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:222:7-44
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:222:13-67
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:223:7-61
 intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:224:13-226:29
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:224:7-226:23
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:225:17-79
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:225:9-71
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:225:25-76
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:225:17-68
 receiver#com.tama.chat.utils.broadcasts.ChatMessageReceiver
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:228:9-234:20
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:228:5-234:16
 	android:label
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:230:13-48
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:229:7-42
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:229:13-65
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:230:7-59
 intent-filter#q_municate.got_chat_message
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:231:13-233:29
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:231:7-233:23
 action#q_municate.got_chat_message
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:232:17-70
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:232:9-62
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:232:25-67
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:232:17-59
 service#com.tama.q_municate_core.network.NetworkGCMTaskService
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:236:9-243:19
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:236:5-243:15
 	android:exported
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:238:13-36
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:237:7-30
 	android:permission
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:239:13-93
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:239:7-87
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:237:13-82
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:238:7-76
 intent-filter#com.google.android.gms.gcm.ACTION_TASK_READY
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:240:13-242:29
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:240:7-242:23
 action#com.google.android.gms.gcm.ACTION_TASK_READY
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:241:17-87
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:241:9-79
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:241:25-84
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:241:17-76
 service#com.tama.chat.gcm.GCMIntentService
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:244:9-57
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:244:5-53
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:244:18-54
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:244:14-50
 service#com.tama.chat.service.MyFirebaseMessagingService
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:245:9-249:19
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:245:5-249:15
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:245:18-68
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:245:14-64
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:246:13-248:29
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:246:7-248:23
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:247:17-78
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:247:9-70
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:247:25-75
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:247:17-67
 service#com.tama.chat.service.MyFirebaseInstanceIDService
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:250:9-254:19
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:250:5-254:15
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:250:18-69
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:250:14-65
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:251:13-253:29
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:251:7-253:23
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:252:17-80
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:252:9-72
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:252:25-77
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:252:17-69
 service#com.tama.q_municate_core.service.QBService
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:255:9-257:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:255:5-257:67
 	android:icon
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:257:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:256:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:256:13-70
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:257:7-64
 service#com.tama.chat.fcm.FcmPushListenerService
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:258:9-262:19
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:258:5-262:15
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:258:18-60
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:258:14-56
 service#com.quickblox.messages.services.fcm.QBFcmPushInstanceIDService
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:263:9-269:19
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:263:5-269:15
 	android:exported
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:265:13-37
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:264:7-31
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:264:13-90
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:265:7-84
 provider#android.support.v4.content.FileProvider
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:271:9-279:20
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:271:5-279:16
 	android:authorities
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:273:13-60
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:272:7-54
 		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
 	android:grantUriPermissions
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:275:13-47
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:274:7-41
 	android:exported
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:274:13-37
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:273:7-31
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:272:13-67
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:275:7-61
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:276:13-278:58
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:276:7-278:50
 	android:resource
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:278:17-55
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:278:9-47
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:277:17-67
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:277:9-59
 activity#com.tama.chat.ui.activities.mapBlink.MapBlinkElementActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:281:9-284:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:281:5-284:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:284:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:284:7-43
 	android:label
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:283:13-69
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:282:7-63
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:282:13-75
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:283:7-69
 activity#com.tama.chat.ui.activities.mapBlink.MapsActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:286:9-288:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:286:5-288:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:288:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:288:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:287:13-64
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:287:7-58
 activity#com.tama.chat.ui.activities.location.MapsActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:290:9-292:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:290:5-292:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:292:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:292:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:291:13-64
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:291:7-58
 meta-data#io.fabric.ApiKey
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:294:9-297:45
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:294:5-297:39
 MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:19:9-21:63
 	android:value
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:296:13-69
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:296:7-63
 		REJECTED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Avetik\.android\build-cache\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\output\AndroidManifest.xml:21:13-60
 	tools:replace
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:297:13-42
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:297:7-36
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:295:13-44
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:295:7-38
 activity#com.tama.chat.ui.activities.tamaaccount.TopupMyAccountActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:299:9-301:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:299:5-301:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:301:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:301:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:300:13-77
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:300:7-71
 activity#com.tama.chat.ui.activities.tamaaccount.TamaHistoryActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:302:9-304:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:302:5-304:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:304:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:304:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:303:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:303:7-68
 activity#com.tama.chat.ui.activities.tamaaccount.TamaTopUpActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:305:9-307:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:305:5-307:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:307:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:307:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:306:13-72
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:306:7-66
 activity#com.tama.chat.ui.activities.tamaaccount.TamaTransferActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:308:9-310:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:308:5-310:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:310:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:310:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:309:13-75
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:309:7-69
 activity#com.tama.chat.ui.activities.tamaaccount.MyTamaRequestActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:311:9-313:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:311:5-313:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:313:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:313:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:312:13-76
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:312:7-70
 activity#com.tama.chat.ui.activities.tamaaccount.MyTamaAccountTopUpRqtActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:314:9-316:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:314:5-316:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:316:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:316:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:315:13-84
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:315:7-78
 activity#com.tama.chat.ui.activities.tamaaccount.MyTamaMobileTopUpRequestActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:317:9-319:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:317:5-319:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:319:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:319:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:318:13-87
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:318:7-81
 activity#com.tama.chat.ui.activities.tamaaccount.PayTamaExpressRequestActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:320:9-322:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:320:5-322:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:322:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:322:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:321:13-84
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:321:7-78
 activity#com.tama.chat.ui.activities.tamaaccount.IncomingRequestActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:323:9-325:52
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:323:5-325:46
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:325:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:325:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:324:13-78
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:324:7-72
 activity#com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:326:9-330:55
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:326:5-330:49
 	android:screenOrientation
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:329:13-49
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:329:7-43
 	android:windowSoftInputMode
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:330:13-52
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:330:7-46
 	android:configChanges
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:328:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:327:7-68
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:327:13-74
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:328:7-68
 activity#com.tama.chat.ui.activities.tamaaccount.ContactUsActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:331:9-81
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:331:5-333:46
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:333:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:331:19-78
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:332:7-66
 activity#com.tama.chat.ui.activities.tamaaccount.ProfileInfoActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:332:9-83
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:334:5-336:46
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:336:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:332:19-80
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:335:7-68
 activity#com.tama.chat.ui.activities.authorization.AuthenticationActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:333:9-335:78
-	android:label
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:335:13-66
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:337:5-339:46
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:339:7-43
 	android:name
-		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:334:13-79
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:338:7-73
+activity#com.tama.chat.ui.activities.tamaaccount.TamaSingleHistoryActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:340:5-342:46
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:342:7-43
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:341:7-74
+activity#com.tama.chat.ui.activities.tamaaccount.FindARatailerActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:343:5-90
+	android:name
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:343:15-78
 uses-sdk
 INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\Avetik\.android\build-cache\2d969044b49db1c0ae60c9b65329f33fbfbd8f56\output\AndroidManifest.xml:18:5-42

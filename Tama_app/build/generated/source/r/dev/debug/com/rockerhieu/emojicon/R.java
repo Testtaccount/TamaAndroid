@@ -914,22 +914,22 @@ public final class R {
         public static final int sym_keyboard_delete_holo_dark = 0x7f020604;
     }
     public static final class id {
-        public static final int Emoji_GridView = 0x7f1001ae;
-        public static final int emojicon_icon = 0x7f1001af;
-        public static final int emojis_backspace = 0x7f1001b7;
-        public static final int emojis_pager = 0x7f1001b8;
-        public static final int emojis_tab = 0x7f1001b0;
-        public static final int emojis_tab_0_recents = 0x7f1001b1;
-        public static final int emojis_tab_1_people = 0x7f1001b2;
-        public static final int emojis_tab_2_nature = 0x7f1001b3;
-        public static final int emojis_tab_3_objects = 0x7f1001b4;
-        public static final int emojis_tab_4_cars = 0x7f1001b5;
-        public static final int emojis_tab_5_punctuation = 0x7f1001b6;
+        public static final int Emoji_GridView = 0x7f1001cd;
+        public static final int emojicon_icon = 0x7f1001ce;
+        public static final int emojis_backspace = 0x7f1001d6;
+        public static final int emojis_pager = 0x7f1001d7;
+        public static final int emojis_tab = 0x7f1001cf;
+        public static final int emojis_tab_0_recents = 0x7f1001d0;
+        public static final int emojis_tab_1_people = 0x7f1001d1;
+        public static final int emojis_tab_2_nature = 0x7f1001d2;
+        public static final int emojis_tab_3_objects = 0x7f1001d3;
+        public static final int emojis_tab_4_cars = 0x7f1001d4;
+        public static final int emojis_tab_5_punctuation = 0x7f1001d5;
     }
     public static final class layout {
-        public static final int emojicon_grid = 0x7f03005f;
-        public static final int emojicon_item = 0x7f030060;
-        public static final int emojicons = 0x7f030061;
+        public static final int emojicon_grid = 0x7f030061;
+        public static final int emojicon_item = 0x7f030062;
+        public static final int emojicons = 0x7f030063;
     }
     public static final class string {
         public static final int app_name = 0x7f0800d7;

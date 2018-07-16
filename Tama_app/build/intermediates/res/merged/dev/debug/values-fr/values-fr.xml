@@ -418,6 +418,7 @@ numéro de téléphone et/ou votre email.</string>
     <string name="higher_amount">Pardon! Ce montant est supérieur au montant disponible dans votre compte. S\'il vous plaît entrer un montant valide</string>
     <string name="history">HISTOIRE</string>
     <string name="historyProducts">DES PRODUITS</string>
+    <string name="history_action_text">Histoire</string>
     <string name="history_all">Tout</string>
     <string name="history_balance_transfer">Transfert de solde</string>
     <string name="history_tama_express">TamaExpress</string>
@@ -448,7 +449,7 @@ numéro de téléphone et/ou votre email.</string>
     <string name="message_available_european_users">Ces options ne sont disponibles que pour les utilisateurs européens</string>
     <string name="messenger_send_button_text">Envoyer</string>
     <string name="minutes_short">%1$dm</string>
-    <string name="mobile">Mobile +</string>
+    <string name="mobile">Mobile</string>
     <string name="mobile_topup">TÉLÉPHONE MOBILE RECHARGE</string>
     <string name="my_account">MON COMPTE</string>
     <string name="my_tama">MyTama</string>
@@ -554,7 +555,7 @@ numéro de téléphone et/ou votre email.</string>
     <string name="success">TRANSACTION RÉUSSIE</string>
     <string name="switch_camera">Commuter la caméra</string>
     <string name="switch_speaker">Commuter l\'orateur</string>
-    <string name="tama_express">TAMA EXPRESS</string>
+    <string name="tama_express">Tama Express</string>
     <string name="tama_express_confirm_text">Confirmez que vous voulez payer de %1$s</string>
     <string name="tama_express_one_line">TAMA EXPRESS</string>
     <string name="tama_family">Tama Family</string>

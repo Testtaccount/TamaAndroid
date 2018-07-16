@@ -120,7 +120,11 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryViewHolder> {
       history_idTv.setText(String.valueOf(element.getHistoryId()));
       history_header_statusTv.setText(element.getHistoryName());
       history_amountTv.setText(element.getAmount());
-      history_mobile_noTv.setText(String.valueOf(element.getMobileNo()));
+      if (element.getMobileNo() != null) {
+        history_mobile_noTv.setText(String.valueOf(element.getMobileNo()));
+      }else {
+        history_mobile_noTv.setText("");
+      }
       history_statusTv.setText(element.getStatus());
       history_timestampTv.setText(element.getTimestamp());
       loadImageByUri(element.getImage(),mImageView);

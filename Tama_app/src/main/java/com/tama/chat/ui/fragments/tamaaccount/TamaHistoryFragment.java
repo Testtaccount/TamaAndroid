@@ -1,5 +1,6 @@
 package com.tama.chat.ui.fragments.tamaaccount;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -19,7 +20,6 @@ import com.tama.chat.tamaAccount.HistoryAdapter;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryData;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryResult;
 import com.tama.chat.tamaAccount.entry.historyPojos.TamaHistoryElement;
-import com.tama.chat.utils.ToastUtils;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONArray;
@@ -33,8 +33,9 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
     private static final String ARG_PARAM = "param";
 //    private RecyclerView mRecyclerView;
     private HistoryAdapter mAdapter;
-    private LinearLayoutManager layoutManager;;
+    private LinearLayoutManager layoutManager;
     private List<HistoryResult> mHistoryResultList;
+    private OnHistoryFragmentInteractionListener mListener;
 
 //    @Bind(R.id.list_view)
 //    ListView mRecyclerView;
@@ -191,7 +192,7 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 HistoryResult element = mHistoryResultList.get(position);
-//                activity.setCurrentFragment(TamaSingleHistoryFragment.newInstance(user_id,element.getHistoryId()));
+//                activity.setCurrentFragment(TamaSingleHistoryActivity.newInstance(user_id,element.getHistoryId()));
             }
         };
     }
@@ -218,6 +219,18 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
 //        historyTamaExpress.setBackgroundResource(0);
 //        historyTamaTopup.setBackgroundResource(0);
         currentTextView.setBackgroundResource(R.drawable.selector_button_red_under_line);
+    }
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnHistoryFragmentInteractionListener) {
+            mListener = (OnHistoryFragmentInteractionListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
+                + " must implement OnHistoryFragmentInteractionListener");
+        }
     }
 
 
@@ -299,6 +312,15 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
 
     @Override
     public void onOilHistoryItemClick(HistoryResult result) {
-        ToastUtils.shortToast(result.getHistoryName());
+        if(mListener!=null){
+            mListener.onHistoryItemViewClickListener(result);
+        }
+    }
+
+
+
+    public interface OnHistoryFragmentInteractionListener {
+        void onHistoryItemViewClickListener(HistoryResult result);
+
     }
 }

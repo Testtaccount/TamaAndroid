@@ -11,8 +11,8 @@ public class TamaHistoryActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
     View view;
     view = finder.findRequiredView(source, 2131755339, "field 'mProgressBar'");
     target.mProgressBar = finder.castView(view, 2131755339, "field 'mProgressBar'");
-    view = finder.findRequiredView(source, 2131755611, "field 'mTabLayout'");
-    target.mTabLayout = finder.castView(view, 2131755611, "field 'mTabLayout'");
+    view = finder.findRequiredView(source, 2131755612, "field 'mTabLayout'");
+    target.mTabLayout = finder.castView(view, 2131755612, "field 'mTabLayout'");
     view = finder.findRequiredView(source, 2131755340, "field 'mViewPager'");
     target.mViewPager = finder.castView(view, 2131755340, "field 'mViewPager'");
     view = finder.findRequiredView(source, 2131755260, "field 'errorMessageText'");

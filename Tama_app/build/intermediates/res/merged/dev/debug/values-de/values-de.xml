@@ -434,6 +434,7 @@ anhand Deiner Telefonnummer und/oder E-Mail Adresse finden können.</string>
     <string name="higher_amount">Es tut uns leid! Dieser Betrag ist höher als der auf Ihrem Konto verfügbare Betrag. Bitte geben Sie einen gültigen Betrag ein</string>
     <string name="history">HISTORIE</string>
     <string name="historyProducts">PRODUKTE</string>
+    <string name="history_action_text">Historie</string>
     <string name="history_all">Alle</string>
     <string name="history_balance_transfer">GUTHABENÜBERTRAGUNG</string>
     <string name="history_tama_express">TamaExpress</string>
@@ -464,7 +465,7 @@ anhand Deiner Telefonnummer und/oder E-Mail Adresse finden können.</string>
     <string name="message_available_european_users">Diese Optionen sind nur für europäische Benutzer verfügbar</string>
     <string name="messenger_send_button_text">Senden</string>
     <string name="minutes_short">%1$dm</string>
-    <string name="mobile">Handy +</string>
+    <string name="mobile">Handy</string>
     <string name="mobile_topup">HANDY AUFLADUNG</string>
     <string name="my_account">MEIN KONTO</string>
     <string name="my_tama">MyTama</string>
@@ -570,7 +571,7 @@ anhand Deiner Telefonnummer und/oder E-Mail Adresse finden können.</string>
     <string name="success">Erfolgreich</string>
     <string name="switch_camera">Kamera einschalten</string>
     <string name="switch_speaker">Lautsprecher einschalten</string>
-    <string name="tama_express">TAMA EXPRESS</string>
+    <string name="tama_express">Tama Express</string>
     <string name="tama_express_confirm_text">Bestätigen Sie, dass Sie zahlen möchten von %1$s</string>
     <string name="tama_express_one_line">TAMA EXPRESS</string>
     <string name="tama_family">Tama Family</string>

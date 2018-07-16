@@ -355,11 +355,12 @@
     <string name="topup_my_account">TOPUP MY ACCOUNT</string>
     <string name="topup_my_account_one_line">TOPUP MY ACCOUNT</string>
     <string name="send_credit">SEND\n CREDIT</string>
-    <string name="tama_express">TAMA EXPRESS</string>
+    <string name="tama_express">Tama Express</string>
     <string name="tama_express_one_line">TAMA EXPRESS</string>
     <string name="tama_topup">TAMA TOPUP</string>
     <string name="tama_request">REQUEST</string>
     <string name="history">HISTORY</string>
+    <string name="history_action_text">History</string>
     <string name="balance">BALANCE</string>
     <string name="account_topup">ACCOUNT TOPUP</string>
     <string name="please_enter_the_voucher_number">Please enter the voucher number</string>
@@ -455,7 +456,7 @@
     <string name="success">SUCCESS</string>
     <string name="view">View</string>
     <string name="order_no">Order No</string>
-    <string name="mobile">Mobile +</string>
+    <string name="mobile">Mobile</string>
     <string name="amount">Amount</string>
     <string name="succes">SUCCESS</string>
     <string name="sender_number">Sender Number</string>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -140,4 +141,33 @@ public abstract class BaseFragment extends Fragment implements UserStatusChangin
     public void onConnectedToService(QBService service) {
         // nothing by default
     }
+    public double getDouble(String source) {
+        if (TextUtils.isEmpty(source)) {
+            return 0;
+        }
+
+        String number = "0";
+        int length = source.length();
+
+        boolean cutNumber = false;
+        for (int i = 0; i < length; i++) {
+            char c = source.charAt(i);
+            if (cutNumber) {
+                if (Character.isDigit(c) || c == '.' || c == ',') {
+                    c = (c == ',' ? '.' : c);
+                    number += c;
+                } else {
+                    cutNumber = false;
+                    break;
+                }
+            } else {
+                if (Character.isDigit(c)) {
+                    cutNumber = true;
+                    number += c;
+                }
+            }
+        }
+        return Double.parseDouble(number);
+    }
+
 }

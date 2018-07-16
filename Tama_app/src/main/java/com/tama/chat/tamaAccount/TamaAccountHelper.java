@@ -234,10 +234,9 @@ public class TamaAccountHelper {
     new GetHistoryTask().execute(GET_HISTORY  + "/" + history_type + getLanguages());
   }
 
-  public void getSingleHistory(TamaAccountHelperListener listener, String user_id,
-      String history_id) {
+  public void getSingleHistory(TamaAccountHelperListener listener, String history_id) {
     this.listener = listener;
-    new GetHistoryTask().execute(GET_SINGLE_HISTORY + user_id + "/" + history_id + getLanguages());
+    new GetHistoryTask().execute(GET_SINGLE_HISTORY +  "/" + history_id + getLanguages());
 //        new GetHistoryTask().execute(GET_SINGLE_HISTORY + 1 + "/" + history_id);
   }
 

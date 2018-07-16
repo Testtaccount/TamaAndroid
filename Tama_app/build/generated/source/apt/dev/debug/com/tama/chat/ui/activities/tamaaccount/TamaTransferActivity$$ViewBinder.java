@@ -21,8 +21,8 @@ public class TamaTransferActivity$$ViewBinder<T extends com.tama.chat.ui.activit
       });
     view = finder.findRequiredView(source, 2131755298, "field 'bodyLayout'");
     target.bodyLayout = finder.castView(view, 2131755298, "field 'bodyLayout'");
-    view = finder.findRequiredView(source, 2131755355, "field 'transferButton' and method 'clickOnTransferButton'");
-    target.transferButton = finder.castView(view, 2131755355, "field 'transferButton'");
+    view = finder.findRequiredView(source, 2131755386, "field 'transferButton' and method 'clickOnTransferButton'");
+    target.transferButton = finder.castView(view, 2131755386, "field 'transferButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

@@ -79,6 +79,7 @@
               </LinearLayout>
 
               <TextView
+                android:visibility="gone"
                 android:id="@+id/tv_promotion_txt"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
@@ -226,7 +227,7 @@
                       android:padding="3dp"
                       android:fontFamily="sans-serif-medium"
                       android:gravity="center"
-                      android:text="INTERNATIONAL TAMA TOPUP"
+                      android:text="International Tama Topup"
                       android:textColor="@color/black"
                       android:textSize="13sp" />
                   </LinearLayout>
@@ -261,7 +262,7 @@
                       android:padding="3dp"
                       android:fontFamily="sans-serif-medium"
                       android:gravity="center"
-                      android:text="@string/history"
+                      android:text="@string/history_action_text"
                       android:textColor="@color/black" />
                   </LinearLayout>
 
@@ -335,7 +336,7 @@
                       android:padding="3dp"
                       android:fontFamily="sans-serif-medium"
                       android:gravity="center"
-                      android:text="FIND A RETAILER"
+                      android:text="Find a Retailer"
                       android:textColor="@color/black" />
                   </LinearLayout>
 
@@ -368,7 +369,7 @@
                       android:padding="3dp"
                       android:fontFamily="sans-serif-medium"
                       android:gravity="center"
-                      android:text="ABOUT US"
+                      android:text="About Us"
                       android:textColor="@color/black" />
                   </LinearLayout>
 
@@ -401,7 +402,7 @@
                       android:padding="3dp"
                       android:fontFamily="sans-serif-medium"
                       android:gravity="center"
-                      android:text="CONTACT US"
+                      android:text="Contact Us"
                       android:textColor="@color/black" />
                   </LinearLayout>
 

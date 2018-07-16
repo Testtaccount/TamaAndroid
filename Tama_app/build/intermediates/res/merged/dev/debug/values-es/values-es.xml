@@ -419,6 +419,7 @@ Se pueden aplicar cargos por mensajes, llamadas y datos.</string>
     <string name="higher_amount">¡Lo siento! Esta cantidad es mayor que la cantidad disponible en su cuenta. Introduzca un importe válido</string>
     <string name="history">HISTORIA</string>
     <string name="historyProducts">PRODUCTOS</string>
+    <string name="history_action_text">Historia</string>
     <string name="history_all">Todas</string>
     <string name="history_balance_transfer">Transferencia de saldo</string>
     <string name="history_tama_express">TamaExpress</string>
@@ -449,7 +450,7 @@ Se pueden aplicar cargos por mensajes, llamadas y datos.</string>
     <string name="message_available_european_users">Estas opciones solo están disponibles para usuarios europeos</string>
     <string name="messenger_send_button_text">Enviar</string>
     <string name="minutes_short">%1$dm</string>
-    <string name="mobile">Móvil +</string>
+    <string name="mobile">Móvil</string>
     <string name="mobile_topup">RECARGA MÓVIL</string>
     <string name="my_account">MI CUENTA</string>
     <string name="my_tama">MyTama</string>
@@ -555,7 +556,7 @@ Se pueden aplicar cargos por mensajes, llamadas y datos.</string>
     <string name="success">ÉXITO</string>
     <string name="switch_camera">Cambiar la cámara</string>
     <string name="switch_speaker">Cambiar el altavoz</string>
-    <string name="tama_express">TAMA EXPRESS</string>
+    <string name="tama_express">Tama Express</string>
     <string name="tama_express_confirm_text">Confirme que desea pagar de %1$s</string>
     <string name="tama_express_one_line">TAMA EXPRESS</string>
     <string name="tama_family">Tama Family</string>

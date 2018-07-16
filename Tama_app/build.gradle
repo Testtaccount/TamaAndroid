@@ -205,7 +205,6 @@ def changeApkFileName(variant) {
 }
 
 
-
 crashlytics {
     enableNdk false
     androidNdkOut 'src/main/obj'
