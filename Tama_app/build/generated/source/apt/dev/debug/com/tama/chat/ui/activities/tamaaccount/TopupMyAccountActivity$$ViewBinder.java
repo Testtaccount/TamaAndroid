@@ -9,12 +9,12 @@ public class TopupMyAccountActivity$$ViewBinder<T extends com.tama.chat.ui.activ
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755388, "field 'topupVoucherText'");
-    target.topupVoucherText = finder.castView(view, 2131755388, "field 'topupVoucherText'");
-    view = finder.findRequiredView(source, 2131755375, "field 'topupErrorText'");
-    target.topupErrorText = finder.castView(view, 2131755375, "field 'topupErrorText'");
-    view = finder.findRequiredView(source, 2131755389, "field 'topupButton' and method 'sendTopupRequest'");
-    target.topupButton = finder.castView(view, 2131755389, "field 'topupButton'");
+    view = finder.findRequiredView(source, 2131755395, "field 'topupVoucherText'");
+    target.topupVoucherText = finder.castView(view, 2131755395, "field 'topupVoucherText'");
+    view = finder.findRequiredView(source, 2131755382, "field 'topupErrorText'");
+    target.topupErrorText = finder.castView(view, 2131755382, "field 'topupErrorText'");
+    view = finder.findRequiredView(source, 2131755396, "field 'topupButton' and method 'sendTopupRequest'");
+    target.topupButton = finder.castView(view, 2131755396, "field 'topupButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

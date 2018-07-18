@@ -9,8 +9,8 @@ public class NewGroupDialogActivity$$ViewBinder<T extends com.tama.chat.ui.activ
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755327, "field 'membersEditText'");
-    target.membersEditText = finder.castView(view, 2131755327, "field 'membersEditText'");
+    view = finder.findRequiredView(source, 2131755332, "field 'membersEditText'");
+    target.membersEditText = finder.castView(view, 2131755332, "field 'membersEditText'");
   }
 
   @Override public void unbind(T target) {

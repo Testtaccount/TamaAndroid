@@ -335,6 +335,7 @@ Se pueden aplicar cargos por mensajes, llamadas y datos.</string>
     <string name="feedback_support_email">q-municate@quickblox.com</string>
     <string name="feedback_title">Comentarios Descripción</string>
     <string name="feedback_write_email">Escribe un email</string>
+    <string name="find_a_retailer">Find a Retailer</string>
     <string name="forgot_password_email">Email</string>
     <string name="forgot_password_email_field_is_incorrect">Por favor introduzca una dirección de correo electrónico válida</string>
     <string name="forgot_password_email_field_not_entered">Introduce el correo electrónico</string>
@@ -414,7 +415,7 @@ Se pueden aplicar cargos por mensajes, llamadas y datos.</string>
     <string name="fui_welcome_back_password_prompt_body" translation_description="Message to users that need to signin using existing email accounts">Ya has usado %1$s para iniciar sesión. Introduce la contraseña de esa cuenta.</string>
     <string name="germany">Alemania</string>
     <string name="get_offer_code">Obtener el código de oferta</string>
-    <string name="grand_total">Gran total</string>
+    <string name="grand_total">Gran total:</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="higher_amount">¡Lo siento! Esta cantidad es mayor que la cantidad disponible en su cuenta. Introduzca un importe válido</string>
     <string name="history">HISTORIA</string>

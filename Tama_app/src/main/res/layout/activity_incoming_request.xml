@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/toolbar_tama_view"
-        layout="@layout/toolbar_tama"
+        layout="@layout/toolbar_tama_with_subtitle"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"/>
     <RelativeLayout

@@ -14,7 +14,7 @@
     <include
       android:visibility="visible"
       android:id="@+id/toolbar_tama_view"
-      layout="@layout/toolbar_tama"/>
+      layout="@layout/toolbar_tama_with_subtitle"/>
 
   </android.support.design.widget.AppBarLayout>
   <TextView
@@ -114,6 +114,7 @@
         android:padding="0dp"/>
         <!--android:background="@drawable/background_red_rect" />-->
       <TextView
+        android:layout_marginTop="10dp"
         android:id="@+id/status_text"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -128,12 +129,12 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/image_view"
         android:layout_toRightOf="@+id/image_view"
-        android:paddingTop="20dp"
+        android:layout_marginTop="4dp"
         android:text="Tama Express Order"
         android:textColor="@color/black" />
       <TextView
+        android:layout_marginTop="2dp"
         android:id="@+id/mobile_text"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/history_name"
@@ -142,15 +143,42 @@
         android:text="@string/mobile"
         android:textColor="@color/black" />
       <TextView
+        android:layout_marginTop="2dp"
         android:id="@+id/mobile_no"
         android:textStyle="bold"
+        android:textSize="15dp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/history_name"
         android:layout_toEndOf="@+id/mobile_text"
         android:layout_toRightOf="@+id/mobile_text"
         android:text=""
+        android:layout_marginLeft="8dp"
         android:textColor="@color/black" />
+      <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/order_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile_no"
+        android:layout_toEndOf="@+id/image_view"
+        android:layout_toRightOf="@+id/image_view"
+        android:text="Order Status: "
+        android:textColor="@color/black" />
+      <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/order_status"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile_text"
+        android:layout_toRightOf="@+id/order_status_label"
+        android:text="Accepted"
+        android:textSize="15dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/black" />
+
       <TextView
         android:id="@+id/status_btn"
         android:textStyle="bold"
@@ -161,6 +189,7 @@
         android:layout_alignParentRight="true"
         android:gravity="center"
         android:text="SUCC"
+        android:visibility="gone"
         android:textColor="@color/tama_account_text" />
     </RelativeLayout>
 

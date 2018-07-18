@@ -473,7 +473,7 @@
   <string name="remove">Remove</string>
   <string name="continue_shopping">Continue Shopping</string>
   <string name="checkout">Checkout</string>
-  <string name="grand_total">Grand Total</string>
+  <string name="grand_total">Grand Total:</string>
   <string name="sorry_your_balance_is_low_please_topup_your_mytama_account">Sorry! your balance is low.\nPlease topup your MyTama account</string>
   <string name="topup">Topup</string>
   <string name="your_personal_details">Your Personal Details</string>
@@ -553,5 +553,6 @@
   <string name="message_available_european_users">These options are only available to European users</string>
   <string name="you_have_no_history">You have no history</string>
   <string name="title_activity_authentication">AuthenticationActivity</string>
+  <string name="find_a_retailer">Find a Retailer</string>
 
 </resources>

@@ -9,6 +9,7 @@ public class ProductsItemToSave implements Serializable{
     public String product_name;
     public String product_image;
     public String product_cost;
+    public String shipping_cost;
     public int count;
 
     public ProductsItemToSave(){}
@@ -20,6 +21,7 @@ public class ProductsItemToSave implements Serializable{
         product_cost = item.product_cost;
         count = 1;
         country = item.product_country;
+        shipping_cost = item.shipping_cost;
     }
 
 

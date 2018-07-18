@@ -334,6 +334,7 @@ numéro de téléphone et/ou votre email.</string>
     <string name="feedback_support_email">q-municate@quickblox.com</string>
     <string name="feedback_title">Description du commentaire</string>
     <string name="feedback_write_email">Écrire un e-mail</string>
+    <string name="find_a_retailer">Find a Retailer</string>
     <string name="forgot_password_email">E-mail</string>
     <string name="forgot_password_email_field_is_incorrect">Entrez une adresse e-mail valide</string>
     <string name="forgot_password_email_field_not_entered">Entrez une adresse e-mail</string>
@@ -413,7 +414,7 @@ numéro de téléphone et/ou votre email.</string>
     <string name="fui_welcome_back_password_prompt_body" translation_description="Message to users that need to signin using existing email accounts">Vous avez déjà utilisé l\'adresse e-mail %1$s pour vous connecter. Saisissez le mot de passe du compte.</string>
     <string name="germany">Allemagne</string>
     <string name="get_offer_code">Code d\'offre</string>
-    <string name="grand_total">Somme finale</string>
+    <string name="grand_total">Somme finale:</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="higher_amount">Pardon! Ce montant est supérieur au montant disponible dans votre compte. S\'il vous plaît entrer un montant valide</string>
     <string name="history">HISTOIRE</string>

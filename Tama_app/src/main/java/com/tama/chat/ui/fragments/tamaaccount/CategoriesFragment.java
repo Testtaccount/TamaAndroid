@@ -229,7 +229,6 @@ public class CategoriesFragment extends Fragment implements TamaAccountHelperLis
 
     @Override
     public void alertDialogCancelListener() {
-
     }
 
     @Override

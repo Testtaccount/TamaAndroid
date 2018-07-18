@@ -8,24 +8,24 @@ import butterknife.ButterKnife.ViewBinder;
 public class MapBlinkElementActivity$$ViewBinder<T extends com.tama.chat.ui.activities.mapBlink.MapBlinkElementActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755280, "field 'ratingTextView'");
-    target.ratingTextView = finder.castView(view, 2131755280, "field 'ratingTextView'");
-    view = finder.findRequiredView(source, 2131755282, "field 'descriptionText'");
-    target.descriptionText = finder.castView(view, 2131755282, "field 'descriptionText'");
-    view = finder.findRequiredView(source, 2131755283, "field 'addressText'");
-    target.addressText = finder.castView(view, 2131755283, "field 'addressText'");
-    view = finder.findRequiredView(source, 2131755284, "field 'openNowText'");
-    target.openNowText = finder.castView(view, 2131755284, "field 'openNowText'");
-    view = finder.findRequiredView(source, 2131755285, "field 'weekDayText'");
-    target.weekDayText = finder.castView(view, 2131755285, "field 'weekDayText'");
-    view = finder.findRequiredView(source, 2131755278, "field 'scrollingLinLayout'");
-    target.scrollingLinLayout = finder.castView(view, 2131755278, "field 'scrollingLinLayout'");
-    view = finder.findRequiredView(source, 2131755279, "field 'firstPhoto'");
-    target.firstPhoto = finder.castView(view, 2131755279, "field 'firstPhoto'");
-    view = finder.findRequiredView(source, 2131755281, "field 'ratingView'");
-    target.ratingView = finder.castView(view, 2131755281, "field 'ratingView'");
-    view = finder.findRequiredView(source, 2131755287, "field 'directionButton' and method 'sendRequest'");
-    target.directionButton = finder.castView(view, 2131755287, "field 'directionButton'");
+    view = finder.findRequiredView(source, 2131755285, "field 'ratingTextView'");
+    target.ratingTextView = finder.castView(view, 2131755285, "field 'ratingTextView'");
+    view = finder.findRequiredView(source, 2131755287, "field 'descriptionText'");
+    target.descriptionText = finder.castView(view, 2131755287, "field 'descriptionText'");
+    view = finder.findRequiredView(source, 2131755288, "field 'addressText'");
+    target.addressText = finder.castView(view, 2131755288, "field 'addressText'");
+    view = finder.findRequiredView(source, 2131755289, "field 'openNowText'");
+    target.openNowText = finder.castView(view, 2131755289, "field 'openNowText'");
+    view = finder.findRequiredView(source, 2131755290, "field 'weekDayText'");
+    target.weekDayText = finder.castView(view, 2131755290, "field 'weekDayText'");
+    view = finder.findRequiredView(source, 2131755283, "field 'scrollingLinLayout'");
+    target.scrollingLinLayout = finder.castView(view, 2131755283, "field 'scrollingLinLayout'");
+    view = finder.findRequiredView(source, 2131755284, "field 'firstPhoto'");
+    target.firstPhoto = finder.castView(view, 2131755284, "field 'firstPhoto'");
+    view = finder.findRequiredView(source, 2131755286, "field 'ratingView'");
+    target.ratingView = finder.castView(view, 2131755286, "field 'ratingView'");
+    view = finder.findRequiredView(source, 2131755292, "field 'directionButton' and method 'sendRequest'");
+    target.directionButton = finder.castView(view, 2131755292, "field 'directionButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -34,8 +34,8 @@ public class MapBlinkElementActivity$$ViewBinder<T extends com.tama.chat.ui.acti
           target.sendRequest();
         }
       });
-    view = finder.findRequiredView(source, 2131755286, "field 'getOfferCode'");
-    target.getOfferCode = finder.castView(view, 2131755286, "field 'getOfferCode'");
+    view = finder.findRequiredView(source, 2131755291, "field 'getOfferCode'");
+    target.getOfferCode = finder.castView(view, 2131755291, "field 'getOfferCode'");
   }
 
   @Override public void unbind(T target) {

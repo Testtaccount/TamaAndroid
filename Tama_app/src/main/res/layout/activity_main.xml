@@ -15,7 +15,7 @@
         android:visibility="gone"/>
 
     <include
-        layout="@layout/toolbar_tama"
+        layout="@layout/toolbar_tama_with_subtitle"
         android:visibility="gone"/>
 
     <FrameLayout

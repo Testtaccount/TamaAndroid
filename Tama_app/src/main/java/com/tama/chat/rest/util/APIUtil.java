@@ -65,6 +65,9 @@ public class APIUtil {
             case HttpRequestManager.RequestType.HISTORY_SINGLE:
                 apiUrl = getHost() + "history/view/" + id + param;
                 break;
+            case HttpRequestManager.RequestType.FIND_A_RETAILER:
+                apiUrl = getHost() + "retailers" + param;
+                break;
             default:
                 apiUrl = "";
                 break;

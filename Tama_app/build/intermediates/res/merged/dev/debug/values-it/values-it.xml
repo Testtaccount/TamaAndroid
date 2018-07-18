@@ -335,6 +335,7 @@
     <string name="feedback_support_email">q-municate@quickblox.com</string>
     <string name="feedback_title">Descrizione del commento</string>
     <string name="feedback_write_email">Scrivere un email</string>
+    <string name="find_a_retailer">Find a Retailer</string>
     <string name="forgot_password_email">Email</string>
     <string name="forgot_password_email_field_is_incorrect">Si prega di inserire un indirizzo email valido</string>
     <string name="forgot_password_email_field_not_entered">Inserisci l\'email</string>
@@ -414,7 +415,7 @@
     <string name="fui_welcome_back_password_prompt_body" translation_description="Message to users that need to signin using existing email accounts">Hai già utilizzato %1$s per accedere. Inserisci la password di questo account.</string>
     <string name="germany">Germania</string>
     <string name="get_offer_code">Ottieni il codice dell\'offerta</string>
-    <string name="grand_total">Somma totale</string>
+    <string name="grand_total">Somma totale:</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="higher_amount">Scusate! Questo importo è superiore a quello disponibile sul tuo account. Inserisci un importo valido</string>
     <string name="history">STORIA</string>

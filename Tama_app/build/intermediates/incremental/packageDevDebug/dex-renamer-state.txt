@@ -1,7 +1,7 @@
-#Mon Jul 16 18:46:10 AMT 2018
-base.0=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\10000\\instant-run-bootstrap_de8c848a17a0745ee10b089160f24d18a5db1f96
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\10000\\instant-run_294a4b04d9c601ac42315110d1279d0ba9cd7b9d\\classes.dex
-base.1=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\10000\\instant-run_294a4b04d9c601ac42315110d1279d0ba9cd7b9d
-file.0=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\10000\\instant-run-bootstrap_de8c848a17a0745ee10b089160f24d18a5db1f96\\classes.dex
+#Wed Jul 18 15:49:55 AMT 2018
+base.0=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\1f\\main
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\1f\\main\\classes.dex
+base.1=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\1f\\main
+file.0=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\1f\\main\\classes2.dex

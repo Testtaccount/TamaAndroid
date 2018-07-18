@@ -350,6 +350,7 @@ anhand Deiner Telefonnummer und/oder E-Mail Adresse finden können.</string>
     <string name="feedback_support_email">q-municate@quickblox.com</string>
     <string name="feedback_title">Feedback Beschreibung</string>
     <string name="feedback_write_email">Schreibe eine E-Mail</string>
+    <string name="find_a_retailer">Find a Retailer</string>
     <string name="forgot_password_email">E-Mail</string>
     <string name="forgot_password_email_field_is_incorrect">Bitte geben Sie eine gültige E-Mail-Adresse ein</string>
     <string name="forgot_password_email_field_not_entered">Bitte E-Mail eingeben</string>
@@ -429,7 +430,7 @@ anhand Deiner Telefonnummer und/oder E-Mail Adresse finden können.</string>
     <string name="fui_welcome_back_password_prompt_body" translation_description="Message to users that need to signin using existing email accounts">Sie haben %1$s bereits zur Anmeldung verwendet. Geben Sie das Passwort für dieses Konto ein.</string>
     <string name="germany">Deutschland</string>
     <string name="get_offer_code">Erhalten Sie Angebot-Code</string>
-    <string name="grand_total">Gesamtsumme</string>
+    <string name="grand_total">Gesamtsumme:</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="higher_amount">Es tut uns leid! Dieser Betrag ist höher als der auf Ihrem Konto verfügbare Betrag. Bitte geben Sie einen gültigen Betrag ein</string>
     <string name="history">HISTORIE</string>

@@ -47,53 +47,5 @@
             android:layout_marginEnd="16dp"/>
 
     </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="37dp">
-        <TextView
-            android:id="@+id/tama_toolbar_subtitle"
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:gravity="center_vertical"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            tools:text="@string/my_account"
-            android:textColor="@color/tama_account_text"
-            android:background="@color/tama_account_grey"/>
-        <RelativeLayout
-            android:id="@+id/shopping_btn"
-            android:layout_width="40dp"
-            android:layout_height="37dp"
-            android:layout_marginRight="7dp"
-            android:layout_marginEnd="7dp"
-            android:padding="2dp"
-            android:visibility="gone"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true">
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentBottom="true"
-                android:src="@drawable/shopping_cart"/>
-            <TextView
-                android:id="@+id/product_count"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:visibility="gone"
-                android:text="2"
-                android:textColor="@color/tama_account_text"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/shape_oval_red"/>
-        </RelativeLayout>
-    </RelativeLayout>
-
 
 </LinearLayout>

@@ -91,6 +91,11 @@ public abstract class TamaAccountBaseActivity extends BaseActivity implements Ta
         tamaToolbarSubtitle.setText(getString(subTitle));
     }
 
+    protected void setTamaToolbar(int title){
+//        checkVisibilityTamaUserIcon(tamaToolbarUserIcon);
+        tamaToolbarTitle.setText(getString(title).toUpperCase());
+    }
+
     public boolean isNetworkAvailable() {
         return NetworkUtil.isConnected(this);
     }

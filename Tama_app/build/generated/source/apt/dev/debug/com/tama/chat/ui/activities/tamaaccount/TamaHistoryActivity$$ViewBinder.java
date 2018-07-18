@@ -9,14 +9,14 @@ public class TamaHistoryActivity$$ViewBinder<T extends com.tama.chat.ui.activiti
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755339, "field 'mProgressBar'");
-    target.mProgressBar = finder.castView(view, 2131755339, "field 'mProgressBar'");
-    view = finder.findRequiredView(source, 2131755612, "field 'mTabLayout'");
-    target.mTabLayout = finder.castView(view, 2131755612, "field 'mTabLayout'");
-    view = finder.findRequiredView(source, 2131755340, "field 'mViewPager'");
-    target.mViewPager = finder.castView(view, 2131755340, "field 'mViewPager'");
-    view = finder.findRequiredView(source, 2131755260, "field 'errorMessageText'");
-    target.errorMessageText = finder.castView(view, 2131755260, "field 'errorMessageText'");
+    view = finder.findRequiredView(source, 2131755344, "field 'mProgressBar'");
+    target.mProgressBar = finder.castView(view, 2131755344, "field 'mProgressBar'");
+    view = finder.findRequiredView(source, 2131755621, "field 'mTabLayout'");
+    target.mTabLayout = finder.castView(view, 2131755621, "field 'mTabLayout'");
+    view = finder.findRequiredView(source, 2131755345, "field 'mViewPager'");
+    target.mViewPager = finder.castView(view, 2131755345, "field 'mViewPager'");
+    view = finder.findRequiredView(source, 2131755265, "field 'errorMessageText'");
+    target.errorMessageText = finder.castView(view, 2131755265, "field 'errorMessageText'");
   }
 
   @Override public void unbind(T target) {

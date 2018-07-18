@@ -10,14 +10,14 @@ public class TamaAccountBaseActivity$$ViewBinder<T extends com.tama.chat.ui.acti
     View view;
     view = finder.findRequiredView(source, 2131755218, "field 'toolbarTamaView'");
     target.toolbarTamaView = finder.castView(view, 2131755218, "field 'toolbarTamaView'");
-    view = finder.findRequiredView(source, 2131755748, "field 'tamaToolbarUserIcon'");
-    target.tamaToolbarUserIcon = finder.castView(view, 2131755748, "field 'tamaToolbarUserIcon'");
-    view = finder.findRequiredView(source, 2131755747, "field 'tamaToolbarTitle'");
-    target.tamaToolbarTitle = finder.castView(view, 2131755747, "field 'tamaToolbarTitle'");
-    view = finder.findRequiredView(source, 2131755749, "field 'tamaToolbarSubtitle'");
-    target.tamaToolbarSubtitle = finder.castView(view, 2131755749, "field 'tamaToolbarSubtitle'");
-    view = finder.findRequiredView(source, 2131755750, "field 'shoppingButton' and method 'onClickOnShoppingCart'");
-    target.shoppingButton = finder.castView(view, 2131755750, "field 'shoppingButton'");
+    view = finder.findRequiredView(source, 2131755760, "field 'tamaToolbarUserIcon'");
+    target.tamaToolbarUserIcon = finder.castView(view, 2131755760, "field 'tamaToolbarUserIcon'");
+    view = finder.findRequiredView(source, 2131755759, "field 'tamaToolbarTitle'");
+    target.tamaToolbarTitle = finder.castView(view, 2131755759, "field 'tamaToolbarTitle'");
+    view = finder.findRequiredView(source, 2131755761, "field 'tamaToolbarSubtitle'");
+    target.tamaToolbarSubtitle = finder.castView(view, 2131755761, "field 'tamaToolbarSubtitle'");
+    view = finder.findRequiredView(source, 2131755762, "field 'shoppingButton' and method 'onClickOnShoppingCart'");
+    target.shoppingButton = finder.castView(view, 2131755762, "field 'shoppingButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -26,8 +26,8 @@ public class TamaAccountBaseActivity$$ViewBinder<T extends com.tama.chat.ui.acti
           target.onClickOnShoppingCart();
         }
       });
-    view = finder.findRequiredView(source, 2131755751, "field 'productCount'");
-    target.productCount = finder.castView(view, 2131755751, "field 'productCount'");
+    view = finder.findRequiredView(source, 2131755763, "field 'productCount'");
+    target.productCount = finder.castView(view, 2131755763, "field 'productCount'");
   }
 
   @Override public void unbind(T target) {

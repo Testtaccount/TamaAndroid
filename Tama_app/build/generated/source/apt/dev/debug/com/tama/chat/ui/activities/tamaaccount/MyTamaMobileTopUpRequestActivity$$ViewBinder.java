@@ -9,8 +9,8 @@ public class MyTamaMobileTopUpRequestActivity$$ViewBinder<T extends com.tama.cha
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755312, "field 'amountNumberLayout' and method 'clickOnAmountLayout'");
-    target.amountNumberLayout = finder.castView(view, 2131755312, "field 'amountNumberLayout'");
+    view = finder.findRequiredView(source, 2131755317, "field 'amountNumberLayout' and method 'clickOnAmountLayout'");
+    target.amountNumberLayout = finder.castView(view, 2131755317, "field 'amountNumberLayout'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -19,10 +19,10 @@ public class MyTamaMobileTopUpRequestActivity$$ViewBinder<T extends com.tama.cha
           target.clickOnAmountLayout();
         }
       });
-    view = finder.findRequiredView(source, 2131755298, "field 'bodyLayout'");
-    target.bodyLayout = finder.castView(view, 2131755298, "field 'bodyLayout'");
-    view = finder.findRequiredView(source, 2131755315, "field 'btnSendRequest' and method 'clickOnSendRequestButton'");
-    target.btnSendRequest = finder.castView(view, 2131755315, "field 'btnSendRequest'");
+    view = finder.findRequiredView(source, 2131755303, "field 'bodyLayout'");
+    target.bodyLayout = finder.castView(view, 2131755303, "field 'bodyLayout'");
+    view = finder.findRequiredView(source, 2131755320, "field 'btnSendRequest' and method 'clickOnSendRequestButton'");
+    target.btnSendRequest = finder.castView(view, 2131755320, "field 'btnSendRequest'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -31,18 +31,18 @@ public class MyTamaMobileTopUpRequestActivity$$ViewBinder<T extends com.tama.cha
           target.clickOnSendRequestButton();
         }
       });
-    view = finder.findRequiredView(source, 2131755313, "field 'amountText'");
-    target.amountText = finder.castView(view, 2131755313, "field 'amountText'");
-    view = finder.findRequiredView(source, 2131755304, "field 'phoneErrorTextFirst'");
-    target.phoneErrorTextFirst = finder.castView(view, 2131755304, "field 'phoneErrorTextFirst'");
-    view = finder.findRequiredView(source, 2131755310, "field 'phoneErrorTextSecond'");
-    target.phoneErrorTextSecond = finder.castView(view, 2131755310, "field 'phoneErrorTextSecond'");
-    view = finder.findRequiredView(source, 2131755314, "field 'amountErrorText'");
-    target.amountErrorText = finder.castView(view, 2131755314, "field 'amountErrorText'");
+    view = finder.findRequiredView(source, 2131755318, "field 'amountText'");
+    target.amountText = finder.castView(view, 2131755318, "field 'amountText'");
+    view = finder.findRequiredView(source, 2131755309, "field 'phoneErrorTextFirst'");
+    target.phoneErrorTextFirst = finder.castView(view, 2131755309, "field 'phoneErrorTextFirst'");
+    view = finder.findRequiredView(source, 2131755315, "field 'phoneErrorTextSecond'");
+    target.phoneErrorTextSecond = finder.castView(view, 2131755315, "field 'phoneErrorTextSecond'");
+    view = finder.findRequiredView(source, 2131755319, "field 'amountErrorText'");
+    target.amountErrorText = finder.castView(view, 2131755319, "field 'amountErrorText'");
     view = finder.findRequiredView(source, 2131755181, "field 'checkBox'");
     target.checkBox = finder.castView(view, 2131755181, "field 'checkBox'");
-    view = finder.findRequiredView(source, 2131755303, "field 'openContactsListFirst' and method 'clickOpenContactsListFirst'");
-    target.openContactsListFirst = finder.castView(view, 2131755303, "field 'openContactsListFirst'");
+    view = finder.findRequiredView(source, 2131755308, "field 'openContactsListFirst' and method 'clickOpenContactsListFirst'");
+    target.openContactsListFirst = finder.castView(view, 2131755308, "field 'openContactsListFirst'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -51,8 +51,8 @@ public class MyTamaMobileTopUpRequestActivity$$ViewBinder<T extends com.tama.cha
           target.clickOpenContactsListFirst();
         }
       });
-    view = finder.findRequiredView(source, 2131755309, "field 'openContactsListSecond' and method 'clickOpenContactsListSecond'");
-    target.openContactsListSecond = finder.castView(view, 2131755309, "field 'openContactsListSecond'");
+    view = finder.findRequiredView(source, 2131755314, "field 'openContactsListSecond' and method 'clickOpenContactsListSecond'");
+    target.openContactsListSecond = finder.castView(view, 2131755314, "field 'openContactsListSecond'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

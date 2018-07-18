@@ -8,7 +8,7 @@ import butterknife.ButterKnife.ViewBinder;
 public class UserAgreementDialogFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.dialogs.UserAgreementDialogFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755334, "method 'openUserAgreement'");
+    view = finder.findRequiredView(source, 2131755339, "method 'openUserAgreement'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

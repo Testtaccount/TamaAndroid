@@ -2,12 +2,12 @@ package com.tama.chat.tamaAccount;
 
 import static com.tama.chat.method.Methods.loadImageByUri;
 
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.tama.chat.R;
 import com.tama.chat.tamaAccount.HistoryAdapter.HistoryViewHolder;
@@ -71,13 +71,20 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryViewHolder> {
     return mHistoryResults.size();
   }
 
+  public void clear() {
+    if (mHistoryResults != null) {
+      mHistoryResults.clear();
+    }
+    notifyDataSetChanged();
+  }
+
 
   /**
    * HistoryViewHolder class for the recycler view item
    */
   public class HistoryViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    private CardView rootRl;
+    private LinearLayout rootLl;
     private TextView history_idTv;
     private TextView history_header_statusTv;
     private TextView history_amountTv;
@@ -100,8 +107,8 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryViewHolder> {
     }
 
     void findViews(View view) {
-      rootRl = (CardView) view.findViewById(R.id.item_history_card_root);
-      rootRl.setOnClickListener(this);
+      rootLl = (LinearLayout) view.findViewById(R.id.item_history_card_root);
+      rootLl.setOnClickListener(this);
       history_idTv = (TextView) view.findViewById(R.id.history_id);
       history_header_statusTv = (TextView) view.findViewById(R.id.history_header_status);
       history_amountTv = (TextView) view.findViewById(R.id.history_amount);

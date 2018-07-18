@@ -12,8 +12,8 @@ public class BaseDialogActivity$$ViewBinder<T extends com.tama.chat.ui.activitie
     target.messageSwipeRefreshLayout = finder.castView(view, 2131755231, "field 'messageSwipeRefreshLayout'");
     view = finder.findRequiredView(source, 2131755232, "field 'messagesRecyclerView'");
     target.messagesRecyclerView = finder.castView(view, 2131755232, "field 'messagesRecyclerView'");
-    view = finder.findRequiredView(source, 2131755792, "field 'messageEditText', method 'messageEditTextChanged', and method 'touchMessageEdit'");
-    target.messageEditText = finder.castView(view, 2131755792, "field 'messageEditText'");
+    view = finder.findRequiredView(source, 2131755804, "field 'messageEditText', method 'messageEditTextChanged', and method 'touchMessageEdit'");
+    target.messageEditText = finder.castView(view, 2131755804, "field 'messageEditText'");
     ((android.widget.TextView) view).addTextChangedListener(
       new android.text.TextWatcher() {
         @Override public void onTextChanged(
@@ -47,8 +47,8 @@ public class BaseDialogActivity$$ViewBinder<T extends com.tama.chat.ui.activitie
           return target.touchMessageEdit();
         }
       });
-    view = finder.findRequiredView(source, 2131755790, "field 'attachButton' and method 'attachFile'");
-    target.attachButton = finder.castView(view, 2131755790, "field 'attachButton'");
+    view = finder.findRequiredView(source, 2131755802, "field 'attachButton' and method 'attachFile'");
+    target.attachButton = finder.castView(view, 2131755802, "field 'attachButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -57,20 +57,20 @@ public class BaseDialogActivity$$ViewBinder<T extends com.tama.chat.ui.activitie
           target.attachFile(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755791, "field 'recordAudioButton'");
-    target.recordAudioButton = finder.castView(view, 2131755791, "field 'recordAudioButton'");
-    view = finder.findRequiredView(source, 2131755785, "field 'recordChronometer'");
-    target.recordChronometer = finder.castView(view, 2131755785, "field 'recordChronometer'");
-    view = finder.findRequiredView(source, 2131755784, "field 'bucketView'");
-    target.bucketView = finder.castView(view, 2131755784, "field 'bucketView'");
-    view = finder.findRequiredView(source, 2131755783, "field 'audioLayout'");
-    target.audioLayout = finder.castView(view, 2131755783, "field 'audioLayout'");
-    view = finder.findRequiredView(source, 2131755786, "field 'audioRecordTextView'");
-    target.audioRecordTextView = finder.castView(view, 2131755786, "field 'audioRecordTextView'");
-    view = finder.findRequiredView(source, 2131755789, "field 'sendButton'");
-    target.sendButton = finder.castView(view, 2131755789, "field 'sendButton'");
-    view = finder.findRequiredView(source, 2131755794, "field 'smilePanelImageButton' and method 'smilePanelImageButtonClicked'");
-    target.smilePanelImageButton = finder.castView(view, 2131755794, "field 'smilePanelImageButton'");
+    view = finder.findRequiredView(source, 2131755803, "field 'recordAudioButton'");
+    target.recordAudioButton = finder.castView(view, 2131755803, "field 'recordAudioButton'");
+    view = finder.findRequiredView(source, 2131755797, "field 'recordChronometer'");
+    target.recordChronometer = finder.castView(view, 2131755797, "field 'recordChronometer'");
+    view = finder.findRequiredView(source, 2131755796, "field 'bucketView'");
+    target.bucketView = finder.castView(view, 2131755796, "field 'bucketView'");
+    view = finder.findRequiredView(source, 2131755795, "field 'audioLayout'");
+    target.audioLayout = finder.castView(view, 2131755795, "field 'audioLayout'");
+    view = finder.findRequiredView(source, 2131755798, "field 'audioRecordTextView'");
+    target.audioRecordTextView = finder.castView(view, 2131755798, "field 'audioRecordTextView'");
+    view = finder.findRequiredView(source, 2131755801, "field 'sendButton'");
+    target.sendButton = finder.castView(view, 2131755801, "field 'sendButton'");
+    view = finder.findRequiredView(source, 2131755806, "field 'smilePanelImageButton' and method 'smilePanelImageButtonClicked'");
+    target.smilePanelImageButton = finder.castView(view, 2131755806, "field 'smilePanelImageButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -79,8 +79,8 @@ public class BaseDialogActivity$$ViewBinder<T extends com.tama.chat.ui.activitie
           target.smilePanelImageButtonClicked();
         }
       });
-    view = finder.findRequiredView(source, 2131755795, "field 'snapChatImageButton' and method 'snapChatOnOff'");
-    target.snapChatImageButton = finder.castView(view, 2131755795, "field 'snapChatImageButton'");
+    view = finder.findRequiredView(source, 2131755807, "field 'snapChatImageButton' and method 'snapChatOnOff'");
+    target.snapChatImageButton = finder.castView(view, 2131755807, "field 'snapChatImageButton'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

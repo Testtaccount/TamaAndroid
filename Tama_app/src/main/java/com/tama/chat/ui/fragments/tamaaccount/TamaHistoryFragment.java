@@ -310,7 +310,17 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
         return elementList;
     }
 
-    @Override
+  @Override
+  public void setUserVisibleHint(boolean isVisibleToUser) {
+    super.setUserVisibleHint(isVisibleToUser);
+    if (!isVisibleToUser) {
+        if(mAdapter!=null) {
+            mAdapter.clear();
+        }
+    }
+  }
+
+  @Override
     public void onOilHistoryItemClick(HistoryResult result) {
         if(mListener!=null){
             mListener.onHistoryItemViewClickListener(result);
@@ -318,8 +328,7 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
     }
 
 
-
-    public interface OnHistoryFragmentInteractionListener {
+  public interface OnHistoryFragmentInteractionListener {
         void onHistoryItemViewClickListener(HistoryResult result);
 
     }

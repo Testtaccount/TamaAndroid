@@ -346,7 +346,9 @@
         <activity
             android:name="com.tama.chat.ui.activities.tamaaccount.TamaSingleHistoryActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.tama.chat.ui.activities.tamaaccount.FindARatailerActivity" />
+        <activity
+            android:name="com.tama.chat.ui.activities.tamaaccount.FindARetailerActivity"
+            android:screenOrientation="portrait" />
 
         <provider
             android:name="com.crashlytics.android.CrashlyticsInitProvider"

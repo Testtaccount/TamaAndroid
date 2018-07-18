@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.InputFilter;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -412,6 +413,20 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
   private String balance;
   private double grandTotal;
 
+  @Bind(R.id.sender_name)
+  EditText senderName;
+
+  @Bind(R.id.beneficiary_name)
+  EditText beneficiaryName;
+
+  @Bind(R.id.enter_phone_number_text_first)
+  protected EditText enterPhoneNumberTextFirst;
+
+  @Bind(R.id.enter_phone_number_text_second)
+  protected EditText enterPhoneNumberTextSecond;
+
+  @Bind(R.id.phone_number_text_second)
+  protected TextView phoneNumberTextSecond;
 
   @Bind(R.id.confirm_btn)
   Button btnConfirm;
@@ -427,21 +442,6 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
 
   @Bind(R.id.country_code_spinner_second)
   protected Spinner countryCodeSpinnerSecond;
-
-  @Bind(R.id.enter_phone_number_text_first)
-  protected EditText enterPhoneNumberTextFirst;
-
-  @Bind(R.id.enter_phone_number_text_second)
-  protected EditText enterPhoneNumberTextSecond;
-
-  @Bind(R.id.phone_number_text_second)
-  protected TextView phoneNumberTextSecond;
-
-  @Bind(R.id.sender_name)
-  EditText senderName;
-
-  @Bind(R.id.beneficiary_name)
-  EditText beneficiaryName;
 
   @Bind(R.id.open_contacts_list_first)
   Button openContactsListFirst;
@@ -605,18 +605,20 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
 //        double d1 = Double.valueOf(balance);
     if (!App.getInstance().getAppSharedHelper().getTamaPayByRetailer()) {
       createDialog("Service not available", false);
-
     } else {
+      if(checkInputs())
       sendConfirmRequest("balance");
     }
   }
+
 
   @OnClick(R.id.request_order_btn)
   public void OnClickRequestOrder() {
     if (!App.getInstance().getAppSharedHelper().getTamaPayByRetailer()) {
       createDialog("Service not available", false);
     } else {
-      sendConfirmRequest("retailer");
+      if(checkInputs())
+        sendConfirmRequest("retailer");
     }
   }
 
@@ -624,6 +626,31 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
   public void OnClickPayOnline() {
     Intent intent = new Intent(getActivity(), TamaPayOnlineActivity.class);
     startActivity(intent);
+  }
+
+  private boolean checkInputs() {
+
+    if (TextUtils.isEmpty(senderName.getText())) {
+      createDialog("Sender name cannot be empty", false);
+      return false;
+    }
+
+    if (TextUtils.isEmpty(beneficiaryName.getText())) {
+      createDialog("Beneficiary name cannot be empty", false);
+      return false;
+    }
+
+    if (TextUtils.isEmpty(enterPhoneNumberTextFirst.getText())) {
+      createDialog("Sender mobile number cannot be empty", false);
+      return false;
+    }
+
+    if (TextUtils.isEmpty(enterPhoneNumberTextSecond.getText())) {
+      createDialog("Beneficiary mobile number cannot be empty", false);
+      return false;
+    }
+
+    return true;
   }
 
   private void sendConfirmRequest(String pay_by) {

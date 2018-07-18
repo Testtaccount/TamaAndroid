@@ -10,10 +10,10 @@ public class MyProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activities
     View view;
     view = finder.findRequiredView(source, 2131755227, "field 'photoImageView'");
     target.photoImageView = finder.castView(view, 2131755227, "field 'photoImageView'");
-    view = finder.findRequiredView(source, 2131755296, "field 'fullNameTextInputLayout'");
-    target.fullNameTextInputLayout = finder.castView(view, 2131755296, "field 'fullNameTextInputLayout'");
-    view = finder.findRequiredView(source, 2131755297, "field 'fullNameEditText' and method 'onTextChangedFullName'");
-    target.fullNameEditText = finder.castView(view, 2131755297, "field 'fullNameEditText'");
+    view = finder.findRequiredView(source, 2131755301, "field 'fullNameTextInputLayout'");
+    target.fullNameTextInputLayout = finder.castView(view, 2131755301, "field 'fullNameTextInputLayout'");
+    view = finder.findRequiredView(source, 2131755302, "field 'fullNameEditText' and method 'onTextChangedFullName'");
+    target.fullNameEditText = finder.castView(view, 2131755302, "field 'fullNameEditText'");
     ((android.widget.TextView) view).addTextChangedListener(
       new android.text.TextWatcher() {
         @Override public void onTextChanged(
@@ -38,7 +38,7 @@ public class MyProfileActivity$$ViewBinder<T extends com.tama.chat.ui.activities
           
         }
       });
-    view = finder.findRequiredView(source, 2131755295, "method 'changePhoto'");
+    view = finder.findRequiredView(source, 2131755300, "method 'changePhoto'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

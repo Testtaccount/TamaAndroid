@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:2:1-346:12
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:2:1-347:12
 	package
 		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:4:3-26
 		INJECTED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
@@ -173,7 +173,7 @@ MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Avetik\.
 	android:required
 		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:48:5-28
 application
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:50:3-344:17
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:50:3-345:17
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.7.0] C:\Users\Avetik\.android\build-cache\ac3365c8660ff548b9d6849fcf3de97d5d1a4b28\output\AndroidManifest.xml:11:5-17:19
 MERGED from [com.crashlytics.sdk.android:beta:1.2.6] C:\Users\Avetik\.android\build-cache\002b52ee859c4a539193424c436caeac872c3a95\output\AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.4.0] C:\Users\Avetik\.android\build-cache\571d39b289e96d09fb803a33bf3fe5bc2c7e0632\output\AndroidManifest.xml:54:5-20
@@ -776,8 +776,10 @@ ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml
 		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:342:7-43
 	android:name
 		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:341:7-74
-activity#com.tama.chat.ui.activities.tamaaccount.FindARatailerActivity
-ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:343:5-90
+activity#com.tama.chat.ui.activities.tamaaccount.FindARetailerActivity
+ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:343:5-344:45
+	android:screenOrientation
+		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:344:7-43
 	android:name
 		ADDED from E:\Android\Project\Tama Android\Tama_app\src\main\AndroidManifest.xml:343:15-78
 uses-sdk

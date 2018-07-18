@@ -32,10 +32,18 @@ public class ShoppingCartFragment extends Fragment{
     private static final String TAG = "myLogs";
     private List<ProductsItemToSave> productItems;
     private TamaExpressActivity mActivity;
+    private double subTotal = 0;
+    private double shippingTotal = 0;
     private double grandTotal = 0;
     //    private EditText editTextOnFocus;
     private String balance;
     private ProductToSaveListAdapter productListAdapter;
+
+    @Bind(R.id.sub_total_text)
+    TextView subTotalView;
+
+    @Bind(R.id.shipping_total_text)
+    TextView shippingTotalView;
 
     @Bind(R.id.grand_total_text)
     TextView grandTotalView;
@@ -71,7 +79,8 @@ public class ShoppingCartFragment extends Fragment{
         }
 
         String productIds = getProductIds();
-        mActivity.setCurrentFragment(CheckoutFragment.newInstance(productIds, getProductCountry(), grandTotal));
+        mActivity.setCurrentFragment(CheckoutFragment.newInstance(productIds, getProductCountry(),
+            subTotal));
 //        new TamaAccountHelper().getHeartbeat(this.getContext(), this, user_id);
     }
 
@@ -106,29 +115,48 @@ public class ShoppingCartFragment extends Fragment{
             productListAdapter = new ProductToSaveListAdapter(productItems);
             productListView.setAdapter(productListAdapter);
         }
+        setSubTotal();
+        setShippingTotal();
         setGrandTotal();
         return view;
     }
 
     private void refreshProductListView() {
-        grandTotal = 0;
+        subTotal = 0;
 //        productItems = mActivity.getProductsListToSave();
         if (productItems != null && !productItems.isEmpty()) {
             productListView.setAdapter(new ProductToSaveListAdapter(productItems));
         } else {
             productListView.setAdapter(null);
         }
+        setSubTotal();
+        setShippingTotal();
         setGrandTotal();
         mActivity.refreshProductCountInButton();
     }
 
-    private void setGrandTotal() {
-        grandTotal = 0;
+    private void setSubTotal() {
+        subTotal = 0;
         if (productItems != null && !productItems.isEmpty()) {
             for (ProductsItemToSave item : productItems) {
-                grandTotal += (mActivity.getDouble(String.valueOf(item.count)) * mActivity.getDouble(item.product_cost));
+                subTotal += (mActivity.getDouble(String.valueOf(item.count)) * mActivity.getDouble(item.product_cost));
             }
         }
+        subTotalView.setText(String.format("%.2f", subTotal) + getString(R.string.euro));
+    }
+
+    private void setShippingTotal() {
+        shippingTotal = 0;
+        if (productItems != null && !productItems.isEmpty()) {
+            for (ProductsItemToSave item : productItems) {
+                shippingTotal += (mActivity.getDouble(String.valueOf(item.count)) * mActivity.getDouble(item.shipping_cost));
+            }
+        }
+        shippingTotalView.setText(String.format("%.2f", shippingTotal) + getString(R.string.euro));
+    }
+
+    private void setGrandTotal() {
+        grandTotal = subTotal+shippingTotal;
         grandTotalView.setText(String.format("%.2f", grandTotal) + getString(R.string.euro));
     }
 
@@ -189,7 +217,7 @@ public class ShoppingCartFragment extends Fragment{
 //        canTopup= AppUtil.intToBoolean(Integer.valueOf(getValueByKeyFromParseJSon(data,"tamatopup")));
 //        canTopupByVoucher= AppUtil.intToBoolean(Integer.valueOf(getValueByKeyFromParseJSon(data,"tamavoucher")));
 //        balance = getValueByKeyFromParseJSon(data,"balance_ws");
-////        if (mActivity.getDouble(getValueByKeyFromParseJSon(data,"balance_ws")) < grandTotal) {
+////        if (mActivity.getDouble(getValueByKeyFromParseJSon(data,"balance_ws")) < subTotal) {
 ////            createDialog();
 ////        } else {
 //
@@ -247,7 +275,7 @@ public class ShoppingCartFragment extends Fragment{
 //                String ids = getProductIds();
 //                mActivity
 //                    .setCurrentFragment(
-//                        CheckoutFragment.newInstance(ids, getProductCountry(), balance, grandTotal, false));
+//                        CheckoutFragment.newInstance(ids, getProductCountry(), balance, subTotal, false));
 //            }
 //        });
 //        alertDialog.show();
@@ -361,6 +389,8 @@ public class ShoppingCartFragment extends Fragment{
                         productItem.count = (countText.getText().toString().isEmpty() ? 0 : Integer.valueOf(countText.getText().toString()));
                         double total = mActivity.getDouble(productItem.product_cost) * (double) productItem.count;
                         totalText.setText(String.format("%.2f", total) + getString(R.string.euro));
+                        setSubTotal();
+                        setShippingTotal();
                         setGrandTotal();
                         mActivity.setProductsListToSave(productItems);
                         mActivity.refreshProductCountInButton();

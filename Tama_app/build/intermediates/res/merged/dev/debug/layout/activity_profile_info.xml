@@ -9,7 +9,7 @@
 
   <include
     android:id="@+id/include"
-    layout="@layout/toolbar_tama"
+    layout="@layout/toolbar_tama_with_subtitle"
     tools:context=".ui.activities.tamaaccount.ProfileInfoActivity" />
 
   <TextView

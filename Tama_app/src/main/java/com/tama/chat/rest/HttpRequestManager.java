@@ -27,6 +27,7 @@ public class HttpRequestManager {
     public static final int HISTORIES_TAMAEXPRESS = 7;
     public static final int HISTORIES_TRANSFER = 8;
     public static final int HISTORY_SINGLE = 9;
+    public static final int FIND_A_RETAILER = 10;
   }
 
   // ===========================================================

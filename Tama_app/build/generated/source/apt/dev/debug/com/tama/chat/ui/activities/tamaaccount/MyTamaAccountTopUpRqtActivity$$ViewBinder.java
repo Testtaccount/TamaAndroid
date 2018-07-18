@@ -9,8 +9,8 @@ public class MyTamaAccountTopUpRqtActivity$$ViewBinder<T extends com.tama.chat.u
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755312, "field 'amountNumberLayout' and method 'clickOnAmountLayout'");
-    target.amountNumberLayout = finder.castView(view, 2131755312, "field 'amountNumberLayout'");
+    view = finder.findRequiredView(source, 2131755317, "field 'amountNumberLayout' and method 'clickOnAmountLayout'");
+    target.amountNumberLayout = finder.castView(view, 2131755317, "field 'amountNumberLayout'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -19,10 +19,10 @@ public class MyTamaAccountTopUpRqtActivity$$ViewBinder<T extends com.tama.chat.u
           target.clickOnAmountLayout();
         }
       });
-    view = finder.findRequiredView(source, 2131755298, "field 'bodyLayout'");
-    target.bodyLayout = finder.castView(view, 2131755298, "field 'bodyLayout'");
-    view = finder.findRequiredView(source, 2131755315, "field 'btnSendRequest' and method 'clickOnSendRequestButton'");
-    target.btnSendRequest = finder.castView(view, 2131755315, "field 'btnSendRequest'");
+    view = finder.findRequiredView(source, 2131755303, "field 'bodyLayout'");
+    target.bodyLayout = finder.castView(view, 2131755303, "field 'bodyLayout'");
+    view = finder.findRequiredView(source, 2131755320, "field 'btnSendRequest' and method 'clickOnSendRequestButton'");
+    target.btnSendRequest = finder.castView(view, 2131755320, "field 'btnSendRequest'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -31,16 +31,16 @@ public class MyTamaAccountTopUpRqtActivity$$ViewBinder<T extends com.tama.chat.u
           target.clickOnSendRequestButton();
         }
       });
-    view = finder.findRequiredView(source, 2131755313, "field 'amountText'");
-    target.amountText = finder.castView(view, 2131755313, "field 'amountText'");
-    view = finder.findRequiredView(source, 2131755326, "field 'phoneErrorText'");
-    target.phoneErrorText = finder.castView(view, 2131755326, "field 'phoneErrorText'");
-    view = finder.findRequiredView(source, 2131755314, "field 'amountErrorText'");
-    target.amountErrorText = finder.castView(view, 2131755314, "field 'amountErrorText'");
+    view = finder.findRequiredView(source, 2131755318, "field 'amountText'");
+    target.amountText = finder.castView(view, 2131755318, "field 'amountText'");
+    view = finder.findRequiredView(source, 2131755331, "field 'phoneErrorText'");
+    target.phoneErrorText = finder.castView(view, 2131755331, "field 'phoneErrorText'");
+    view = finder.findRequiredView(source, 2131755319, "field 'amountErrorText'");
+    target.amountErrorText = finder.castView(view, 2131755319, "field 'amountErrorText'");
     view = finder.findRequiredView(source, 2131755181, "field 'checkBox'");
     target.checkBox = finder.castView(view, 2131755181, "field 'checkBox'");
-    view = finder.findRequiredView(source, 2131755325, "field 'openContactsList' and method 'clickOpenContactsList'");
-    target.openContactsList = finder.castView(view, 2131755325, "field 'openContactsList'");
+    view = finder.findRequiredView(source, 2131755330, "field 'openContactsList' and method 'clickOpenContactsList'");
+    target.openContactsList = finder.castView(view, 2131755330, "field 'openContactsList'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

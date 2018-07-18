@@ -133,6 +133,7 @@ android/support/v7/app/ActionBar.class
 android/support/v4/view/NestedScrollingChild.class
 com/google/android/exoplayer2/drm/MediaDrmCallback.class
 android/support/v4/view/animation/LookupTableInterpolator.class
+com/tama/chat/tamaAccount/entry/findARetailerPojos/RetailerData.class
 com/tama/q_municate_db/models/Message.class
 com/j256/ormlite/field/types/LongStringType.class
 com/j256/ormlite/field/BaseFieldConverter.class
@@ -531,6 +532,7 @@ com/google/android/exoplayer2/extractor/mp4/Atom$LeafAtom.class
 com/google/android/gms/dynamic/zzq.class
 org/apache/http/impl/conn/tsccm/RefQueueHandler.class
 org/jivesoftware/smack/XMPPConnection.class
+com/tama/chat/tamaAccount/entry/historyPojos/historySinglePojos/HistorySingle.class
 com/google/android/exoplayer2/drm/WidevineUtil.class
 com/google/android/exoplayer2/drm/ExoMediaCrypto.class
 org/jivesoftware/smackx/carbons/packet/CarbonExtension.class
@@ -1000,6 +1002,7 @@ android/support/design/widget/ThemeUtils.class
 android/support/v7/appcompat/R$attr.class
 com/google/android/exoplayer2/upstream/cache/Cache$CacheException.class
 com/google/android/exoplayer2/text/ttml/TtmlStyle.class
+com/tama/chat/tamaAccount/entry/historyPojos/historySinglePojos/HistorySingleData.class
 org/jetbrains/annotations/Nls.class
 javax/inject/Named.class
 com/google/android/gms/common/zzo.class
@@ -1044,6 +1047,7 @@ android/support/v4/content/IntentCompat.class
 org/jivesoftware/smack/ConnectionConfiguration.class
 dagger/Provides$Type.class
 com/quickblox/messages/model/QBDevice.class
+com/tama/chat/tamaAccount/entry/findARetailerPojos/RetailerJson.class
 com/google/android/exoplayer2/DefaultRenderersFactory$ExtensionRendererMode.class
 android/support/annotation/StyleRes.class
 com/google/android/exoplayer2/text/Cue.class
@@ -1187,6 +1191,7 @@ com/google/android/exoplayer2/drm/DrmSession$State.class
 com/google/android/exoplayer2/text/CaptionStyleCompat.class
 com/google/android/exoplayer2/ExoPlaybackException$Type.class
 com/google/android/exoplayer2/drm/ExoMediaDrm$ProvisionRequest.class
+com/tama/chat/tamaAccount/entry/findARetailerPojos/RetailerResult.class
 android/support/v7/app/ActionBarDrawerToggle$Delegate.class
 android/support/v7/widget/LinearLayoutCompat$OrientationMode.class
 com/google/android/gms/common/zzp.class

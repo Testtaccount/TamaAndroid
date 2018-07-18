@@ -9,10 +9,10 @@ public class SignUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities.au
     super.bind(finder, target, source);
 
     View view;
-    view = finder.findRequiredView(source, 2131755296, "field 'fullNameInputLayout'");
-    target.fullNameInputLayout = finder.castView(view, 2131755296, "field 'fullNameInputLayout'");
-    view = finder.findRequiredView(source, 2131755297, "field 'fullNameEditText' and method 'onTextChangedFullName'");
-    target.fullNameEditText = finder.castView(view, 2131755297, "field 'fullNameEditText'");
+    view = finder.findRequiredView(source, 2131755301, "field 'fullNameInputLayout'");
+    target.fullNameInputLayout = finder.castView(view, 2131755301, "field 'fullNameInputLayout'");
+    view = finder.findRequiredView(source, 2131755302, "field 'fullNameEditText' and method 'onTextChangedFullName'");
+    target.fullNameEditText = finder.castView(view, 2131755302, "field 'fullNameEditText'");
     ((android.widget.TextView) view).addTextChangedListener(
       new android.text.TextWatcher() {
         @Override public void onTextChanged(
@@ -37,9 +37,9 @@ public class SignUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities.au
           
         }
       });
-    view = finder.findRequiredView(source, 2131755241, "field 'avatarImageView'");
-    target.avatarImageView = finder.castView(view, 2131755241, "field 'avatarImageView'");
-    view = finder.findRequiredView(source, 2131755333, "method 'selectAvatar'");
+    view = finder.findRequiredView(source, 2131755246, "field 'avatarImageView'");
+    target.avatarImageView = finder.castView(view, 2131755246, "field 'avatarImageView'");
+    view = finder.findRequiredView(source, 2131755338, "method 'selectAvatar'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -48,7 +48,7 @@ public class SignUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities.au
           target.selectAvatar(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131755334, "method 'openUserAgreement'");
+    view = finder.findRequiredView(source, 2131755339, "method 'openUserAgreement'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

@@ -336,7 +336,7 @@
                       android:padding="3dp"
                       android:fontFamily="sans-serif-medium"
                       android:gravity="center"
-                      android:text="Find a Retailer"
+                      android:text="@string/find_a_retailer"
                       android:textColor="@color/black" />
                   </LinearLayout>
 

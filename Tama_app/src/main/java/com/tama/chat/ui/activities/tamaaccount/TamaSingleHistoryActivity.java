@@ -50,6 +50,9 @@ public class TamaSingleHistoryActivity extends
   @Bind(R.id.mobile_no)
   TextView mobileNo;
 
+  @Bind(R.id.order_status)
+  TextView orderStatus;
+
   @Bind(R.id.status_btn)
   TextView statusBtn;
 
@@ -140,16 +143,21 @@ public class TamaSingleHistoryActivity extends
     if (element.getMobileNo() != null) {
       mobileNo.setText(element.getMobileNo().toString());
     }
-    if (element.getStatus().contains("Accepted") || element.getStatus().contains("successful")) {
-      statusBtn.setText(getString(R.string.succes));
-      statusBtn.setBackgroundResource(R.drawable.background_green_oval);
-    } else if (element.getStatus().contains("In Progress")) {
-      statusBtn.setText(getString(R.string.progress));
-      statusBtn.setBackgroundResource(R.drawable.background_orange_oval);
-    } else {
-      statusBtn.setText(getString(R.string.denied));
-      statusBtn.setBackgroundResource(R.drawable.background_red_oval);
-    }
+
+    orderStatus.setText(element.getOrderStatus());
+
+//    if (element.getOrderStatus().contains("Accepted") || element.getOrderStatus().contains("successful")) {
+//      statusBtn.setText(getString(R.string.succes));
+//      statusBtn.setBackgroundResource(R.drawable.background_green_oval);
+//    } else if (element.getOrderStatus().contains("In Progress")) {
+//      statusBtn.setText(getString(R.string.progress));
+//      statusBtn.setBackgroundResource(R.drawable.background_orange_oval);
+//    } else {
+//      statusBtn.setText(getString(R.string.denied));
+//      statusBtn.setBackgroundResource(R.drawable.background_red_oval);
+//    }
+
+
     if (element.getImage() != null) {
       loadImageByUri(element.getImage(), imageView);
     }

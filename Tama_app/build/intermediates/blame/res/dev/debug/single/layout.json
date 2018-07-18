@@ -256,6 +256,10 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\view_chat_attach_message_opponent.xml"
     },
     {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\toolbar_tama_with_subtitle.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\toolbar_tama_with_subtitle.xml"
+    },
+    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\com_facebook_activity_layout.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\layout\\com_facebook_activity_layout.xml"
     },
@@ -636,6 +640,10 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\item_search_retailer.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\item_search_retailer.xml"
+    },
+    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\messenger_button_send_blue_small.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\layout\\messenger_button_send_blue_small.xml"
     },
@@ -762,6 +770,10 @@
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\emojicon_item.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\ba349513ecd4bc5b86431111b522ce1d08b1011c\\output\\res\\layout\\emojicon_item.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_find_a_retailer.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_find_a_retailer.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\design_layout_tab_icon.xml",
@@ -946,10 +958,6 @@
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\item_denominations.xml",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\item_denominations.xml"
-    },
-    {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\activity_find_a_ratailer.xml",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\layout\\activity_find_a_ratailer.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\layout\\exo_playback_control_view.xml",

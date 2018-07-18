@@ -24,7 +24,7 @@ import com.tama.chat.tamaAccount.TamaAboutUsActivity;
 import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.tamaaccount.ContactUsActivity;
-import com.tama.chat.ui.activities.tamaaccount.FindARatailerActivity;
+import com.tama.chat.ui.activities.tamaaccount.FindARetailerActivity;
 import com.tama.chat.ui.activities.tamaaccount.MyTamaRequestActivity;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
 import com.tama.chat.ui.activities.tamaaccount.TamaHistoryActivity;
@@ -171,9 +171,9 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
   }
 
   @OnClick(R.id.button_tama_find_a_retailer)
-  public void startTamaFindARatailerActivity() {
+  public void startTamaFindARetailerActivity() {
     setButtonEnable(false);
-    Intent intent = new Intent(baseActivity, FindARatailerActivity.class);
+    Intent intent = new Intent(baseActivity, FindARetailerActivity.class);
     startActivity(intent);
   }
 

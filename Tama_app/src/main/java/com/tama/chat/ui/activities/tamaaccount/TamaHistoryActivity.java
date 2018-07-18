@@ -28,14 +28,6 @@ import com.tama.chat.tamaAccount.entry.historyPojos.TamaHistoryElement;
 import com.tama.chat.tamaAccount.entry.historyPojos.historySinglePojos.HistorySingle;
 import com.tama.chat.tamaAccount.entry.historyPojos.historySinglePojos.HistorySingleData;
 import com.tama.chat.ui.fragments.tamaaccount.TamaHistoryFragment;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.charset.Charset;
 import java.util.List;
 
 public class TamaHistoryActivity extends TamaAccountBaseActivity implements  ViewPager.OnPageChangeListener ,TamaHistoryFragment.OnHistoryFragmentInteractionListener{
@@ -48,7 +40,6 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 
   @Bind(R.id.progress_bar)
   public ProgressBar mProgressBar;
-
 
   @Bind(R.id.ctl)
   TabLayout mTabLayout;
@@ -77,10 +68,6 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
   }
 
   private void loadHistory(int position) {
-    TamaHistoryFragment fragment=((TamaHistoryFragment)mFragmentAdapter.getItem(position));
-    if (fragment!=null) {
-      mProgressBar.setVisibility(View.VISIBLE);
-    }
     new TamaHistoryElementsAsyncTask().execute(String.valueOf(position));
   }
 
@@ -132,7 +119,6 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
   @Override
   public void onPageScrollStateChanged(int state) {
     Log.d(TAG, "onPageScrollStateChanged - " + state);
-
   }
 
   @Override
@@ -142,6 +128,16 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 
 
   private class TamaHistoryElementsAsyncTask extends AsyncTask<String, Void, List<HistoryResult>> {
+
+    @Override
+    protected void onPreExecute() {
+      super.onPreExecute();
+      TamaHistoryFragment fragment=((TamaHistoryFragment)mFragmentAdapter.getItem(position));
+      if (fragment!=null) {
+        mProgressBar.setVisibility(View.VISIBLE);
+      }
+    }
+
     int position;
     @Override
     protected  List<HistoryResult> doInBackground(String... params) {
@@ -157,10 +153,10 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
            url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_MYTAMA,getLanguages(getAppContext()));
           break;
         case 2:
-           url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_TAMA_TOPUP,getLanguages(getAppContext()));
+           url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_TAMAEXPRESS,getLanguages(getAppContext()));
           break;
         case 3:
-           url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_TAMAEXPRESS,getLanguages(getAppContext()));
+           url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_TAMA_TOPUP,getLanguages(getAppContext()));
           break;
         case 4:
            url = APIUtil.getURL(HttpRequestManager.RequestType.HISTORIES_TRANSFER,getLanguages(getAppContext()));
@@ -232,84 +228,12 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
       return historyHistoryResults;
     }
 
-
     @Override
     protected void onPostExecute(List<HistoryResult> historyHistoryResultList) {
       if (historyHistoryResultList == null) {
         return;
       }
       updateUi(position,historyHistoryResultList);
-
-    }
-
-    /**
-     * Returns new URL object from the given string URL.
-     */
-    private URL createUrl(String stringUrl) {
-      URL url = null;
-      try {
-        url = new URL(stringUrl);
-      } catch (MalformedURLException exception) {
-//        Log.e(TAG, "Error with creating URL", exception);
-        return null;
-      }
-      return url;
-    }
-
-    /**
-     * Make an HTTP request to the given URL and return a String as the response.
-     */
-    private String makeHttpRequest(URL url) throws IOException {
-      String jsonResponse = "";
-      HttpURLConnection urlConnection = null;
-      InputStream inputStream = null;
-      try {
-        urlConnection = (HttpURLConnection) url.openConnection();
-        urlConnection.setRequestMethod("GET");
-        urlConnection.setReadTimeout(10000 /* milliseconds */);
-        urlConnection.setConnectTimeout(15000 /* milliseconds */);
-        urlConnection.connect();
-        inputStream = urlConnection.getInputStream();
-        jsonResponse = readFromStream(inputStream);
-      } catch (IOException e) {
-        // TODO: Handle the exception
-      } finally {
-        if (urlConnection != null) {
-          urlConnection.disconnect();
-        }
-        if (inputStream != null) {
-          // function must handle java.io.IOException here
-          inputStream.close();
-        }
-      }
-      return jsonResponse;
-    }
-
-    /**
-     * Convert the {@link InputStream} into a String which contains the
-     * whole JSON response from the server.
-     */
-    private String readFromStream(InputStream inputStream) throws IOException {
-      StringBuilder output = new StringBuilder();
-      if (inputStream != null) {
-        InputStreamReader inputStreamReader = new InputStreamReader(inputStream,
-            Charset.forName("UTF-8"));
-        BufferedReader reader = new BufferedReader(inputStreamReader);
-        String line = reader.readLine();
-        while (line != null) {
-          output.append(line);
-          line = reader.readLine();
-        }
-      }
-      return output.toString();
-    }
-
-
-    private TamaHistoryElement extractFeatureFromJson(String dataJSON) {
-
-      TamaHistoryElement data1 = new Gson().fromJson(dataJSON, TamaHistoryElement.class);
-
-      return data1;
 
     }
   }
@@ -398,76 +322,6 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 //      setCurrentFragment(TamaSingleHistoryActivity.newInstance(historyResult));
     }
 
-    /**
-     * Returns new URL object from the given string URL.
-     */
-    private URL createUrl(String stringUrl) {
-      URL url = null;
-      try {
-        url = new URL(stringUrl);
-      } catch (MalformedURLException exception) {
-//        Log.e(TAG, "Error with creating URL", exception);
-        return null;
-      }
-      return url;
-    }
-
-    /**
-     * Make an HTTP request to the given URL and return a String as the response.
-     */
-    private String makeHttpRequest(URL url) throws IOException {
-      String jsonResponse = "";
-      HttpURLConnection urlConnection = null;
-      InputStream inputStream = null;
-      try {
-        urlConnection = (HttpURLConnection) url.openConnection();
-        urlConnection.setRequestMethod("GET");
-        urlConnection.setReadTimeout(10000 /* milliseconds */);
-        urlConnection.setConnectTimeout(15000 /* milliseconds */);
-        urlConnection.connect();
-        inputStream = urlConnection.getInputStream();
-        jsonResponse = readFromStream(inputStream);
-      } catch (IOException e) {
-        // TODO: Handle the exception
-      } finally {
-        if (urlConnection != null) {
-          urlConnection.disconnect();
-        }
-        if (inputStream != null) {
-          // function must handle java.io.IOException here
-          inputStream.close();
-        }
-      }
-      return jsonResponse;
-    }
-
-    /**
-     * Convert the {@link InputStream} into a String which contains the
-     * whole JSON response from the server.
-     */
-    private String readFromStream(InputStream inputStream) throws IOException {
-      StringBuilder output = new StringBuilder();
-      if (inputStream != null) {
-        InputStreamReader inputStreamReader = new InputStreamReader(inputStream,
-            Charset.forName("UTF-8"));
-        BufferedReader reader = new BufferedReader(inputStreamReader);
-        String line = reader.readLine();
-        while (line != null) {
-          output.append(line);
-          line = reader.readLine();
-        }
-      }
-      return output.toString();
-    }
-
-
-    private TamaHistoryElement extractFeatureFromJson(String dataJSON) {
-
-      TamaHistoryElement data1 = new Gson().fromJson(dataJSON, TamaHistoryElement.class);
-
-      return data1;
-
-    }
   }
 
   private void openSingleHistoryActivity(HistoryResult historyResult) {
@@ -490,6 +344,7 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 //      }
 
       mViewPager.setAdapter(mFragmentAdapter);
+
 //      mTabLayout.post(new Runnable() {
 //        @Override
 //        public void run() {

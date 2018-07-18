@@ -12,7 +12,7 @@
     <include
       android:visibility="visible"
       android:id="@+id/toolbar_tama_view"
-      layout="@layout/toolbar_tama"/>
+      layout="@layout/toolbar_tama_with_subtitle"/>
 
     <include
       layout="@layout/include_layout_tab"/>
