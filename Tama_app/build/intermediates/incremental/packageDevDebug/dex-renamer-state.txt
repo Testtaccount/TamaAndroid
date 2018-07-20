@@ -1,4 +1,4 @@
-#Wed Jul 18 15:49:55 AMT 2018
+#Fri Jul 20 18:21:07 AMT 2018
 base.0=E\:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\transforms\\dex\\dev\\debug\\folders\\1000\\1f\\main
 renamed.1=classes.dex
 renamed.0=classes2.dex

@@ -360,6 +360,8 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
     App.getInstance().getAppSharedHelper().saveTamaPayByRetailer(this.pay_to_retailer);
     App.getInstance().getAppSharedHelper().savePromoTamaexpressBalance(this.promo_tamaexpress_balance);
     App.getInstance().getAppSharedHelper().savePromoTamatopupBalance(this.promo_tamatopup_balance);
+    App.getInstance().getAppSharedHelper().setMinOrderAmountTamaexpress(min_order_amount_tamaexpress);
+    App.getInstance().getAppSharedHelper().setMinOrderAmountTamatopup(min_order_amount_tamatopup);
 
     if (tamaAccountBalance != null) {
       tamaAccountBalance.setText(this.balance);

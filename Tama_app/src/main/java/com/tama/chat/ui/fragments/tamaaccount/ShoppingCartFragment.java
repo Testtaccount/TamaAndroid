@@ -21,6 +21,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
+import com.tama.chat.App;
 import com.tama.chat.R;
 import com.tama.chat.tamaAccount.ProductsItemToSave;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
@@ -152,11 +153,17 @@ public class ShoppingCartFragment extends Fragment{
                 shippingTotal += (mActivity.getDouble(String.valueOf(item.count)) * mActivity.getDouble(item.shipping_cost));
             }
         }
-        shippingTotalView.setText(String.format("%.2f", shippingTotal) + getString(R.string.euro));
+        if(subTotal < mActivity.getDouble(App.getInstance().getAppSharedHelper().getMinOrderAmountTamaexpress())) {
+            shippingTotalView.setText(String.format("%.2f", shippingTotal) + getString(R.string.euro));
+        }else {
+            shippingTotalView.setText("FREE");
+        }
     }
 
     private void setGrandTotal() {
-        grandTotal = subTotal+shippingTotal;
+        if(shippingTotal< mActivity.getDouble(App.getInstance().getAppSharedHelper().getMinOrderAmountTamaexpress())) {
+            grandTotal = subTotal+shippingTotal;
+        }
         grandTotalView.setText(String.format("%.2f", grandTotal) + getString(R.string.euro));
     }
 

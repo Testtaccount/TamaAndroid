@@ -25,6 +25,7 @@ import com.tama.chat.tamaAccount.Denominations;
 import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaDenominationsAdapter;
 import com.tama.chat.ui.fragments.chats.ContactsListFragment;
+import com.tama.chat.utils.ToastUtils;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -118,11 +119,21 @@ public class TamaTopUpActivity extends BaseFlagActivity implements OnItemClickLi
     initCodes();
   }
 
+  public String removeFirstChar(String s){
+    return s.substring(1);
+  }
+
   private void createSecondPage(String mobile_number, String country, String operator,
       String destination_currency, List<String> product_list, List<String> retail_price_list) {
     //    promoCheckBox.setVisibility(View.VISIBLE);
     String promoBalance= App.getInstance().getAppSharedHelper().getPromoTamatopupBalance();
-    promoCheckBox.setText("Use My Tama Promo Balance "+ promoBalance);
+    if (promoCheckBox != null && getDouble(removeFirstChar(promoBalance))!=0) {
+      promoCheckBox.setVisibility(View.VISIBLE);
+      promoCheckBox.setText("Use My Tama Promo Balance "+ promoBalance);
+    }else {
+      promoCheckBox.setVisibility(View.GONE);
+      promoCheckBox.setText("");
+    }
     denominations = getDenominationsFromJson(mobile_number,country,operator,destination_currency,product_list,retail_price_list);
     tamaTopupFirstPage.setVisibility(View.GONE);
     tamaTopupSecondPage.setVisibility(View.VISIBLE);
@@ -172,7 +183,11 @@ public class TamaTopUpActivity extends BaseFlagActivity implements OnItemClickLi
     String use_promo = usePromo ? "yes" : "no";
     String pay_by = "balance";
 
-    new TamaAccountHelper().confirmTamaTopUp(this, topup_no,country_code, euro_amount, local_amount, dest_currency,pay_by,use_promo);
+    if (getDouble(local_amount) < getDouble(App.getInstance().getAppSharedHelper().getMinOrderAmountTamatopup())) {
+      ToastUtils.longToast("The minimum amount that you can topup is " + App.getInstance().getAppSharedHelper().getMinOrderAmountTamatopup());
+      return;
+    }
+    new TamaAccountHelper().confirmTamaTopUp(this, topup_no, country_code, euro_amount, local_amount, dest_currency, pay_by, use_promo);
   }
 
   @OnCheckedChanged(R.id.checkbox_promo)
@@ -183,7 +198,6 @@ public class TamaTopUpActivity extends BaseFlagActivity implements OnItemClickLi
       usePromo = false;
     }
   }
-
 
   private Denominations getDenominationsFromJson(String mobile_number, String country,
       String operator, String destination_currency, List<String> product_list,

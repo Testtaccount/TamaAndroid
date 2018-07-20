@@ -58,6 +58,8 @@ public class SharedHelper extends CoreSharedHelper {
         public static final String TAMA_PAY_BY_RETAILER = "TAMA_PAY_BY_RETAILER";
         public static final String TAMA_PROMO_TAMAEXPRESS_BALANCE = "TAMA_PROMO_TAMAEXPRESS_BALANCE";
         public static final String TAMA_PROMO_TAMATOPUP_BALANCE = "TAMA_PROMO_TAMATOPUP_BALANCE";
+        public static final String MIN_ORDER_AMOUNT_TAMAEXPRESS = "MIN_ORDER_AMOUNT_TAMAEXPRESS";
+        public static final String MIN_ORDERA_MOUNT_TAMATOPUP = "MIN_ORDERA_MOUNT_TAMATOPUP";
     }
 
     public SharedHelper(Context context) {
@@ -163,6 +165,24 @@ public class SharedHelper extends CoreSharedHelper {
 
     public void savePromoTamatopupBalance(String promoTamaetopupBalance) {
         savePref(Constants.TAMA_PROMO_TAMATOPUP_BALANCE, promoTamaetopupBalance);
+    }
+
+
+    public String getMinOrderAmountTamaexpress() {
+        return getPref(Constants.MIN_ORDER_AMOUNT_TAMAEXPRESS, null);
+    }
+
+    public void setMinOrderAmountTamaexpress(String minOrderAmountTamaexpress) {
+        savePref(Constants.MIN_ORDER_AMOUNT_TAMAEXPRESS, minOrderAmountTamaexpress);
+    }
+
+
+    public String getMinOrderAmountTamatopup() {
+        return getPref(Constants.MIN_ORDERA_MOUNT_TAMATOPUP, null);
+    }
+
+    public void setMinOrderAmountTamatopup(String minOrderAmountTamatopup) {
+        savePref(Constants.MIN_ORDERA_MOUNT_TAMATOPUP, minOrderAmountTamatopup);
     }
 
     public String getProductsList() {

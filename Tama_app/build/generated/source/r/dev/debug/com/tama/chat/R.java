@@ -8976,7 +8976,17 @@ containing a value of this type.
         public static final int TimeProgressBarView=0x7f0c01ef;
         public static final int ToolbarStyle=0x7f0c01f0;
         public static final int ToolbarStyleCall=0x7f0c01f1;
+        /** <item name="android:colorControlNormal" tools:ignore="NewApi">@color/dark_gray</item>
+&lt;!&ndash; Hack! &ndash;&gt;
+<item name="homeAsUpIndicator">@drawable/cast_abc_scrubber_control_off_mtrl_alpha</item>
+&lt;!&ndash; ! &ndash;&gt;
+         */
         public static final int ToolbarTheme=0x7f0c01f2;
+        /** <item name="android:colorControlNormal" tools:ignore="NewApi">@color/light_gray</item>
+&lt;!&ndash; Hack! &ndash;&gt;
+<item name="homeAsUpIndicator">@drawable/cast_abc_scrubber_control_off_mtrl_alpha</item>
+&lt;!&ndash; ! &ndash;&gt;
+         */
         public static final int ToolbarThemeCall=0x7f0c01f3;
         public static final int VideoAttachDurationView=0x7f0c01f4;
         public static final int VideoAttachDurationView_Left=0x7f0c01f5;

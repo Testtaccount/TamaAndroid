@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\34f8896745313d6a95295cb58925e0a7da7d42ee\\output\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\fui_ic_twitter_bird_white_24dp.xml",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\\output\\res\\drawable\\fui_ic_twitter_bird_white_24dp.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\tw__login_btn_pressed.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\20cf879fd5418271a5007097b7180ba509367f8c\\output\\res\\drawable\\tw__login_btn_pressed.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\fui_ic_twitter_bird_white_24dp.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\c9cd45c0c209fde23c12be63d919bc0ff184e4f9\\output\\res\\drawable\\fui_ic_twitter_bird_white_24dp.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\abc_item_background_holo_light.xml",
@@ -60,20 +60,20 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\879e4c391d93a1c4d3b2e1b2b3b111a18c5aaea7\\output\\res\\drawable\\md_transparent.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\messenger_button_white_bg_selector.xml",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable\\messenger_button_white_bg_selector.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\f92b20edd533d15bb0b651fdaa17eca62d64070e\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\messenger_button_white_bg_selector.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable\\messenger_button_white_bg_selector.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\f92b20edd533d15bb0b651fdaa17eca62d64070e\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\abc_vector_test.xml",
@@ -272,12 +272,12 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable\\selector_button_red_rect.xml"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\edit_box_drop_selector.xml",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable\\edit_box_drop_selector.xml"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\selector_button_light_gray.xml",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable\\selector_button_light_gray.xml"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\edit_box_drop_selector.xml",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable\\edit_box_drop_selector.xml"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable\\tw__login_btn_default.xml",

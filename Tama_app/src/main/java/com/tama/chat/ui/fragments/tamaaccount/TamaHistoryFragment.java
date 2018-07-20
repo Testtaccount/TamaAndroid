@@ -21,6 +21,7 @@ import com.tama.chat.tamaAccount.entry.historyPojos.HistoryData;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryResult;
 import com.tama.chat.tamaAccount.entry.historyPojos.TamaHistoryElement;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -151,6 +152,14 @@ public class TamaHistoryFragment extends Fragment implements HistoryAdapter.OnHi
     }
 
     public void setHistoryResultList(List<HistoryResult> historyResultList) {
+//        Collections.sort(historyResultList, new Comparator<HistoryResult>(){
+//            public int compare(HistoryResult o1, HistoryResult o2){
+//                if(o1.getHistoryId() == o2.getHistoryId())
+//                    return 0;
+//                return o1.getHistoryId() < o2.getHistoryId() ? 1 : -1;
+//            }
+//        });
+        Collections.reverse(historyResultList);
         mAdapter.set(historyResultList);
         if(mHistoryResultList.isEmpty()){
             errorMessageText.setVisibility(View.VISIBLE);

@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\f92b20edd533d15bb0b651fdaa17eca62d64070e\\output\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_play_circle_outline_white_24dp.png",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\380438f198877825db6978745ff2b29f0ce2d08c\\output\\res\\drawable-mdpi-v4\\ic_play_circle_outline_white_24dp.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_send_message_dark.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_send_message_dark.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_play_circle_outline_white_24dp.png",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\380438f198877825db6978745ff2b29f0ce2d08c\\output\\res\\drawable-mdpi-v4\\ic_play_circle_outline_white_24dp.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
@@ -64,24 +64,24 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-mdpi\\ic_next.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_settings.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-mdpi\\ic_settings.png"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_status_mes_sent_received.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_status_mes_sent_received.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\com_facebook_tooltip_black_bottomnub.png",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_status_mes_sent_received.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_status_mes_sent_received.png"
-    },
-    {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_user_send_message_dark.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_user_send_message_dark.png"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_settings.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-mdpi\\ic_settings.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_camera_rear_white.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_camera_rear_white.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_user_send_message_dark.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_user_send_message_dark.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
@@ -108,24 +108,24 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_status_mes_sent.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\com_facebook_tooltip_black_background.9.png",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_background.9.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\md_nav_back.png",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\879e4c391d93a1c4d3b2e1b2b3b111a18c5aaea7\\output\\res\\drawable-mdpi-v4\\md_nav_back.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_add_user_white.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_add_user_white.png"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\com_facebook_tooltip_black_background.9.png",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_background.9.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_alert_white.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_alert_white.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\com_facebook_button_icon_white.png",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable-mdpi-v4\\com_facebook_button_icon_white.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_alert_white.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_alert_white.png"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_add_user_white.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_add_user_white.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_call.png",
@@ -180,12 +180,12 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\dgts__login_header.png",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\fbfa7c9fcaf12064224d0a83152ad5248de88dca\\output\\res\\drawable-mdpi-v4\\dgts__login_header.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\dgts__login_header.png",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\fbfa7c9fcaf12064224d0a83152ad5248de88dca\\output\\res\\drawable-mdpi-v4\\dgts__login_header.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_launcher.png",
@@ -232,12 +232,12 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable-mdpi-v4\\com_facebook_profile_picture_blank_square.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_camera_off_dark.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_camera_off_dark.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_action_start_chat.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_action_start_chat.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_camera_off_dark.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\ic_camera_off_dark.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_fb_white.png",
@@ -276,12 +276,12 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-mdpi\\ic_remove.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\about_logo_qb.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\about_logo_qb.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\orca_emoji_category_objects.png",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\ba349513ecd4bc5b86431111b522ce1d08b1011c\\output\\res\\drawable-mdpi\\orca_emoji_category_objects.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\about_logo_qb.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-mdpi\\about_logo_qb.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-mdpi-v4\\ic_contacts.png",

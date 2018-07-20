@@ -44,7 +44,7 @@
     android:paddingRight="20dp"
     android:gravity="top"
     android:orientation="vertical"
-    android:visibility="gone">
+    android:visibility="visible">
 
     <RelativeLayout
       android:layout_width="match_parent"
@@ -257,7 +257,7 @@
     android:paddingRight="10dp"
     android:gravity="top"
     android:orientation="vertical"
-    android:visibility="visible">
+    android:visibility="gone">
 
     <GridView
       tools:listitem="@layout/item_denominations"

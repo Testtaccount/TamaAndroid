@@ -177,7 +177,7 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 
       } else {
         Logger.e(TAG, httpConnection.getHttpConnectionMessage());
-        HttpRequestManager.handleFailedRequest( httpConnection);
+        HttpRequestManager.handleFailedRequest(httpConnection);
       }
 
 

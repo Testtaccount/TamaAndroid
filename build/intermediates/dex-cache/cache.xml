@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="E:\Android\Project\Tama Android\Tama_app\build\intermediates\incremental-runtime-classes\dev\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\10000\instant-run_294a4b04d9c601ac42315110d1279d0ba9cd7b9d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Avetik\.android\build-cache\0c708a243bcde7192e8301746b5f7a82c0f8b5f1\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -426,6 +417,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="E:\Android\Project\Tama Android\q-municate_base_service\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0ec6f2bb30e0f677cbe694cce848c113e64330f3">
+        <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\4\classes_6b84f31a14def7a53d150707d03a359eae3d3eec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Avetik\.android\build-cache\c86f59d366445ef391ece65b55f8927b9ef2eb1f\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -633,12 +633,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="E:\Android\Project\Tama Android\q-municate_user_cache\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="932c30414930f95a0eecfc17c6801d393519fbd0">
+        <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\4\classes_aa61ac347bd2b21527b8e5a82618a18bf50a5568\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Avetik\.gradle\caches\modules-2\files-2.1\de.measite.minidns\minidns\0.1.7\993582d1455b93a5723d2af4b39d8679735b3550\minidns-0.1.7.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
         sha1="993582d1455b93a5723d2af4b39d8679735b3550">
         <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\10\minidns-0.1.7_7550f092f067562117846ae41362c51ac8cf97f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Project\Tama Android\q-municate_auth_service\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e55a92156bd13e2fd06f2c10e1c13b75b10f46b6">
+        <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\4\classes_1eb4765598bd7a07a99f04551cbc4e79db7c7f5f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -702,6 +720,15 @@
         revision="26.0.2"
         sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
         <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\10\butterknife-7.0.1_91983da3555d16a97a092fcdfcd3c292adcf4b0a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Project\Tama Android\Q-municate_db\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="72ae52f3c4ed2161671c50bf3b9277a178be3b75">
+        <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\4\classes_ab0d5e718e791f0473d6527fed376ae59f1a1dc3\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -957,15 +984,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="E:\Android\Project\Tama Android\Tama_app\build\intermediates\incremental-classes\dev\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="1a089bf5818fe7d73795ac6881c28fbf708af759">
-        <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\10000\instant-run-bootstrap_de8c848a17a0745ee10b089160f24d18a5db1f96\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Avetik\.android\build-cache\380438f198877825db6978745ff2b29f0ce2d08c\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -1044,6 +1062,15 @@
         revision="26.0.2"
         sha1="acc33023966f868dfe3ecb77a3ce5676dc8de92d">
         <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\10\classes_8c8eb1bf4a95ddde168b5e4347febaa8537b8822\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Project\Tama Android\q-municate_user_service\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="784b5fcafe09e176b5c7a13f6e2cb77ad4f4c298">
+        <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\4\classes_d974c094a1457916aea0c34fce1676f398a279b3\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -1188,6 +1215,15 @@
         revision="26.0.2"
         sha1="709b41fbacf3c153f8d7f8a3e29968e4fefe8959">
         <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\10\classes_494737e4fb0cb0c52abdbcb05e7429a8b6af9802\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Project\Tama Android\q-municate_base_cache\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="242d7557ea54b1e27afe46e0d1bf3b8bb3dfab9f">
+        <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\4\classes_5681b13294230b3a5e70fc0b60f5238f0515b1b4\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -1566,6 +1602,15 @@
         revision="26.0.2"
         sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
         <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\10\classes_e81ab5e12881102cfdd2e99bc14fee7a412fe596\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\Project\Tama Android\Q-municate_core\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="64b14d27b5584171319bfe14533f6692c99a4055">
+        <dex dex="E:\Android\Project\Tama Android\Tama_app\build\intermediates\transforms\dex\dev\debug\folders\1000\4\classes_009d1637045835fa0ee4198d5c250c20c7fac76d\classes.dex" />
     </item>
     <item
         is-multidex="true"

@@ -539,7 +539,17 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
     enterPhoneNumberTextFirst.setImeOptions(EditorInfo.IME_ACTION_SEND);
     enterPhoneNumberTextFirst.setImeActionLabel(getString(R.string.label_send), EditorInfo.IME_ACTION_SEND);
     String expressBalance=sharedHelper.getPromoTamaexpressBalance();
-    expressCheckBox.setText("Use My Tama Express Balance "+ expressBalance);
+    if (expressCheckBox != null && mActivity.getDouble(removeFirstChar(expressBalance))!=0) {
+      expressCheckBox.setVisibility(View.VISIBLE);
+      expressCheckBox.setText("Use My Tama Express Balance "+ expressBalance);
+    }else {
+      expressCheckBox.setVisibility(View.GONE);
+      expressCheckBox.setText("");
+    }
+  }
+
+  public String removeFirstChar(String s){
+    return s.substring(1);
   }
 
   protected void initCodes() {
