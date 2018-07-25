@@ -20,7 +20,9 @@ import com.tama.chat.R;
 import com.tama.chat.tamaAccount.ProductsItem;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
+import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.image.ImageLoaderUtils;
+import com.tama.q_municate_core.utils.NetworkUtil;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -67,8 +69,11 @@ public class ProductsFragment extends Fragment implements TamaAccountHelperListe
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 //                new TamaAccountHelper().getListOfCategories(accountHelperListener);
-                mActivity
-                    .setCurrentFragment(SingleProductFragment.newInstance(productsItems.get(position)));
+                if (!NetworkUtil.isConnected(getActivity())) {
+                    ToastUtils.longToast(R.string.no_internet_conection);
+                    return;
+                }
+                mActivity.setCurrentFragment(SingleProductFragment.newInstance(productsItems.get(position)));
             }
         });
         if (!productsItems.isEmpty()) {

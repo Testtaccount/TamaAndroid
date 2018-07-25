@@ -71,9 +71,9 @@ public final class R {
         public static final int common_google_signin_btn_text_light_focused = 0x7f02009b;
         public static final int common_google_signin_btn_text_light_normal = 0x7f02009c;
         public static final int common_google_signin_btn_text_light_normal_background = 0x7f02009d;
-        public static final int googleg_disabled_color_18 = 0x7f02050c;
-        public static final int googleg_standard_color_18 = 0x7f02050d;
-        public static final int quantum_ic_art_track_grey600_48 = 0x7f0205cc;
+        public static final int googleg_disabled_color_18 = 0x7f02050d;
+        public static final int googleg_standard_color_18 = 0x7f02050e;
+        public static final int quantum_ic_art_track_grey600_48 = 0x7f0205cd;
     }
     public static final class id {
         public static final int adjust_height = 0x7f10006f;
@@ -82,7 +82,7 @@ public final class R {
         public static final int button = 0x7f10008b;
         public static final int center = 0x7f10003e;
         public static final int dark = 0x7f100082;
-        public static final int email = 0x7f100245;
+        public static final int email = 0x7f100246;
         public static final int hybrid = 0x7f100071;
         public static final int icon_only = 0x7f10007f;
         public static final int light = 0x7f100083;
@@ -96,7 +96,7 @@ public final class R {
         public static final int terrain = 0x7f100073;
         public static final int text = 0x7f100022;
         public static final int text2 = 0x7f100023;
-        public static final int toolbar = 0x7f1002e9;
+        public static final int toolbar = 0x7f1002ea;
         public static final int wide = 0x7f100081;
         public static final int wrap_content = 0x7f10005b;
     }

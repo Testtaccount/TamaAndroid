@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class TamaHistoryFragment$$ViewBinder<T extends com.tama.chat.ui.fragments.tamaaccount.TamaHistoryFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131755582, "field 'mRecyclerView'");
-    target.mRecyclerView = finder.castView(view, 2131755582, "field 'mRecyclerView'");
+    view = finder.findRequiredView(source, 2131755583, "field 'mRecyclerView'");
+    target.mRecyclerView = finder.castView(view, 2131755583, "field 'mRecyclerView'");
     view = finder.findRequiredView(source, 2131755265, "field 'errorMessageText'");
     target.errorMessageText = finder.castView(view, 2131755265, "field 'errorMessageText'");
   }

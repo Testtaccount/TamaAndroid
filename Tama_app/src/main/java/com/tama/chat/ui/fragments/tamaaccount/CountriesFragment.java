@@ -25,6 +25,7 @@ import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
 import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.image.ImageLoaderUtils;
+import com.tama.q_municate_core.utils.NetworkUtil;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -124,6 +125,10 @@ public class CountriesFragment extends Fragment implements TamaAccountHelperList
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (!NetworkUtil.isConnected(getContext())) {
+                    ToastUtils.longToast(R.string.no_internet_conection);
+                    return;
+                }
                 alertDialog.cancel();
                 prodList.clear();
                 mActivity.setProductsListToSave(prodList);

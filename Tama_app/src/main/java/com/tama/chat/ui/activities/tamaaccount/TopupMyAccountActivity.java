@@ -13,6 +13,7 @@ import butterknife.OnClick;
 import com.tama.chat.R;
 import com.tama.chat.tamaAccount.TamaAccountHelper;
 import com.tama.chat.tamaAccount.TamaAccountHelperListener;
+import com.tama.chat.utils.ToastUtils;
 import java.util.HashMap;
 import java.util.Map;
 import org.json.JSONException;
@@ -46,6 +47,11 @@ public class TopupMyAccountActivity extends TamaAccountBaseActivity implements
 
     @OnClick(R.id.topup_button)
     public void sendTopupRequest() {
+        hideSoftKeyboard();
+        if (!isNetworkAvailable()) {
+            ToastUtils.longToast(R.string.no_internet_conection);
+            return;
+        }
         topupErrorText.setText("");
         if (checkNumberCount()) {
             if (isNetworkAvailable()) {
@@ -134,7 +140,7 @@ public class TopupMyAccountActivity extends TamaAccountBaseActivity implements
                 topupErrorText.setText(message);
                 topupErrorText.setTextColor(Color.GREEN);
                 topupBalance = getDouble(balance_ws) - currentBalance;
-                createDialog(String.valueOf(topupBalance), getString(R.string.d_m_account_with), "");
+                createDialog(String.format("%.2f", topupBalance), getString(R.string.d_m_account_with), "");
                 currentBalance = getDouble(balance_ws);
                 topupVoucherText.setText("");
                 topupButton.setEnabled(true);
@@ -279,3 +285,10 @@ public class TopupMyAccountActivity extends TamaAccountBaseActivity implements
     }
 
 }
+/*
+472226908
+078236594
+652910750
+708563235
+736178913
+*/

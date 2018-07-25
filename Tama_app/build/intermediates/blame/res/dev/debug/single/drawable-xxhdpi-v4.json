@@ -16,6 +16,10 @@
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\88b4de45b041dc9e8696ea67b08fb10f3c033df9\\output\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png"
     },
     {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxhdpi-v4\\f000.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxhdpi\\f000.png"
+    },
+    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxhdpi-v4\\ic_camera_rear_white.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxhdpi\\ic_camera_rear_white.png"
     },

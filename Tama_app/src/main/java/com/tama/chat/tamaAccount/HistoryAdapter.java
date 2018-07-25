@@ -3,6 +3,7 @@ package com.tama.chat.tamaAccount;
 import static com.tama.chat.method.Methods.loadImageByUri;
 
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -127,6 +128,16 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryViewHolder> {
       history_idTv.setText(String.valueOf(element.getHistoryId()));
       history_header_statusTv.setText(element.getHistoryName());
       history_amountTv.setText(element.getAmount());
+
+      String amount= element.getAmount();
+      if (getDouble(removeFirstChar(amount))!=0) {
+        history_amountTv.setText(amount);
+        history_amountTv.setVisibility(View.VISIBLE);
+      }else {
+        history_amountTv.setText("");
+        history_amountTv.setVisibility(View.GONE);
+      }
+
       if (element.getMobileNo() != null) {
         history_mobile_noTv.setText(String.valueOf(element.getMobileNo()));
       }else {
@@ -157,6 +168,38 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryViewHolder> {
       }
     }
 
+    public String removeFirstChar(String s){
+      return s.substring(1);
+    }
+
+    public double getDouble(String source) {
+      if (TextUtils.isEmpty(source)) {
+        return 0;
+      }
+
+      String number = "0";
+      int length = source.length();
+
+      boolean cutNumber = false;
+      for (int i = 0; i < length; i++) {
+        char c = source.charAt(i);
+        if (cutNumber) {
+          if (Character.isDigit(c) || c == '.' || c == ',') {
+            c = (c == ',' ? '.' : c);
+            number += c;
+          } else {
+            cutNumber = false;
+            break;
+          }
+        } else {
+          if (Character.isDigit(c)) {
+            cutNumber = true;
+            number += c;
+          }
+        }
+      }
+      return Double.parseDouble(number);
+    }
   }
 
   public interface OnHistoryItemClickListener {

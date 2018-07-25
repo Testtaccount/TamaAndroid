@@ -20,6 +20,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.text.InputFilter;
 import android.text.Spanned;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -389,48 +390,6 @@ public abstract class BaseFlagActivity extends TamaAccountBaseActivity {
     @Bind(R.id.enter_phone_number_text)
     protected EditText enterPhoneNumberText;
 
-    protected AdapterView.OnItemSelectedListener mOnItemSelectedListener = new AdapterView.OnItemSelectedListener() {
-        @Override
-        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            Country c = (Country) countryCodeSpinner.getItemAtPosition(position);
-            if (!editNumber && mLastEnteredPhone != null && mLastEnteredPhone.startsWith(c.getCountryCodeStr())) {
-                return;
-            }else if(editNumber && getFirstNumber()!=null&&!getFirstNumber().isEmpty()){
-                mLastEnteredPhone =getFirstNumber();
-                enterPhoneNumberText.setText(mLastEnteredPhone);
-                textWatcher.setTextToTextEdit(mLastEnteredPhone);
-                textWatcher.setEditabale();
-                editNumber = false;
-                return;
-            }
-            enterPhoneNumberText.getText().clear();
-            enterPhoneNumberText.getText().insert(enterPhoneNumberText.getText().length() > 0 ? 1 : 0, String.valueOf(c.getCountryCode()));
-            enterPhoneNumberText.setSelection(enterPhoneNumberText.length());
-            mLastEnteredPhone = null;
-        }
-
-        @Override
-        public void onNothingSelected(AdapterView<?> parent) {
-        }
-    };
-
-    protected String getPhoneNumber(){
-        Country c = (Country) countryCodeSpinner.getSelectedItem();
-        String phoneNumber = enterPhoneNumberText.getText().toString();
-        phoneNumber = phoneNumber.replace(c.getCountryCodeStr(),"");
-        return phoneNumber.replace(" ","");
-    }
-
-    protected String getCountryCode(){
-        Country c = (Country) countryCodeSpinner.getSelectedItem();
-        return c.getCountryCodeStr().replace("+","");
-    }
-
-    protected String getFullPhoneNumber(){
-        String phoneNumber = enterPhoneNumberText.getText().toString();
-        return phoneNumber.replace(" ","");
-    }
-
     protected OnPhoneChangedListener mOnPhoneChangedListener = new OnPhoneChangedListener() {
         @Override
         public void onPhoneChanged(String phone) {
@@ -492,10 +451,43 @@ public abstract class BaseFlagActivity extends TamaAccountBaseActivity {
                     });
                 }
             } catch (NumberParseException ignore) {
+                Log.d(TAG, "exception - " + ignore);
             }
 
         }
     };
+
+    int first =1;
+    protected AdapterView.OnItemSelectedListener mOnItemSelectedListener = new AdapterView.OnItemSelectedListener() {
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            Country c = (Country) countryCodeSpinner.getItemAtPosition(position);
+            if (!editNumber && mLastEnteredPhone != null && mLastEnteredPhone.startsWith(c.getCountryCodeStr())) {
+                return;
+            }else if(editNumber && getFirstNumber()!=null&&!getFirstNumber().isEmpty()){
+                mLastEnteredPhone =getFirstNumber();
+                enterPhoneNumberText.setText(mLastEnteredPhone);
+                textWatcher.setTextToTextEdit(mLastEnteredPhone);
+                textWatcher.setEditabale();
+                editNumber = false;
+                return;
+            }
+            enterPhoneNumberText.getText().clear();
+            if(first ==1) {
+                first++;
+                enterPhoneNumberText.setText("+");
+            }else{
+                enterPhoneNumberText.getText().insert(enterPhoneNumberText.getText().length() > 0 ? 1 : 0, String.valueOf(c.getCountryCode()));
+            }
+            enterPhoneNumberText.setSelection(enterPhoneNumberText.length());
+            mLastEnteredPhone = null;
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+        }
+    };
+
 
     protected void initUI() {
         countryCodeSpinner.setOnItemSelectedListener(mOnItemSelectedListener);
@@ -526,6 +518,33 @@ public abstract class BaseFlagActivity extends TamaAccountBaseActivity {
     protected void initCodes() {
         new AsyncPhoneInitTask(this).execute();
     }
+
+    protected String getPhoneNumber(){
+        Country c = (Country) countryCodeSpinner.getSelectedItem();
+        String phoneNumber = enterPhoneNumberText.getText().toString();
+        phoneNumber = phoneNumber.replace(c.getCountryCodeStr(),"");
+        return phoneNumber.replace(" ","");
+    }
+
+    protected String getCountryCode(){
+        Country c = (Country) countryCodeSpinner.getSelectedItem();
+        return c.getCountryCodeStr().replace("+","");
+    }
+
+    protected String getFullPhoneNumber(){
+        String phoneNumber = enterPhoneNumberText.getText().toString();
+        return phoneNumber.replace(" ","");
+    }
+
+    protected void hideKeyboard(View v) {
+        InputMethodManager imm = (InputMethodManager) v.getContext().getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+    }
+
+//    protected void showKeyboard(View v) {
+//        InputMethodManager imm = (InputMethodManager) v.getContext().getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+//        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+//    }
 
     protected class AsyncPhoneInitTask extends AsyncTask<Void, Void, ArrayList<Country>> {
 
@@ -583,29 +602,18 @@ public abstract class BaseFlagActivity extends TamaAccountBaseActivity {
                     }
                 }
             }
+//            mAdapter.add(0,new Country(mContext,,));
             return data;
         }
 
         @Override
         protected void onPostExecute(ArrayList<Country> data) {
             mAdapter.addAll(data);
-            if (mSpinnerPosition > 0) {
-                countryCodeSpinner.setSelection(mSpinnerPosition);
-            }
+//            if (mSpinnerPosition > 0) {
+//                countryCodeSpinner.setSelection(mSpinnerPosition);
+//            }
         }
     }
-
-
-    protected void hideKeyboard(View v) {
-        InputMethodManager imm = (InputMethodManager) v.getContext().getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
-    }
-
-
-//    protected void showKeyboard(View v) {
-//        InputMethodManager imm = (InputMethodManager) v.getContext().getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
-//        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
-//    }
 
     public enum RequestType
     {

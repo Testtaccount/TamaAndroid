@@ -25,7 +25,9 @@ import com.tama.chat.App;
 import com.tama.chat.R;
 import com.tama.chat.tamaAccount.ProductsItemToSave;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
+import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.image.ImageLoaderUtils;
+import com.tama.q_municate_core.utils.NetworkUtil;
 import java.util.List;
 
 public class ShoppingCartFragment extends Fragment{
@@ -70,11 +72,19 @@ public class ShoppingCartFragment extends Fragment{
 
     @OnClick(R.id.continue_shopping_btn)
     public void OnClickContinueShopping() {
+        if (!NetworkUtil.isConnected(getActivity())) {
+            ToastUtils.longToast(R.string.no_internet_conection);
+            return;
+        }
         mActivity.onBackPressed();
     }
 
     @OnClick(R.id.checkout_btn)
     public void onClickCheckOutBtn() {
+        if (!NetworkUtil.isConnected(getActivity())) {
+            ToastUtils.longToast(R.string.no_internet_conection);
+            return;
+        }
         if (productItems == null || productItems.isEmpty()) {
             return;
         }
@@ -161,8 +171,10 @@ public class ShoppingCartFragment extends Fragment{
     }
 
     private void setGrandTotal() {
-        if(shippingTotal< mActivity.getDouble(App.getInstance().getAppSharedHelper().getMinOrderAmountTamaexpress())) {
+        if(subTotal< mActivity.getDouble(App.getInstance().getAppSharedHelper().getMinOrderAmountTamaexpress())) {
             grandTotal = subTotal+shippingTotal;
+        }else {
+            grandTotal = subTotal;
         }
         grandTotalView.setText(String.format("%.2f", grandTotal) + getString(R.string.euro));
     }

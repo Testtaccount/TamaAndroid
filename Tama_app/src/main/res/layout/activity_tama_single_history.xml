@@ -17,6 +17,13 @@
       layout="@layout/toolbar_tama_with_subtitle"/>
 
   </android.support.design.widget.AppBarLayout>
+  <ProgressBar
+  android:visibility="gone"
+  android:layout_marginTop="16dp"
+  android:id="@+id/progress_bar"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center" />
   <TextView
     android:id="@+id/error_message_text"
     android:layout_width="match_parent"
@@ -27,6 +34,7 @@
     android:textSize="@dimen/topup_title_text_height"
     android:visibility="gone" />
   <RelativeLayout
+    android:visibility="visible"
     android:id="@+id/activity_tama_history_id"
     android:layout_width="match_parent"
     android:layout_height="match_parent">

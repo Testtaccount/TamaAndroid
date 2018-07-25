@@ -68,6 +68,12 @@ public class APIUtil {
             case HttpRequestManager.RequestType.FIND_A_RETAILER:
                 apiUrl = getHost() + "retailers" + param;
                 break;
+                case HttpRequestManager.RequestType.SEND_TAMA_CONFIRM_ORDER:
+                apiUrl = getHost() + "sendtama/confirm" + param;
+                break;
+                case HttpRequestManager.RequestType.TAMA_TOPUP_DENOMINATIONS:
+                apiUrl = getHost() + "tama-topup" + param;
+                break;
             default:
                 apiUrl = "";
                 break;

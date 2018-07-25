@@ -8,16 +8,16 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-xxxhdpi\\ic_settings.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f177.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f177.png"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\ic_next.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-xxxhdpi\\ic_next.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\ic_next.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-xxxhdpi\\ic_next.png"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f177.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f177.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\dgts__login_header.png",
@@ -92,12 +92,12 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f095.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\logo_qb.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\logo_qb.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f081.png",
@@ -212,16 +212,16 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f057.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\ic_user_audio_call_dark.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\ic_user_audio_call_dark.png"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\add_photo.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\add_photo.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\ic_dynamic_on.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\ic_dynamic_on.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\add_photo.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\add_photo.png"
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\ic_user_audio_call_dark.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\ic_user_audio_call_dark.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f179.png",
@@ -300,6 +300,10 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\ic_switch_camera.png"
     },
     {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f233.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f233.png"
+    },
+    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f006.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f006.png"
     },
@@ -320,12 +324,12 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f047.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png",
-        "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\splash_logo.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\splash_logo.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png",
+        "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f189.png",
@@ -488,12 +492,12 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\ic_call_end_sm.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f010.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f010.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\dgts__addressbook_header.png",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\fbfa7c9fcaf12064224d0a83152ad5248de88dca\\output\\res\\drawable-xxxhdpi-v4\\dgts__addressbook_header.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f010.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f010.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f139.png",
@@ -716,12 +720,12 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f077.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f232.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f232.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\app_logo.png",
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\app_logo.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f232.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f232.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f032.png",
@@ -1056,12 +1060,12 @@
         "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\src\\main\\res\\drawable-xxxhdpi\\f199.png"
     },
     {
-        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\ic_contacts.png",
-        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-xxxhdpi\\ic_contacts.png"
-    },
-    {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png",
         "source": "C:\\Users\\Avetik\\.android\\build-cache\\8d79c5e519e8c5e77d850985b5dce84fbfc609c7\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\ic_contacts.png",
+        "source": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\generated\\res\\pngs\\dev\\debug\\drawable-xxxhdpi\\ic_contacts.png"
     },
     {
         "merged": "E:\\Android\\Project\\Tama Android\\Tama_app\\build\\intermediates\\res\\merged\\dev\\debug\\drawable-xxxhdpi-v4\\f138.png",

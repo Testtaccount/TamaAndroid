@@ -124,7 +124,7 @@ public abstract class BaseAuthActivity extends BaseActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
+//        super.onSaveInstanceState(outState);
         outState.putSerializable(STARTED_LOGIN_TYPE, loginType);
     }
 

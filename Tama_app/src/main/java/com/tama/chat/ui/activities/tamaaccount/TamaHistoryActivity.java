@@ -1,7 +1,7 @@
 package com.tama.chat.ui.activities.tamaaccount;
 
 import static com.tama.chat.rest.util.APIUtil.getLanguages;
-import static com.tama.chat.ui.activities.tamaaccount.TamaSingleHistoryActivity.EXTRA_HISTORY_SINGLE_ELEMENT;
+import static com.tama.chat.ui.activities.tamaaccount.TamaSingleHistoryActivity.EXTRA_HISTORY_SINGLE_ELEMENT_ID;
 
 import android.content.Context;
 import android.content.Intent;
@@ -25,9 +25,8 @@ import com.tama.chat.rest.util.APIUtil;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryData;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryResult;
 import com.tama.chat.tamaAccount.entry.historyPojos.TamaHistoryElement;
-import com.tama.chat.tamaAccount.entry.historyPojos.historySinglePojos.HistorySingle;
-import com.tama.chat.tamaAccount.entry.historyPojos.historySinglePojos.HistorySingleData;
 import com.tama.chat.ui.fragments.tamaaccount.TamaHistoryFragment;
+import com.tama.chat.utils.ToastUtils;
 import java.util.List;
 
 public class TamaHistoryActivity extends TamaAccountBaseActivity implements  ViewPager.OnPageChangeListener ,TamaHistoryFragment.OnHistoryFragmentInteractionListener{
@@ -123,7 +122,12 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
 
   @Override
   public void onHistoryItemViewClickListener(HistoryResult result) {
-    new TamaHistorySingleAsyncTask().execute(String.valueOf(result.getHistoryId()));
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
+    if(result!=null)
+    openSingleHistoryActivity(result.getHistoryId());
   }
 
 
@@ -238,95 +242,10 @@ public class TamaHistoryActivity extends TamaAccountBaseActivity implements  Vie
     }
   }
 
-  private class TamaHistorySingleAsyncTask extends AsyncTask<String, Void, HistoryResult> {
 
-    @Override
-    protected  HistoryResult doInBackground(String... params) {
-      String jsonResponse = "";
-
-      int id  = Integer.valueOf(params[0]);
-
-
-      HttpConnection httpConnection =HttpRequestManager
-          .executeRequest(getAppContext(),
-              RestHttpClient.RequestMethod.GET,
-              APIUtil.getURL(HttpRequestManager.RequestType.HISTORY_SINGLE,id,getLanguages(getAppContext())),
-              App.getInstance().getAppSharedHelper().getTamaAccountAccessToken(),
-              null);
-
-
-      if (httpConnection.isHttpConnectionSucceeded()) {
-        StringBuilder jsonResponseStringBuilder =httpConnection.getHttpResponseBody();
-        jsonResponse=jsonResponseStringBuilder.toString();
-
-      } else {
-        Logger.e(TAG, httpConnection.getHttpConnectionMessage());
-        HttpRequestManager.handleFailedRequest( httpConnection);
-      }
-
-
-
-      /////////////////////////////////////////////////////////////////////////////////////////////
-//      // Create URL object
-//      URL url = createUrl("http://tamaexpress.com:585/api/history?lang=en");
-//
-//
-//      // Perform HTTP request to the URL and receive a JSON response back
-//      String jsonResponse = "";
-//
-//      try {
-//        DefaultHttpClient httpclient = new DefaultHttpClient();
-//        HttpGet httpGet = new HttpGet("http://tamaexpress.com:585/api/history?lang=en");
-//        httpGet.setHeader("Accept", "application/json");
-//        httpGet.setHeader("Content-type", "application/json");
-//        httpGet.setHeader("Authorization", "Bearer " + App.getInstance().getAppSharedHelper().getTamaAccountAccessToken());
-//        ResponseHandler responseHandler = new BasicResponseHandler();
-//        jsonResponse= (String) httpclient.execute(httpGet, responseHandler);
-//
-//      } catch (Exception e) {
-//        e.printStackTrace();
-//      }
-//      TamaHistoryElement historyElement = extractFeatureFromJson(jsonResponse);
-//
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-//
-//      try {
-//        jsonResponse = makeHttpRequest(url);
-//      } catch (IOException e) {
-//        // TODO Handle the IOException
-//      }
-
-      // Extract relevant fields from the JSON response and create an {@link Event} object
-
-      // Return the {@link Event} object as the result fo the {@link TsunamiAsyncTask}
-
-      HistorySingle historySingle = new Gson().fromJson(jsonResponse, HistorySingle.class);
-//          extractFeatureFromJson(jsonResponse.toString());
-
-      HistorySingleData historyData = historySingle.getData();
-      HistoryResult historyResult = historyData.getResult();
-      return historyResult;
-    }
-
-
-    @Override
-    protected void onPostExecute(HistoryResult historyResult) {
-      if (historyResult == null) {
-        return;
-      }
-      openSingleHistoryActivity(historyResult);
-//      setCurrentFragment(TamaSingleHistoryActivity.newInstance(historyResult));
-    }
-
-  }
-
-  private void openSingleHistoryActivity(HistoryResult historyResult) {
+  private void openSingleHistoryActivity(long historyId) {
     Intent intent=new Intent(this, TamaSingleHistoryActivity.class);
-    intent.putExtra(EXTRA_HISTORY_SINGLE_ELEMENT,historyResult);
+    intent.putExtra(EXTRA_HISTORY_SINGLE_ELEMENT_ID,String.valueOf(historyId));
     startActivity(intent);
   }
 

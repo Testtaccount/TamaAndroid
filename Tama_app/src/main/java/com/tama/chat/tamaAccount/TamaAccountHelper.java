@@ -1649,7 +1649,6 @@ public class TamaAccountHelper {
   }
 
   public interface AsyncResponse {
-
     void processFinish(String output);
   }
 

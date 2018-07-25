@@ -23,6 +23,7 @@ import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
 import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.image.ImageLoaderUtils;
+import com.tama.q_municate_core.utils.NetworkUtil;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -80,6 +81,10 @@ public class CategoriesFragment extends Fragment implements TamaAccountHelperLis
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (! NetworkUtil.isConnected(getActivity())) {
+                    ToastUtils.longToast(R.string.no_internet_conection);
+                    return;
+                }
                 if (categoriesItems.get(position).isSubCategoriesEmpty()) {
                     new TamaAccountHelper().getListOfProducts(accountHelperListener, url,
                         categoriesItems.get(position).category_id);

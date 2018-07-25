@@ -12,10 +12,10 @@ public class GlobalSearchAdapter$ViewHolder$$ViewBinder<T extends com.tama.chat.
     target.avatarImageView = finder.castView(view, 2131755246, "field 'avatarImageView'");
     view = finder.findRequiredView(source, 2131755247, "field 'fullNameTextView'");
     target.fullNameTextView = finder.castView(view, 2131755247, "field 'fullNameTextView'");
-    view = finder.findRequiredView(source, 2131755636, "field 'statusTextView'");
-    target.statusTextView = finder.castView(view, 2131755636, "field 'statusTextView'");
-    view = finder.findRequiredView(source, 2131755635, "field 'addFriendImageView'");
-    target.addFriendImageView = finder.castView(view, 2131755635, "field 'addFriendImageView'");
+    view = finder.findRequiredView(source, 2131755637, "field 'statusTextView'");
+    target.statusTextView = finder.castView(view, 2131755637, "field 'statusTextView'");
+    view = finder.findRequiredView(source, 2131755636, "field 'addFriendImageView'");
+    target.addFriendImageView = finder.castView(view, 2131755636, "field 'addFriendImageView'");
   }
 
   @Override public void unbind(T target) {

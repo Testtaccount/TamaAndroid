@@ -9,6 +9,10 @@ public class TamaTopUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities
     super.bind(finder, target, source);
 
     View view;
+    view = finder.findRequiredView(source, 2131755328, "field 'mSpinner'");
+    target.mSpinner = finder.castView(view, 2131755328, "field 'mSpinner'");
+    view = finder.findRequiredView(source, 2131755329, "field 'mEditText'");
+    target.mEditText = finder.castView(view, 2131755329, "field 'mEditText'");
     view = finder.findRequiredView(source, 2131755381, "field 'tamaTopupFirstPage'");
     target.tamaTopupFirstPage = finder.castView(view, 2131755381, "field 'tamaTopupFirstPage'");
     view = finder.findRequiredView(source, 2131755388, "field 'tamaTopupSecondPage'");
@@ -67,6 +71,8 @@ public class TamaTopUpActivity$$ViewBinder<T extends com.tama.chat.ui.activities
   @Override public void unbind(T target) {
     super.unbind(target);
 
+    target.mSpinner = null;
+    target.mEditText = null;
     target.tamaTopupFirstPage = null;
     target.tamaTopupSecondPage = null;
     target.topupTitle = null;

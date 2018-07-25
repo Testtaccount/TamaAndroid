@@ -3,9 +3,12 @@ package com.tama.chat.ui.fragments.tamaaccount;
 import static com.tama.chat.tamaAccount.TamaAccountHelper.parse;
 
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
@@ -76,14 +79,20 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
   @Bind(R.id.button_tama_history)
   LinearLayout buttonTamaHistory;
 
+  @Bind(R.id.button_tama_find_a_retailer)
+  LinearLayout buttonFindARetailer;
+
+  @Bind(R.id.button_tama_about_us)
+  LinearLayout buttonTamaAboutUs;
+
+  @Bind(R.id.button_tama_contact_us)
+  LinearLayout buttonTamaContactUs;
+
   @Bind(R.id.button_send_credit)
   LinearLayout buttonSendCredit;
 
   @Bind(R.id.button_tama_request)
   LinearLayout buttonTamaRequest;
-
-  @Bind(R.id.button_tama_contact_us)
-  LinearLayout buttonTamaContactUs;
 
   public static MyTamaAccountFragment newInstance() {
     MyTamaAccountFragment fragment = new MyTamaAccountFragment();
@@ -95,12 +104,22 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
       Bundle savedInstanceState) {
     View view = inflater.inflate(R.layout.fragment_my_tama_account, container, false);
     ButterKnife.bind(this, view);
+    buttonTopupMyAcc.setEnabled(false);
+    buttonTamaExpress.setEnabled(false);
+    buttonTamaTopUp.setEnabled(false);
+    buttonTamaHistory.setEnabled(false);
+    buttonFindARetailer.setEnabled(false);
+    buttonTamaAboutUs.setEnabled(false);
+    buttonTamaContactUs.setEnabled(false);
     return view;
   }
 
   @Override
   public void onResume() {
     super.onResume();
+    getActivity()
+        .registerReceiver(receiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+
     if (isNetworkAvailable()) {
 //            updateBalance();
       updateHeartbeat();
@@ -123,12 +142,10 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
   @OnClick(R.id.button_topup_myacc)
   public void startTopupMyAccountActivity() {
 
-//    if (result[@"tamatopup"] != [NSNull null] && result[@"tamatopup"] != nil) {
-//      weakSelf.canTopup = [result[@"tamatopup"] boolValue];
-//    }
-//    if (result[@"tamavoucher"] != [NSNull null] && result[@"tamavoucher"] != nil) {
-//      weakSelf.canTopupByVoucher = [result[@"tamavoucher"] boolValue];
-//    }
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
 
     if (!tamatopup && !tamavoucher) {
       createMessageDialog(getString(R.string.message_available_european_users), "", "");
@@ -142,6 +159,11 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
 
   @OnClick(R.id.button_tama_express)
   public void startTamaExpressAcitvity() {
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
+
     setButtonEnable(false);
     Intent intent = new Intent(baseActivity, TamaExpressActivity.class);
     startActivity(intent);
@@ -154,6 +176,11 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
 //      return;
 //    }
 
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
+
     if (!tamatopup && !tamavoucher) {
       createMessageDialog(getString(R.string.message_available_european_users), "", "");
       return;
@@ -165,6 +192,10 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
 
   @OnClick(R.id.button_tama_history)
   public void startTamaHistoryActivity() {
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
     setButtonEnable(false);
     Intent intent = new Intent(baseActivity, TamaHistoryActivity.class);
     startActivity(intent);
@@ -172,6 +203,10 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
 
   @OnClick(R.id.button_tama_find_a_retailer)
   public void startTamaFindARetailerActivity() {
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
     setButtonEnable(false);
     Intent intent = new Intent(baseActivity, FindARetailerActivity.class);
     startActivity(intent);
@@ -179,6 +214,11 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
 
   @OnClick(R.id.button_tama_about_us)
   public void startAboutUsActivity() {
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
+
     setButtonEnable(false);
     Intent intent = new Intent(baseActivity, TamaAboutUsActivity.class);
     startActivity(intent);
@@ -186,6 +226,11 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
 
   @OnClick(R.id.button_tama_contact_us)
   public void startTamaContactUs() {
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
+
     setButtonEnable(false);
     Intent intent = new Intent(baseActivity, ContactUsActivity.class);
     startActivity(intent);
@@ -193,6 +238,11 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
 
   @OnClick(R.id.button_send_credit)
   public void startTamaBalanceTransfer() {
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
+
     setButtonEnable(false);
     Intent intent = new Intent(baseActivity, TamaTransferActivity.class);
     startActivity(intent);
@@ -200,6 +250,11 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
 
   @OnClick(R.id.button_tama_request)
   public void startRequestActivity() {
+    if (!isNetworkAvailable()) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
+
     setButtonEnable(false);
     Intent intent = new Intent(baseActivity, MyTamaRequestActivity.class);
     startActivity(intent);
@@ -358,27 +413,43 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
 
     App.getInstance().getAppSharedHelper().saveTamaIsPayByBalance(this.pay_by_balance);
     App.getInstance().getAppSharedHelper().saveTamaPayByRetailer(this.pay_to_retailer);
-    App.getInstance().getAppSharedHelper().savePromoTamaexpressBalance(this.promo_tamaexpress_balance);
+    App.getInstance().getAppSharedHelper()
+        .savePromoTamaexpressBalance(this.promo_tamaexpress_balance);
     App.getInstance().getAppSharedHelper().savePromoTamatopupBalance(this.promo_tamatopup_balance);
-    App.getInstance().getAppSharedHelper().setMinOrderAmountTamaexpress(min_order_amount_tamaexpress);
+    App.getInstance().getAppSharedHelper()
+        .setMinOrderAmountTamaexpress(min_order_amount_tamaexpress);
     App.getInstance().getAppSharedHelper().setMinOrderAmountTamatopup(min_order_amount_tamatopup);
 
     if (tamaAccountBalance != null) {
       tamaAccountBalance.setText(this.balance);
     }
 
-    if (promotionTxtTv != null && getDouble(removeFirstChar(promo_tamaexpress_balance) )!=0||getDouble(removeFirstChar(promo_tamatopup_balance) )!=0) {
+    if (promotionTxtTv != null && getDouble(removeFirstChar(promo_tamaexpress_balance)) != 0
+        || getDouble(removeFirstChar(promo_tamatopup_balance)) != 0) {
       promotionTxtTv.setVisibility(View.VISIBLE);
       promotionTxtTv.setText(promotion_txt);
-    }else {
+    } else {
       promotionTxtTv.setVisibility(View.GONE);
       promotionTxtTv.setText("");
     }
-
+    buttonTopupMyAcc.setEnabled(true);
+    buttonTamaExpress.setEnabled(true);
+    buttonTamaTopUp.setEnabled(true);
+    buttonTamaHistory.setEnabled(true);
+    buttonFindARetailer.setEnabled(true);
+    buttonTamaAboutUs.setEnabled(true);
+    buttonTamaContactUs.setEnabled(true);
   }
 
   @Override
   public void requestError(String data) {
+//    buttonTopupMyAcc.setEnabled(true);
+//    buttonTamaExpress.setEnabled(true);
+//    buttonTamaTopUp.setEnabled(true);
+//    buttonTamaHistory.setEnabled(true);
+//    buttonFindARetailer.setEnabled(true);
+//    buttonTamaAboutUs.setEnabled(true);
+//    buttonTamaContactUs.setEnabled(true);
     ToastUtils.longToast(data);
   }
 
@@ -387,7 +458,31 @@ public class MyTamaAccountFragment extends BaseFragment implements TamaAccountHe
     return getContext();
   }
 
-  public String removeFirstChar(String s){
+  public String removeFirstChar(String s) {
     return s.substring(1);
   }
+
+
+  @Override
+  public void onPause() {
+    super.onPause();
+    getActivity().unregisterReceiver(receiver);
+
+  }
+
+  private BroadcastReceiver receiver = new BroadcastReceiver() {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+      if (isNetworkAvailable()) {
+//            updateBalance();
+        updateHeartbeat();
+      } else {
+        Toast.makeText(app, app.getString(R.string.no_internet_conection), Toast.LENGTH_SHORT)
+            .show();
+      }
+      setButtonEnable(true);
+    }
+  };
+
+
 }

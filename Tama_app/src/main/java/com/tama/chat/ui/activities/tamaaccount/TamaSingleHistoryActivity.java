@@ -1,8 +1,10 @@
 package com.tama.chat.ui.activities.tamaaccount;
 
 import static com.tama.chat.method.Methods.loadImageByUri;
+import static com.tama.chat.rest.util.APIUtil.getLanguages;
 
 import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,21 +13,36 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.Bind;
+import com.google.gson.Gson;
+import com.tama.chat.App;
 import com.tama.chat.R;
+import com.tama.chat.rest.HttpRequestManager;
+import com.tama.chat.rest.Logger;
+import com.tama.chat.rest.RestHttpClient;
+import com.tama.chat.rest.entity.HttpConnection;
+import com.tama.chat.rest.util.APIUtil;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryProduct;
 import com.tama.chat.tamaAccount.entry.historyPojos.HistoryResult;
+import com.tama.chat.tamaAccount.entry.historyPojos.historySinglePojos.HistorySingle;
+import com.tama.chat.tamaAccount.entry.historyPojos.historySinglePojos.HistorySingleData;
 import java.util.List;
 
 public class TamaSingleHistoryActivity extends
     TamaAccountBaseActivity {// implements TamaAccountHelperListener {
 
-  private HistoryResult element;
+  @Bind(R.id.progress_bar)
+  public ProgressBar mProgressBar;
 
-  //    private long history_id;
-  public static final String EXTRA_HISTORY_SINGLE_ELEMENT = "EXTRA_HISTORY_SINGLE_ELEMENT";
+  @Bind(R.id.activity_tama_history_id)
+  public RelativeLayout contentRl;
+
+//  private HistoryResult element;
+  private String  historyId;
+  public static final String EXTRA_HISTORY_SINGLE_ELEMENT_ID = "EXTRA_HISTORY_SINGLE_ELEMENT_ID";
 //    private TamaHistoryActivity activity;
 
 
@@ -83,6 +100,9 @@ public class TamaSingleHistoryActivity extends
   @Bind(R.id.image_view)
   ImageView imageView;
 
+  @Bind(R.id.amount_title_view)
+  TextView amountTitleTv;
+
 
   @Bind(R.id.image_view_promo)
   ImageView imageViewPromo;
@@ -106,14 +126,19 @@ public class TamaSingleHistoryActivity extends
 //        new TamaAccountHelper().getSingleHistory(this,String.valueOf(history_id));
     setTamaToolbar(R.string.history, R.string.history);
 
+    contentRl.setVisibility(View.GONE);
+    mProgressBar.setVisibility(View.VISIBLE);
+
     if (getIntent() != null) {
-      element = getIntent().getParcelableExtra(EXTRA_HISTORY_SINGLE_ELEMENT);
+      historyId = getIntent().getStringExtra(EXTRA_HISTORY_SINGLE_ELEMENT_ID);
     }
-    if (element != null) {
-      initFields(element);
+    if (historyId != null) {
+      new TamaHistorySingleAsyncTask().execute(historyId);
     } else {
       errorMessageText.setVisibility(View.VISIBLE);
       errorMessageText.setText(R.string.error_unauthorized);
+//      contentRl.setVisibility(View.GONE);
+      mProgressBar.setVisibility(View.GONE);
     }
   }
 
@@ -133,18 +158,33 @@ public class TamaSingleHistoryActivity extends
 //      }
 //      return view;
 //    }
+public String removeFirstChar(String s){
+  return s.substring(1);
+}
 
-  private void initFields(HistoryResult element) {
-    singleHistoryId.setText(String.valueOf(element.getHistoryId()));
-    singleHistoryTimestamp.setText(element.getTimestamp());
-    amountTextView.setText(element.getAmount());
-    statusText.setText(element.getStatus());
-    historyName.setText(element.getHistoryName());
-    if (element.getMobileNo() != null) {
-      mobileNo.setText(element.getMobileNo().toString());
+  private void initFields(HistoryResult historyResult) {
+    singleHistoryId.setText(String.valueOf(historyResult.getHistoryId()));
+    singleHistoryTimestamp.setText(historyResult.getTimestamp());
+    String amount= historyResult.getAmount();
+    if (getDouble(removeFirstChar(amount))!=0) {
+      amountTextView.setText(amount);
+      amountTitleTv.setVisibility(View.VISIBLE);
+      amountTextView.setVisibility(View.VISIBLE);
+      imageViewPromo.setVisibility(View.VISIBLE);
+    }else {
+      amountTextView.setText("");
+      amountTitleTv.setVisibility(View.GONE);
+      amountTextView.setVisibility(View.GONE);
+      imageViewPromo.setVisibility(View.GONE);
     }
 
-    orderStatus.setText(element.getOrderStatus());
+    statusText.setText(historyResult.getStatus());
+    historyName.setText(historyResult.getHistoryName());
+    if (historyResult.getMobileNo() != null) {
+      mobileNo.setText(historyResult.getMobileNo().toString());
+    }
+
+    orderStatus.setText(historyResult.getOrderStatus());
 
 //    if (element.getOrderStatus().contains("Accepted") || element.getOrderStatus().contains("successful")) {
 //      statusBtn.setText(getString(R.string.succes));
@@ -158,25 +198,25 @@ public class TamaSingleHistoryActivity extends
 //    }
 
 
-    if (element.getImage() != null) {
-      loadImageByUri(element.getImage(), imageView);
+    if (historyResult.getImage() != null) {
+      loadImageByUri(historyResult.getImage(), imageView);
     }
-    if (element.getPromoUsed().equals("yes")) {
-      if (element.getPromoImage() != null) {
-        loadImageByUri(element.getPromoImage(), imageViewPromo);
+    if (historyResult.getPromoUsed().equals("yes")) {
+      if (historyResult.getPromoImage() != null) {
+        loadImageByUri(historyResult.getPromoImage(), imageViewPromo);
       }
     }
-    if (element.getSenderName() != null && !element.getSenderName().equals("")) {
+    if (historyResult.getSenderName() != null && !historyResult.getSenderName().equals("")) {
       senderLayout.setVisibility(View.VISIBLE);
-      senderNameText.setText(element.getSenderName());
-      senderNumberText.setText(element.getSenderMobile());
-      receiverNameText.setText(element.getReceiverName());
-      receiverNumberText.setText(element.getReceiverMobile());
+      senderNameText.setText(historyResult.getSenderName());
+      senderNumberText.setText(historyResult.getSenderMobile());
+      receiverNameText.setText(historyResult.getReceiverName());
+      receiverNumberText.setText(historyResult.getReceiverMobile());
     }
-    if (element.getProducts() != null && element.getProducts().size() > 0) {
+    if (historyResult.getProducts() != null && historyResult.getProducts().size() > 0) {
       productsListLayout.setVisibility(View.VISIBLE);
       line_3.setVisibility(View.VISIBLE);
-      productsList.setAdapter(new ProductsListAdapter(element.getProducts()));
+      productsList.setAdapter(new ProductsListAdapter(historyResult.getProducts()));
     }
   }
 
@@ -326,4 +366,97 @@ public class TamaSingleHistoryActivity extends
 //        SingleHistoryElement element = parseJSon(data);
 //        initFields(element);
 //    }
+
+  private class TamaHistorySingleAsyncTask extends AsyncTask<String, Void, HistoryResult> {
+
+    @Override
+    protected  HistoryResult doInBackground(String... params) {
+      String jsonResponse = "";
+
+      int id  = Integer.valueOf(params[0]);
+
+
+      HttpConnection httpConnection = HttpRequestManager
+          .executeRequest(getAppContext(),
+              RestHttpClient.RequestMethod.GET,
+              APIUtil.getURL(HttpRequestManager.RequestType.HISTORY_SINGLE,id,getLanguages(getAppContext())),
+              App.getInstance().getAppSharedHelper().getTamaAccountAccessToken(),
+              null);
+
+
+      if (httpConnection.isHttpConnectionSucceeded()) {
+        StringBuilder jsonResponseStringBuilder =httpConnection.getHttpResponseBody();
+        jsonResponse=jsonResponseStringBuilder.toString();
+
+      } else {
+        Logger.e(TAG, httpConnection.getHttpConnectionMessage());
+        HttpRequestManager.handleFailedRequest( httpConnection);
+      }
+
+
+
+      /////////////////////////////////////////////////////////////////////////////////////////////
+//      // Create URL object
+//      URL url = createUrl("http://tamaexpress.com:585/api/history?lang=en");
+//
+//
+//      // Perform HTTP request to the URL and receive a JSON response back
+//      String jsonResponse = "";
+//
+//      try {
+//        DefaultHttpClient httpclient = new DefaultHttpClient();
+//        HttpGet httpGet = new HttpGet("http://tamaexpress.com:585/api/history?lang=en");
+//        httpGet.setHeader("Accept", "application/json");
+//        httpGet.setHeader("Content-type", "application/json");
+//        httpGet.setHeader("Authorization", "Bearer " + App.getInstance().getAppSharedHelper().getTamaAccountAccessToken());
+//        ResponseHandler responseHandler = new BasicResponseHandler();
+//        jsonResponse= (String) httpclient.execute(httpGet, responseHandler);
+//
+//      } catch (Exception e) {
+//        e.printStackTrace();
+//      }
+//      TamaHistoryElement historyElement = extractFeatureFromJson(jsonResponse);
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//
+//      try {
+//        jsonResponse = makeHttpRequest(url);
+//      } catch (IOException e) {
+//        // TODO Handle the IOException
+//      }
+
+      // Extract relevant fields from the JSON response and create an {@link Event} object
+
+      // Return the {@link Event} object as the result fo the {@link TsunamiAsyncTask}
+
+      HistorySingle historySingle = new Gson().fromJson(jsonResponse, HistorySingle.class);
+//          extractFeatureFromJson(jsonResponse.toString());
+
+      HistorySingleData historyData = historySingle.getData();
+      HistoryResult historyResult = historyData.getResult();
+      return historyResult;
+    }
+
+
+    @Override
+    protected void onPostExecute(HistoryResult historyResult) {
+      if (historyResult != null) {
+        initFields(historyResult);
+        contentRl.setVisibility(View.VISIBLE);
+        mProgressBar.setVisibility(View.GONE);
+      } else {
+        errorMessageText.setVisibility(View.VISIBLE);
+        errorMessageText.setText(R.string.error_unauthorized);
+//        contentRl.setVisibility(View.GONE);
+        mProgressBar.setVisibility(View.GONE);
+      }
+//      setCurrentFragment(TamaSingleHistoryActivity.newInstance(historyResult));
+    }
+
+  }
+
 }

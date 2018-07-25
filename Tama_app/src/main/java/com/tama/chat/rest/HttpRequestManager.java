@@ -28,6 +28,8 @@ public class HttpRequestManager {
     public static final int HISTORIES_TRANSFER = 8;
     public static final int HISTORY_SINGLE = 9;
     public static final int FIND_A_RETAILER = 10;
+    public static final int SEND_TAMA_CONFIRM_ORDER = 11;
+    public static final int TAMA_TOPUP_DENOMINATIONS = 12;
   }
 
   // ===========================================================

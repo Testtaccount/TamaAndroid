@@ -2,6 +2,9 @@ package com.tama.chat.ui.fragments.tamaaccount;
 
 import static com.tama.chat.app.PhoneNumber.FIRST;
 import static com.tama.chat.app.PhoneNumber.SECOND;
+import static com.tama.chat.rest.util.APIUtil.getLanguages;
+import static com.tama.chat.tamaAccount.TamaAccountHelper.parse;
+import static com.tama.chat.ui.activities.tamaaccount.TamaSingleHistoryActivity.EXTRA_HISTORY_SINGLE_ELEMENT_ID;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -40,21 +43,37 @@ import com.tama.chat.countryCode.CountryAdapter;
 import com.tama.chat.countryCode.CustomPhoneNumberFormattingTextWatcher;
 import com.tama.chat.countryCode.OnPhoneChangedListener;
 import com.tama.chat.countryCode.PhoneUtils;
+import com.tama.chat.rest.HttpRequestManager;
+import com.tama.chat.rest.HttpRequestManager.RequestType;
+import com.tama.chat.rest.Logger;
+import com.tama.chat.rest.RestHttpClient.RequestMethod;
+import com.tama.chat.rest.entity.HttpConnection;
+import com.tama.chat.rest.util.APIUtil;
+import com.tama.chat.rest.util.PostEntityUtil;
 import com.tama.chat.tamaAccount.ProductsItemToSave;
-import com.tama.chat.tamaAccount.TamaAccountHelper;
-import com.tama.chat.tamaAccount.TamaAccountHelperListener;
 import com.tama.chat.tamaAccount.TamaPayOnlineActivity;
 import com.tama.chat.ui.activities.tamaaccount.TamaExpressActivity;
+import com.tama.chat.ui.activities.tamaaccount.TamaSingleHistoryActivity;
 import com.tama.chat.ui.fragments.chats.ContactsListFragment;
+import com.tama.chat.ui.fragments.dialogs.base.ProgressDialogFragment;
+import com.tama.chat.utils.ToastUtils;
 import com.tama.chat.utils.helpers.SharedHelper;
+import com.tama.q_municate_core.utils.NetworkUtil;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.TreeSet;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-public class CheckoutFragment extends Fragment implements TamaAccountHelperListener {
+public class CheckoutFragment extends Fragment {
+
+//  @Bind(R.id.progress_bar)
+//  public ProgressBar mProgressBar;
 
   private static final String TAG = "myLogs";
 
@@ -413,6 +432,8 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
   private String balance;
   private double grandTotal;
 
+  long historyId;
+
   @Bind(R.id.sender_name)
   EditText senderName;
 
@@ -433,6 +454,9 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
 
   @Bind(R.id.request_order_btn)
   Button btnRequestOrder;
+
+  @Bind(R.id.pay_online_btn)
+  Button btnPayOnline;
 
   @Bind(R.id.checkbox_express)
   CheckBox expressCheckBox;
@@ -613,6 +637,10 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
   @OnClick(R.id.confirm_btn)
   public void OnClickConfirmBtn() {
 //        double d1 = Double.valueOf(balance);
+    if (!NetworkUtil.isConnected(getActivity())) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
     if (!App.getInstance().getAppSharedHelper().getTamaPayByRetailer()) {
       createDialog("Service not available", false);
     } else {
@@ -624,6 +652,10 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
 
   @OnClick(R.id.request_order_btn)
   public void OnClickRequestOrder() {
+    if (!NetworkUtil.isConnected(getActivity())) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
     if (!App.getInstance().getAppSharedHelper().getTamaPayByRetailer()) {
       createDialog("Service not available", false);
     } else {
@@ -634,6 +666,10 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
 
   @OnClick(R.id.pay_online_btn)
   public void OnClickPayOnline() {
+    if (!NetworkUtil.isConnected(getActivity())) {
+      ToastUtils.longToast(R.string.no_internet_conection);
+      return;
+    }
     Intent intent = new Intent(getActivity(), TamaPayOnlineActivity.class);
     startActivity(intent);
   }
@@ -664,13 +700,20 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
   }
 
   private void sendConfirmRequest(String pay_by) {
+
     btnConfirm.setEnabled(false);
+    btnRequestOrder.setEnabled(false);
+    btnPayOnline.setEnabled(false);
     String sender_name = senderName.getText().toString();
     String sender_mobile = getFullPhoneNumberFirst();// enterPhoneNumberTextFirst.getText().toString();
     String receiver_name = beneficiaryName.getText().toString();
     String receiver_mobile = getFullPhoneNumberSecond();
     String use_promo = useExpress ? "yes" : "no";
-    new TamaAccountHelper().setConfirm(this, productIds, sender_name, sender_mobile, receiver_name, receiver_mobile,pay_by, use_promo);
+    ProgressDialogFragment.show(getChildFragmentManager());
+
+    new ConfirmAsyncTask().execute( productIds, sender_name, sender_mobile, receiver_name, receiver_mobile,pay_by, use_promo);
+
+//    new TamaAccountHelper().setConfirm(this, productIds, sender_name, sender_mobile, receiver_name, receiver_mobile,pay_by, use_promo);
   }
 
   @Override
@@ -700,13 +743,18 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
       public void onClick(View v) {
         alertDialog.cancel();
         if (isSuccess) {
-          Intent intent = new Intent(getActivity(), TamaExpressActivity.class);
-          startActivity(intent);
+          openSingleHistoryActivity(historyId);
           getActivity().finish();
         }
       }
     });
     alertDialog.show();
+  }
+
+  private void openSingleHistoryActivity(long historyId) {
+    Intent intent=new Intent(getActivity(), TamaSingleHistoryActivity.class);
+    intent.putExtra(EXTRA_HISTORY_SINGLE_ELEMENT_ID,String.valueOf(historyId));
+    startActivity(intent);
   }
 
   protected String getPhoneNumberFirst() {
@@ -977,30 +1025,116 @@ public class CheckoutFragment extends Fragment implements TamaAccountHelperListe
     };
   }
 
-  @Override
-  public void alertDialogCancelListener() {
 
+  private class ConfirmAsyncTask extends AsyncTask<String, Void, String> {
+
+    @Override
+    protected void onPreExecute() {
+      super.onPreExecute();
+//        mProgressBar.setVisibility(View.VISIBLE);
+
+    }
+
+    int position;
+
+    @Override
+    protected String doInBackground(String... params) {
+      String jsonResponse = "";
+      String url="";
+      String productIds = params[0];
+      String sender_name = params[1];
+      String sender_mobile = params[2];
+      String receiver_name = params[3];
+      String receiver_mobile = params[4];
+      String pay_by = params[5];
+      String use_promo = params[6];
+
+      String postEntity = PostEntityUtil.composeConfirmOrderPostEntity(
+          productIds,
+          sender_name,
+          sender_mobile,
+          receiver_name,
+          receiver_mobile,
+          pay_by,
+          use_promo
+      );
+
+      HttpConnection httpConnection =HttpRequestManager
+          .executeRequest(getContext(),
+              RequestMethod.POST,
+              APIUtil.getURL(RequestType.SEND_TAMA_CONFIRM_ORDER,getLanguages(getContext())),
+              App.getInstance().getAppSharedHelper().getTamaAccountAccessToken(),
+              postEntity);
+
+
+      if (httpConnection.isHttpConnectionSucceeded()) {
+        StringBuilder jsonResponseStringBuilder =httpConnection.getHttpResponseBody();
+        jsonResponse=jsonResponseStringBuilder.toString();
+
+      } else {
+        Logger.e(TAG, httpConnection.getHttpConnectionMessage());
+        HttpRequestManager.handleFailedRequest(httpConnection);
+      }
+
+
+      return jsonResponse;
+    }
+//{"data":{"code":"0","http_code":200,"message":"TamaExpress order was successful, your pin was  251093486","result":{"balance":"\u20ac101.40","history_id":101}}}
+    @Override
+    protected void onPostExecute(String jsonResponse) {
+//      mProgressBar.setVisibility(View.GONE);
+      ProgressDialogFragment.hide(getChildFragmentManager());
+
+      if (jsonResponse == null) {
+        requestError("Something is wrong");
+        return;
+      }
+      Map<String, String> map = new HashMap<>();
+
+      try {
+        JSONObject jsonObject = new JSONObject(jsonResponse);
+        parse(jsonObject, map);
+      } catch (JSONException e) {
+        e.printStackTrace();
+      }
+
+      String code = map.get("code");
+      String http_code = map.get("http_code");
+      String message = map.get("message");
+      String balance = map.get("balance");
+      String history_id = map.get("history_id");
+
+      if (http_code.equals("400")) {
+        requestError(message);
+      } else if (code.equals("1")) {
+        requestError(message);
+      } else if (code.equals("0")) {
+        if(history_id!=null) {
+          historyId = Long.parseLong(history_id);
+        }
+        requestSuccess(message);
+      }
+      btnConfirm.setEnabled(true);
+      btnRequestOrder.setEnabled(true);
+      btnPayOnline.setEnabled(true);
+
+//      updateUi(position,historyHistoryResultList);
+
+    }
   }
 
-  @Override
   public void requestSuccess(String message) {
-    btnConfirm.setEnabled(true);
-    createDialog(message, true);
     List<ProductsItemToSave> list = mActivity.getProductsListToSave();
     list.clear();
     mActivity.setProductsListToSave(list);
     mActivity.refreshProductCountInButton();
     productIds = "";
+    createDialog(message, true);
   }
 
-  @Override
   public void requestError(String message) {
-    btnConfirm.setEnabled(true);
     createDialog(message, false);
   }
 
-  @Override
-  public Context getAppContext() {
-    return getContext();
-  }
+
 }

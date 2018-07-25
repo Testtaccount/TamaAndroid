@@ -15,7 +15,16 @@
     android:textAllCaps="true"
     android:textColor="@color/tama_account_text"
     android:textSize="15sp" />
+  <!--<ProgressBar-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:id="@+id/progress_bar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center" />-->
   <ScrollView
+    android:id="@+id/scrollView_checkout"
+    android:visibility="visible"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none">
@@ -238,12 +247,17 @@
         android:id="@+id/checkbox_express"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:layout_below="@id/phone_number_layout_second"
         android:button="@drawable/check_box_selector"
         android:textColor="@color/black"
         android:textSize="@dimen/topup_title_text_height"
-        android:visibility="visible" />
+        android:visibility="gone" />
 
       <LinearLayout
         android:id="@+id/button_layout"
@@ -291,6 +305,7 @@
           android:textAllCaps="true"
           android:textColor="@color/white"
           android:textSize="@dimen/topup_button_text_size" />
+
       </LinearLayout>
 
     </RelativeLayout>
